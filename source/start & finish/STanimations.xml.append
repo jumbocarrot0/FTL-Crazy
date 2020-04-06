@@ -1,0 +1,42 @@
+<animSheet name="nothing_animation" w="400" h="100" fw="40" fh="100">weapons/blank.png</animSheet>
+<weaponAnim name="nothing_animation">
+	<sheet>nothing_animation</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="0" y="50"/>
+	<mountPoint x="0" y="50"/>
+	<chargeImage>weapons/blank.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="nothing_animation_shot" w="400" h="100" fw="40" fh="100">weapons/blank.png</animSheet>
+<anim name="nothing_animation_shot">
+	<sheet>nothing_animation_shot</sheet>
+	<desc length="10" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="artillery_fed_ion" w="400" h="100" fw="40" fh="100">weapons/ion_fed_strip10.png</animSheet>
+<weaponAnim name="artillery_fed_ion">
+	<sheet>artillery_fed_ion</sheet>
+	<desc length="10" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="0" y="50"/>
+	<mountPoint x="0" y="50"/>
+	<chargeImage>weapons/beam_ion_glow.png</chargeImage>
+</weaponAnim>
+
+<animSheet name="ion_artillery_big_shot" w="348" h="48" fw="48" fh="48">weapons/ion_big_shot_strip8.png</animSheet>
+<anim name="ion_artillery_big_shot">
+	<sheet>ion_artillery_big_shot</sheet>
+	<desc length="8" x="0" y="0"/>
+	<time>0.3</time>
+</anim>
+
+<animSheet name="ion_artillery_shot" w="47" h="131" fw="47" fh="131">weapons/ion_artillery_shot.png</animSheet>
+<anim name="ion_artillery_shot">
+	<sheet>ion_artillery_shot</sheet>
+	<desc length="1" x="0" y="0"/>
+	<time>0.3</time>
+</anim>

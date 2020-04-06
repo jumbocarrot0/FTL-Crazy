@@ -1,0 +1,60 @@
+<shipBlueprint name="PLAYER_SHIP_FED" layout="fed_cruiser_4" img="fed_cruiser_4">
+	<class id="ship_PLAYER_SHIP_FED_3_class"/>
+	<name id="ship_PLAYER_SHIP_FED_3_name"/>
+	<systemList>
+		<artillery power="2" room="1" start="true" weapon="ARTILLERY_FED_C" img="room_artillery" />
+		<battery power="1" room="12" start="false" img="room_battery_15" />
+		<cloaking power="1" room="7" start="false" img="room_cloaking_3" />
+		<clonebay power="2" room="2" start="true">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="10" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="14" start="false" img="room_drones_3" />
+		<engines power="3" room="17" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="3" start="false" img="room_hacking_6" />
+		<medbay power="1" room="2" start="false" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="6" start="false" img="room_mind_3" />
+		<oxygen power="1" room="9" start="true" img="room_oxygen_2" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="11" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="16" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="5" start="true" />
+		<weapons power="1" room="15" start="true" img="room_weapons_2">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+</shipBlueprint>

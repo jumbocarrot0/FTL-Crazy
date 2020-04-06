@@ -1,0 +1,55 @@
+<shipBlueprint name="PLAYER_SHIP_JELLY" layout="jelly_cruiser_3" img="jelly_cruiser_3">
+	<class id="ship_PLAYER_SHIP_JELLY_3_class"/>
+	<name id="ship_PLAYER_SHIP_JELLY_3_name"/>
+	<systemList>
+		<pilot power="1" room="8" start="true"/>
+		<doors power="2" room="10" start="true" img="room_doors_9">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<oxygen power="1" room="3" start="true" img="room_oxygen_2"/>
+		<engines power="2" room="6" start="true" img="room_engines_2"/>
+		<shields power="2" room="7" start="true" img="room_shields_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<weapons power="2" room="9" start="true" img="room_weapons_5">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+		<medbay power="1" room="15" start="false" img="room_medbay_9">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay><!--F-->
+		<clonebay power="1" room="15" start="true">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<sensors power="1" room="5" start="false" img="room_sensors_3"><!--F-->
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<drones power="2" room="13" start="false" img="room_drones_15"/>  <!--F-->
+		<teleporter power="1" room="11" start="false"/>  <!--F-->
+		<cloaking power="1" room="1" start="false" img="room_cloaking_3"/>  <!--F-->
+		<battery power="1" room="4" start="false" img="room_battery_10"/> <!--F-->
+		<mind power="1" room="0" start="true" img="room_mind_5"/>  <!--F-->
+		<hacking power="1" room="12" start="true" img="room_hacking_8"> <!--F-->
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</hacking>
+		<artillery power="1" room="14" weapon="ARTILLERY_FED" img="room_artillery_5"/>
+	</systemList>
+</shipBlueprint>

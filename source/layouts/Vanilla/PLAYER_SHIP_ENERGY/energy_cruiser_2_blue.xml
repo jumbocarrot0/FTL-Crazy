@@ -1,0 +1,55 @@
+<shipBlueprint name="PLAYER_SHIP_ENERGY" layout="energy_cruiser_2" img="energy_cruiser_2">
+	<class id="ship_PLAYER_SHIP_ENERGY_2_class"/>
+	<name id="ship_PLAYER_SHIP_ENERGY_2_name"/>
+	<systemList>
+		<pilot power="1" room="14" start="true"/>
+		<doors power="1" room="8" start="true" img="room_doors_7">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<sensors power="1" room="13" start="true" img="room_sensors_4">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<oxygen power="1" room="12" start="true" img="room_oxygen_7"/>
+		<engines power="2" room="3" start="true" img="room_engines_5">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</engines>
+		<shields power="1" room="5" start="true" img="room_shields_8"/>
+		<weapons power="4" room="7" start="true" img="room_weapons_4">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</weapons>
+		<drones power="2" room="2" start="false"/>      <!--F-->
+		<medbay power="1" room="0" start="true" img="room_medbay_4">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<clonebay power="1" room="0" start="false">  <!--F-->
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<teleporter power="1" room="11" start="false"/>  <!--F-->  <!-- CHANGED room was "4" -->
+		<cloaking power="1" room="6" start="false"/> <!--F-->
+		<battery power="1" room="9" start="false" img="room_battery_13"/>  <!--F-->
+		<mind power="1" room="1" start="false" img="room_mind_9"/>  <!--F-->
+		<hacking power="1" room="4" start="false" img="room_hacking_5"> <!--F-->
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</hacking>
+		<artillery power="1" room="10" weapon="ARTILLERY_FED" img="room_artillery_2"/>
+	</systemList>
+</shipBlueprint>

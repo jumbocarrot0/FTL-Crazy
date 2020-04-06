@@ -1,0 +1,60 @@
+<shipBlueprint name="PLAYER_SHIP_HARD" layout="kestral_2" img="kestral_2">
+	<class id="ship_PLAYER_SHIP_KESTREL_2_class"/>
+	<name id="ship_PLAYER_SHIP_KESTREL_2_name"/>
+	<systemList>
+		<pilot power="1" room="9" start="true" img="room_pilot_3">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</pilot>
+		<doors power="1" room="7" start="true" img="room_doors">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<sensors power="1" room="11" start="true" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<medbay power="1" room="3" start="true">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<clonebay power="1" room="3" start="false"><!-- F-->
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<oxygen power="1" room="0" start="true" img="room_oxygen_2"/>
+		<shields power="2" room="2" start="true" img="room_shields_9">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<engines power="2" room="5" start="true" img="room_engines_3">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<weapons power="4" room="10" start="true" img="room_weapons"/>
+		<drones power="2" room="13" start="false" img="room_drones_12"/> <!-- F-->
+		<teleporter power="1" room="8"	start="false"/> <!-- F-->
+		<cloaking power="1" room="12" start="false" img="room_cloaking_2"/> <!-- F-->
+		<battery power="1" room="6" start="false" img="room_battery_2"/>  <!-- F-->
+		<mind power="1" room="1" start="false" img="room_mind_1"/>  <!-- F-->
+		<hacking power="1" room="14" start="false" img="room_hacking_4"> <!--F-->
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</hacking>
+		<artillery power="1" room="4" weapon="ARTILLERY_FED" img="room_artillery_2"/>
+	</systemList>
+</shipBlueprint>

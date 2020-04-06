@@ -1,0 +1,59 @@
+<shipBlueprint name="PLAYER_SHIP_ENERGY" layout="zoltan_station_b" img="zoltan_station_a">
+	<class>Zoltan Outpost</class>
+	<name>Zoltan Station</name>
+	<systemList>
+		<battery power="1" room="10" start="false" img="room_battery_7" />
+		<cloaking power="1" room="6" start="false" img="room_cloaking_8" />
+		<clonebay power="1" room="4" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="11" start="true" img="room_doors_a">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="12" start="false" img="room_drones_a" />
+		<engines power="1" room="7" start="true" img="room_engines_8">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="10" start="false" img="room_hacking" />
+		<medbay power="1" room="4" start="true" img="room_medbay_rest_4">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="8" start="false" img="room_mind_9" />
+		<oxygen power="2" room="5" start="true" img="room_oxygen_plants_2" />
+		<pilot power="2" room="3" start="true" img="room_pilot_b">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="1" start="true" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="9" start="true" img="room_shields_11">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="2" start="false" />
+		<weapons power="3" room="0" start="true" img="room_weapons_d">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+</shipBlueprint>

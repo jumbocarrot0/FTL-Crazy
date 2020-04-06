@@ -1,0 +1,23 @@
+<event name="START_BEACON_ROCK_WAR">
+	<text>You arrive in a tense situation. In the distance, fleets of Rockmen ships are fighting a fleet comprised of strange, crystalline ships. A nearby outpost is sending a signal to turn back now, but with the Rebel fleet in hot pursuit, you have no choice but to enter the war zone.</text>
+	<choice>
+		<text id="continue"/>
+		<event>
+			<text>Noticing you, a Rockman ambassador contacts you. "We are aware of the threat you face passing here, and the threat you face if you don't. For our mutual benefit, help us against these Crystalline invaders, and we will help you against the Rebellion."</text>
+			<choice>
+				<text>Agree to the offer</text>
+				<event>
+					<text>"As a means of trust we will be equipping you with a rock-man designed missile, blessed for good luck by our missionaries. Please, keep it equipped for the duration you are in this sector as a sign of allegiance. Keeping it in cargo or giving it away is a sign of betrayal in our culture."</text>
+					<choice>
+						<text>We understand</text>
+						<event/>
+					</choice>
+				</event>
+			</choice>
+			<choice>
+				<text>Refuse to co-operate</text>
+				<event/>
+			</choice>
+		</event>
+	</choice>
+</event>

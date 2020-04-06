@@ -1,0 +1,61 @@
+<shipBlueprint name="PLAYER_SHIP_ANAEROBIC" layout="anaerobic_cruiser" img="anaerobic_cruiser">
+	<class id="ship_PLAYER_SHIP_ANAEROBIC_class"/>
+	<name id="ship_PLAYER_SHIP_ANAEROBIC_name"/>
+	<systemList>
+		<battery power="1" room="12" start="false" img="room_battery_8" />
+		<cloaking power="1" room="14" start="false" img="room_cloaking_3" />
+		<clonebay power="1" room="7" start="true">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="2" start="true" img="room_doors_6">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="1" room="13" start="false" img="room_drones_15" />
+		<engines power="1" room="1" start="true" img="room_engines_2">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="9" start="false" img="room_hacking_4" />
+		<medbay power="1" room="7" start="false" img="room_medbay_7">
+			<slot>
+				<number>2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="16" start="false" img="room_mind_2" />
+		<oxygen power="1" room="6" start="true" img="room_oxygen" />
+		<pilot power="1" room="0" start="true" img="room_pilot">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="3" start="true" img="room_sensors_4">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="1" room="8" start="true" img="room_shields_11">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="5" start="false" />
+		<weapons power="3" room="4" start="true" img="room_weapons_10">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</weapons>
+		<artillery power="1" room="11" weapon="ARTILLERY_FED"/>
+	</systemList>
+</shipBlueprint>
+

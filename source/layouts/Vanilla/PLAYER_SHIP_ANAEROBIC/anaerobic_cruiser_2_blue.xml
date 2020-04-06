@@ -1,0 +1,65 @@
+<shipBlueprint name="PLAYER_SHIP_ANAEROBIC" layout="anaerobic_cruiser_2" img="anaerobic_cruiser_2">
+	<class id="ship_PLAYER_SHIP_ANAEROBIC_2_class"/>
+	<name id="ship_PLAYER_SHIP_ANAEROBIC_2_name"/>
+	<systemList>
+		<pilot power="1" room="9" start="true">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<doors power="1" room="16" start="true" img="room_doors_2">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<sensors power="1" room="0" start="false" img="room_sensors_2"> <!--F-->
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<oxygen power="1" room="5" start="true"/>
+		<engines power="1" room="8" start="true" img="room_engines_2">
+			<slot>
+				<direction>down</direction>
+				<number>2</number>
+			</slot>
+		</engines>
+		<shields power="2" room="4" start="true" img="room_shields_3">
+			<slot>
+				<direction>left</direction>
+				<number>2</number>
+			</slot>
+		</shields>
+		<weapons power="1" room="13" start="true" img="room_weapons_10">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</weapons>
+		<drones power="2" room="2" start="false" img="room_drones_7"/> <!--F-->
+		<clonebay power="1" room="11" start="true">
+			<slot>
+				<number>2</number>
+			</slot>
+		</clonebay>
+		<medbay power="1" room="11" start="false" img="room_medbay_7"> <!--F-->
+			<slot>
+				<number>2</number>
+			</slot>
+		</medbay>
+		<teleporter power="1" room="12" start="true"/>
+		<cloaking power="1" room="1" start="false" img="room_cloaking_3"/> <!--F-->
+		<mind power="1" room="17" start="true" img="room_mind_3"/>
+		<battery power="1" room="15" start="false" img="room_battery_12"/>  <!--F-->
+		<hacking power="1" room="3" start="false" img="room_hacking_4">  <!--F-->
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</hacking>
+		<artillery power="1" room="7" weapon="ARTILLERY_FED"/>
+	</systemList>
+</shipBlueprint>

@@ -1,0 +1,58 @@
+<mod:findComposite>
+	<mod:par op="OR">
+		<mod:findName name="HOSTILE" type="sectorType"/>
+		<mod:findName name="OVERRIDE_HOSTILE" type="sectorType"/>
+	</mod:par>
+	<mod-append:sector>ROCK_HOME_WAR</mod-append:sector>
+	
+	<mod:findLike type="sector">
+		<mod:selector>ROCK_HOME</mod:selector>
+		<mod:removeTag/>
+	</mod:findLike>
+	
+	
+	<!-- SMPK and CE support -->
+	<mod:findLike type="sector">
+		<mod:selector>ROCK_HOME_AE</mod:selector>
+		<mod:removeTag/>
+	</mod:findLike>
+	
+	<mod:findLike type="sector">
+		<mod:selector>SE_ROCK_HOME</mod:selector>
+		<mod:removeTag/>
+	</mod:findLike>
+	
+</mod:findComposite>
+
+<sectorDescription name="ROCK_HOME_WAR" minSector="4" unique="true">
+	<nameList>
+		<name id="sectorname_ROCK_HOME" short="sectorname_short_ROCK_HOME"/>
+	</nameList>
+	<trackList>
+		<track>rock</track>
+		<track>wasteland</track>
+	</trackList>
+	<rarityList>
+		<blueprint name="engi" rarity="0"/>
+		<blueprint name="mantis" rarity="0"/>
+		<blueprint name="energy" rarity="3"/>
+		<blueprint name="slug" rarity="0"/>
+		<blueprint name="rock" rarity="1"/>
+		<blueprint name="human" rarity="2"/>
+		<blueprint name="BOMB_LOCK" rarity="2"/>
+	</rarityList>
+	<!--<event name="STORE" min="2" max="4"/>-->
+
+	<startEvent>START_BEACON_ROCK_WAR</startEvent>
+	<event name="ROCK_CRYSTAL_BEACON" min="1" max="1"/> <!-- CRYSTAL UNLOCK-->
+	<event name="ROCK_UNLOCK1" min="1" max="1"/>
+	<event name="STORE_ROCK" min="2" max="2"/>
+	<event name="NOTHING_ROCK" min="2" max="3"/>
+	<event name="DISTRESS_BEACON_ROCK" min="1" max="2"/>
+	<event name="HOSTILE_ROCK" min="6" max="8"/>
+	<event name="BOARDERS_ROCK" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="2"/>
+	<event name="QUESTS_ROCK" min="0" max="1"/>
+	<event name="NEUTRAL_ROCK" min="7" max="8"/>
+
+</sectorDescription>

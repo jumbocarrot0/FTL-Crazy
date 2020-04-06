@@ -1,0 +1,61 @@
+<shipBlueprint name="PLAYER_SHIP_HARD" layout="fed_station_a" img="fed_station">
+	<class>Federation Outpost</class>
+	<name>Federation Station</name>
+	<systemList>
+		<cloaking power="1" room="2" start="false" img="room_cloaking_3"/>
+		<medbay power="2" room="6" start="true" img="room_medbay_4">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<clonebay power="1" room="6" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="4" start="true" img="room_doors_8">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<engines power="1" room="5" start="true" img="room_engines_rest_2">
+			<slot>
+				<number>-2</number>
+				<!--<direction>right</direction>
+				<number>1</number>-->
+			</slot>
+		</engines>
+		<oxygen power="1" room="3" start="true" img="room_oxygen_9"/>
+		<shields power="2" room="7" start="true" img="room_shields_a">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<drones power="2" room="8" start="false" img="room_drones_14"/>
+		<pilot power="1" room="10" start="true" img="room_pilot_a">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<teleporter power="1" room="11" start="false"/>
+		<weapons power="3" room="12" start="true" img="room_weapons_a">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+		<sensors power="2" room="13" start="true" img="room_sensors_a">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<mind power="1" room="9" start="false" img="room_mind_4"/>
+		<battery power="1" room="1" start="false" img="room_battery_6"/>
+		<hacking power="1" room="0" start="false" img="room_hacking_hangar"/>
+		<!--room room="0" start="true" img="room_hangar_4"/-->
+	</systemList>
+</shipBlueprint>

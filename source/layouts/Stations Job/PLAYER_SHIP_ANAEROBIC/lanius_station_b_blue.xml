@@ -1,0 +1,59 @@
+<shipBlueprint name="PLAYER_SHIP_ANAEROBIC" layout="lanius_station_b" img="lanius_station">
+	<class>Lanius Outpost</class>
+	<name>Lanius Station</name>
+	<systemList>
+		<battery power="1" room="5" start="false" img="room_battery_11" />
+		<cloaking power="1" room="4" start="true" img="room_cloaking_a" />
+		<clonebay power="1" room="3" start="true">
+			<slot>
+				<number>3</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="2" start="true" img="room_doors_rest">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="13" start="false" img="room_drones_b" />
+		<engines power="1" room="10" start="true" img="room_engines_3u">
+			<slot>
+				<direction>down</direction>
+				<number>-2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="12" start="false" img="room_hacking_9" />
+		<medbay power="1" room="3" start="false" img="room_medbay_3">
+			<slot>
+				<number>3</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="9" start="true" img="room_mind_7" />
+		<oxygen power="1" room="7" start="false" img="room_oxygen_6" />
+		<pilot power="1" room="11" start="true" img="room_pilot_b">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="0" start="true" img="room_sensors_4">
+			<slot>
+				<direction>left</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="8" start="false" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="1" start="true" />
+		<weapons power="4" room="6" start="true" img="room_weapons_d">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+</shipBlueprint>

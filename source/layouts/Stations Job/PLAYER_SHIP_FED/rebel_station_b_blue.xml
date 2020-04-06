@@ -1,0 +1,60 @@
+<shipBlueprint name="PLAYER_SHIP_FED_2" layout="rebel_station_b" img="rebel_station">
+	<class>Rebel Outpost</class>
+	<name>Rebel Station</name>
+	<systemList>
+		<artillery power="1" room="5" start="false" weapon="ARTILLERY_FED" img="room_artillery_b" />
+		<battery power="1" room="14" start="false" img="room_battery" />
+		<cloaking power="1" room="1" start="false" img="room_cloaking_6" />
+		<clonebay power="1" room="9" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="6" start="true" img="room_doors_hangar_2">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="2" start="false" img="room_drones" />
+		<engines power="1" room="0" start="true" img="room_engines_b">
+			<slot>
+				<direction>down</direction>
+				<number>-2</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="11" start="false" img="room_hacking_8" />
+		<medbay power="1" room="9" start="true" img="room_medbay_rebel">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="10" start="false" img="room_mind_2" />
+		<oxygen power="1" room="12" start="true" img="room_oxygen" />
+		<pilot power="1" room="3" start="true" img="room_pilot_c">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="7" start="true" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="4" start="true" img="room_shields_9">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="13" start="false" />
+		<weapons power="4" room="8" start="true" img="room_weapons_5">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+</shipBlueprint>

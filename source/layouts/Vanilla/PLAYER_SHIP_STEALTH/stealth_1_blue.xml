@@ -1,0 +1,37 @@
+<shipBlueprint name="PLAYER_SHIP_STEALTH" layout="stealth_1" img="stealth">
+	<class id="ship_PLAYER_SHIP_STEALTH_class"/>
+	<name id="ship_PLAYER_SHIP_STEALTH_name"/>
+	<systemList>
+		<pilot power="1" room="0" start="true"/>
+		<doors power="1" room="14" start="true" img="room_doors_2">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<sensors power="2" room="13" start="true" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<oxygen power="1" room="1" start="true" img="room_oxygen_2"/>
+		<engines power="4" room="12" start="true" img="room_engines_2"/>
+		<shields power="2" room="10" start="false" img="room_shields_2"/> <!--F-->
+		<weapons power="2" room="3" start="true" img="room_weapons_2"/>
+		<drones power="2" room="11" start="false" img="room_drones_2"/><!--F-->
+		<medbay power="1" room="7" start="true"/>
+		<clonebay power="1" room="7" start="false"/> <!--F-->
+		<teleporter power="1" room="5" start="false"/> <!--F-->
+		<cloaking power="1" room="8" start="true" img="room_cloaking_2"/>
+		<hacking power="1" room="6" start="false" img="room_hacking"><!-- F-->
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</hacking>
+		<battery power="1" room="4" start="false"/><!-- F-->
+		<mind power="1" room="9" start="false" img="room_mind_2"/><!-- F-->
+		<artillery power="1" room="2" weapon="ARTILLERY_FED" img="room_artillery_2"/>
+	</systemList>
+</shipBlueprint>

@@ -1,0 +1,5 @@
+<mod:findWithChildLike type="blueprintList" child-type="name">
+	<mod:selector>ION_2</mod:selector>
+	<mod-append:name>RAND_ION_PULSE</mod-append:name>
+	<mod-append:name>RAND_ION_PULSE_2</mod-append:name>
+</mod:findWithChildLike>

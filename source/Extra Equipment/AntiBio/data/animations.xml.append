@@ -1,0 +1,42 @@
+<animSheet name="rand_bomblauncher_bio" w="595" h="50" fw="35" fh="50">Crazyweapons/bomblauncher_bio_strip17.png</animSheet>
+<weaponAnim name="rand_bomblauncher_bio">
+	<sheet>rand_bomblauncher_bio</sheet>
+	<desc length="17" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>16</fireFrame>
+	<firePoint x="20" y="8" />
+	<mountPoint x="5" y="34" />
+	<delayChargeAnim>0.98</delayChargeAnim>
+	<chargeImage>Crazyweapons/bomblauncher_1_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="rand_bomb_bio" w="315" h="35" fw="35" fh="35">Crazyweapons/bomb_bio_strip9.png</animSheet>
+<anim name="rand_bomb_bio">
+	<sheet>rand_bomb_bio</sheet>
+	<desc length="9" x="0" y="0"></desc>
+	<time>0.35</time>
+</anim>
+<animSheet name="rand_beam_bio_2" w="272" h="60" fw="34" fh="60">Crazyweapons/beam_bio_2_strip8.png</animSheet>
+<weaponAnim name="rand_beam_bio_2">
+	<sheet>rand_beam_bio_2</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>2</fireFrame>
+	<firePoint  x="18" y="19"/>
+	<mountPoint x="3" y="37"/>
+	<chargeImage>Crazyweapons/beam_bio_2_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="rand_laser_bio" w="192" h="60" fw="16" fh="60">Crazyweapons/laser_bio_strip12.png</animSheet>
+<weaponAnim name="rand_laser_bio">
+	<sheet>rand_laser_bio</sheet>
+	<desc length="12" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint  x="10" y="16"/>
+	<mountPoint x="2" y="44"/>
+</weaponAnim>
+<animSheet name="rand_laser_bio_projectile" w="200" h="20" fw="50" fh="20">Crazyweapons/laser_bio_projectile_strip4.png</animSheet>
+<anim name="laser_bio_projectile">
+	<sheet>laser_bio_projectile</sheet>
+	<desc length="4" x="0" y="0"/>
+	<time>0.5</time>
+</anim>

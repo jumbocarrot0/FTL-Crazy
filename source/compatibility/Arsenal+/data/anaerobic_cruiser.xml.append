@@ -1,0 +1,7 @@
+<weaponMounts>
+	<mount x="460" y="178" rotate="true" mirror="true" gib="4" slide="up"/>
+	<mount x="460" y="428" rotate="true" mirror="false" gib="3" slide="down"/>
+	<mount x="425" y="135" rotate="true" mirror="true" gib="6" slide="right"/>
+	<mount x="425" y="472" rotate="true" mirror="false" gib="3" slide="right"/>
+	<!-- artillery mounts testing -->
+</weaponMounts>

@@ -1,0 +1,11 @@
+<weaponMounts>
+	<mount x="540" y="155" rotate="true" mirror="true" gib="6" slide="up"/>
+	<mount x="540" y="262" rotate="true" mirror="false" gib="6" slide="down"/>
+	<mount x="390" y="122" rotate="true" mirror="true" gib="5" slide="up"/>
+	<mount x="390" y="294" rotate="true" mirror="false" gib="5" slide="down"/>
+	<!-- artillery mounts testing -->
+	<mount x="540" y="170" rotate="true" mirror="true" gib="6" slide="up"/>
+	<mount x="540" y="274" rotate="true" mirror="false" gib="6" slide="down"/>
+	<mount x="390" y="135" rotate="true" mirror="true" gib="5" slide="up"/>
+	<mount x="390" y="309" rotate="true" mirror="false" gib="5" slide="down"/>
+</weaponMounts>

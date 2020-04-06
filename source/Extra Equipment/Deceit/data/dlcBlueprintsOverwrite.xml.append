@@ -1,0 +1,72 @@
+<mod:findComposite>
+	<mod:par op="AND">
+		<mod:findWithChildLike type="blueprintList" child-type="name">
+			<mod:selector>LASER_BURST_2_A</mod:selector>
+		</mod:findWithChildLike>
+		<mod:findWithChildLike type="blueprintList" child-type="name">
+			<mod:selector>LASER_BURST_3</mod:selector>
+		</mod:findWithChildLike>
+	</mod:par>
+	<mod-append:name>RAND_LASER_BURST_2_A_DECEIT</mod-append:name>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="AND">
+		<mod:findWithChildLike type="blueprintList" child-type="name">
+			<mod:selector>ION_1</mod:selector>
+		</mod:findWithChildLike>
+		<mod:findWithChildLike type="blueprintList" child-type="name">
+			<mod:selector>ION_4</mod:selector>
+		</mod:findWithChildLike>
+	</mod:par>
+	<mod-append:name>RAND_ION_1_DECIET</mod-append:name>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="AND">
+		<mod:findWithChildLike type="blueprintList" child-type="name">
+			<mod:selector>LASER_BURST_1</mod:selector>
+		</mod:findWithChildLike>
+		<mod:findWithChildLike type="blueprintList" child-type="name">
+			<mod:selector>LASER_HEAVY_1</mod:selector>
+		</mod:findWithChildLike>
+	</mod:par>
+	<mod-append:name>RAND_LASER_BURST_1_DECEIT</mod-append:name>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="AND">
+		<mod:findWithChildLike type="blueprintList" child-type="name">
+			<mod:selector>BOMB_1</mod:selector>
+		</mod:findWithChildLike>
+		<mod:findWithChildLike type="blueprintList" child-type="name">
+			<mod:selector>BOMB_ION</mod:selector>
+		</mod:findWithChildLike>
+	</mod:par>
+	<mod-append:name>RAND_BOMB_1_DECEIT</mod-append:name>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="AND">
+		<mod:findWithChildLike type="blueprintList" child-type="name">
+			<mod:selector>BEAM_2</mod:selector>
+		</mod:findWithChildLike>
+		<mod:findWithChildLike type="blueprintList" child-type="name">
+			<mod:selector>BEAM_3</mod:selector>
+		</mod:findWithChildLike>
+	</mod:par>
+	<mod-append:name>RAND_BEAM_2_DECEIT</mod-append:name>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="AND">
+		<mod:findWithChildLike type="blueprintList" child-type="name">
+			<mod:selector>LASER_BURST_1</mod:selector>
+		</mod:findWithChildLike>
+		<mod:findWithChildLike type="blueprintList" child-type="name">
+			<mod:selector>LASER_CHAINGUN_2</mod:selector>
+		</mod:findWithChildLike>
+	</mod:par>
+	<mod-append:name>RAND_LASER_CHAINGUN_2_DECEIT</mod-append:name>
+	<mod-append:name>RAND_LASER_BURST_1_DECEIT2</mod-append:name>
+</mod:findComposite>

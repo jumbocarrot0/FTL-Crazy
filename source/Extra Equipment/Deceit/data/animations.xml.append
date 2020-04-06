@@ -1,0 +1,16 @@
+<animSheet name="laser_burst_1_deceitchain_charge" w="160" h="67" fw="32" fh="67">weapons/blank.png</animSheet>
+<anim name="laser_burst_1_deceitchain_charge">
+	<sheet>laser_burst_1_deceitchain_charge</sheet>
+	<desc length="5" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="laser_burst_1_deceitchain" w="192" h="60" fw="16" fh="60">weapons/laser1_strip12.png</animSheet>
+<weaponAnim name="laser_burst_1_deceitchain">
+	<sheet>laser_burst_1_deceitchain</sheet>
+	<desc length="12" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>8</fireFrame>
+	<firePoint  x="10" y="16"/>
+	<mountPoint x="2" y="44"/>
+</weaponAnim>

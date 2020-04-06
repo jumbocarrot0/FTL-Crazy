@@ -1,0 +1,39 @@
+<shipBlueprint name="PLAYER_SHIP_STEALTH" layout="auto_station_b" img="auto_station_a">
+	<class>Automated Outpost</class>
+	<name>AI Station</name>
+	<systemList>
+		<cloaking power="1" room="6" start="true" img="room_cloaking_4" />
+		<drones power="2" room="4" start="true" img="room_drones_12" />
+		<engines power="1" room="5" start="true" img="room_engines_c">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</engines>
+		<hacking power="1" room="3" start="false" img="room_hacking_9" />
+		<pilot power="2" room="1" start="true" img="room_pilot_e">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="2" room="2" start="true" img="room_sensors_6">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="0" start="true" img="room_shields_8">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<weapons power="4" room="7" start="true" img="room_weapons_d">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+</shipBlueprint>

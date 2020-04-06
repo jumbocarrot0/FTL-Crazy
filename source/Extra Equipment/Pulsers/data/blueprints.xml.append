@@ -1,0 +1,84 @@
+<weaponBlueprint name="RAND_ION_PULSE">
+	<type>LASER</type>
+	<title>Ion Pulser</title>
+	<short>Ion Pulser</short>
+	<tip>tip_pulse</tip>
+	<desc>This Ion Pulser weapon can pierce a single shield layer, allowing it to potentially ionize the shields twice.</desc>
+	<tooltip>Fires a powerful blast that pierces a single shield layer and causes 1 ion damage.</tooltip>
+	<damage>0</damage>
+	<ion>1</ion>
+	<speed>30</speed>
+	<shots>1</shots>
+	<sp>1</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>1</stunChance>
+	<cooldown>11</cooldown>
+	<power>2</power>
+	<cost>60</cost>
+	<rarity>4</rarity>
+	<image>ion_2_shot</image>
+	<explosion>explosion_small_ion</explosion>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>rand_ion_pulse_1</weaponArt> 
+	<iconImage>ion</iconImage>
+</weaponBlueprint>
+<weaponBlueprint name="RAND_ION_PULSE_2">
+	<type>LASER</type>
+	<title>Ion Pulser Mark 2</title>
+	<short>Ion Pulser II</short>
+	<tip>tip_pulse</tip>
+	<desc>This improved Ion Pulser weapon can pierce two layers of shield, allowing it to potentially ionize the shields three times.</desc>
+	<tooltip>Fires a powerful blast that pierces a single shield layer and causes 1 ion damage.</tooltip>
+	<damage>0</damage>
+	<ion>1</ion>
+	<speed>30</speed>
+	<shots>1</shots>
+	<sp>2</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>1</stunChance>
+	<cooldown>17</cooldown>
+	<power>3</power>
+	<cost>85</cost>
+	<rarity>4</rarity>
+	<image>ion_2_shot</image>
+	<explosion>explosion_small_ion</explosion>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>rand_ion_pulse_2</weaponArt> 
+	<iconImage>ion</iconImage>
+</weaponBlueprint>

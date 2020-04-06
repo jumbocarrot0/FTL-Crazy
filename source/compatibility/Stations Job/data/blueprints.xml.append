@@ -1,0 +1,80 @@
+<mod:findLike type="shipBlueprint">
+	<mod:selector img="fed_station_a"/>
+	<mod:setAttributes img="fed_station"/>
+</mod:findLike>
+
+<mod:findWithChildLike type="shipBlueprint" child-type="cloakImage">
+	<mod:selector img="fed_station_c"/>
+	<mod-overwrite:cloakImage>fed_station_c</mod-overwrite:cloakImage>
+</mod:findWithChildLike>
+
+<mod:findLike type="shipBlueprint">
+	<mod:selector img="engi_station_a"/>
+	<mod:setAttributes img="engi_station"/>
+</mod:findLike>
+
+<mod:findWithChildLike type="shipBlueprint" child-type="cloakImage">
+	<mod:selector img="engi_station_c"/>
+	<mod-overwrite:cloakImage>engi_station_c</mod-overwrite:cloakImage>
+</mod:findWithChildLike>
+
+<mod:findLike type="shipBlueprint">
+	<mod:selector img="rebel_station_a"/>
+	<mod:setAttributes img="rebel_station"/>
+</mod:findLike>
+
+<mod:findWithChildLike type="shipBlueprint" child-type="cloakImage">
+	<mod:selector img="rebel_station_b"/>
+	<mod-overwrite:cloakImage>rebel_station_b</mod-overwrite:cloakImage>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike type="shipBlueprint" child-type="cloakImage">
+	<mod:selector>zoltan_station</mod:selector>
+	<mod-overwrite:cloakImage>zoltan_station_a</mod-overwrite:cloakImage>
+</mod:findWithChildLike>
+
+<mod:findLike type="shipBlueprint">
+	<mod:selector img="mantis_station_a"/>
+	<mod:setAttributes img="mantis_station"/>
+</mod:findLike>
+
+<mod:findLike type="shipBlueprint">
+	<mod:selector img="slug_station_a"/>
+	<mod:setAttributes img="slug_station"/>
+</mod:findLike>
+
+<mod:findWithChildLike type="shipBlueprint" child-type="cloakImage">
+	<mod:selector>rock_station</mod:selector>
+	<mod-overwrite:cloakImage>rock_station_a</mod-overwrite:cloakImage>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike type="shipBlueprint" child-type="cloakImage">
+	<mod:selector>auto_station</mod:selector>
+	<mod-overwrite:cloakImage>auto_station_a</mod-overwrite:cloakImage>
+</mod:findWithChildLike>
+
+<mod:findLike type="shipBlueprint">
+	<mod:selector img="lanius_station_a"/>
+	<mod:setAttributes img="lanius_station"/>
+</mod:findLike>
+
+<mod:findWithChildLike type="shipBlueprint" child-type="cloakImage">
+	<mod:selector>lanius_station_a</mod:selector>
+	<mod-overwrite:cloakImage>lanius_station</mod-overwrite:cloakImage>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike type="shipBlueprint" child-type="cloakImage">
+	<mod:selector img="lanius_station_b"/>
+	<mod-overwrite:cloakImage>lanius_station_b</mod-overwrite:cloakImage>
+</mod:findWithChildLike>
+<!--
+<mod:findLike type="shipBlueprint">
+	<mod:selector img="crystal_station_a"/>
+	<mod:setAttributes img="crystal_station"/>
+</mod:findLike>-->
+
+<mod:findWithChildLike type="shipBlueprint" child-type="cloakImage">
+	<mod:selector>crystal_station</mod:selector>
+	<mod-overwrite:cloakImage>crystal_station_a</mod-overwrite:cloakImage>
+</mod:findWithChildLike>
+

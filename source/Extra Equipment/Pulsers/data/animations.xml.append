@@ -1,0 +1,20 @@
+<animSheet name="rand_ion_pulse_1" w="240" h="54" fw="30" fh="54">Crazyweapons/pulse_1_strip8.png</animSheet>
+<weaponAnim name="rand_ion_pulse_1">
+	<sheet>rand_ion_pulse_1</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint  x="17" y="7"/>
+	<mountPoint x="9" y="35"/>
+	<chargeImage>Crazyweapons/pulse_1_glow.png</chargeImage>
+</weaponAnim>
+<animSheet name="rand_ion_pulse_2" w="264" h="56" fw="33" fh="56">Crazyweapons/pulse_2_strip8.png</animSheet>
+<weaponAnim name="rand_ion_pulse_2">
+	<sheet>rand_ion_pulse_2</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint  x="17" y="7"/>
+	<mountPoint x="9" y="35"/>
+	<chargeImage>Crazyweapons/pulse_2_glow.png</chargeImage>
+</weaponAnim>

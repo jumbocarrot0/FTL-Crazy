@@ -1,0 +1,11 @@
+|Count|2334
+crystal|ST
+crystal|R1
+crystal|R1
+human|R3
+engi|R5
+energy|R5
+mantis|R5
+anaerobic|DLC|R4
+rock|R3
+slug|R5

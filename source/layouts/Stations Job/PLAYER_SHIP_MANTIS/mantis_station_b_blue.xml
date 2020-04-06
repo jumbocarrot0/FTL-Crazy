@@ -1,0 +1,60 @@
+<shipBlueprint name="PLAYER_SHIP_MANTIS_2" layout="mantis_station_b" img="mantis_station">
+	<class>Mantis Outpost</class>
+	<name>Mantis Station</name>
+	<systemList>
+		<battery power="1" room="9" start="false" img="room_battery_15" />
+		<cloaking power="1" room="7" start="false" img="room_cloaking_5" />
+		<clonebay power="1" room="5" start="true">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="0" start="true" img="room_doors_hangar">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="12" start="false" img="room_drones_2" />
+		<engines power="1" room="6" start="true" img="room_engines_8u">
+			<slot>
+				<number>-2</number>
+				<!--<direction>left</direction>
+				<number>1</number>-->
+			</slot>
+		</engines>
+		<hacking power="1" room="1" start="false" img="room_hacking_4" />
+		<medbay power="2" room="5" start="true" img="room_medbay_4">
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="1" start="false" img="room_mind_5" />
+		<oxygen power="1" room="2" start="true" img="room_oxygen_10" />
+		<pilot power="2" room="3" start="true" img="room_pilot_e">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="11" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="10" start="true" img="room_shields_d">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="2" room="4" start="true" />
+		<weapons power="2" room="8" start="true" img="room_weapons_a">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+</shipBlueprint>

@@ -1,0 +1,65 @@
+<shipBlueprint name="PLAYER_SHIP_ANAEROBIC" layout="anaerobic_cruiser_1" img="anaerobic_cruiser">
+	<class id="ship_PLAYER_SHIP_ANAEROBIC_class"/>
+	<name id="ship_PLAYER_SHIP_ANAEROBIC_name"/>
+	<systemList>
+		<pilot power="1" room="8" start="true" img="room_pilot_4">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<doors power="1" room="15" start="true" img="room_doors_2">
+			<slot>
+				<direction>down</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<sensors power="1" room="14" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<oxygen power="1" room="2" start="true" img="room_oxygen_2"/>
+		<engines power="1" room="7" start="true" img="room_engines_7">
+			<slot>
+				<direction>right</direction>
+				<number>3</number>
+			</slot>
+		</engines>
+		<shields power="2" room="5" start="true" img="room_shields_10">
+			<slot>
+				<direction>down</direction>
+				<number>3</number>
+			</slot>
+		</shields>
+		<weapons power="3" room="9" start="true" img="room_weapons_9">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+		<drones power="2" room="11" start="false" img="room_drones_9"/> <!--F-->
+		<clonebay power="1" room="0" start="true">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<medbay power="1" room="0" start="false" img="room_medbay_4">   <!--F-->
+			<slot>
+				<number>0</number>
+			</slot>
+		</medbay>
+		<teleporter power="1" room="1" start="false"/>   <!--F-->
+		<cloaking power="1" room="6" start="false" img="room_cloaking_4"/>  <!--F-->
+		<battery power="1" room="10" start="false" img="room_battery_10"/>   <!--F-->
+		<mind power="1" room="13" start="false" img="room_mind_6"/>   <!--F-->
+		<hacking power="1" room="3" start="true" img="room_hacking_5">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</hacking>
+		<artillery power="1" room="4" weapon="ARTILLERY_FED"/>
+	</systemList>
+</shipBlueprint>

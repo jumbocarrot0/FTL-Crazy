@@ -1,0 +1,45 @@
+<shipBlueprint name="PLAYER_SHIP_CRYSTAL" layout="crystal_cruiser_1" img="crystal_cruiser">
+	<class id="ship_PLAYER_SHIP_CRYSTAL_class"/>
+	<name id="ship_PLAYER_SHIP_CRYSTAL_name"/>
+	<systemList>
+		<pilot power="1" room="8" start="true"/>
+		<doors power="1" room="16" start="true" img="room_doors_8">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</doors>
+		<sensors power="1" room="3" start="true" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<oxygen power="1" room="7" start="true" img="room_oxygen_10"/>
+		<engines power="2" room="0" start="true" img="room_engines_2"/>
+		<shields power="2" room="6" start="true" img="room_shields_2"/>
+		<weapons power="3" room="17" start="true" img="room_weapons_7"/>
+		<drones power="2" room="1" start="false" img="room_drones_7"/>  <!--F-->
+		<medbay power="1" room="13" start="true" img="room_medbay_3">
+			<slot>
+				<number>3</number>
+			</slot>
+		</medbay>
+		<clonebay power="1" room="13" start="false"><!--F-->
+			<slot>
+				<number>3</number>
+			</slot>
+		</clonebay>
+		<teleporter power="1" room="15" start="false"/>  <!--F-->
+		<cloaking power="1" room="9" start="false" img="room_cloaking_2"/>  <!--F-->
+		<battery power="1" room="12" start="false" img="room_battery_3"/>  <!--F-->
+		<mind power="1" room="2" start="false" img="room_mind_10"/>  <!--F-->
+		<hacking power="1" room="14" start="false" img="room_hacking_6"> <!--F-->
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</hacking>
+		<artillery power="1" room="5" weapon="ARTILLERY_FED" img="room_artillery_3"/>
+	</systemList>
+</shipBlueprint>

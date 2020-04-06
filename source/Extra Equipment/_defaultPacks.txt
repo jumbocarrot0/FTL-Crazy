@@ -1,0 +1,16 @@
+A discription of each pack included in the base download
+
+-AntiBio
+Adds a set of various anti-bio weapons, including an Anti-Bio Beam Mark 2, an Anti-Bio Bomb and an Anti-Bio Laser.
+
+-ChainCharge
+Expands the selection of chain weapons and charge weapons in the game.
+
+-Crystals
+Adds more crystal weapons
+
+-Deceit
+Clones certain weapons but changes their animation to be of another weapon. If you don't pay attention, you could end up conned.
+
+-Pulsers
+Adds a new weapon, an ion weapon that can pierce shields, causing extra ion-damage to any shields it passes through.

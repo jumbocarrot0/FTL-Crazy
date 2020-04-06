@@ -1,0 +1,6 @@
+<weaponMounts>
+	<mount x="260" y="40" rotate="true" mirror="true" gib="4" slide="up"/>
+	<mount x="260" y="358" rotate="true" mirror="false" gib="5" slide="down"/>
+	<mount x="460" y="60" rotate="true" mirror="true" gib="2" slide="up"/>
+	<mount x="460" y="339" rotate="true" mirror="false" gib="1" slide="down"/>
+</weaponMounts>

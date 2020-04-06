@@ -1,0 +1,60 @@
+<shipBlueprint name="PLAYER_SHIP_CIRCLE" layout="engi_station_a" img="engi_station">
+	<class>Engi Outpost</class>
+	<name>Engi Station</name>
+	<systemList>
+		<battery power="1" room="3" start="false" img="room_battery_10" />
+		<cloaking power="1" room="11" start="false" img="room_cloaking_3" />
+		<clonebay power="1" room="4" start="false">
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<doors power="2" room="9" start="true" img="room_doors_a">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="3" room="7" start="true" img="room_drones" />
+		<engines power="1" room="12" start="true" img="room_engines_d">
+			<slot>
+				<number>-2</number>
+				<!--<direction>up</direction>
+				<number>0</number>-->
+			</slot>
+		</engines>
+		<hacking power="1" room="1" start="false" img="room_hacking_a" />
+		<medbay power="1" room="4" start="true" img="room_medbay_5">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="5" start="false" img="room_mind_5" />
+		<oxygen power="1" room="8" start="true" img="room_oxygen_6" />
+		<pilot power="1" room="0" start="true" img="room_pilot_l">
+			<slot>
+				<direction>right</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="2" start="true" img="room_sensors">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<shields power="3" room="13" start="true" img="room_shields">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="6" start="false" />
+		<weapons power="2" room="10" start="true" img="room_weapons_3">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+</shipBlueprint>

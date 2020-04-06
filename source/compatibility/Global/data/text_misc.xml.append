@@ -1,0 +1,11 @@
+<!-- Do not delete -->
+
+<text name="artillery_1">25% slower Cooldown</text>
+<text name="artillery_2">Normal Cooldown</text>
+<text name="artillery_3">25% Faster Cooldown</text>
+<text name="artillery_4">50% Faster Cooldown</text>
+
+<text name="weak_warning">Weak System - Extra scrap may be required for initial upgrades</text>
+
+<text name="version">Game Version \1\n\nCrazy Version 1.0</text>  <!-- \1: version number -->
+<text name="window_title">FTL: Crazy</text>  <!-- Title of the game window -->

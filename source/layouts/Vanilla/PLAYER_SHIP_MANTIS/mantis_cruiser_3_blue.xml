@@ -1,0 +1,42 @@
+<shipBlueprint name="PLAYER_SHIP_MANTIS" layout="mantis_cruiser_3" img="mantis_cruiser_3">
+	<class id="ship_PLAYER_SHIP_MANTIS_3_class"/>
+	<name id="ship_PLAYER_SHIP_MANTIS_2_name"/>
+	<systemList>
+		<pilot power="1" room="7" start="true" img="room_pilot_4"/>
+		<doors power="1" room="9" start="true">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<sensors power="1" room="10" start="true">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<oxygen power="1" room="5" start="true" img="room_oxygen_12"/>
+		<shields power="2" room="6" start="true" img="room_shields_3">
+			<slot>
+				<direction>left</direction>
+				<number>2</number>
+			</slot>
+		</shields>
+		<engines power="2" room="0" start="true" img="room_engines_2"/>
+		<weapons power="2" room="12" start="true" img="room_weapons_9"/>
+		<drones power="2" room="16" start="false" img="room_drones_11"/><!-- F-->
+		<medbay power="1" room="3" start="false"/>
+		<clonebay power="2" room="3" start="true"/><!-- F-->
+		<teleporter power="1" room="15" start="true"/>
+		<cloaking power="1" room="13" start="false" img="room_cloaking_10"/><!-- F-->
+		<battery power="1" room="11" start="false" img="room_battery_8"/> <!-- F-->
+		<mind power="1" room="8" start="false" img="room_mind_4"/><!-- F-->
+		<hacking power="1" room="2" start="false" img="room_hacking_6"><!-- F-->
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</hacking>
+		<artillery power="1" room="17" weapon="ARTILLERY_FED" img="room_artillery_2"/>
+	</systemList>
+</shipBlueprint>

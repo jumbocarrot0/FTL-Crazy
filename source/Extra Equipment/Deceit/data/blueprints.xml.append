@@ -1,0 +1,261 @@
+<weaponBlueprint name="RAND_LASER_BURST_2_A_DECEIT">  <!-- 2 power 2 shots -->
+	<type>LASER</type>
+	<title id="weapon_LASER_BURST_3_title"/>
+	<short id="weapon_LASER_BURST_3_short"/>
+	<tip>tip_laser</tip>
+	<desc id="weapon_LASER_BURST_3_desc"/>
+	<tooltip id="weapon_LASER_BURST_3_tooltip"/>
+	<damage>1</damage>
+	<shots>2</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>11</cooldown>
+	<power>2</power>
+	<cost>80</cost>
+	<bp>4</bp>
+	<rarity>5</rarity>
+	<image>laser_light1</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_3</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="RAND_ION_1_DECIET">
+	<type>LASER</type>
+	<title id="weapon_ION_4_title"/>
+	<short id="weapon_ION_4_short"/>
+	<tip>tip_ion</tip>
+	<desc id="weapon_ION_4_desc"/>
+	<tooltip id="weapon_ION_4_tooltip"/>
+	<damage>0</damage>
+	<ion>1</ion>
+	<speed>30</speed>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<stunChance>1</stunChance>
+	<cooldown>8</cooldown>
+	<power>1</power>
+	<cost>70</cost>
+	<bp>3</bp>
+	<rarity>5</rarity>
+	<image>ion_1_shot</image>
+	<explosion>explosion_small_ion</explosion>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>ion_4</weaponArt>
+	<iconImage>ion</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="RAND_LASER_BURST_1_DECEIT">  <!-- 1 shot 1power-->
+	<type>LASER</type>
+	<title id="weapon_LASER_HEAVY_1_title"/>
+	<short id="weapon_LASER_HEAVY_1_short"/>
+	<tip>tip_laser</tip>
+	<desc id="weapon_LASER_HEAVY_1_desc"/>
+	<tooltip id="weapon_LASER_HEAVY_1_tooltip"/>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>10</cooldown>
+	<power>1</power>
+	<cost>50</cost>
+	<bp>2</bp>
+	<rarity>5</rarity>
+	<image>laser_light1</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_heavy_1</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="RAND_BOMB_1_DECEIT"> <!-- 1power 2damage-->
+	<type>BOMB</type>
+	<tip>tip_bombs</tip>
+	<title id="weapon_BOMB_ION_title"/>
+	<short id="weapon_BOMB_ION_short"/>
+	<desc id="weapon_BOMB_ION_desc"/>
+	<tooltip id="weapon_BOMB_ION_tooltip"/>
+	<damage>0</damage>
+	<sysDamage>2</sysDamage>
+	<persDamage>2</persDamage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>13</cooldown>
+	<power>1</power>
+	<cost>55</cost> <!--was 55-->
+	<bp>4</bp>
+	<rarity>5</rarity>
+	<image>bomb_ion</image>
+	<explosion>explosion_random</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<weaponArt>bomb_ion</weaponArt>
+	<iconImage>bomb</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="RAND_BEAM_2_DECEIT">
+	<type>BEAM</type>
+	<tip>tip_beams</tip>
+	<title id="weapon_BEAM_3_title"/>
+	<short id="weapon_BEAM_3_short"/>
+	<desc id="weapon_BEAM_3_desc"/>
+	<tooltip id="weapon_BEAM_3_tooltip"/>
+	<damage>2</damage>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>17</cooldown>
+	<power>3</power>
+	<cost>95</cost> <!--was 70-->
+	<bp>7</bp>
+	<rarity>5</rarity>
+	<length>80</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>beam_3</weaponArt>
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="RAND_LASER_BURST_1_DECEIT2">  <!-- 1 shot 1power-->
+	<type>LASER</type>
+	<title id="weapon_LASER_CHAINGUN_2_title"/>
+	<short id="weapon_LASER_CHAINGUN_2_short"/>
+	<tip>tip_chain_laser</tip>
+	<desc id="weapon_LASER_CHAINGUN_2_desc"/>
+	<tooltip id="weapon_LASER_CHAINGUN_2_tooltip"/>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>10</cooldown>
+	<power>1</power>
+	<cost>95</cost>
+	<bp>2</bp>
+	<rarity>5</rarity>
+	<image>laser_light1</image>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>chainlaser_2</weaponArt>
+	<iconImage>laser</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="RAND_LASER_CHAINGUN_2_DECEIT">  <!-- 1 shot 1power-->
+	<type>LASER</type>
+	<title id="weapon_LASER_BURST_1_title"/>
+	<short id="weapon_LASER_BURST_1_short"/>
+	<tip>tip_laser</tip>
+	<desc id="weapon_LASER_BURST_1_desc"/>
+	<tooltip id="weapon_LASER_BURST_1_tooltip"/>
+	<damage>1</damage>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>11.1</cooldown>
+	<power>4</power>
+	<cost>20</cost>
+	<bp>2</bp>
+	<rarity>0</rarity>
+	<image>laser_light1</image>
+	<boost>
+		<type>cooldown</type>
+		<amount>2</amount>
+		<count>5</count>
+	</boost>
+	<launchSounds>
+		<sound>lightLaser1</sound>
+		<sound>lightLaser2</sound>
+		<sound>lightLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull2</sound>
+		<sound>hitHull3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_burst_1_deceitchain</weaponArt>
+	<iconImage>laser_chain</iconImage>
+</weaponBlueprint>

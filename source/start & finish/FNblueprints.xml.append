@@ -1,0 +1,57 @@
+<!-- Player Ship Stuff -->
+
+<!-- Player Ship Image Decryption  
+
+-->
+
+	
+<mod:findLike >
+		<mod:selector img="kestral_1"/>
+		<mod:setAttributes img="kestral"/>
+</mod:findLike>
+
+<mod:findLike >
+		
+		<mod:selector img="circle_cruiser_1"/>
+		<mod:setAttributes img="circle_cruiser"/>
+</mod:findLike>
+
+<mod:findLike >
+		<mod:selector img="fed_cruiser_1"/>
+		<mod:setAttributes img="fed_cruiser"/>
+</mod:findLike>
+
+<mod:findLike >
+		<mod:selector img="energy_cruiser_1"/>
+		<mod:setAttributes img="energy_cruiser"/>
+</mod:findLike>
+
+<mod:findLike >
+		<mod:selector img="mantis_cruiser_1"/>
+		<mod:setAttributes img="mantis_cruiser"/>
+</mod:findLike>
+
+<mod:findLike >
+		<mod:selector img="jelly_cruiser_1"/>
+		<mod:setAttributes img="jelly_cruiser"/>
+</mod:findLike>
+
+<mod:findLike >
+		<mod:selector img="rock_cruiser_1"/>
+		<mod:setAttributes img="rock_cruiser"/>
+</mod:findLike>
+
+<mod:findLike >
+		<mod:selector img="stealth_1"/>
+		<mod:setAttributes img="stealth"/>
+</mod:findLike>
+
+<mod:findLike >
+		<mod:selector img="crystal_cruiser_1"/>
+		<mod:setAttributes img="crystal_cruiser"/>
+</mod:findLike>
+
+<mod:findLike >
+		<mod:selector img="anaerobic_cruiser_1"/>
+		<mod:setAttributes img="anaerobic_cruiser"/>
+</mod:findLike>

@@ -1,0 +1,50 @@
+<shipBlueprint name="PLAYER_SHIP_CIRCLE" layout="circle_cruiser_2" img="circle_cruiser_2">
+	<class id="ship_PLAYER_SHIP_ENGI_2_class"/>
+	<name id="ship_PLAYER_SHIP_ENGI_2_name"/>
+	<systemList>
+		<pilot power="1" room="13" start="true"/>
+		<doors power="1" room="8" start="true">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<sensors power="1" room="2" start="false">  <!--F-->
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</sensors>
+		<oxygen power="1" room="5" start="true" img="room_oxygen_6"/>
+		<engines power="1" room="0" start="true" img="room_engines_2"/>
+		<shields power="2" room="11" start="true" img="room_shields_11">
+			<slot>
+				<direction>down</direction>
+				<number>1</number>
+			</slot>
+		</shields>
+		<weapons power="3" room="1" start="true" img="room_weapons_8">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+		<drones power="3" room="7" start="true" img="room_drones_6"/>
+		<medbay power="1" room="6" start="true" img="room_medbay_6">
+			<slot>
+				<number>-2</number>
+			</slot>
+		</medbay>
+		<clonebay power="1" room="6" start="false">  <!--F-->
+			<slot>
+				<number>0</number>
+			</slot>
+		</clonebay>
+		<teleporter power="1" room="3" start="false"/>     <!--F-->
+		<cloaking power="1" room="14" start="false" img="room_cloaking_7"/>    <!--F-->
+		<mind power="1" room="4" start="false" img="room_mind_6"/>    <!--F-->
+		<battery power="1" room="10" start="false" img="room_battery_7"/>    <!--F-->
+		<hacking power="1" room="9" start="false" img="room_hacking_4"/>    <!--F-->
+		<artillery power="1" room="12" weapon="ARTILLERY_FED" img="room_artillery_2"/>
+	</systemList>
+</shipBlueprint>

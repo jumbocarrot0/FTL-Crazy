@@ -1,0 +1,59 @@
+<shipBlueprint name="PLAYER_SHIP_JELLY" layout="slug_station_b" img="slug_station">
+	<class>Slug Outpost</class>
+	<name>Slug Station</name>
+	<systemList>
+		<cloaking power="1" room="14" start="false" img="room_cloaking_8" />
+		<clonebay power="1" room="8" start="false">
+			<slot>
+				<number>1</number>
+			</slot>
+		</clonebay>
+		<doors power="1" room="3" start="true" img="room_doors_6">
+			<slot>
+				<direction>right</direction>
+				<number>1</number>
+			</slot>
+		</doors>
+		<drones power="2" room="10" start="false" img="room_drones_5" />
+		<engines power="1" room="11" start="true" img="room_engines_2u">
+			<slot>
+				<number>-2</number>
+				<!--<direction>down</direction>
+				<number>2</number>-->
+			</slot>
+		</engines>
+		<hacking power="1" room="6" start="false" img="room_hacking_b" />
+		<medbay power="1" room="8" start="true" img="room_medbay">
+			<slot>
+				<number>1</number>
+			</slot>
+		</medbay>
+		<mind power="1" room="13" start="false" img="room_mind_7" />
+		<oxygen power="1" room="15" start="true" img="room_oxygen_plants" />
+		<pilot power="1" room="1" start="true" img="room_pilot_rest_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</pilot>
+		<sensors power="1" room="16" start="false" img="room_sensors_2">
+			<slot>
+				<direction>up</direction>
+				<number>0</number>
+			</slot>
+		</sensors>
+		<shields power="2" room="0" start="true" img="room_shields_rest">
+			<slot>
+				<direction>left</direction>
+				<number>0</number>
+			</slot>
+		</shields>
+		<teleporter power="1" room="2" start="false" />
+		<weapons power="3" room="9" start="true" img="room_weapons_3">
+			<slot>
+				<direction>up</direction>
+				<number>1</number>
+			</slot>
+		</weapons>
+	</systemList>
+</shipBlueprint>

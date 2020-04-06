@@ -1,0 +1,11 @@
+|Count|233344
+energy|ST
+energy|ST
+human|R5
+engi|R3
+energy|R1
+energy|R1
+mantis|R5
+anaerobic|DLC|R5
+rock|R5
+slug|R5

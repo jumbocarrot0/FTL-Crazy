@@ -1,0 +1,274 @@
+
+
+<!-- Player Ship Image Prep (Gives type A's their shield and cloak images, and ships their proper floor image) -->
+
+<weaponBlueprint name="ARTILLERY_FED_ION">
+	<type>LASER</type>
+	<title>Ion Artillery</title>
+	<short>Artillery</short>
+	<desc>Fires multiple heavy ion shots automatically. More power means faster cooldown.</desc>
+	<tooltip>Artillery: Ion that automatically fires 2 ion shots that do 2 ion damage each.</tooltip>
+	<damage>0</damage>
+	<ion>2</ion>
+	<speed>40</speed>
+	<sp>5</sp>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>40</cooldown>
+	<power>1</power>
+	<cost>40</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>ion_artillery_big_shot</image>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>artillery_fed_ion</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="LASER_ARTILLERY">
+	<type>LASER</type>
+	<title>Heavy Laser Artillery</title>
+	<short>Artillery</short>
+	<desc>A multi-shot artillery that fires a few high damage laser shots at the enemy that can pierce weak shields. More power means faster cooldown.</desc>
+	<tooltip>Artillery: Laser that automatically fires 3 lasers that deal 3 damage each and pierce 1 shield bubble.</tooltip>
+	<damage>3</damage>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>1</breachChance>
+	<cooldown>40</cooldown>
+	<power>1</power>
+	<cost>55</cost>
+	<bp>6</bp>
+	<sp>1</sp>
+	<rarity>0</rarity>
+	<image>laser_heavy1</image>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>nothing_animation</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="MISSILE_ARTILLERY">
+	<type>MISSILES</type>
+	<title>Replicating Missile Artillery</title>
+	<short>Artillery</short>
+	<desc>Artillery that fires 3 missiles that deal 2 damage each. More power means faster cooldown.</desc>
+	<tooltip>Artillery: Missile that automatically fires 3 missiles that deal 2 damage and pierce all shields with no cost to missile supply.</tooltip>
+	<damage>2</damage>
+	<missiles>0</missiles>
+	<shots>3</shots>
+	<sp>5</sp>
+	<fireChance>3</fireChance>
+	<breachChance>2</breachChance>
+	<cooldown>40</cooldown>
+	<power>1</power>
+	<cost>80</cost>
+	<bp>7</bp>
+	<rarity>0</rarity>
+	<image>missile_1</image>
+	<launchSounds>
+		<sound>smallMissile1</sound>
+		<sound>smallMissile2</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>nothing_animation</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="BEAM_ARTILLERY">
+	<type>BEAM</type>
+	<tip>tip_beams</tip>
+	<title>Artillery Beam</title>
+	<short>Artillery</short>
+	<desc>Powers a slow, high-powered beam that pierces all shields and does one damage per room hit. More power means faster cooldown.</desc>
+	<tooltip>Artillery: Beam that automatically fires a 1 damage beam that pierces all shields</tooltip>
+	<damage>1</damage>
+	<sp>5</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>40</cooldown>
+	<power>1</power>
+	<cost>70</cost>
+	<bp>7</bp>
+	<rarity>0</rarity>
+	<length>500</length>
+	<image>beam_contact</image>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>nothing_animation</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="ION_ARTILLERY">
+	<type>LASER</type>
+	<title>Ion Artillery</title>
+	<short>Artillery</short>
+	<desc>Fires multiple heavy ion shots automatically. More power means faster cooldown.</desc>
+	<tooltip>Artillery: Ion that automatically fires 3 ion shots that do 2 ion damage each.</tooltip>
+	<damage>0</damage>
+	<ion>2</ion>
+	<speed>40</speed>
+	<sp>5</sp>
+	<shots>3</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>40</cooldown>
+	<power>1</power>
+	<cost>40</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>ion_4_shot</image>
+	<launchSounds>
+		<sound>ionShoot1</sound>
+		<sound>ionShoot2</sound>
+		<sound>ionShoot3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>nothing_animation</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="ION_HEAVY_ARTILLERY">
+	<type>BURST</type>
+	<flavorType>Ion</flavorType>
+	<title>Ion Artillery</title>
+	<short>Artillery</short>
+	<desc>A powerful artillery that sends ion waves to opposing ships, effectively disabling their entire ship.</desc>
+	<tooltip>Artillery: Ion that automatically fires a 4 ion damage shot that pierces all shields</tooltip>
+	<radius>55</radius>
+	<damage>0</damage>
+	<ion>2</ion>
+	<speed>40</speed>
+	<sp>5</sp>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>40</cooldown>
+	<power>1</power>
+	<cost>40</cost>
+	<bp>4</bp>
+	<rarity>0</rarity>
+	<image>ion_artillery_shot</image>
+	<projectiles>
+		<projectile count="1" fake="true">ion_artillery_shot</projectile>
+		<projectile count="2" fake="false">nothing_animation_shot</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>pulsar</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>ionHit1</sound>
+		<sound>ionHit2</sound>
+		<sound>ionHit3</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>ionShields1</sound>
+		<sound>ionShields2</sound>
+		<sound>ionShields3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>nothing_animation</weaponArt>
+</weaponBlueprint>
+
+<weaponBlueprint name="SHOTGUN_ARTILLERY">
+	<type>BURST</type>
+	<flavorType>Flak Cannon</flavorType>
+	<drone_targetable>1</drone_targetable> 
+	<title>Flak Artillery Cannon</title>
+	<short>Artillery</short>
+	<desc>A nose-mounted cannon that launches a massive burst of debris towards enemy ships, dealing up to 7 damage. Devastating against Shields but cannot be aimed.</desc>
+	<tooltip>Artillery: Flak cannon that automatically fires 7 projectiles.</tooltip>
+	<radius>30</radius>
+	<damage>1</damage>
+	<spin>720</spin>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>0</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>40</cooldown>
+	<power>3</power>
+	<cost>75</cost>
+	<bp>10</bp>
+	<speed>26</speed>
+	<rarity>0</rarity>
+	<projectiles>
+		<projectile count="3" fake="false">debris_large</projectile>
+		<projectile count="4" fake="false">debris_med</projectile>
+		<projectile count="7" fake="true">debris_small</projectile>
+	</projectiles>
+	<launchSounds>
+		<sound>flak</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>flakImpact1</sound>
+		<sound>flakImpact2</sound>
+		<sound>flakImpact3</sound>
+		<sound>flakImpact4</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<iconImage>flak</iconImage>
+	<weaponArt>nothing_animation</weaponArt> 
+</weaponBlueprint>
