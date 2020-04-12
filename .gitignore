@@ -2,3 +2,4 @@
 *.bak
 Error.py
 Customisation.txt
+*.pyc
