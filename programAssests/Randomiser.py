@@ -1996,7 +1996,8 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		
 	for x in range(0, len(deleteFiles)):
 		for y in range(0, len(deleteFiles[x][2])):
-			os.remove(deleteFiles[x][0]+'/'+deleteFiles[x][2][y])
+			if deleteFiles[x][2][y] != 'metadata.xml':
+				os.remove(deleteFiles[x][0]+'/'+deleteFiles[x][2][y])
 	
 	# Implementation of Files
 	
