@@ -13,7 +13,7 @@ shields
 engines
 223
 weapons
-12234
+2334
 drones
 22233
 teleporter
