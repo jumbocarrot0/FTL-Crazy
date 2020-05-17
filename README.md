@@ -37,4 +37,9 @@ Versions for various Overhaul mods are also avaliable, however the randomiser sh
 Clicking the Generate button will create a .ftl file. Patch this file into the game with Slipstream Mod Manager. If there is already a copy of that .ftl in this directory, it will be overwritten.
 The source files this the mod can be seen in the compiledFiles folder. The other folders are for the functionality of the randomiser and shouldn't be tinkered with unless you know what you're doing.
 
+## Features to Add
+
+- Complete mod compatability (mainly including more equipment in the custom ship pool)
+
+
 
