@@ -40,6 +40,4 @@ The source files this the mod can be seen in the compiledFiles folder. The other
 ## Features to Add
 
 - Complete mod compatability (mainly including more equipment in the custom ship pool)
-
-
-
+- Change the source data to be in XML rather than what's done now.
