@@ -1,0 +1,95 @@
+<mod:findComposite>
+	<mod:par op="OR">
+		<mod:findName name="BOSS_1_EASY"/>
+		<mod:findName name="BOSS_1_NORMAL"/>
+		<mod:findName name="BOSS_1_HARD"/>
+		
+		<mod:findName name="BOSS_1_EASY_DLC"/>
+		<mod:findName name="BOSS_1_NORMAL_DLC"/>
+		<mod:findName name="BOSS_1_HARD_DLC"/>
+	</mod:par>
+	
+	<mod:findLike type="systemList">
+		<mod-append:cloaking power="2" room="15"/>
+	</mod:findLike>
+	
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+		<mod:findName name="BOSS_2_EASY"/>
+		<mod:findName name="BOSS_2_NORMAL"/>
+		<mod:findName name="BOSS_2_HARD"/>
+		
+		<mod:findName name="BOSS_2_EASY_DLC"/>
+		<mod:findName name="BOSS_2_NORMAL_DLC"/>
+		<mod:findName name="BOSS_2_HARD_DLC"/>
+	</mod:par>
+	
+	<mod:findLike type="systemList">
+		<mod-append:drones power="8" room="12"/>
+	</mod:findLike>
+	
+	<mod-overwrite:droneList count="4" drones="10">
+		<drone name="DEFENSE_1"/>
+		<drone name="COMBAT_1"/>
+		<drone name="COMBAT_BEAM"/>
+		<drone name="BOARDER_BOSS"/>
+	</mod-overwrite:droneList>
+	
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+		<mod:findName name="BOSS_3_EASY"/>
+		<mod:findName name="BOSS_3_NORMAL"/>
+		<mod:findName name="BOSS_3_HARD"/>
+		
+		<mod:findName name="BOSS_3_EASY_DLC"/>
+		<mod:findName name="BOSS_3_NORMAL_DLC"/>
+		<mod:findName name="BOSS_3_HARD_DLC"/>
+	</mod:par>
+	
+	<mod:findLike type="systemList">
+		<mod-append:teleporter power="3" room="3"/>
+	</mod:findLike>
+	
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+		<mod:findName name="BOSS_1_EASY_DLC"/>
+		<mod:findName name="BOSS_1_NORMAL_DLC"/>
+		<mod:findName name="BOSS_1_HARD_DLC"/>
+	</mod:par>
+	
+	<mod:findLike type="systemList">
+		<mod-append:hacking power="3" room="2"/>
+	</mod:findLike>
+	
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+		<mod:findName name="BOSS_2_EASY_DLC"/>
+		<mod:findName name="BOSS_2_NORMAL_DLC"/>
+		<mod:findName name="BOSS_2_HARD_DLC"/>
+	</mod:par>
+	
+	<mod:findLike type="systemList">
+	</mod:findLike>
+	
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+		<mod:findName name="BOSS_3_EASY_DLC"/>
+		<mod:findName name="BOSS_3_NORMAL_DLC"/>
+		<mod:findName name="BOSS_3_HARD_DLC"/>
+	</mod:par>
+	
+	<mod:findLike type="systemList">
+		<mod-append:mind power="3" room="5"/>
+	</mod:findLike>
+	
+</mod:findComposite>

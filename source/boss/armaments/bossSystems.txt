@@ -1,8 +1,0 @@
-|NEWSET|
-|P1|cloaking|hacking|
-|P2|drones|NONE|
-|P3|teleporter|mind|
-|NEWSET|
-|P1|teleporter|hacking|
-|P2|drones|cloaking|
-|P3|teleporter|mind|

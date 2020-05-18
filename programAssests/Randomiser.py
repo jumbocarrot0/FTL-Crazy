@@ -534,11 +534,10 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 				extraEquipment.append(extraEquipmentFiles[0][1][x])
 				
 	print(extraEquipment)
-
 	
 	print("shuffled")
 	
-	#Ship Creation'
+	#Ship Creation
 	
 	blueprints_ships = ''''''
 	
@@ -2069,7 +2068,12 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	xml.writelines(xmlStart)
 	xml.close()
 	
+	xml = open("source/boss/layouts/bosses.xml", "r")
+	bosses_0 = str(xml.read(100000))
+	xml.close()
+	
 	xml = open("compiledFiles/data/bosses.xml.append", "w")
+	xml.writelines(bosses_0)
 	xml.writelines(bosses_1)
 	xml.close()
 	
@@ -2186,7 +2190,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	if os.path.exists("source/compatibility/"+transferMod) is False:
 		transferMod = 'Vanilla'
 	
-	for repeat in range(0, 3):
+	for repeat in range(0, 4):
 
 		transferFiles = []
 	
@@ -2198,6 +2202,9 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 				transferFiles.append(list(file))
 		elif repeat == 2:
 			for file in os.walk('source/boss/layouts/'+str(randint(1, 13))):
+				transferFiles.append(list(file))
+		elif repeat == 3:
+			for file in os.walk('source/boss/systems/'+str(randint(1, 3))):
 				transferFiles.append(list(file))
 	
 		for x in range(0, len(transferFiles)):

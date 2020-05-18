@@ -4,20 +4,17 @@
 		<pilot power="3" room="0"/>
 		<shields power="6" room="1"/>
 		<doors power="3" room="17"/>
-		<sys3 power="2" room="3" start="false"/>
-		<sys1 power="2" room="15" start="false"/>
 		<sensors power="2" room="13"/>
 		<medbay power="3" room="5"/>
 		<engines power="2" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys2 power="1" room="12" start="false"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2" />
 		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
 		<artillery power="3" room="18" weapon="ARTILLERY_BOSS_4"/>
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-	<droneList count="0" missiles="2"/>
+	<droneList count="0" drones="10"/>
 	<health amount="20"/>
 	<maxPower amount ="40"/>
 </shipBlueprint>
@@ -26,23 +23,16 @@
 	<systemList>
 		<pilot power="3" room="0"/>
 		<shields power="6" room="1"/>
-		<sys2 power="2" room="3" start="false"/>
 		<medbay power="3" room="5"/>
 		<engines power="3" room="8"/>
 		<oxygen power="2" room="7"/>
 		<sensors power="2" room="13"/>
-		<sys1 power="8" room="12" start="false"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2"/>
 		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-	<droneList count="4" drones="10">
-		<drone name="DEFENSE_1"/>
-		<drone name="COMBAT_1"/>
-		<drone name="COMBAT_BEAM"/>
-		<drone name="BOARDER_BOSS"/>
-	</droneList>
+<droneList count="0" drones="10"/>
 	<health amount="22"/>
 	<maxPower amount ="42"/>
 </shipBlueprint>
@@ -51,7 +41,6 @@
 	<systemList>
 		<pilot power="3" room="0"/>
 		<shields power="6" room="1"/>
-		<sys3 power="2" room="3"/>
 		<medbay power="3" room="5"/>
 		<engines power="6" room="8"/>
 		<oxygen power="2" room="7"/>
@@ -71,19 +60,16 @@
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
 		<doors power="3" room="17"/>
-		<sys3 power="2" room="3"/>
-		<sys1 power="2" room="15"/>
 		<medbay power="3" room="5"/>
 		<engines power="2" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys2 power="1" room="12"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2" />
 		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
 		<artillery power="3" room="18" weapon="ARTILLERY_BOSS_4"/>
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-	<droneList count="0" missiles="2"/>
+	<droneList count="0" drones="10"/>
 	<health amount="20"/>
 	<maxPower amount ="42"/>
 </shipBlueprint>
@@ -92,22 +78,15 @@
 	<systemList>
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
-		<sys3 power="2" room="3"/>
 		<medbay power="3" room="5"/>
 		<engines power="3" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys2 power="8" room="12"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2"/>
 		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-	<droneList count="4" drones="10">
-		<drone name="DEFENSE_1"/>
-		<drone name="COMBAT_1"/>
-		<drone name="COMBAT_BEAM"/>
-		<drone name="BOARDER_BOSS"/>
-	</droneList>
+<droneList count="0" drones="10"/>
 	<health amount="22"/>
 	<maxPower amount ="44"/>
 </shipBlueprint>
@@ -116,7 +95,6 @@
 	<systemList>
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
-		<sys3 power="2" room="3"/>
 		<medbay power="3" room="5"/>
 		<engines power="6" room="8"/>
 		<oxygen power="2" room="7"/>
@@ -136,19 +114,16 @@
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
 		<doors power="3" room="17"/>
-		<sys3 power="2" room="3"/>
-		<sys1 power="2" room="15"/>
 		<medbay power="3" room="5"/>
 		<engines power="2" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys2 power="1" room="12"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2" />
 		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
 		<artillery power="3" room="18" weapon="ARTILLERY_BOSS_4"/>
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-	<droneList count="0" missiles="2"/>
+	<droneList count="0" drones="10"/>
 	<health amount="20"/>
 	<maxPower amount ="42"/>
 </shipBlueprint>
@@ -157,22 +132,15 @@
 	<systemList>
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
-		<sys3 power="2" room="3"/>
 		<medbay power="3" room="5"/>
 		<engines power="3" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys2 power="8" room="12"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2"/>
 		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-	<droneList count="4" drones="10">
-		<drone name="DEFENSE_1"/>
-		<drone name="COMBAT_1"/>
-		<drone name="COMBAT_BEAM"/>
-		<drone name="BOARDER_BOSS"/>
-	</droneList>
+<droneList count="0" drones="10"/>
 	<health amount="22"/>
 	<maxPower amount ="44"/>
 </shipBlueprint>
@@ -181,7 +149,6 @@
 	<systemList>
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
-		<sys3 power="2" room="3"/>
 		<medbay power="3" room="5"/>
 		<engines power="6" room="8"/>
 		<oxygen power="2" room="7"/>
@@ -201,21 +168,16 @@
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
 		<doors power="3" room="17"/>
-		<sys3 power="2" room="3"/>
-		<cloaking power="2" room="15"/>
 		<medbay power="3" room="5"/>
 		<engines power="2" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys2 power="1" room="12"/>
-		<sys4 power="3" room="2"/>
-		<sys5 power="1" room="4"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2" />
 		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
 		<artillery power="3" room="18" weapon="ARTILLERY_BOSS_4"/>
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-	<droneList count="0" missiles="2"/>
+	<droneList count="0" drones="10"/>
 	<health amount="20"/>
 	<maxPower amount ="42"/>
 </shipBlueprint>
@@ -224,24 +186,15 @@
 	<systemList>
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
-		<sys3 power="2" room="3"/>
 		<medbay power="3" room="5"/>
 		<engines power="3" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys2 power="8" room="12"/>
-		<sys5 power="1" room="4"/>
-		<sys4 power="1" room="2"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2" />
 		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-	<droneList count="4" drones="10">
-		<drone name="DEFENSE_1"/>
-		<drone name="COMBAT_1"/>
-		<drone name="COMBAT_BEAM"/>
-		<drone name="BOARDER_BOSS"/>
-	</droneList>
+<droneList count="0" drones="10"/>
 	<health amount="22"/>
 	<maxPower amount ="44"/>
 </shipBlueprint>
@@ -250,13 +203,9 @@
 	<systemList>
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
-		<teleporter power="2" room="3"/>
 		<medbay power="3" room="5"/>
 		<engines power="6" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys4 power="1" room="2"/>
-		<sys5 power="1" room="4"/>
-		<sys1 power="3" room="4"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2" />
 	</systemList>
@@ -273,21 +222,16 @@
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
 		<doors power="3" room="17"/>
-		<sys3 power="2" room="3"/>
-		<sys1 power="2" room="15"/>
 		<medbay power="3" room="5"/>
 		<engines power="2" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys2 power="1" room="12"/>
-		<sys4 power="3" room="2"/>
-		<sys5 power="1" room="4"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2" />
 		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
 		<artillery power="3" room="18" weapon="ARTILLERY_BOSS_4"/>
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-	<droneList count="0" missiles="2"/>
+	<droneList count="0" drones="10"/>
 	<health amount="20"/>
 	<maxPower amount ="42"/>
 </shipBlueprint>
@@ -296,24 +240,15 @@
 	<systemList>
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
-		<sys3 power="2" room="3"/>
 		<medbay power="3" room="5"/>
 		<engines power="3" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys2 power="8" room="12"/>
-		<sys4 power="1" room="2"/>
-		<sys5 power="1" room="4"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2" />
 		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-	<droneList count="4" drones="10">
-		<drone name="DEFENSE_1"/>
-		<drone name="COMBAT_1"/>
-		<drone name="COMBAT_BEAM"/>
-		<drone name="BOARDER_BOSS"/>
-	</droneList>
+<droneList count="0" drones="10"/>
 	<health amount="22"/>
 	<maxPower amount ="44"/>
 </shipBlueprint>
@@ -322,12 +257,9 @@
 	<systemList>
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
-		<sys3 power="2" room="3"/>
 		<medbay power="3" room="5"/>
 		<engines power="6" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys4 power="1" room="2"/>
-		<sys5 power="3" room="4"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2" />
 	</systemList>
@@ -344,21 +276,16 @@
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
 		<doors power="3" room="17"/>
-		<sys3 power="2" room="3"/>
-		<sys1 power="2" room="15"/>
 		<medbay power="3" room="5"/>
 		<engines power="2" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys2 power="1" room="12"/>
-		<sys4 power="3" room="2"/>
-		<sys5 power="1" room="4"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2" />
 		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
 		<artillery power="3" room="18" weapon="ARTILLERY_BOSS_4"/>
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-	<droneList count="0" missiles="2"/>
+	<droneList count="0" drones="10"/>
 	<health amount="20"/>
 	<maxPower amount ="42"/>
 </shipBlueprint>
@@ -367,24 +294,15 @@
 	<systemList>
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
-		<sys3 power="2" room="3"/>
 		<medbay power="3" room="5"/>
 		<engines power="3" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys2 power="8" room="12"/>
-		<sys4 power="1" room="2"/>
-		<sys5 power="1" room="4"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2" />
 		<artillery power="3" room="14" weapon="ARTILLERY_BOSS_3"/>
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-	<droneList count="4" drones="10">
-		<drone name="DEFENSE_1"/>
-		<drone name="COMBAT_1"/>
-		<drone name="COMBAT_BEAM"/>
-		<drone name="BOARDER_BOSS"/>
-	</droneList>
+<droneList count="0" drones="10"/>
 	<health amount="22"/>
 	<maxPower amount ="44"/>
 </shipBlueprint>
@@ -393,19 +311,16 @@
 	<systemList>
 		<pilot power="3" room="0"/>
 		<shields power="8" room="1"/>
-		<sys3 power="2" room="3"/>
 		<medbay power="3" room="5"/>
 		<engines power="6" room="8"/>
 		<oxygen power="2" room="7"/>
-		<sys4 power="1" room="2"/>
-		<sys5 power="1" room="4"/>
 		<artillery power="4" room="9" weapon="ARTILLERY_BOSS_1"/>
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2" />
 	</systemList>
 	<weaponList count="0" missiles="10"/>
 		<!--<weapon name="ION_2"/>
-		<weapon name="BEAM_FIRE"/>
-	</weaponList>-->
+		<weapon name="BEAM_FIRE"/>-->
+	</weaponList>
 	<health amount="20"/>
 	<maxPower amount ="32"/>
 	<boardingAI>invasion</boardingAI>
