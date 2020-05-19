@@ -2260,13 +2260,23 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			for y in range(0, len(transferFiles[x][2])):
 				if '.pdn' not in transferFiles[x][2][y]:
 					if transferFiles[x][2][y][-11:] == '.xml.append':
-						fileAppenda = open(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'r')
-						fileAppendb = open('compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0]):]+'/'+transferFiles[x][2][y], 'a')
-		
-						fileAppendb.write(fileAppenda.read(10000000))
-		
-						fileAppenda.close()
-						fileAppendb.close()
+						if 'boss' in transferFiles[x][2][y]:
+							fileAppenda = open(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'r')
+							fileAppendb = open('compiledFiles/data/' + transferFiles[x][0][len(transferFiles[0][0]):]+'/'+transferFiles[x][2][y], 'a')
+			
+							fileAppendb.write(fileAppenda.read(10000000))
+			
+							fileAppenda.close()
+							fileAppendb.close()
+						
+						else:
+							fileAppenda = open(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'r')
+							fileAppendb = open('compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0]):]+'/'+transferFiles[x][2][y], 'a')
+			
+							fileAppendb.write(fileAppenda.read(10000000))
+			
+							fileAppenda.close()
+							fileAppendb.close()
 					elif 'boss' in transferFiles[x][2][y] and transferFiles[x][2][y][-4:] == '.txt':
 						shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles/data' + transferFiles[x][0][len(transferFiles[0][0]):]+'/'+transferFiles[x][2][y])
 					elif ('_shields1' in transferFiles[x][2][y] or '_base' in transferFiles[x][2][y] or '_gib' in transferFiles[x][2][y] or 'miniship' in transferFiles[x][2][y]) and 'boss' not in transferFiles[x][2][y]:
