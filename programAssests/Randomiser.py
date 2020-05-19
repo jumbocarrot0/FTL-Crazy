@@ -2201,7 +2201,10 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			for file in os.walk("source/compatibility/Global"):
 				transferFiles.append(list(file))
 		elif repeat == 2:
-			for file in os.walk('source/boss/layouts/'+str(randint(1, 13))):
+			randNumb = randint(1, 13)
+			#randNumb = 6
+			print('Boss layout: ' + str(randNumb))
+			for file in os.walk('source/boss/layouts/'+str(randNumb)):
 				transferFiles.append(list(file))
 		elif repeat == 3:
 			for file in os.walk('source/boss/systems/'+str(randint(1, 3))):

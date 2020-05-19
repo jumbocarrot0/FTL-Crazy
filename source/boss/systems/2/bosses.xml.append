@@ -96,7 +96,7 @@
 	</mod:par>
 	
 	<mod:findLike type="systemList">
-		<mod-append:mind power="3" room="5"/>
+		<mod-append:mind power="3" room="6"/>
 	</mod:findLike>
 	
 </mod:findComposite>
