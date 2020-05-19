@@ -318,9 +318,6 @@
 		<artillery power="4" room="10" weapon="ARTILLERY_BOSS_2" />
 	</systemList>
 	<weaponList count="0" missiles="10"/>
-		<!--<weapon name="ION_2"/>
-		<weapon name="BEAM_FIRE"/>-->
-	</weaponList>
 	<health amount="20"/>
 	<maxPower amount ="32"/>
 	<boardingAI>invasion</boardingAI>

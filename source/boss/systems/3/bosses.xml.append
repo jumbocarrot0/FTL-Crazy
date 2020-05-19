@@ -59,7 +59,7 @@
 	</mod:par>
 	
 	<mod:findLike type="systemList">
-		<mod-append:drones power="8" room="5"/>
+		<mod-append:drones power="8" room="6"/>
 		<mod-append:teleporter power="3" room="3"/>
 	</mod:findLike>
 	
