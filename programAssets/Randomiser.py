@@ -222,16 +222,20 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		for x in range(0, len(playerImgOrder)):
 			randomCyclePlayerHull.append([])
 		for x in range(0, len(playerImgOrder)):
-			if x >= 9:
+			if x >= 8:
 				imgCheck = 3
 			else:
 				imgCheck = 4
-			while (os.path.exists('source/compatibility/Global/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck]) + '_base.png') is True or os.path.exists('source/compatibility/'+str(Mod)+'/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck]) + '_base.png') is True) and imgCheck < len(shipTypeId):
+			print('source/compatibility/Global/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png')
+			print('source/compatibility/'+str(Mod)+'/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png')
+			while (os.path.exists('source/compatibility/Global/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png') is True or os.path.exists('source/compatibility/'+str(Mod)+'/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png') is True) and imgCheck < len(shipTypeId):
 				imgCheck += 1
+				print('source/compatibility/Global/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png')
+				print('source/compatibility/'+str(Mod)+'/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png')
 			for y in range(1, imgCheck):
 				randomCyclePlayerHull[x].append(str(y))
 			shuffle(randomCyclePlayerHull[x])
-		#print(randomCyclePlayerHull)
+		print(randomCyclePlayerHull)
 		
 		allNames = [[], [], 'skip', [], [], [], [], 'skip', [], 'skip']
 		
@@ -2190,6 +2194,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	if os.path.exists("source/compatibility/"+transferMod) is False:
 		transferMod = 'Vanilla'
 	
+	log = open('programAssets/randLog.txt', 'w')
 	for repeat in range(0, 4):
 
 		transferFiles = []
@@ -2258,11 +2263,16 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 						shutil.copy('source/layouts/Vanilla/'+str(playerShipOrder[x])+'/'+str(allLayouts[x][y])+'_floor.png', 'compiledFiles/img/ship')
 				
 		#print(transferFiles)
+		
 	
 		for x in range(0, len(transferFiles)):
 			for y in range(0, len(transferFiles[x][2])):
 				if '.pdn' not in transferFiles[x][2][y]:
+					log.write('One: ' + str(transferFiles[x][0]+'/'+transferFiles[x][2][y]) + '\n')
+					log.write('Two: ' + str('compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0]):]+'/'+transferFiles[x][2][y]) + '\n')
+					log.write('Three: ' + str(transferFiles[x][2][y]) + '\n')
 					if transferFiles[x][2][y][-11:] == '.xml.append':
+						log.write('Check 1\n')
 						if 'boss' in transferFiles[x][2][y]:
 							fileAppenda = open(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'r')
 							fileAppendb = open('compiledFiles/data/' + transferFiles[x][0][len(transferFiles[0][0]):]+'/'+transferFiles[x][2][y], 'a')
@@ -2281,37 +2291,36 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 							fileAppenda.close()
 							fileAppendb.close()
 					elif 'boss' in transferFiles[x][2][y] and transferFiles[x][2][y][-4:] == '.txt':
+						log.write('Check 2\n')
 						shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles/data' + transferFiles[x][0][len(transferFiles[0][0]):]+'/'+transferFiles[x][2][y])
 					elif ('_shields1' in transferFiles[x][2][y] or '_base' in transferFiles[x][2][y] or '_gib' in transferFiles[x][2][y] or 'miniship' in transferFiles[x][2][y]) and 'boss' not in transferFiles[x][2][y]:
+						log.write('Check 3\n')
 						if randShipCheck is True:
 							for z in range(0, len(randomCyclePlayerHull)):
 								if str(playerImgOrder[z]) in transferFiles[x][2][y]:
+									log.write('Check 5\n')
 									for a in range(1, len(randomCyclePlayerHull[z])+1):
-										#print('One: ' + str(transferFiles[x][0]+'/'+transferFiles[x][2][y]))
-										#print('Two: ' + str('compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0]):]+'/'+transferFiles[x][2][y]))
-										#print('Three: ' + str(transferFiles[x][2][y]))
 										if str(a) in randomCyclePlayerHull[z][:3 - int(z > 7)] and str(shipTypeId[a-1]) in transferFiles[x][2][y][:-5] and '_gib' in transferFiles[x][2][y]:
+											log.write('Check 6\n')
 											if transferFiles[x][0][len(transferFiles[0][0]):][:1] == '/':
 												shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):])
 											else:
 												shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0]):])
 										elif str(a) in randomCyclePlayerHull[z][:3 - int(z > 7)] and str(shipTypeId[a-1]) in transferFiles[x][2][y] and '_gib' not in transferFiles[x][2][y]:
+											log.write('Check 7\n')
 											if transferFiles[x][0][len(transferFiles[0][0]):][:1] == '/':
 												shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):])
 											else:
 												shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0])-1:])
 					else:
-						#print('One: ' + str(transferFiles[x][0]+'/'+transferFiles[x][2][y]))
-						#print('Two: ' + str('compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0]):]+'/'+transferFiles[x][2][y]))
-						#print('Three: ' + str(transferFiles[x][2][y]))
+						log.write('Check 4\n')
 						if transferFiles[x][0][len(transferFiles[0][0]):][:1] == '/':
 							shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):])
 						else:
 							shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0])-1:])
-					
+			
+	log.close()		
 
-
-	
 	print("Configured")
 	
 
