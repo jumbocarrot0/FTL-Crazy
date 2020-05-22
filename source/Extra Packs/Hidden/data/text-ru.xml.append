@@ -1,0 +1,57 @@
+<!-- Weapon/drone info boxes -->
+
+<mod:findComposite>
+	<mod:par op="OR">
+
+		<mod:findName type="text" name="required_power"/>  <!-- Also used for drones. \1: required power -->
+		<mod:findName type="text" name="boost_power_speed"/>
+		<mod:findName type="text" name="boost_power_damage"/>
+		<mod:findName type="text" name="damage_cap"/>  <!-- \1: maximum damage amount -->
+		<mod:findName type="text" name="speed_cap"/>  <!-- \1: fastest cooldown speed -->
+
+		<mod:findName type="text" name="charge_time"/>  <!-- \1: charge time -->
+		<mod:findName type="text" name="requires_missiles"/>
+		<mod:findName type="text" name="shots"/>  <!-- \1: number of shots per charge -->
+		<mod:findName type="text" name="charge"/>  <!-- \1: maximum number of charges -->
+		<mod:findName type="text" name="damage_shot"/>  <!-- \1: damage amount -->
+		<mod:findName type="text" name="damage_room"/>  <!-- \1: damage amount -->
+		<mod:findName type="text" name="shield_piercing"/>  <!-- \1: maximum shield level that can be pierced -->
+		<mod:findName type="text" name="fire_chance"/>  <!-- \1: chance (chance_* string) -->
+		<mod:findName type="text" name="breach_chance"/>  <!-- \1: chance (chance_* string) -->
+		<mod:findName type="text" name="stun_chance"/>  <!-- \1: chance (chance_* string) -->
+		<mod:findName type="text" name="ion_damage"/>  <!-- \1: damage amount -->
+		<mod:findName type="text" name="stun_damage"/>  <!-- \1: stun duration -->
+		<mod:findName type="text" name="personnel_damage"/>  <!-- \1: damage amount -->
+		<mod:findName type="text" name="system_damage"/>  <!-- \1: damage amount -->
+		<mod:findName type="text" name="double_damage"/>
+
+		<mod:findName type="text" name="chance_of"/>  <!-- \1: list of possible effects -->
+		<mod:findName type="text" name="chance_of_separator"/>
+		<mod:findName type="text" name="chance_of_fire"/>
+		<mod:findName type="text" name="chance_of_breach"/>
+		<mod:findName type="text" name="chance_of_stun"/>
+
+		<mod:findName type="text" name="chance_low"/>
+		<mod:findName type="text" name="chance_medium"/>
+		<mod:findName type="text" name="chance_high"/>
+
+		<mod:findName type="text" name="type_desc"/>  <!-- \1: type string (1 or 2 lines), \2: effect string (0 or more lines) -->
+
+		<mod:findName type="text" name="type_beam"/>
+		<mod:findName type="text" name="type_bomb"/>
+		<mod:findName type="text" name="type_laser"/>
+		<mod:findName type="text" name="type_laser_chain"/>
+		<mod:findName type="text" name="type_laser_charge"/>
+		<mod:findName type="text" name="type_missile"/>
+		<mod:findName type="text" name="type_crystal"/>
+		<mod:findName type="text" name="type_burst"/>  <!-- Weapons which hit randomly in a circular area, i.e. flak weapons and Swarm Missile -->
+		<mod:findName type="text" name="type_burst_chain"/>
+		<mod:findName type="text" name="type_burst_charge"/>
+		<mod:findName type="text" name="type_ion"/>
+		<mod:findName type="text" name="type_ion_chain"/>
+		<mod:findName type="text" name="type_ion_charge"/>
+	</mod:par>
+	
+	<mod:setValue></mod:setValue>
+
+</mod:findComposite>

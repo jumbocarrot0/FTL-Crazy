@@ -28,7 +28,7 @@ from random import *
 import shutil
 import os
 
-def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentCheck=False, randShipCheck=True):
+def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentCheck=False, randShipCheck=True, equipPower=True):
 
 	if modSeed != '':
 		modSeed = modSeed.encode('utf-8')
@@ -513,7 +513,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	#print(randomCycleDroneCooldown)
 	
 	randomCycleWeaponPower = []
-	if balanced is False:
+	if balanced is False and equipPower is True:
 		for x in range(1, 5):
 			randomCycleWeaponPower.append(str(x))
 		shuffle(randomCycleWeaponPower)
@@ -526,7 +526,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	extraEquipment = []
 	
 	if extraEquipmentCheck is True:
-		for file in os.walk("source/Extra Equipment"):
+		for file in os.walk("source/Extra Packs"):
 			extraEquipmentFiles.append(list(file))
 	
 		for x in range(0, len(extraEquipmentFiles)):
@@ -629,8 +629,8 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			allWeapons[x] += weaponsRead.readlines(10000)
 			weaponsRead.close()
 			for y in range(0, len(extraEquipment)):
-				if os.path.exists('source/Extra Equipment/'+str(extraEquipment[y])+'/'+str(playerShipOrder[x])+'Weapons.txt') is True:
-					weaponsRead = open('source/Extra Equipment/'+str(extraEquipment[y])+'/'+str(playerShipOrder[x])+'Weapons.txt', 'r')
+				if os.path.exists('source/Extra Packs/'+str(extraEquipment[y])+'/'+str(playerShipOrder[x])+'Weapons.txt') is True:
+					weaponsRead = open('source/Extra Packs/'+str(extraEquipment[y])+'/'+str(playerShipOrder[x])+'Weapons.txt', 'r')
 					allWeapons[x] += weaponsRead.readlines(10000)
 					weaponsRead.close()
 			
@@ -2013,7 +2013,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	
 	for x in range(0, len(extraEquipment)):
 		extraEquipmentFileTransfer.append([])
-		for file in os.walk("source/Extra Equipment/"+extraEquipment[x]):
+		for file in os.walk("source/Extra Packs/"+extraEquipment[x]):
 			extraEquipmentFileTransfer[x].append(list(file))
 	
 		for z in range(0, len(extraEquipmentFileTransfer[x])):

@@ -12,5 +12,8 @@ Adds more crystal weapons
 -Deceit
 Clones certain weapons but changes their animation to be of another weapon. If you don't pay attention, you could end up conned.
 
+-Hidden
+Hides weapon information, now you won't know what changed!
+
 -Pulsers
 Adds a new weapon, an ion weapon that can pierce shields, causing extra ion-damage to any shields it passes through.
