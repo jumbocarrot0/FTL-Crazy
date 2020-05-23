@@ -22,6 +22,7 @@
 
 Thanks to Gencool, for his Sensory Deprivation mod that gave me the idea in the first place.
 Thanks to Kix, for lending me some of his Federation and Slug player ship hulls.
+Also, the black kestral reskin is a touched up and recolored version I got from the forums. Who originally made it, I don't remember, all I know is that the original images have since dissapeared.
 
 
 ## What is This
