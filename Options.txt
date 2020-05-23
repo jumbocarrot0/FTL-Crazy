@@ -1,0 +1,29 @@
+Just a brief overview of the options currently avaliable in this tool.
+
+Mod Compatability
+Makes certain changes to the resultant mod to make it compatable with the selected version. Most of these aren't 100% finished, at minimum fixing some graphical inconsistencies. New equipment isn't fully implemented into random ship pools just yet. Right now these include:
+ - Vanilla (Default)
+ - Captains Edition
+ - Arsenal+
+ - SM:PK
+ - Stations Job (Is 100% finished)
+
+Balanced
+Essentially puts restrictions on how much certain variables can be changed. Generally most things, like weapon cooldown, are restricted to changing within a range of 5 seconds, and certain variables like damage and weapon power aren't touched at all. This is so the game doesn't become ridiculously unbalanced where you/your enemy has a god weapon.
+
+Random Seed
+Input a random seed. Could be used for some versus mode where two people can play with the same random seed without sending 4MB file, or as a way to share an interesting seed.
+
+Randomize Player Ships
+A toggle to turn on/off randomised player ships, if you plan to use another ship randomiser or another ship mod (all of which are objectively better thab this one, and probably compatible with major overhaul mods.)
+
+Extra Packs
+When turned on, will randomly add pre-made 'packs' to the randomised file, which could include new weapons, events, really anything that can be in a normal mod.
+
+The following are in the 'more options' menu:
+
+Change Equipment Power
+Disables weapons and drones from changing how much power they use when balanced is turned off (default is on).
+
+Change Equipment Damage
+Disables weapons and drones from changing how much damage they cause (including system damage) when balanced is turned off (default is on).

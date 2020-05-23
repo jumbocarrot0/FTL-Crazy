@@ -8,7 +8,7 @@
 	<mount x="614" y="281" rotate="true" mirror="false" gib="6" slide="down"/>
 	<mount x="268" y="33" rotate="true" mirror="true" gib="2" slide="up"/>
 	<mount x="268" y="368" rotate="true" mirror="false" gib="4" slide="down"/>
-	<mount x="649" y="250" rotate="false" mirror="false" gib="6" slide="no"/>
+	<mount x="649" y="200" rotate="false" mirror="false" gib="6" slide="no"/>
 </weaponMounts>
 <explosion>
 	<gib1>

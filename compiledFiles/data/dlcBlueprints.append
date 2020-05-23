@@ -1,6 +1,0 @@
-<mod:findWithChildLike type="blueprintList" child-type="name">
-	<mod:selector>BEAM_BIO</mod:selector>
-	<mod-append:name>RAND_BOMB_BIO</mod-append:name>
-	<mod-append:name>RAND_BEAM_BIO_2</mod-append:name>
-	<mod-append:name>RAND_LASER_BIO_1</mod-append:name>
-</mod:findWithChildLike>

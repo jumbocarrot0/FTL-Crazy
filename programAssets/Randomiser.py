@@ -27,13 +27,19 @@ print(logo)
 from random import *
 import shutil
 import os
+from sys import maxsize
 
-def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentCheck=False, randShipCheck=True, equipPower=True):
+def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentCheck=False, randShipCheck=True, equipPower=True, equipDamage=True):
 
 	if modSeed != '':
 		modSeed = modSeed.encode('utf-8')
 		seed(int(modSeed.hex(), 16))
 		print('Effective Seed: ' + str(int(modSeed.hex(), 16)))
+	else:
+		modSeed = randrange(maxsize)
+		seed(modSeed)
+		print('Seed: ' + str(modSeed))
+		
 	
 	print('Randomizing')
 	
@@ -329,7 +335,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		#print(playerImgOrder)
 		
 	randomCycleWeaponDamage = []
-	if balanced is False:
+	if balanced is False and equipDamage is True:
 		for x in range(1,5):
 			randomCycleWeaponDamage.append(str(x))
 		shuffle(randomCycleWeaponDamage)
