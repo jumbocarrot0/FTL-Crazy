@@ -13,7 +13,7 @@ Essentially puts restrictions on how much certain variables can be changed and w
 WARNING: There is no guarantee that a player ship generated with this turned off will even be possible to win with.
 
 Random Seed
-Input a random seed. Could be used for some versus mode where two people can play with the same random seed without sending 4MB file, or as a way to share an interesting seed.
+Input a random seed. Could be used for some versus mode where two people can play with the same random seed without sending 4MB file, or as a way to share an interesting seed. Seeds will change with different options enabled and across different versions.
 
 Randomize Player Ships
 A toggle to turn on/off randomised player ships, if you plan to use another ship randomiser or another ship mod (all of which are objectively better thab this one, and probably compatible with major overhaul mods.)
