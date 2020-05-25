@@ -587,6 +587,19 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		reactorCountRarities = []
 		
 		weaponRaritySignals = ['|R1', '|R2', '|R3', '|R4', '|R5']
+			
+		if os.path.exists('source/shipArmaments/all/'+str(Mod)+'Missiles.txt') is True:
+			weaponsReadb = open('source/shipArmaments/all/'+str(Mod)+'Missiles.txt', 'r')
+		else:
+			weaponsReadb = open('source/shipArmaments/all/VanillaMissiles.txt', 'r')
+		missileWeapons = weaponsReadb.readlines(10000)
+		weaponsReadb.close()
+		
+		for y in range(0, len(extraEquipment)):
+			if os.path.exists('source/Extra Packs/'+str(extraEquipment[y])+'/MissilesWeapons.txt') is True:
+				weaponsRead = open('source/Extra Packs/'+str(extraEquipment[y])+'/MissilesWeapons.txt', 'r')
+				missileWeapons += weaponsRead.readlines(10000)
+				weaponsRead.close()
 		
 		for x in range(0, 10):
 			if os.path.exists('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Systems.txt') is True:
@@ -673,13 +686,6 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			for y in range(0, len(nonAEWeapons[x])):
 				if '\n' in nonAEWeapons[x][y]:
 					nonAEWeapons[x][y]=nonAEWeapons[x][y][:-1]
-			
-			if os.path.exists('source/shipArmaments/all/'+str(Mod)+'Missiles.txt') is True:
-				weaponsReadb = open('source/shipArmaments/all/'+str(Mod)+'Missiles.txt', 'r')
-			else:
-				weaponsReadb = open('source/shipArmaments/all/VanillaMissiles.txt', 'r')
-			missileWeapons = weaponsReadb.readlines(10000)
-			weaponsReadb.close()
 			
 			for y in range(0, len(missileWeapons)):
 				if '\n' in missileWeapons[y]:
