@@ -1,0 +1,16 @@
+<!-- Disabled to avoid non-AE appearances -->
+
+<!--<mod:findWithChildLike type="blueprintList" child-type="name">
+	<mod:selector>BOMB_1</mod:selector>
+	<mod-append:name>BOMB_CHAIN</mod-append:name>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike type="blueprintList" child-type="name">
+	<mod:selector>BEAM_2</mod:selector>
+	<mod-append:name>BEAM_CHAINGUN</mod-append:name>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike type="blueprintList" child-type="name">
+	<mod:selector>LASER_HEAVY_2</mod:selector>
+	<mod-append:name>LASER_HEAVY_CHAIN</mod-append:name>
+</mod:findWithChildLike>-->

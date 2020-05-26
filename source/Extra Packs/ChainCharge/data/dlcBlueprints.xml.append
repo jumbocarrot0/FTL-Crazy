@@ -1,0 +1,132 @@
+<mod:findName type="blueprintList" name="DLC_ITEMS">
+	<mod-append:name>BEAM_CHAINGUN</mod-append:name>
+	<mod-append:name>BOMB_CHAIN</mod-append:name>
+	<mod-append:name>LASER_HEAVY_CHAIN</mod-append:name>
+</mod:findName>
+
+<mod:findWithChildLike type="blueprintList" child-type="name">
+	<mod:selector>BOMB_1</mod:selector>
+	<mod-append:name>BOMB_CHAIN</mod-append:name>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike type="blueprintList" child-type="name">
+	<mod:selector>BEAM_2</mod:selector>
+	<mod-append:name>BEAM_CHAINGUN</mod-append:name>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike type="blueprintList" child-type="name">
+	<mod:selector>LASER_HEAVY_2</mod:selector>
+	<mod-append:name>LASER_HEAVY_CHAIN</mod-append:name>
+</mod:findWithChildLike>
+
+<weaponBlueprint name="BEAM_CHAINGUN">
+	<type>BEAM</type>
+	<title>Chain Beam</title>
+	<short>Chain B.</short>
+	<tip>tip_beams</tip>
+	<desc>This beam uses holographic lenses to increase its damage overtime.</desc>
+	<tooltip>One damage per room beam weapon. Increases damage to three damage per room</tooltip>
+	<damage>1</damage>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>16</cooldown>
+	<power>2</power>
+	<cost>75</cost> 
+	<bp>12</bp>
+	<rarity>4</rarity>
+	<length>90</length>
+	<image>beam_contact</image>
+	<boost>
+		<type>damage</type>
+		<amount>1</amount>
+		<count>2</count>
+	</boost>
+	<launchSounds>
+		<sound>beam2</sound>
+	</launchSounds>
+	<weaponArt>beam_chaingun</weaponArt> 
+	<iconImage>beam</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="BOMB_CHAIN"> <!-- 1power 2damage-->
+	<type>BOMB</type>
+	<tip>tip_bombs</tip>
+	<title>Chain Bomb</title>
+	<short>C. Bomb</title>
+	<desc>A modified Small Bomb that can reach close to half the cooldown of a standard Small Bomb after the bomb has fired a couple of times.</desc>
+	<tooltip>Bomb weapon; requires a missile; does 2 damage, but only damages system. Reaches 7 second cooldown after 2 shots. Can target your own ship.</tooltip>
+	<!--<desc>Power Req: 2     Self-teleporting explosive that deals 2 damage to systems and subsystems without causing hull damage.</desc>-->
+	<damage>0</damage>
+	<sysDamage>2</sysDamage>
+	<persDamage>2</persDamage>
+	<missiles>1</missiles>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>1</fireChance>
+	<breachChance>0</breachChance>
+	<cooldown>16</cooldown>
+	<boost>
+		<type>cooldown</type>
+		<amount>4.5</amount>
+		<count>2</count>
+	</boost>
+	<power>1</power>
+	<cost>45</cost> <!--was 55-->
+	<bp>4</bp>
+	<rarity>3</rarity>
+	<image>bomb1</image>
+	<explosion>explosion_random</explosion>
+	<launchSounds>
+		<sound>bombTeleport</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>smallExplosion</sound>
+	</hitShipSounds>
+	<weaponArt>bomb_chain</weaponArt>
+	<iconImage>bomb</iconImage>
+</weaponBlueprint>
+
+<weaponBlueprint name="LASER_HEAVY_CHAIN">
+	<type>LASER</type>
+	<title>Chain Heavy Laser</title>
+	<short>Chain H.</short>
+	<tip>tip_laser</tip>
+	<desc>This powerful laser's damage output increases every time its fires, up to a total of five damage.</desc>
+	<tooltip>Fires 1 shot, causes 2 damage with low chance of fire and breaching, increases +1 each shot, up to 5 damage.</tooltip>
+	<damage>2</damage>
+	<boost>
+		<type>damage</type>
+		<amount>1</amount>
+		<count>3</count>
+	</boost>
+	<shots>1</shots>
+	<sp>0</sp>
+	<fireChance>3</fireChance>
+	<breachChance>3</breachChance>
+	<stunChance>2</stunChance>
+	<cooldown>11.5</cooldown>
+	<power>1</power>
+	<cost>50</cost> <!-- was 55-->
+	<bp>6</bp>
+	<rarity>5</rarity>
+	<image>laser_heavy1</image>
+	<launchSounds>
+		<sound>heavyLaser1</sound>
+		<sound>heavyLaser2</sound>
+		<sound>heavyLaser3</sound>
+	</launchSounds>
+	<hitShipSounds>
+		<sound>hitHull1</sound>
+	</hitShipSounds>
+	<hitShieldSounds>
+		<sound>hitShield1</sound>
+		<sound>hitShield2</sound>
+		<sound>hitShield3</sound>
+	</hitShieldSounds>
+	<missSounds>
+		<sound>miss</sound>
+	</missSounds>
+	<weaponArt>laser_heavy_chain</weaponArt>
+	<iconImage>heavyL</iconImage>
+</weaponBlueprint>

@@ -1,0 +1,55 @@
+<animSheet name="bomb_chain_charge" w="70" h="52" fw="35" fh="52">Crazyweapons/bomblauncher_chain_chargeglow.png</animSheet>
+<anim name="bomb_chain_charge">
+	<sheet>bomb_chain_charge</sheet>
+	<desc length="2" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+
+<animSheet name="bomb_chain" w="595" h="52" fw="35" fh="52">Crazyweapons/bomblauncher_chain_strip17.png</animSheet>
+<weaponAnim name="bomb_chain">
+	<sheet>bomb_chain</sheet>
+	<desc length="17" x="0" y="0"/>
+	<chargedFrame>5</chargedFrame>
+	<fireFrame>16</fireFrame>
+	<firePoint x="20" y="8" />
+	<mountPoint x="5" y="34" />
+	<delayChargeAnim>0.98</delayChargeAnim>
+	<chargeImage>Crazyweapons/bomblauncher_1_glow.png</chargeImage>
+	<boost>bomb_chain_charge</boost>
+</weaponAnim>
+
+<animSheet name="laser_heavy_charge" w="208" h="62" fw="26" fh="62">Crazyweapons/bomblauncher_chain_chargeglow.png</animSheet>
+<anim name="laser_heavy_charge">
+	<sheet>laser_heavy_charge</sheet>
+	<desc length="3" x="0" y="0"/>
+	<time>1.0</time>
+</anim>
+<animSheet name="laser_heavy_chain" w="208" h="62" fw="26" fh="62">Crazyweapons/heavy_chain_strip8.png</animSheet>
+<weaponAnim name="laser_heavy_chain">
+	<sheet>laser_heavy_chain</sheet>
+	<desc length="8" x="0" y="0"/>
+	<chargedFrame>1</chargedFrame>
+	<fireFrame>5</fireFrame>
+	<firePoint  x="17" y="10"/>
+	<mountPoint x="3" y="41"/>
+	<chargeImage>Crazyweapons/heavy_chain_glow.png</chargeImage>
+	<boost>laser_heavy_charge</boost>
+</weaponAnim>
+
+<animSheet name="beam_chaingun_charge" w="60" h="59" fw="30" fh="59">Crazyweapons/beam_chain_chargeglow.png</animSheet>
+<anim name="beam_chaingun_charge">
+   <sheet>beam_chaingun_charge</sheet>
+   <desc length="2" x="0" y="0"/>
+   <time>1.0</time>
+</anim>
+<animSheet name="beam_chaingun" w="270" h="59" fw="30" fh="59">Crazyweapons/beam_chain_strip9.png</animSheet>
+<weaponAnim name="beam_chaingun">
+   <sheet>beam_chaingun</sheet>
+   <desc length="9" x="0" y="0"/>
+   <chargedFrame>1</chargedFrame>
+   <fireFrame>2</fireFrame>
+   <firePoint  x="16" y="35"/>
+   <mountPoint x="5" y="47"/>
+   <chargeImage>Crazyweapons/beam_chain_glow.png</chargeImage>
+   <boost>beam_chaingun_charge</boost>
+</weaponAnim>
