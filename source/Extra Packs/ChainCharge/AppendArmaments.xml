@@ -1,0 +1,9 @@
+<shipArmaments>
+
+<blueprintList name="all_weapons">
+	<blueprint power="2" dlc="true">BEAM_CHAINGUN</blueprint>
+	<blueprint power="1" type="bomb" dlc="true">BOMB_CHAIN</blueprint>
+	<blueprint power="1" dlc="true">LASER_HEAVY_CHAIN</blueprint>
+</blueprintList>
+
+</shipArmaments>

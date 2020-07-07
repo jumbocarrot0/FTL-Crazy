@@ -1,0 +1,28 @@
+<playerImgOrder>	<img>fed_station</img>
+	<img>engi_station</img>
+	<img>rebel_station</img>
+	<img>zoltan_station</img>
+	<img>mantis_station</img>
+	<img>slug_station</img>
+	<img>rock_station</img>
+	<img>auto_station</img>
+	<img>crystal_station</img>
+	<img>lanius_station</img>
+	
+	<shipTypeID preset="abc"/>
+	<!--
+	<shipTypeID>
+		<prefix>Q</prefix>
+		<prefix>W</prefix>
+		<prefix>E</prefix>
+		<prefix>R</prefix>
+		<prefix>T</prefix>
+		<prefix>Y</prefix>
+		
+		...
+		
+		<prefix>M</prefix>
+		
+	</shipTypeID>
+	-->
+</playerImgOrder>

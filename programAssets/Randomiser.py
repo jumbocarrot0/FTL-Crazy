@@ -28,6 +28,7 @@ from random import *
 import shutil
 import os
 from sys import maxsize
+import xml.etree.ElementTree as ET
 
 def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentCheck=False, randShipCheck=True, equipPower=True, equipDamage=True):
 
@@ -183,39 +184,52 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		shipTypeId = []
 		
 		playerShipOrder = ['PLAYER_SHIP_HARD', 'PLAYER_SHIP_CIRCLE', 'PLAYER_SHIP_FED', 'PLAYER_SHIP_ENERGY', 'PLAYER_SHIP_MANTIS', 'PLAYER_SHIP_JELLY', 'PLAYER_SHIP_ROCK', 'PLAYER_SHIP_STEALTH', 'PLAYER_SHIP_CRYSTAL', 'PLAYER_SHIP_ANAEROBIC', 'PLAYER_SHIP_HARD_2', 'PLAYER_SHIP_CIRCLE_2', 'PLAYER_SHIP_FED_2', 'PLAYER_SHIP_ENERGY_2', 'PLAYER_SHIP_MANTIS_2', 'PLAYER_SHIP_JELLY_2', 'PLAYER_SHIP_ROCK_2', 'PLAYER_SHIP_STEALTH_2', 'PLAYER_SHIP_CRYSTAL_2', 'PLAYER_SHIP_ANAEROBIC_2', 'PLAYER_SHIP_HARD_3', 'PLAYER_SHIP_CIRCLE_3', 'PLAYER_SHIP_FED_3', 'PLAYER_SHIP_ENERGY_3', 'PLAYER_SHIP_MANTIS_3', 'PLAYER_SHIP_JELLY_3', 'PLAYER_SHIP_ROCK_3', 'PLAYER_SHIP_STEALTH_3']
-		if os.path.exists('source/compatibility/'+str(Mod)+'/playerImgOrderOverwrite.txt') is True:
-			overwriteRead = open('source/compatibility/'+str(Mod)+'/playerImgOrderOverwrite.txt', 'r')
-			overwriteData = overwriteRead.readlines(100000)
-			overwriteRead.close()
-			imgOrderCheck = False
-			typeIdCheck = False
-			for line in overwriteData:
+		if os.path.exists('source/compatibility/'+str(Mod)+'/playerImgOrderOverwrite.xml') is True:
+			tree = ET.parse('source/compatibility/'+str(Mod)+'/playerImgOrderOverwrite.xml')
+			root = tree.getroot()
+			# overwriteRead = open('source/compatibility/'+str(Mod)+'/playerImgOrderOverwrite.txt', 'r')
+			# overwriteData = overwriteRead.readlines(100000)
+			# overwriteRead.close()
+			# imgOrderCheck = False
+			# #typeIdCheck = False
+			# for line in overwriteData:
+			for child in root:
 				if '|endplayerImgOrder|' in line:
 					imgOrderCheck = False
 				if '|endshipTypeId|' in line:
 					typeIdCheck = False
-				if imgOrderCheck is True:
-					if line[-1:] == '\n':
-						playerImgOrder.append(line[:-1])
-					else:
-						playerImgOrder.append(line)
-				if typeIdCheck is True:
-					if 'preset|' in line:
-						if 'abc' in line:
+				# if imgOrderCheck is True:
+				if child.tag == 'img':
+					#if line[-1:] == '\n':
+					#	playerImgOrder.append(line[:-1])
+					#else:
+					#	playerImgOrder.append(line)
+					playerImg.Order(child.text)
+				# if typeIdCheck is True:
+				if child.tag == 'preset':
+					#if 'preset|' in line:
+					if 'preset' in child.attrib:
+						#if 'abc' in line:
+						if child.attrib['preset'] == 'abc':
 							shipTypeId = []
 							for letter in range(0, 26):
 								shipTypeId.append(chr(letter+97))
-						if '123' in line:
+						#if '123' in line:
+						if child.attrib['preset'] == '123':
 							shipTypeId = []
 							for letter in range(1, 26):
 								shipTypeId.append(str(letter))
-						typeIdCheck = False
+						#typeIdCheck = False
 					else:
-						shipTypeId.append(line)
-				if '|shipTypeId|' in line:
-					typeIdCheck = True
-				if '|playerImgOrder|' in line:
-					imgOrderCheck = True
+						#shipTypeId.append(line)
+						for child_prefix in child:
+							if child_prefix.tag == 'prefix':
+								shipTypeId.append(child_prefix.text)
+						
+				# if '|shipTypeId|' in line:
+				#	typeIdCheck = True
+				# if '|playerImgOrder|' in line:
+				#	imgOrderCheck = True
 				
 		else:
 			playerImgOrder = ['kestral', 'circle_cruiser', 'fed_cruiser', 'energy_cruiser', 'mantis_cruiser', 'jelly_cruiser', 'rock_cruiser', 'stealth', 'crystal_cruiser', 'anaerobic_cruiser']
@@ -241,13 +255,28 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			for y in range(1, imgCheck):
 				randomCyclePlayerHull[x].append(str(y))
 			shuffle(randomCyclePlayerHull[x])
-		print(randomCyclePlayerHull)
 		
 		allNames = [[], [], 'skip', [], [], [], [], 'skip', [], 'skip']
 		
 		namesOrder = ['ship_PLAYER_SHIP_BIRD', 'ship_PLAYER_SHIP_CIRCLE', 'skip', 'ship_PLAYER_SHIP_ENERGY', 'ship_PLAYER_SHIP_MANTIS', 'ship_PLAYER_SHIP_JELLY', 'ship_PLAYER_SHIP_ROCK', 'skip', 'ship_PLAYER_SHIP_CRYSTAL', 'skip', ]
+		
+		tree = ET.parse('source/names/names.xml')
+		root = tree.getroot()
+		for index, type in enumerate(namesOrder):
+			if type != 'skip':
+				for child in root:
+					try:
+						if child.tag == 'nameList' and child.attrib['type'] == type:
+							for name in child:
+								if name.tag == 'name':
+									allNames[index].append(name.text)
+					except ET.KeyError:
+						print('Error in parsing names.xml, undefined "type" attribute.')
+					except:
+						print('An unexpected error occurred.')
+				
 			
-		xml = open("source/names/bird.txt", "r")
+		'''xml = open("source/names/bird.txt", "r")
 		xmlName = xml.readlines(100000)
 		for line in xmlName:
 			if '\n' in line:
@@ -308,7 +337,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 				allNames[8].append(lines[:-1])
 			else:
 				allNames[8].append(lines)
-		xml.close()
+		xml.close()'''	
 		
 		for x in range(0, len(allNames)):
 			if allNames[x] != 'skip':
@@ -557,23 +586,17 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		systemRarities = [[], [], [], [], [], [], [], [], [], []]
 		systemLevelWeights = [[], [], [], [], [], [], [], [], [], []]
 		
-		nonAEWeapons = [[], [], [], [], [], [], [], [], [], []]
-		allWeapons = [[], [], [], [], [], [], [], [], [], []]
+		shipWeapons = [[], [], [], [], [], [], [], [], [], []]
 		
-		STnonAEWeapons = [[], [], [], [], [], [], [], [], [], []]
-		STallWeapons = [[], [], [], [], [], [], [], [], [], []]
+		STshipWeapons = [[], [], [], [], [], [], [], [], [], []]
 		
-		nonAEDrones = [[], [], [], [], [], [], [], [], [], []]
-		allDrones = [[], [], [], [], [], [], [], [], [], []]
+		shipDrones = [[], [], [], [], [], [], [], [], [], []]
 		
-		STnonAEDrones = [[], [], [], [], [], [], [], [], [], []]
-		STallDrones = [[], [], [], [], [], [], [], [], [], []]
+		STshipDrones = [[], [], [], [], [], [], [], [], [], []]
 		
-		nonAEAug = [[], [], [], [], [], [], [], [], [], []]
-		allAug = [[], [], [], [], [], [], [], [], [], []]
+		shipAug = [[], [], [], [], [], [], [], [], [], []]
 		
-		STnonAEAug = [[], [], [], [], [], [], [], [], [], []]
-		STallAug = [[], [], [], [], [], [], [], [], [], []]
+		STshipAug = [[], [], [], [], [], [], [], [], [], []]
 		
 		augCountRarities = [[], [], [], [], [], [], [], [], [], []]
 		
@@ -583,25 +606,175 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		
 		ArtilleryChoices = [[], [], [], [], [], [], [], [], [], []]
 		
-		systemCountRarities = []
-		reactorCountRarities = []
-		
-		weaponRaritySignals = ['|R1', '|R2', '|R3', '|R4', '|R5']
+		systemCountRarities = [[], [], [], [], [], [], [], [], [], []]
+		reactorCountRarities = [[], [], [], [], [], [], [], [], [], []]
 			
-		if os.path.exists('source/shipArmaments/all/'+str(Mod)+'Missiles.txt') is True:
-			weaponsReadb = open('source/shipArmaments/all/'+str(Mod)+'Missiles.txt', 'r')
+		if os.path.exists('source/shipArmaments/all/'+str(Mod)+'Armaments.xml') is True:
+			tree = ET.parse('source/shipArmaments/all/'+str(Mod)+'Armaments.xml')
+			# weaponsReadb = open('source/shipArmaments/all/'+str(Mod)+'Missiles.txt', 'r')
 		else:
-			weaponsReadb = open('source/shipArmaments/all/VanillaMissiles.txt', 'r')
-		missileWeapons = weaponsReadb.readlines(10000)
-		weaponsReadb.close()
+			tree = ET.parse('source/shipArmaments/all/VanillaArmaments.xml')
+			# weaponsReadb = open('source/shipArmaments/all/VanillaMissiles.txt', 'r')
+		root = tree.getroot()
+		# missileWeapons = weaponsReadb.readlines(10000)
+		missileWeapons = []
+		dlcItems = []
+		itemPowers = {}
+		for blueprintList in root:
+			try:
+				if blueprintList.attrib['name'] == 'all_weapons':
+					for weapon in blueprintList:
+						itemPowers[weapon.text] = weapon.attrib['power']
+						try:
+							if weapon.attrib['type'] in ['missile', 'bomb']:
+								missileWeapons.append(weapon.text)
+						except:
+							pass
+						try:
+							if weapon.attrib['dlc'] == 'true':
+								dlcItems.append(weapon.text)
+						except:
+							pass
+			except:
+				print('Error in VanillaArmaments.xml, no "name" attribute')
+				
+			try:
+				if blueprintList.attrib['name'] == 'all_drones':
+					for weapon in blueprintList:
+						itemPowers[weapon.text] = weapon.attrib['power']
+						try:
+							if weapon.attrib['dlc'] == 'true':
+								dlcItems.append(weapon.text)
+						except:
+							pass
+			except:
+				print('Error in VanillaArmaments.xml, no "name" attribute')
+				
+			try:
+				if blueprintList.attrib['name'] == 'all_augments':
+					for weapon in blueprintList:
+						try:
+							if weapon.attrib['dlc'] == 'true':
+								dlcItems.append(weapon.text)
+						except:
+							pass
+			except:
+				print('Error in VanillaArmaments.xml, no "name" attribute')
+				
+			try:
+				if blueprintList.attrib['name'] == 'all_crew':
+					for weapon in blueprintList:
+						try:
+							if weapon.attrib['dlc'] == 'true':
+								dlcItems.append(weapon.text)
+						except:
+							pass
+			except:
+				print('Error in VanillaArmaments.xml, no "name" attribute')
+				
+			try:
+				if blueprintList.attrib['name'] == 'all_systems':
+					for weapon in blueprintList:
+						try:
+							if weapon.attrib['dlc'] == 'true':
+								dlcItems.append(weapon.text)
+						except:
+							pass
+			except:
+				print('Error in VanillaArmaments.xml, no "name" attribute')
+		# weaponsReadb.close()
 		
 		for y in range(0, len(extraEquipment)):
-			if os.path.exists('source/Extra Packs/'+str(extraEquipment[y])+'/MissilesWeapons.txt') is True:
-				weaponsRead = open('source/Extra Packs/'+str(extraEquipment[y])+'/MissilesWeapons.txt', 'r')
-				missileWeapons += weaponsRead.readlines(10000)
-				weaponsRead.close()
+			if os.path.exists('source/Extra Packs/'+str(extraEquipment[y])+'/AppendArmaments.xml') is True:
+				# weaponsRead = open('source/Extra Packs/'+str(extraEquipment[y])+'/MissilesWeapons.txt', 'r')
+				# missileWeapons += weaponsRead.readlines(10000)
+				# weaponsRead.close()
+				tree = ET.parse('source/Extra Packs/'+str(extraEquipment[y])+'/AppendArmaments.xml')
+				root = tree.getroot()
+				for blueprintList in root:
+					try:
+						if blueprintList.attrib['name'] == 'all_weapons':
+							for weapon in blueprintList:
+								weaponPowers[weapon.text] = weapon.attrib['power']
+								weaponPowers[weapon.text] = weapon.attrib['power']
+								try:
+									if weapon.attrib['type'] in ['missile', 'bomb']:
+										missileWeapons.append(weapon.text)
+								except:
+									pass
+					except:
+						print('Error in AppendArmaments.xml, no "name" attribute')
 		
+		if os.path.exists('source/shipArmaments/' + Mod + 'Armaments.xml') is True:
+			tree = ET.parse('source/shipArmaments/all/' + Mod + 'Armaments.xml')
+		else:
+			tree = ET.parse('source/shipArmaments/all/VanillaArmaments.xml')
+		root = tree.getroot()
 		for x in range(0, 10):
+			for child in root:
+				if child.tag == 'shipArmament' and child.attrib['name'] == playerShipOrder[x]:
+					shipRoot = child
+					break
+			
+			for child in shipRoot:
+				if child.tag == 'weaponsList':
+					for weachild in child:
+						for i in range(0, 6 - int(weachild.attrib['rarity'])):
+							shipWeapons[x].append(weachild.text)
+							try:
+								if weachild.attrib['start'] == 'true':
+									STshipWeapons[x].append(weachild.text)
+							except:
+								pass
+				if child.tag == 'dronesList':
+					for weachild in child:
+						for i in range(0, 6 - int(weachild.attrib['rarity'])):
+							shipDrones[x].append(weachild.text)
+							try:
+								if weachild.attrib['start'] == 'true':
+									STshipDrones[x].append(weachild.text)
+							except:
+								pass
+				if child.tag == 'augList':
+					augCountRarities[x] = [int(i) for i in child.attrib['countRatio'].split('|')]
+					for weachild in child:
+						for i in range(0, 6 - int(weachild.attrib['rarity'])):
+							shipAug[x].append(weachild.text)
+						try:
+							if weachild.attrib['start'] == 'true':
+								STshipAug[x].append(weachild.text)
+						except:
+							pass
+				if child.tag == 'crewList':
+					for index, i in enumerate(child.attrib['countRatio'].split('|')):
+						for y in range(0, int(i)):
+							CrewCountRarities[x].append(index)
+					for weachild in child:
+						for i in range(0, 6 - int(weachild.attrib['rarity'])):
+							CrewRarities[x].append(weachild.text)
+						try:
+							if int(weachild.attrib['min']) > 0:
+								for y in range(0, int(weachild.attrib['min'])):
+									STCrewRarities[x].append(weachild.text)
+						except:
+							pass
+				if child.tag == 'systemsList':
+					systemCountRarities[x] = [int(i) for i in child.attrib['countRatio'].split('|')]
+					for syschild in child:
+						weights = [int(i) for i in syschild.attrib['levelRatio'].split('|')]
+						systemLevelWeights[x].append([])
+						for power, count in enumerate(weights):
+							for i in range(0, int(count)):
+								systemLevelWeights[x][-1].append(str(int(power) + 1))
+						systemNames[x].append(syschild.text)
+						systemRarities[x].append(int(syschild.attrib['chance']))
+				if child.tag == 'artilleryList':
+					for syschild in child:
+						ArtilleryChoices[x].append(weachild.text)
+				if child.tag == 'reactorCount':
+					reactorCountRarities[x] = [int(i) for i in child.attrib['levelRatio'].split('|')]
+		'''	
+		for x in range(0, 0):
 			if os.path.exists('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Systems.txt') is True:
 				infoRead = open('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Systems.txt', 'r')
 			else:
@@ -823,9 +996,8 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			for y in range(0, len(ArtilleryChoices[x%10])):
 				if '\n' in ArtilleryChoices[x%10][y]:
 					ArtilleryChoices[x][y] = ArtilleryChoices[x][y][:-1]
-						
-					
-					
+		'''		
+		
 		for x in range(0, len(playerShipOrder)):
 				
 			trueX = x
@@ -838,15 +1010,13 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			if balanced is True:
 				crewList += STCrewRarities[x%10]
 			
-			
-			shuffle(CrewCountRarities[x%10])
-			crewCount = int(CrewCountRarities[x%10][0])
+			crewCount = int(choice(CrewCountRarities[x%10]))
 			
 			while len(crewList) < crewCount:
 				shuffle(CrewRarities[x%10])
-				if '|DLC' in CrewRarities[x%10][0] and (x == 9 or x >= 19 or balanced is False):
+				if CrewRarities[x%10][0] in dlcItems and (x == 9 or x >= 19 or balanced is False):
 					crewList.append(CrewRarities[x%10][0][:-4])
-				if '|DLC' not in CrewRarities[x%10][0]:
+				if CrewRarities[x%10][0] not in dlcItems:
 					crewList.append(CrewRarities[x%10][0])
 				
 			#print(x)
@@ -860,7 +1030,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			xmlRead.close()
 			
 			probCount = 0
-			randNumb = randint(0, 99)
+			randNumb = randint(0, sum(systemCountRarities[x%10]))
 			systemCount = 8
 			for y in range(0, len(systemCountRarities[x%10])):
 				probCount += int(systemCountRarities[x%10][y])
@@ -868,23 +1038,15 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 					systemCount = y
 					break
 					
-					
-					
 			systems = []
 				
 			crashCount = 0
 			while len(systems) != systemCount and crashCount < 100:
 				if len(systems) < systemCount:
-					if x == 9 or x >= 19 or balanced is False:
-						for y in range(0, len(systemNames[x%10])):
-							randNumb = randint(0, 100)
-							if systemRarities[x%10][y] >= randNumb and systemNames[x%10][y] not in systems:
-								systems.append(systemNames[x%10][y])
-					else:
-						for y in range(0, len(systemNames[x%10])-4):
-							randNumb = randint(0, 100)
-							if systemRarities[x%10][y] >= randNumb and systemNames[x%10][y] not in systems:
-								systems.append(systemNames[x%10][y])
+					for y in range(0, len(systemNames[x%10])):
+						randNumb = randint(0, 100)
+						if systemRarities[x%10][y] >= randNumb and systemNames[x%10][y] not in systems and (systemNames[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
+							systems.append(systemNames[x%10][y])
 				if len(systems) > systemCount:
 					for y in range(0, len(systems)):
 						randNumb = randint(0, 100)
@@ -893,14 +1055,13 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 					while 'delete' in systems:
 						systems.remove('delete')
 				crashCount += 1
-				
-			if x == 9 or x >= 19:
-				if balanced is True:
-					if 'medbay' in systems:
-						systems[systems.index('medbay')] = 'clonebay'
 			
 			if balanced is False:
 				if randint(0, 1) == 1:
+					if 'medbay' in systems:
+						systems[systems.index('medbay')] = 'clonebay'		
+			elif x == 9 or x >= 19:
+				if balanced is True:
 					if 'medbay' in systems:
 						systems[systems.index('medbay')] = 'clonebay'
 					
@@ -911,77 +1072,56 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			systemLevels = []
 				
 			for y in range(0, len(systems)):
-				shuffle(systemLevelWeights[x%10][systemNames[x%10].index(systems[y])])
-				systemLevels.append(systemLevelWeights[x%10][systemNames[x%10].index(systems[y])][0])
+				systemLevels.append(choice(systemLevelWeights[x%10][systemNames[x%10].index(systems[y])]))
 			
 			weapons = []
 			rawWeapons = []
 			
-			weaponSystemLevel = int(systemLevels[systems.index("weapons")]) 
+			try:
+				weaponSystemLevel = int(systemLevels[systems.index("weapons")]) 
 			
-			weaponDebuffPool = [-1, 0, 0, 0, 0, 0, 0, 1]
+				weaponDebuffPool = [-1, 0, 0, 0, 0, 0, 0, 1]
+				
+				if 'teleporter' in systems:
+					weaponDebuffPool.append(1)
+				
+				if int(systemLevels[systems.index('weapons')]) == 4:
+					weaponDebuffPool.append(1)
 			
-			if 'teleporter' in systems:
-				weaponDebuffPool.append(1)
 			
-			if int(systemLevels[systems.index('weapons')]) == 4:
-				weaponDebuffPool.append(1)
+				shuffle(weaponDebuffPool)
+				weaponsPowerSum = weaponDebuffPool[0]
 			
-			
-			shuffle(weaponDebuffPool)
-			weaponsPowerSum = weaponDebuffPool[0]
-			
-			if weaponsPowerSum < 0:
+				if weaponsPowerSum < 0:
+					weaponsPowerSum = 0
+			except:
+				print('No Weapons')
+				weaponSystemLevel = 0
 				weaponsPowerSum = 0
 			
 			crashCheckWeapon = 0
 			
 			while weaponsPowerSum < weaponSystemLevel and crashCheckWeapon < 10000:
 				
-				if x == 9 or x >= 19 or balanced is False:
-					if balanced is True and len(weapons) == 0:
-						shuffle(STallWeapons[x%10])
-						for y in range(0, len(STallWeapons[x%10])):
-							if int(STallWeapons[x%10][y][-1:]) <= weaponSystemLevel - weaponsPowerSum and (STallWeapons[x%10][y] not in rawWeapons or balanced is False):
-								if STallWeapons[x%10][y] in nonAEWeapons[x%10]:
-									weapons.append(STallWeapons[x%10][y][:-6])
-								else:
-									weapons.append(STallWeapons[x%10][y][:-10])
-								rawWeapons.append(STallWeapons[x%10][y])
-								weaponsPowerSum += int(STallWeapons[x%10][y][-1:])
-								break
-					else:
-						shuffle(allWeapons[x%10])
-						for y in range(0, len(allWeapons[x%10])):
-							if int(allWeapons[x%10][y][-1:]) <= weaponSystemLevel - weaponsPowerSum and (allWeapons[x%10][y] not in rawWeapons or balanced is False):
-								if allWeapons[x%10][y] in nonAEWeapons[x%10]:
-									weapons.append(allWeapons[x%10][y][:-6])
-								else:
-									weapons.append(allWeapons[x%10][y][:-10])
-								rawWeapons.append(allWeapons[x%10][y])
-								weaponsPowerSum += int(allWeapons[x%10][y][-1:])
-								break
+				if balanced is True and len(weapons) == 0:
+					shuffle(STshipWeapons[x%10])
+					for y in range(0, len(STshipWeapons[x%10])):
+						if int(itemPowers[STshipWeapons[x%10][y]]) <= weaponSystemLevel - weaponsPowerSum and (STshipWeapons[x%10][y] not in rawWeapons or balanced is False) and (STshipWeapons[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
+							weapons.append(STshipWeapons[x%10][y])
+							rawWeapons.append(STshipWeapons[x%10][y])
+							weaponsPowerSum += int(itemPowers[STshipWeapons[x%10][y]])
+							break
 				else:
-					if balanced is True and len(weapons) == 0:
-						shuffle(STnonAEWeapons[x%10])
-						for y in range(0, len(STnonAEWeapons[x%10])):
-							if int(STnonAEWeapons[x%10][y][-1:]) <= weaponSystemLevel - weaponsPowerSum and (STnonAEWeapons[x%10][y] not in rawWeapons or balanced is False):
-								weapons.append(STnonAEWeapons[x%10][y][:-6])
-								rawWeapons.append(STnonAEWeapons[x%10][y])
-								weaponsPowerSum += int(STnonAEWeapons[x%10][y][-1:])
-								break
-					else:
-						shuffle(nonAEWeapons[x%10])
-						for y in range(0, len(nonAEWeapons[x%10])):
-							if int(nonAEWeapons[x%10][y][-1:]) <= weaponSystemLevel - weaponsPowerSum and (nonAEWeapons[x%10][y] not in rawWeapons or balanced is False):
-								weapons.append(nonAEWeapons[x%10][y][:-6])
-								rawWeapons.append(nonAEWeapons[x%10][y])
-								weaponsPowerSum += int(nonAEWeapons[x%10][y][-1:])
-								break
+					shuffle(shipWeapons[x%10])
+					for y in range(0, len(shipWeapons[x%10])):
+						if int(itemPowers[shipWeapons[x%10][y]]) <= weaponSystemLevel - weaponsPowerSum and (shipWeapons[x%10][y] not in rawWeapons or balanced is False) and (shipWeapons[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
+							weapons.append(shipWeapons[x%10][y])
+							rawWeapons.append(shipWeapons[x%10][y])
+							weaponsPowerSum += int(itemPowers[STshipWeapons[x%10][y]])
+							break
+				
 								
 				crashCheckWeapon += 1
-			
-			
 			
 			drones = []
 			rawDrones = []
@@ -995,77 +1135,42 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 				
 				dronesPowerSum = 0
 				while dronesPowerSum < droneSystemLevel + randint(-1, 1)  and crashCheckDrone < 1000:
-					
-					if x == 9 or x >= 19 or balanced is False:
-						if balanced is True and len(drones) == 0:
-							shuffle(STallDrones[x%10])
-							for y in range(0, len(STallDrones[x%10])):
-								if int(STallDrones[x%10][y][-1:]) <= droneSystemLevel - dronesPowerSum and (STallDrones[x%10][y] not in rawDrones or balanced is False):
-									if STallDrones[x%10][y] in nonAEDrones[x%10]:
-										drones.append(STallDrones[x%10][y][:-6])
-									else:
-										drones.append(STallDrones[x%10][y][:-10])
-									rawDrones.append(STallDrones[x%10][y])
-									dronesPowerSum += int(STallDrones[x%10][y][-1:])
-									break
-						else:
-							shuffle(allDrones[x%10])
-							for y in range(0, len(allDrones[x%10])):
-								if int(allDrones[x%10][y][-1:]) <= droneSystemLevel - dronesPowerSum and (allDrones[x%10][y] not in rawDrones or balanced is False):
-									if allDrones[x%10][y] in nonAEDrones[x%10]:
-										drones.append(allDrones[x%10][y][:-6])
-									else:
-										drones.append(allDrones[x%10][y][:-10])
-									rawDrones.append(allDrones[x%10][y])
-									dronesPowerSum += int(allDrones[x%10][y][-1:])
-									break
+					if balanced is True and len(drones) == 0:
+						shuffle(STshipDrones[x%10])
+						for y in range(0, len(STshipDrones[x%10])):
+							if int(itemPowers[STshipDrones[x%10][y]]) <= droneSystemLevel - dronesPowerSum and (STshipDrones[x%10][y] not in rawDrones or balanced is False) and (STshipDrones[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
+								drones.append(STshipDrones[x%10][y])
+								rawDrones.append(STshipDrones[x%10][y])
+								dronesPowerSum += int(itemPowers[STshipDrones[x%10][y]])
+								break
 					else:
-						if balanced is True and len(weapons) == 0:
-							shuffle(STnonAEDrones[x%10])
-							for y in range(0, len(STnonAEDrones[x%10])):
-								if int(STnonAEDrones[x%10][y][-1:]) <= droneSystemLevel - dronesPowerSum and (STnonAEDrones[x%10][y] not in rawDrones or balanced is False):
-									drones.append(STnonAEDrones[x%10][y][:-6])
-									rawDrones.append(STnonAEDrones[x%10][y])
-									dronesPowerSum += int(STnonAEDrones[x%10][y][-1:])
-									break
-						else:
-							shuffle(nonAEDrones[x%10])
-							for y in range(0, len(nonAEDrones[x%10])):
-								if int(nonAEDrones[x%10][y][-1:]) <= droneSystemLevel - dronesPowerSum and (nonAEDrones[x%10][y] not in rawDrones or balanced is False):
-									drones.append(nonAEDrones[x%10][y][:-6])
-									rawDrones.append(nonAEDrones[x%10][y])
-									dronesPowerSum += int(nonAEDrones[x%10][y][-1:])
-									break
+						shuffle(shipDrones[x%10])
+						for y in range(0, len(shipDrones[x%10])):
+							if int(itemPowers[shipDrones[x%10][y]]) <= droneSystemLevel - dronesPowerSum and (shipDrones[x%10][y] not in rawDrones or balanced is False) and (shipDrones[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
+								drones.append(shipDrones[x%10][y])
+								rawDrones.append(shipDrones[x%10][y])
+								dronesPowerSum += int(itemPowers[STshipDrones[x%10][y]])
+								break
 									
 					crashCheckDrone += 1
 					
 			
 			artilleryWeapon = ''
 			if trueX%10==2:
-				shuffle(ArtilleryChoices[trueX%10])
-				artilleryWeapon = ArtilleryChoices[trueX%10][0]
+				artilleryWeapon = choice(ArtilleryChoices[trueX%10])
 			else:
-				shuffle(ArtilleryChoices[x%10])
-				artilleryWeapon = ArtilleryChoices[x%10][0]
-				
+				artilleryWeapon = choice(ArtilleryChoices[x%10])
 				
 			
 			augmentList = []
 			
-			if x == 9 or x >= 19 or balanced is False:
-				shuffle(STallAug[x%10])
-				for y in range(0, int(len(STallAug[x%10]) - (((len(STallAug[x%10]) - 3)/2) + abs((len(STallAug[x%10]) - 3)/2)))):
-					if '|DLC' in STallAug[x%10][y]:
-						augmentList.append(STallAug[x%10][y][:-7])
-					else:
-						augmentList.append(STallAug[x%10][y][:-3])
-			else:
-				shuffle(STnonAEAug[x%10])
-				for y in range(0, int(len(STnonAEAug[x%10]) - (((len(STnonAEAug[x%10]) - 3)/2) + abs((len(STnonAEAug[x%10]) - 3)/2)))):
-					augmentList.append(STnonAEAug[x%10][y][:-3])
+			shuffle(STshipAug[x%10])
+			for y in range(0, len(STshipAug[x%10])):
+				if STshipAug[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False:
+					augmentList.append(STshipAug[x%10][y])
 				
 			probCount = 0
-			randNumb = randint(0, 99)
+			randNumb = randint(0, sum(augCountRarities[x%10]))
 			for y in range(0, len(augCountRarities[x%10])):
 				probCount += int(augCountRarities[x%10][y])
 				if randNumb < probCount:
@@ -1075,29 +1180,15 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			crashCheck = 0
 			
 			while len(augmentList) < augmentCount and crashCheck < 100:
-				if x == 9 or x >= 19 or balanced is False:
-					shuffle(allAug[x%10])
-					for y in range(0, len(allAug[x%10])):
+				shuffle(shipAug[x%10])
+				for y in range(0, len(shipAug[x%10])):
+				
+					if len(augmentList) >= augmentCount:
+						break
 					
-						if len(augmentList) >= augmentCount:
-							break
+					if shipAug[x%10][y] not in augmentList and (shipAug[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
+						augmentList.append(shipAug[x%10][y])
 						
-						if '|DLC' in allAug[x%10][y]:
-							if allAug[x%10][y][:-7] not in augmentList:
-								augmentList.append(allAug[x%10][y][:-7])
-						else:
-							if allAug[x%10][y][:-3] not in augmentList:
-								augmentList.append(allAug[x%10][y][:-3])
-						
-				else:
-					shuffle(nonAEAug[x%10])
-					for y in range(0, len(allAug[x%10])):
-					
-						if len(augmentList) >= augmentCount:
-							break
-							
-						if allAug[x%10][y][:-3] not in augmentList:
-							augmentList.append(nonAEAug[x%10][y][:-3])
 				crashCheck += 1
 				
 				

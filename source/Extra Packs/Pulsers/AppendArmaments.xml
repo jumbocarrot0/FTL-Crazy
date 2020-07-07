@@ -1,0 +1,8 @@
+<shipArmaments>
+
+<blueprintList name="all_weapons">
+	<blueprint power="2">RAND_ION_PULSE</blueprint>
+	<blueprint power="3">RAND_ION_PULSE_2</blueprint>
+</blueprintList>
+
+</shipArmaments>

@@ -1,0 +1,13 @@
+<shipArmaments>
+
+<blueprintList name="all_weapons">
+	<blueprint power="2">RAND_LASER_BURST_2_A_DECEIT</blueprint>
+	<blueprint power="1">RAND_ION_1_DECIET</blueprint>
+	<blueprint power="1">RAND_LASER_BURST_1_DECEIT</blueprint>
+	<blueprint power="1">RAND_BOMB_1_DECEIT</blueprint>
+	<blueprint power="3">RAND_BEAM_2_DECEIT</blueprint>
+	<blueprint power="1">RAND_LASER_BURST_1_DECEIT2</blueprint>
+	<blueprint power="4" dlc="true">RAND_LASER_CHAINGUN_2_DECEIT</blueprint>
+</blueprintList>
+
+</shipArmaments>

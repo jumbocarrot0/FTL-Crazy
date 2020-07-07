@@ -1,9 +1,0 @@
-|Count|233344
-human|ST
-human|R1
-engi|R2
-energy|R2
-mantis|R3
-anaerobic|DLC|R4
-rock|R3
-slug|R4

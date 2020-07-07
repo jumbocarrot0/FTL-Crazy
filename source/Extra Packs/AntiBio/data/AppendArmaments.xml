@@ -1,0 +1,9 @@
+<shipArmaments>
+
+<blueprintList name="all_weapons">
+	<blueprint power="2" type="bomb">RAND_BOMB_BIO</blueprint>
+	<blueprint power="3">RAND_BEAM_BIO_2</blueprint>
+	<blueprint power="1">RAND_LASER_BIO_1</blueprint>
+</blueprintList>
+
+</shipArmaments>

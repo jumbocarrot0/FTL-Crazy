@@ -1,0 +1,124 @@
+<names>
+<nameList type="ship_PLAYER_SHIP_BIRD">
+	<name>The Kestrel</name>
+	<name>Red-tail</name>
+	<name>The Swallow</name>
+	<name>The Osprey</name>
+	<name>Nisos</name>
+	<name>The Fregatidae</name>
+	<name>The Nesasio</name>
+	<name>The Shrike</name>
+	<name>Kruos</name>
+	<name>The Torresian</name>
+	<name>Corvus</name>
+	<name>The Goshawk</name>
+	<name>The Sparrowhawk</name>
+	<name>Peregrine</name>
+	<name>The Condor</name>
+	<name>The Gyrfalcon</name>
+	<name>Pandion</name>
+	<name>Magpie</name>
+	<name>The Crow</name>
+	<name>Tyrannidae</name>
+</nameList>
+<nameList type="ship_PLAYER_SHIP_CRYSTAL">
+	<name>Bravais</name>
+	<name>Carnelian</name>
+	<name>Fedorov</name>
+	<name>Peridot</name>
+	<name>Rietveld</name>
+	<name>Zircon</name>
+	<name>Xanthoconite</name>
+</nameList>
+<nameList type="ship_PLAYER_SHIP_CIRCLE">
+	<name>The Torus</name>
+	<name>The Vortex</name>
+	<name>Tetragon</name>
+	<name>Toroid</name>
+	<name>The Annulus</name>
+	<name>Polyhedron</name>
+</nameList>
+<nameList type="ship_PLAYER_SHIP_MANTIS">
+	<name>The Gila Monster</name>
+	<name>The Basilisk</name>
+	<name>The Theseus</name>
+	<name>The Dullahan</name>
+</nameList>
+<nameList type="ship_PLAYER_SHIP_ROCK">
+	<name>Bulwark</name>
+	<name>Shivan</name>
+	<name>Tektite</name>
+	<name>Asclepius</name>
+</nameList>
+<nameList type="ship_PLAYER_SHIP_JELLY">
+	<name>The Man of War</name>
+	<name>The Stormwalker</name>
+	<name>Ariolimax</name>
+	<name>Hydrozoa</name>
+	<name>The Sea Wasp</name>
+	<name>Ariolimacidae</name>
+	<name>The Limacidae</name>
+	<name>The Sea Swallow</name>
+</nameList>
+<nameList type="ship_PLAYER_SHIP_ENERGY">
+	<name>The Adjudicator</name>
+	<name>Noether</name>
+	<name>Cerenkov</name>
+</nameList>
+<!-- Unused as of now
+<nameList type="default">
+	<name>The Kestrel</name>
+	<name>Red-tail</name>
+	<name>The Swallow</name>
+	<name>The Osprey</name>
+	<name>Nisos</name>
+	<name>The Fregatidae</name>
+	<name>The Nesasio</name>
+	<name>The Shrike</name>
+	<name>Kruos</name>
+	<name>The Torresian</name>
+	<name>Corvus</name>
+	<name>The Goshawk</name>
+	<name>The Sparrowhawk</name>
+	<name>Peregrine</name>
+	<name>The Condor</name>
+	<name>The Gyrfalcon</name>
+	<name>Pandion</name>
+	<name>Magpie</name>
+	<name>The Crow</name>
+	<name>Tyrannidae</name>
+	<name>Bravais</name>
+	<name>Carnelian</name>
+	<name>Fedorov</name>
+	<name>Peridot</name>
+	<name>Rietveld</name>
+	<name>Zircon</name>
+	<name>Xanthoconite</name>
+	<name>The Torus</name>
+	<name>The Vortex</name>
+	<name>Tetragon</name>
+	<name>Toroid</name>
+	<name>The Annulus</name>
+	<name>Polyhedron</name>
+	<name>The Gila Monster</name>
+	<name>The Basilisk</name>
+	<name>The Theseus</name>
+	<name>The Dullahan</name>
+	<name>Bulwark</name>
+	<name>Shivan</name>
+	<name>Tektite</name>
+	<name>Asclepius</name>
+	<name>The Man of War</name>
+	<name>The Stormwalker</name>
+	<name>Ariolimax</name>
+	<name>Hydrozoa</name>
+	<name>The Sea Wasp</name>
+	<name>Ariolimacidae</name>
+	<name>The Limacidae</name>
+	<name>The Sea Swallow</name>
+	<name>The Adjudicator</name>
+	<name>Noether</name>
+	<name>Cerenkov</name>
+</nameList>-->
+
+</names>
