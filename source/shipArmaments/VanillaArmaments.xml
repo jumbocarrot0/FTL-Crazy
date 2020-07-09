@@ -276,7 +276,7 @@
 		<system chance="70" levelRatio="1">hacking</system>
 	</systemsList>
 	<!-- this is zero-based -->
-	<reactorCount levelRatio="0|0|0|0|0|0|0|10|20|25|20|15|10"/>
+	<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
 <shipArmament name="PLAYER_SHIP_CIRCLE">
@@ -774,7 +774,7 @@
 		<system chance="40" levelRatio="1">hacking</system>
 	</systemsList>
 	<!-- this is zero-based -->
-		<reactorCount levelRatio="0|0|0|0|0|0|0|10|20|25|20|15|10"/>
+		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
 <shipArmament name="PLAYER_SHIP_HARD">
@@ -910,7 +910,7 @@
 		<system chance="10" levelRatio="1">hacking</system>
 	</systemsList>
 	<!-- this is zero-based -->
-	<reactorCount levelRatio="0|0|0|0|0|0|0|10|20|25|20|15|10"/>
+	<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
 <shipArmament name="PLAYER_SHIP_JELLY">
@@ -1049,7 +1049,7 @@
 		<system chance="60" levelRatio="1">hacking</system>
 	</systemsList>
 	<!-- this is zero-based -->
-		<reactorCount levelRatio="0|0|0|0|0|0|0|10|20|25|20|15|10"/>
+		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
 <shipArmament name="PLAYER_SHIP_MANTIS">
@@ -1189,7 +1189,7 @@
 		<system chance="10" levelRatio="1">hacking</system>
 	</systemsList>
 	<!-- this is zero-based -->
-		<reactorCount levelRatio="0|0|0|0|0|0|0|10|20|25|20|15|10"/>
+		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
 <shipArmament name="PLAYER_SHIP_ROCK">
@@ -1332,7 +1332,7 @@
 		<system chance="10" levelRatio="1">hacking</system>
 	</systemsList>
 	<!-- this is zero-based -->
-		<reactorCount levelRatio="0|0|0|0|0|0|0|10|20|25|20|15|10"/>
+		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
 <shipArmament name="PLAYER_SHIP_STEALTH">
@@ -1391,7 +1391,6 @@
 		<drone rarity="2">REPAIR</drone>
 		<drone rarity="4">BATTLE</drone>
 		<drone start="true" rarity="4">BOARDER_ION</drone>
-		<drone rarity="4">DRONE_SHIELD</drone>
 		<drone rarity="2">DRONE_SHIELD_PLAYER</drone>
 		<drone rarity="2">ANTI_DRONE</drone>
 		<drone rarity="4">COMBAT_BEAM_2</drone>
@@ -1467,7 +1466,7 @@
 		<system chance="40" levelRatio="1">hacking</system>
 	</systemsList>
 	<!-- this is zero-based -->
-		<reactorCount levelRatio="0|0|0|0|0|0|0|10|20|25|20|15|10"/>
+		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
 </shipArmaments>

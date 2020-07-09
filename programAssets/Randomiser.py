@@ -246,12 +246,8 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 				imgCheck = 3
 			else:
 				imgCheck = 4
-			print('source/compatibility/Global/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png')
-			print('source/compatibility/'+str(Mod)+'/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png')
 			while (os.path.exists('source/compatibility/Global/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png') is True or os.path.exists('source/compatibility/'+str(Mod)+'/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png') is True) and imgCheck < len(shipTypeId):
 				imgCheck += 1
-				print('source/compatibility/Global/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png')
-				print('source/compatibility/'+str(Mod)+'/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png')
 			for y in range(1, imgCheck):
 				randomCyclePlayerHull[x].append(str(y))
 			shuffle(randomCyclePlayerHull[x])
@@ -609,11 +605,11 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		systemCountRarities = [[], [], [], [], [], [], [], [], [], []]
 		reactorCountRarities = [[], [], [], [], [], [], [], [], [], []]
 			
-		if os.path.exists('source/shipArmaments/all/'+str(Mod)+'Armaments.xml') is True:
-			tree = ET.parse('source/shipArmaments/all/'+str(Mod)+'Armaments.xml')
+		if os.path.exists('source/shipArmaments/'+str(Mod)+'Armaments.xml') is True:
+			tree = ET.parse('source/shipArmaments/'+str(Mod)+'Armaments.xml')
 			# weaponsReadb = open('source/shipArmaments/all/'+str(Mod)+'Missiles.txt', 'r')
 		else:
-			tree = ET.parse('source/shipArmaments/all/VanillaArmaments.xml')
+			tree = ET.parse('source/shipArmaments/VanillaArmaments.xml')
 			# weaponsReadb = open('source/shipArmaments/all/VanillaMissiles.txt', 'r')
 		root = tree.getroot()
 		# missileWeapons = weaponsReadb.readlines(10000)
@@ -696,19 +692,67 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 						if blueprintList.attrib['name'] == 'all_weapons':
 							for weapon in blueprintList:
 								weaponPowers[weapon.text] = weapon.attrib['power']
-								weaponPowers[weapon.text] = weapon.attrib['power']
 								try:
 									if weapon.attrib['type'] in ['missile', 'bomb']:
 										missileWeapons.append(weapon.text)
 								except:
 									pass
+								try:
+									if weapon.attrib['dlc'] == 'true':
+										dlcItems.append(weapon.text)
+								except:
+									pass
+								for i in range(0, 6 - int(weachild.attrib['rarity'])):
+									shipWeapons[x].append(weachild.text)
+									try:
+										if weachild.attrib['start'] == 'true':
+											STshipWeapons[x].append(weachild.text)
+									except:
+										pass
+					except:
+						print('Error in AppendArmaments.xml, no "name" attribute')
+						
+					try:
+						if blueprintList.attrib['name'] == 'all_drones':
+							for weapon in blueprintList:
+								weaponPowers[weapon.text] = weapon.attrib['power']
+								try:
+									if weapon.attrib['dlc'] == 'true':
+										dlcItems.append(weapon.text)
+								except:
+									pass
+								for i in range(0, 6 - int(weachild.attrib['rarity'])):
+									shipDrones[x].append(weachild.text)
+									try:
+										if weachild.attrib['start'] == 'true':
+											STshipDrones[x].append(weachild.text)
+									except:
+										pass
+					except:
+						print('Error in AppendArmaments.xml, no "name" attribute')
+						
+					try:
+						if blueprintList.attrib['name'] == 'all_augments':
+							for weapon in blueprintList:
+								try:
+									if weapon.attrib['dlc'] == 'true':
+										dlcItems.append(weapon.text)
+								except:
+									pass
+								for i in range(0, 6 - int(weachild.attrib['rarity'])):
+									shipAug[x].append(weachild.text)
+									try:
+										if weachild.attrib['start'] == 'true':
+											STshipAug[x].append(weachild.text)
+									except:
+										pass
 					except:
 						print('Error in AppendArmaments.xml, no "name" attribute')
 		
 		if os.path.exists('source/shipArmaments/' + Mod + 'Armaments.xml') is True:
-			tree = ET.parse('source/shipArmaments/all/' + Mod + 'Armaments.xml')
+			tree = ET.parse('source/shipArmaments/' + Mod + 'Armaments.xml')
 		else:
-			tree = ET.parse('source/shipArmaments/all/VanillaArmaments.xml')
+			tree = ET.parse('source/shipArmaments/VanillaArmaments.xml')
 		root = tree.getroot()
 		for x in range(0, 10):
 			for child in root:
@@ -1075,7 +1119,6 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 				systemLevels.append(choice(systemLevelWeights[x%10][systemNames[x%10].index(systems[y])]))
 			
 			weapons = []
-			rawWeapons = []
 			
 			try:
 				weaponSystemLevel = int(systemLevels[systems.index("weapons")]) 
@@ -1106,25 +1149,22 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 				if balanced is True and len(weapons) == 0:
 					shuffle(STshipWeapons[x%10])
 					for y in range(0, len(STshipWeapons[x%10])):
-						if int(itemPowers[STshipWeapons[x%10][y]]) <= weaponSystemLevel - weaponsPowerSum and (STshipWeapons[x%10][y] not in rawWeapons or balanced is False) and (STshipWeapons[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
+						if int(itemPowers[STshipWeapons[x%10][y]]) <= weaponSystemLevel - weaponsPowerSum and (STshipWeapons[x%10][y] not in weapons or balanced is False) and (STshipWeapons[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
 							weapons.append(STshipWeapons[x%10][y])
-							rawWeapons.append(STshipWeapons[x%10][y])
 							weaponsPowerSum += int(itemPowers[STshipWeapons[x%10][y]])
 							break
 				else:
 					shuffle(shipWeapons[x%10])
 					for y in range(0, len(shipWeapons[x%10])):
-						if int(itemPowers[shipWeapons[x%10][y]]) <= weaponSystemLevel - weaponsPowerSum and (shipWeapons[x%10][y] not in rawWeapons or balanced is False) and (shipWeapons[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
+						if int(itemPowers[shipWeapons[x%10][y]]) <= weaponSystemLevel - weaponsPowerSum and (shipWeapons[x%10][y] not in weapons or balanced is False) and (shipWeapons[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
 							weapons.append(shipWeapons[x%10][y])
-							rawWeapons.append(shipWeapons[x%10][y])
-							weaponsPowerSum += int(itemPowers[STshipWeapons[x%10][y]])
+							weaponsPowerSum += int(itemPowers[shipWeapons[x%10][y]])
 							break
 				
 								
 				crashCheckWeapon += 1
 			
 			drones = []
-			rawDrones = []
 		
 			
 			if 'drones' in systems:
@@ -1138,18 +1178,16 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 					if balanced is True and len(drones) == 0:
 						shuffle(STshipDrones[x%10])
 						for y in range(0, len(STshipDrones[x%10])):
-							if int(itemPowers[STshipDrones[x%10][y]]) <= droneSystemLevel - dronesPowerSum and (STshipDrones[x%10][y] not in rawDrones or balanced is False) and (STshipDrones[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
+							if int(itemPowers[STshipDrones[x%10][y]]) <= droneSystemLevel - dronesPowerSum and (STshipDrones[x%10][y] not in drones or balanced is False) and (STshipDrones[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
 								drones.append(STshipDrones[x%10][y])
-								rawDrones.append(STshipDrones[x%10][y])
 								dronesPowerSum += int(itemPowers[STshipDrones[x%10][y]])
 								break
 					else:
 						shuffle(shipDrones[x%10])
 						for y in range(0, len(shipDrones[x%10])):
-							if int(itemPowers[shipDrones[x%10][y]]) <= droneSystemLevel - dronesPowerSum and (shipDrones[x%10][y] not in rawDrones or balanced is False) and (shipDrones[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
+							if int(itemPowers[shipDrones[x%10][y]]) <= droneSystemLevel - dronesPowerSum and (shipDrones[x%10][y] not in drones or balanced is False) and (shipDrones[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
 								drones.append(shipDrones[x%10][y])
-								rawDrones.append(shipDrones[x%10][y])
-								dronesPowerSum += int(itemPowers[STshipDrones[x%10][y]])
+								dronesPowerSum += int(itemPowers[shipDrones[x%10][y]])
 								break
 									
 					crashCheckDrone += 1
@@ -1173,7 +1211,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			randNumb = randint(0, sum(augCountRarities[x%10]))
 			for y in range(0, len(augCountRarities[x%10])):
 				probCount += int(augCountRarities[x%10][y])
-				if randNumb < probCount:
+				if randNumb <= probCount:
 					augmentCount = y
 					break
 			
@@ -2102,7 +2140,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		
 	for x in range(0, len(deleteFiles)):
 		for y in range(0, len(deleteFiles[x][2])):
-			if deleteFiles[x][2][y] != 'metadata.xml':
+			if deleteFiles[x][2][y] not in ['metadata.xml', '.gitignore']:
 				os.remove(deleteFiles[x][0]+'/'+deleteFiles[x][2][y])
 	
 	# Implementation of Files
@@ -2120,13 +2158,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			extraEquipmentFileTransfer[x].append(list(file))
 	
 		for z in range(0, len(extraEquipmentFileTransfer[x])):
-			for y in range(0, 7):
-				if '\\' in extraEquipmentFileTransfer[x][z][0]:
-					extraEquipmentFileTransfer[x][z][0] = extraEquipmentFileTransfer[x][z][0][:extraEquipmentFileTransfer[x][z][0].index('\\')]+'/'+extraEquipmentFileTransfer[x][z][0][extraEquipmentFileTransfer[x][z][0].index('\\')+1:]
-	
-				if '//' in extraEquipmentFileTransfer[x][z][0]:
-					extraEquipmentFileTransfer[x][z][0] = extraEquipmentFileTransfer[x][z][0][:extraEquipmentFileTransfer[x][z][0].index('//')]+'/'+extraEquipmentFileTransfer[x][z][0][extraEquipmentFileTransfer[x][z][0].index('//')+2:]
-	
+			extraEquipmentFileTransfer[x][z][0] = extraEquipmentFileTransfer[x][z][0].replace('\\', '/').replace('//', '/')
 	
 	#print(extraEquipmentFileTransfer)
 	
@@ -2155,8 +2187,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 					fileAppenda.close()
 					fileAppendb.close()
 					#print('compiledFiles' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):])
-				elif extraEquipmentFileTransfer[z][x][2][y][-11:] != 'Weapons.txt':
-					print(extraEquipmentFileTransfer[z][x][0]+'/'+extraEquipmentFileTransfer[z][x][2][y])
+				elif extraEquipmentFileTransfer[z][x][2][y] != 'AppendArmaments.xml':
 					if extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):][:1] == '/':
 						#print('compiledFiles' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):])
 						#print('one')
@@ -2297,7 +2328,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	if os.path.exists("source/compatibility/"+transferMod) is False:
 		transferMod = 'Vanilla'
 	
-	log = open('programAssets/randLog.txt', 'w')
+	# log = open('programAssets/randLog.txt', 'w')
 	for repeat in range(0, 4):
 
 		transferFiles = []
@@ -2320,25 +2351,10 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	
 		for x in range(0, len(transferFiles)):
 			#print(transferFiles[x][0])
-			for y in range(0, 100):
-				if '\\' in transferFiles[x][0]:
-					transferFiles[x][0] = transferFiles[x][0][:transferFiles[x][0].index('\\')]+'/'+transferFiles[x][0][transferFiles[x][0].index('\\')+1:]
-					#print(transferFiles[x][0])
-				if '//' in transferFiles[x][0]:
-					transferFiles[x][0] = transferFiles[x][0][:transferFiles[x][0].index('//')]+'/'+transferFiles[x][0][transferFiles[x][0].index('//')+2:]
-					#print(transferFiles[x][0])
-				
-				
-		for x in range(0, len(transferFiles)):
+			transferFiles[x][0] = transferFiles[x][0].replace('\\', '/').replace('//', '/')
 			for z in range (0, len(transferFiles[x][2])):
-				#print(transferFiles[x][2][z])
-				for y in range(0, 100):
-					if '\\' in transferFiles[x][2][z]:
-						transferFiles[x][2][z] = transferFiles[x][2][z][:transferFiles[x][2][z].index('\\')]+'/'+transferFiles[x][2][z][transferFiles[x][2][z].index('\\')+1:]
-						#print(transferFiles[x][2][z])
-					if '//' in transferFiles[x][2][z]:
-						transferFiles[x][2][z] = transferFiles[x][2][z][:transferFiles[x][2][z].index('//')]+'/'+transferFiles[x][2][z][transferFiles[x][2][z].index('//')+2:]
-						#print(transferFiles[x][2][z])
+				transferFiles[x][2][z] = transferFiles[x][2][z].replace('\\', '/').replace('//', '/')
+				
 		#input()
 		
 		if randShipCheck is True:
@@ -2371,11 +2387,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		for x in range(0, len(transferFiles)):
 			for y in range(0, len(transferFiles[x][2])):
 				if '.pdn' not in transferFiles[x][2][y]:
-					log.write('One: ' + str(transferFiles[x][0]+'/'+transferFiles[x][2][y]) + '\n')
-					log.write('Two: ' + str('compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0]):]+'/'+transferFiles[x][2][y]) + '\n')
-					log.write('Three: ' + str(transferFiles[x][2][y]) + '\n')
 					if transferFiles[x][2][y][-11:] == '.xml.append':
-						log.write('Check 1\n')
 						if 'boss' in transferFiles[x][2][y]:
 							fileAppenda = open(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'r')
 							fileAppendb = open('compiledFiles/data/' + transferFiles[x][0][len(transferFiles[0][0]):]+'/'+transferFiles[x][2][y], 'a')
@@ -2394,35 +2406,29 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 							fileAppenda.close()
 							fileAppendb.close()
 					elif 'boss' in transferFiles[x][2][y] and transferFiles[x][2][y][-4:] == '.txt':
-						log.write('Check 2\n')
 						shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles/data' + transferFiles[x][0][len(transferFiles[0][0]):]+'/'+transferFiles[x][2][y])
 					elif ('_shields1' in transferFiles[x][2][y] or '_base' in transferFiles[x][2][y] or '_gib' in transferFiles[x][2][y] or 'miniship' in transferFiles[x][2][y]) and 'boss' not in transferFiles[x][2][y]:
-						log.write('Check 3\n')
 						if randShipCheck is True:
 							for z in range(0, len(randomCyclePlayerHull)):
 								if str(playerImgOrder[z]) in transferFiles[x][2][y]:
-									log.write('Check 5\n')
 									for a in range(1, len(randomCyclePlayerHull[z])+1):
 										if str(a) in randomCyclePlayerHull[z][:3 - int(z > 7)] and str(shipTypeId[a-1]) in transferFiles[x][2][y][:-5] and '_gib' in transferFiles[x][2][y]:
-											log.write('Check 6\n')
 											if transferFiles[x][0][len(transferFiles[0][0]):][:1] == '/':
 												shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):])
 											else:
 												shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0]):])
 										elif str(a) in randomCyclePlayerHull[z][:3 - int(z > 7)] and str(shipTypeId[a-1]) in transferFiles[x][2][y] and '_gib' not in transferFiles[x][2][y]:
-											log.write('Check 7\n')
 											if transferFiles[x][0][len(transferFiles[0][0]):][:1] == '/':
 												shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):])
 											else:
 												shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0])-1:])
 					else:
-						log.write('Check 4\n')
 						if transferFiles[x][0][len(transferFiles[0][0]):][:1] == '/':
 							shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):])
 						else:
 							shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0])-1:])
 			
-	log.close()		
+	# log.close()		
 
 	print("Configured")
 	

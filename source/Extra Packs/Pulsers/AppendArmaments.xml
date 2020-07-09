@@ -5,4 +5,76 @@
 	<blueprint power="3">RAND_ION_PULSE_2</blueprint>
 </blueprintList>
 
+<shipArmament name="PLAYER_SHIP_ANAEROBIC">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<blueprint rarity="5">RAND_ION_PULSE</blueprint>
+		<blueprint rarity="5">RAND_ION_PULSE_2</blueprint>
+	</weaponsList>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_CIRCLE">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<blueprint rarity="3">RAND_ION_PULSE</blueprint>
+		<blueprint rarity="5">RAND_ION_PULSE_2</blueprint>
+	</weaponsList>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_ENERGY">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<blueprint rarity="3">RAND_ION_PULSE</blueprint>
+		<blueprint rarity="5">RAND_ION_PULSE_2</blueprint>
+	</weaponsList>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_FED">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<blueprint rarity="4">RAND_ION_PULSE</blueprint>
+		<blueprint rarity="5">RAND_ION_PULSE_2</blueprint>
+	</weaponsList>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_HARD">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<blueprint rarity="3">RAND_ION_PULSE</blueprint>
+		<blueprint rarity="5">RAND_ION_PULSE_2</blueprint>
+	</weaponsList>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_JELLY">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<blueprint rarity="5">RAND_ION_PULSE</blueprint>
+		<blueprint rarity="5">RAND_ION_PULSE_2</blueprint>
+	</weaponsList>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_MANTIS">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<blueprint rarity="5">RAND_ION_PULSE</blueprint>
+		<blueprint rarity="5">RAND_ION_PULSE_2</blueprint>
+	</weaponsList>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_ROCK">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<blueprint rarity="5">RAND_ION_PULSE</blueprint>
+		<blueprint rarity="5">RAND_ION_PULSE_2</blueprint>
+	</weaponsList>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_STEALTH">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<blueprint rarity="4">RAND_ION_PULSE</blueprint>
+		<blueprint rarity="4">RAND_ION_PULSE_2</blueprint>
+	</weaponsList>
+</shipArmament>
+
 </shipArmaments>
