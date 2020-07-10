@@ -1793,6 +1793,9 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			extraEquipmentFileTransfer[x][z][0] = extraEquipmentFileTransfer[x][z][0].replace('\\', '/').replace('//', '/')
 	
 	#print(extraEquipmentFileTransfer)
+		
+	if os.path.exists('compiledFiles/data') == False:
+		os.makedirs('compiledFiles/data')
 	
 	xml = open("compiledFiles/data/blueprints.xml.append", "w")
 	xml.close()
@@ -1931,6 +1934,9 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 				
 		#input()
 		
+		if os.path.exists('compiledFiles/img/ship') == False:
+			os.makedirs('compiledFiles/img/ship')
+		
 		if randShipCheck is True:
 			for x in range(0, 10):
 				for y in range(0, 2 + int(x<8)):
@@ -1988,18 +1994,30 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 									for a in range(1, len(randomCyclePlayerHull[z])+1):
 										if str(a) in randomCyclePlayerHull[z][:3 - int(z > 7)] and str(shipTypeId[a-1]) in transferFiles[x][2][y][:-5] and '_gib' in transferFiles[x][2][y]:
 											if transferFiles[x][0][len(transferFiles[0][0]):][:1] == '/':
+												if os.path.exists('compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):]) == False:
+													os.makedirs('compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):])
 												shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):])
 											else:
+												if os.path.exists('compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0]):]) == False:
+													os.makedirs('compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0]):])
 												shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0]):])
 										elif str(a) in randomCyclePlayerHull[z][:3 - int(z > 7)] and str(shipTypeId[a-1]) in transferFiles[x][2][y] and '_gib' not in transferFiles[x][2][y]:
 											if transferFiles[x][0][len(transferFiles[0][0]):][:1] == '/':
+												if os.path.exists('compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):]) == False:
+													os.makedirs('compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):])
 												shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):])
 											else:
+												if os.path.exists('compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0])-1:]) == False:
+													os.makedirs('compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0])-1:])
 												shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0])-1:])
 					else:
 						if transferFiles[x][0][len(transferFiles[0][0]):][:1] == '/':
+							if os.path.exists('compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):]) == False:
+								os.makedirs('compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):])
 							shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles' + transferFiles[x][0][len(transferFiles[0][0]):])
 						else:
+							if os.path.exists('compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0])-1:]) == False:
+								os.makedirs('compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0])-1:])
 							shutil.copy(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'compiledFiles/' + transferFiles[x][0][len(transferFiles[0][0])-1:])
 			
 	# log.close()		
