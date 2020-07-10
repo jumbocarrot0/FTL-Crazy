@@ -463,21 +463,27 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		randomCycleWeaponPower.insert(0, '$')
 	#print(randomCycleWeaponPower)
 	
-	
-	extraEquipmentFiles = []
 	extraEquipment = []
 	
 	if extraEquipmentCheck is True:
-		for file in os.walk("source/Extra Packs"):
-			extraEquipmentFiles.append(list(file))
-	
-		for x in range(0, len(extraEquipmentFiles)):
-			for y in range(0, 7):
-				if '\\' in extraEquipmentFiles[x][0]:
-					extraEquipmentFiles[x][0] = extraEquipmentFiles[x][0][:extraEquipmentFiles[x][0].index('\\')]+'/'+extraEquipmentFiles[x][0][extraEquipmentFiles[x][0].index('\\')+1:]
-		for x in range(0, len(extraEquipmentFiles[0][1])):
-			if randint(0, 1) == 1:
-				extraEquipment.append(extraEquipmentFiles[0][1][x])
+		tree = ET.parse('source/Extra Packs/packsInfo.xml')
+		root = tree.getroot()
+		
+		for pack in root:
+			try:
+				if os.path.exists('source/Extra Packs/' + pack.attrib['name']) is True:
+					chance = 0
+					for child in pack:
+						if child.tag == 'chance':
+							chance = child.text
+					if chance is None:
+						chance = 0
+					if int(chance) >= randint(0, 100) > 0:
+						extraEquipment.append(pack.attrib['name'])
+				else:
+					print('No ' + pack.attrib['name'] + ' directory in Extra Packs')
+			except:
+				print('Missing name attribute in packsInfo.xml')
 				
 	print(extraEquipment)
 	
@@ -1821,15 +1827,14 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		
 					fileAppenda.close()
 					fileAppendb.close()
-					#print('compiledFiles' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):])
-				elif extraEquipmentFileTransfer[z][x][2][y] != 'AppendArmaments.xml':
+				elif extraEquipmentFileTransfer[z][x][2][y] != 'AppendArmaments.xml' and extraEquipmentFileTransfer[z][x][2][y].split('.') not in ['pdn', 'xcf']:
 					if extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):][:1] == '/':
-						#print('compiledFiles' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):])
-						#print('one')
+						if os.path.exists('compiledFiles' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):]) == False:
+							os.makedirs('compiledFiles' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):])
 						shutil.copy(extraEquipmentFileTransfer[z][x][0]+'/'+extraEquipmentFileTransfer[z][x][2][y], 'compiledFiles' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):])
 					else:
-						#print('compiledFiles/' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):])
-						#print('two')
+						if os.path.exists('compiledFiles/' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0])-1:]) == False:
+							os.makedirs('compiledFiles/' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0])-1:])
 						shutil.copy(extraEquipmentFileTransfer[z][x][0]+'/'+extraEquipmentFileTransfer[z][x][2][y], 'compiledFiles/' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0])-1:])
 	
 	xml = open("source/boss/layouts/bosses.xml", "r")
