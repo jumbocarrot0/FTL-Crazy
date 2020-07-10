@@ -1,0 +1,918 @@
+<!-- Dummy Augments, emphasizing the DUMB
+
+Slipstream is great, but in this instance, also dumb.
+When a find... tag, whatever it may be, searches for something that doesn't exist, it, for some strange reason, it comes back with every tag.
+In the case of findComposite, this is really problematic, as if, for example, it searches for an augment value that no augment has, it will return every possible tag in the file. And since the operation is OR, that means every possible tag is returned. This makes some commands executed when they shouldn't, at all. To fix this, here's a bunch of blueprints so that, no matter what, every value will appear at LEAST once. -->
+
+<augBlueprint name="CRAZY_DUMMY_0.05">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.05</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.05">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.05</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.10">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.10</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.10">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.10</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.1">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.1</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.1">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.1</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.15">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.15</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.15">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.15</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.20">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.20</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.20">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.20</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.2">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.2</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.2">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.2</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.25">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.25</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.25">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.25</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.30">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.30</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.30">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.30</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.3">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.3</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.3">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.3</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.35">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.35</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.35">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.35</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.40">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.40</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.40">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.40</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.4">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.4</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.4">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.4</value>
+</augBlueprint>
+
+
+<augBlueprint name="CRAZY_DUMMY_0.45">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.45</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.45">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.45</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.50">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.50</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.50">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.50</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.5">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.5</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.5">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.5</value>
+</augBlueprint>
+
+
+<augBlueprint name="CRAZY_DUMMY_0.55">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.55</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.55">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.55</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.60">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.60</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.60">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.60</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.6">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.6</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.6">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.6</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.65">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.65</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.65">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.65</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.70">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.70</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.70">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.70</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.7">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.7</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.7">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.7</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.75">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.75</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.75">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.75</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.80">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.80</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.80">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.80</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.8">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.8</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.8">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.8</value>
+</augBlueprint>
+
+
+<augBlueprint name="CRAZY_DUMMY_0.85">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.85</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.85">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.85</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.90">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.90</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.90">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.90</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_0.9">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.9</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.9">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.9</value>
+</augBlueprint>
+
+
+<augBlueprint name="CRAZY_DUMMY_0.95">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>0.95</value>
+</augBlueprint>
+
+<augBlueprint name="CRAZY_DUMMY_.95">
+	<title>SHOULD NOT SEE</title>
+	<desc>THIS IS A DUMMY BLUEPRINT THAT YOU SHOULD NOT SEE. If you see this report the bug to Jumbocarrot, the creator of the mod. This shouldn't break anything, so feel free to get rid of. Thanks.</desc>
+	<cost>0</cost>
+	<bp>8</bp>
+	<rarity>0</rarity>
+	<stackable>true</stackable>
+	<value>.95</value>
+</augBlueprint>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.05</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.05</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.1</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.10</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>0.10</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.1</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.15</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.15</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.2</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.20</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>0.20</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.2</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.25</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.25</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.3</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.30</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>0.30</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.3</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.35</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.35</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.4</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.40</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>0.40</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.4</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.45</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.45</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.5</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.50</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>0.50</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.5</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.55</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.55</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.6</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.60</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>0.60</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.6</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.65</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.65</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.7</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.70</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>0.70</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.7</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.75</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.75</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.8</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.80</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>0.80</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.8</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.85</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.85</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.9</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.90</mod:selector>
+	</mod:findWithChildLike>
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>0.90</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.9</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findComposite>
+	<mod:par op="OR">
+	<mod:findWithChildLike type="augBlueprint" child-type="value">
+		<mod:selector>.95</mod:selector>
+	</mod:findWithChildLike>
+	</mod:par>
+	
+	<mod-overwrite:value>0.95</mod-overwrite:value>
+</mod:findComposite>
+
+<mod:findLike type="shipBlueprint">
+	<mod-append:enemyShip/>
+</mod:findLike>
+
+<mod:findWithChildLike type="shipBlueprint" child-type="desc">
+	<mod:findLike type="enemyShip">
+		<mod:removeTag/>
+	</mod:findLike>
+</mod:findWithChildLike>
+
+
+<mod:findLike type="weaponBlueprint">
+	<mod-append:spCheck/>
+</mod:findLike>
+
+<mod:findWithChildLike type="weaponBlueprint" child-type="sp">
+	<mod:findLike type="spCheck">
+		<mod:removeTag/>
+	</mod:findLike>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike type="weaponBlueprint" child-type="spCheck">
+	<mod:findLike type="spCheck">
+		<mod:removeTag/>
+	</mod:findLike>
+	<mod-append:sp>0</mod-append:sp>
+</mod:findWithChildLike>
+
+
+<mod:findLike type="weaponBlueprint" child-type="type">
+	<mod:selector>LASER</mod:selector>
+	<mod-append:speedCheck/>
+</mod:findLike>
+
+<mod:findWithChildLike type="weaponBlueprint" child-type="speed">
+	<mod:findLike type="speedCheck">
+		<mod:removeTag/>
+	</mod:findLike>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike type="weaponBlueprint" child-type="speed">
+	<mod:findLike type="speedCheck">
+		<mod:removeTag/>
+	</mod:findLike>
+	
+	<mod-append:speed>60</mod-append:speed>
+</mod:findWithChildLike>
+
+
+<mod:findLike type="weaponBlueprint" child-type="type">
+	<mod:selector>BEAM</mod:selector>
+	<mod-append:speedCheck/>
+</mod:findLike>
+
+<mod:findWithChildLike type="weaponBlueprint" child-type="speed">
+	<mod:findLike type="speedCheck">
+		<mod:removeTag/>
+	</mod:findLike>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike type="weaponBlueprint" child-type="speed">
+	<mod:findLike type="speedCheck">
+		<mod:removeTag/>
+	</mod:findLike>
+	
+	<mod-append:speed>5</mod-append:speed>
+</mod:findWithChildLike>
+
+
+<mod:findWithChildLike type="weaponBlueprint" child-type="type">
+	<mod:selector>MISSILES</mod:selector>
+	<mod-append:speedCheck/>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike type="weaponBlueprint" child-type="speed">
+	<mod:findLike type="speedCheck">
+		<mod:removeTag/>
+	</mod:findLike>
+</mod:findWithChildLike>
+
+<mod:findWithChildLike type="weaponBlueprint" child-type="speed">
+	<mod:findLike type="speedCheck">
+		<mod:removeTag/>
+	</mod:findLike>
+	
+	<mod-append:speed>35</mod-append:speed>
+</mod:findWithChildLike>
+
+<mod:findLike type="weaponBlueprint">
+	<mod:findWithChildLike type="boost" child-type="type">
+		<mod:selector>cooldown</mod:selector>
+		<mod:setAttributes type="cooldown"/>
+	</mod:findWithChildLike>
+</mod:findLike>
+
+<mod:findWithChildLike type="weaponBlueprint" child-type="boost">
+	<mod:selector type="cooldown"/>
+	<mod:findLike type="cooldown">
+		<mod:setAttributes type="chain"/>
+	</mod:findLike>
+</mod:findWithChildLike>
+
+<!-- End of Start -->
+

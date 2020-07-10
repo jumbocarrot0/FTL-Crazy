@@ -184,58 +184,33 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		shipTypeId = []
 		
 		playerShipOrder = ['PLAYER_SHIP_HARD', 'PLAYER_SHIP_CIRCLE', 'PLAYER_SHIP_FED', 'PLAYER_SHIP_ENERGY', 'PLAYER_SHIP_MANTIS', 'PLAYER_SHIP_JELLY', 'PLAYER_SHIP_ROCK', 'PLAYER_SHIP_STEALTH', 'PLAYER_SHIP_CRYSTAL', 'PLAYER_SHIP_ANAEROBIC', 'PLAYER_SHIP_HARD_2', 'PLAYER_SHIP_CIRCLE_2', 'PLAYER_SHIP_FED_2', 'PLAYER_SHIP_ENERGY_2', 'PLAYER_SHIP_MANTIS_2', 'PLAYER_SHIP_JELLY_2', 'PLAYER_SHIP_ROCK_2', 'PLAYER_SHIP_STEALTH_2', 'PLAYER_SHIP_CRYSTAL_2', 'PLAYER_SHIP_ANAEROBIC_2', 'PLAYER_SHIP_HARD_3', 'PLAYER_SHIP_CIRCLE_3', 'PLAYER_SHIP_FED_3', 'PLAYER_SHIP_ENERGY_3', 'PLAYER_SHIP_MANTIS_3', 'PLAYER_SHIP_JELLY_3', 'PLAYER_SHIP_ROCK_3', 'PLAYER_SHIP_STEALTH_3']
-		if os.path.exists('source/compatibility/'+str(Mod)+'/playerImgOrderOverwrite.xml') is True:
-			tree = ET.parse('source/compatibility/'+str(Mod)+'/playerImgOrderOverwrite.xml')
-			root = tree.getroot()
-			# overwriteRead = open('source/compatibility/'+str(Mod)+'/playerImgOrderOverwrite.txt', 'r')
-			# overwriteData = overwriteRead.readlines(100000)
-			# overwriteRead.close()
-			# imgOrderCheck = False
-			# #typeIdCheck = False
-			# for line in overwriteData:
-			for child in root:
-				if '|endplayerImgOrder|' in line:
-					imgOrderCheck = False
-				if '|endshipTypeId|' in line:
-					typeIdCheck = False
-				# if imgOrderCheck is True:
-				if child.tag == 'img':
-					#if line[-1:] == '\n':
-					#	playerImgOrder.append(line[:-1])
-					#else:
-					#	playerImgOrder.append(line)
-					playerImg.Order(child.text)
-				# if typeIdCheck is True:
-				if child.tag == 'preset':
-					#if 'preset|' in line:
-					if 'preset' in child.attrib:
-						#if 'abc' in line:
-						if child.attrib['preset'] == 'abc':
-							shipTypeId = []
-							for letter in range(0, 26):
-								shipTypeId.append(chr(letter+97))
-						#if '123' in line:
-						if child.attrib['preset'] == '123':
-							shipTypeId = []
-							for letter in range(1, 26):
-								shipTypeId.append(str(letter))
-						#typeIdCheck = False
-					else:
-						#shipTypeId.append(line)
-						for child_prefix in child:
-							if child_prefix.tag == 'prefix':
-								shipTypeId.append(child_prefix.text)
-						
-				# if '|shipTypeId|' in line:
-				#	typeIdCheck = True
-				# if '|playerImgOrder|' in line:
-				#	imgOrderCheck = True
-				
+		if os.path.exists('source/compatibility/'+str(Mod)+'/playerImgOrder.xml') is True:
+			tree = ET.parse('source/compatibility/'+str(Mod)+'/playerImgOrder.xml')
 		else:
-			playerImgOrder = ['kestral', 'circle_cruiser', 'fed_cruiser', 'energy_cruiser', 'mantis_cruiser', 'jelly_cruiser', 'rock_cruiser', 'stealth', 'crystal_cruiser', 'anaerobic_cruiser']
-			shipTypeId = []
-			for letter in range(1, 26):
-				shipTypeId.append(letter)
+			tree = ET.parse('source/compatibility/Vanilla/playerImgOrder.xml')
+		root = tree.getroot()
+		for child in root:
+			if child.tag == 'img':
+				playerImgOrder.append(child.text)
+			# if typeIdCheck is True:
+			if child.tag == 'shipTypeID':
+				if 'preset' in child.attrib:
+					if child.attrib['preset'] == 'abc':
+						shipTypeId = []
+						for letter in range(0, 26):
+							shipTypeId.append('_' + chr(letter+97))
+					if child.attrib['preset'] == '123':
+						shipTypeId = []
+						for letter in range(1, 26):
+							shipTypeId.append('_' + str(letter))
+				else:
+					for child_suffix in child:
+						if child_suffix.tag == 'suffix':
+							if child_suffix.text is None:
+								shipTypeId.append('')
+							else:
+								shipTypeId.append(child_suffix.text)
+				
 		
 		#print(shipTypeId)
 		randomCyclePlayerHull = []
@@ -246,7 +221,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 				imgCheck = 3
 			else:
 				imgCheck = 4
-			while (os.path.exists('source/compatibility/Global/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png') is True or os.path.exists('source/compatibility/'+str(Mod)+'/img/ship/' + str(playerImgOrder[x]) + '_' + str(shipTypeId[imgCheck-1]) + '_base.png') is True) and imgCheck < len(shipTypeId):
+			while (os.path.exists('source/compatibility/Global/img/ship/' + str(playerImgOrder[x]) + str(shipTypeId[imgCheck-1]) + '_base.png') is True or os.path.exists('source/compatibility/'+str(Mod)+'/img/ship/' + str(playerImgOrder[x]) + str(shipTypeId[imgCheck-1]) + '_base.png') is True) and imgCheck < len(shipTypeId):
 				imgCheck += 1
 			for y in range(1, imgCheck):
 				randomCyclePlayerHull[x].append(str(y))
@@ -271,70 +246,6 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 					except:
 						print('An unexpected error occurred.')
 				
-			
-		'''xml = open("source/names/bird.txt", "r")
-		xmlName = xml.readlines(100000)
-		for line in xmlName:
-			if '\n' in line:
-				allNames[0].append(line[:-1])
-			else:
-				allNames[0].append(line)
-		xml.close()
-		
-		xml = open("source/names/engi.txt", "r")
-		xmlName = xml.readlines(100000)
-		for lines in xmlName:
-			if '\n' in lines:
-				allNames[1].append(lines[:-1])
-			else:
-				allNames[1].append(lines)
-		xml.close()
-		
-		xml = open("source/names/zoltan.txt", "r")
-		xmlName = xml.readlines(100000)
-		for lines in xmlName:
-			if '\n' in lines:
-				allNames[3].append(lines[:-1])
-			else:
-				allNames[3].append(lines)
-		xml.close()
-		
-		xml = open("source/names/mantis.txt", "r")
-		xmlName = xml.readlines(100000)
-		for lines in xmlName:
-			if '\n' in lines:
-				allNames[4].append(lines[:-1])
-			else:
-				allNames[4].append(lines)
-		xml.close()
-		
-		xml = open("source/names/slug.txt", "r")
-		xmlName = xml.readlines(100000)
-		for lines in xmlName:
-			if '\n' in lines:
-				allNames[5].append(lines[:-1])
-			else:
-				allNames[5].append(lines)
-		xml.close()
-		
-		xml = open("source/names/rock.txt", "r")
-		xmlName = xml.readlines(100000)
-		for lines in xmlName:
-			if '\n' in lines:
-				allNames[6].append(lines[:-1])
-			else:
-				allNames[6].append(lines)
-		xml.close()
-		
-		xml = open("source/names/crystal.txt", "r")
-		xmlName = xml.readlines(100000)
-		for lines in xmlName:
-			if '\n' in lines:
-				allNames[8].append(lines[:-1])
-			else:
-				allNames[8].append(lines)
-		xml.close()'''	
-		
 		for x in range(0, len(allNames)):
 			if allNames[x] != 'skip':
 				shuffle(allNames[x])
@@ -346,15 +257,15 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 			layoutCheck = 1
 			crashCheck = 0
 			if os.path.exists('source/layouts/'+str(Mod)) is True:
-				while os.path.exists('source/layouts/'+str(Mod)+'/'+str(playerShipOrder[x])+'/'+str(playerImgOrder[x])+'_'+str(shipTypeId[layoutCheck])+'.xml') is True and os.path.exists('source/layouts/'+str(Mod)+'/'+str(playerShipOrder[x])+'/'+str(playerImgOrder[x])+'_'+str(shipTypeId[layoutCheck])+'.txt') is True and crashCheck < 100:
+				while os.path.exists('source/layouts/'+str(Mod)+'/'+str(playerShipOrder[x])+'/'+str(playerImgOrder[x])+str(shipTypeId[layoutCheck])+'.xml') is True and os.path.exists('source/layouts/'+str(Mod)+'/'+str(playerShipOrder[x])+'/'+str(playerImgOrder[x])+str(shipTypeId[layoutCheck])+'.txt') is True and crashCheck < 100:
 					layoutCheck += 1
 					crashCheck += 1
 			else:
-				while os.path.exists('source/layouts/Vanilla/'+str(playerShipOrder[x])+'/'+str(playerImgOrder[x])+'_'+str(shipTypeId[layoutCheck])+'.xml') is True and os.path.exists('source/layouts/Vanilla/'+str(playerShipOrder[x])+'/'+str(playerImgOrder[x])+'_'+str(shipTypeId[layoutCheck])+'.txt') is True and crashCheck < 100:
+				while os.path.exists('source/layouts/Vanilla/'+str(playerShipOrder[x])+'/'+str(playerImgOrder[x])+str(shipTypeId[layoutCheck])+'.xml') is True and os.path.exists('source/layouts/Vanilla/'+str(playerShipOrder[x])+'/'+str(playerImgOrder[x])+str(shipTypeId[layoutCheck])+'.txt') is True and crashCheck < 100:
 					layoutCheck += 1
 					crashCheck += 1
 			for y in range(0, layoutCheck):
-				allLayouts[x].append(playerImgOrder[x]+'_'+str(shipTypeId[y]))
+				allLayouts[x].append(playerImgOrder[x]+str(shipTypeId[y]))
 			shuffle(allLayouts[x])
 		#print(allLayouts)
 		#print(playerImgOrder)
@@ -603,7 +514,6 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		ArtilleryChoices = [[], [], [], [], [], [], [], [], [], []]
 		
 		systemCountRarities = [[], [], [], [], [], [], [], [], [], []]
-		reactorCountRarities = [[], [], [], [], [], [], [], [], [], []]
 			
 		if os.path.exists('source/shipArmaments/'+str(Mod)+'Armaments.xml') is True:
 			tree = ET.parse('source/shipArmaments/'+str(Mod)+'Armaments.xml')
@@ -771,35 +681,35 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 							except:
 								pass
 				if child.tag == 'dronesList':
-					for weachild in child:
-						for i in range(0, 6 - int(weachild.attrib['rarity'])):
-							shipDrones[x].append(weachild.text)
+					for drochild in child:
+						for i in range(0, 6 - int(drochild.attrib['rarity'])):
+							shipDrones[x].append(drochild.text)
 							try:
-								if weachild.attrib['start'] == 'true':
-									STshipDrones[x].append(weachild.text)
+								if drochild.attrib['start'] == 'true':
+									STshipDrones[x].append(drochild.text)
 							except:
 								pass
 				if child.tag == 'augList':
 					augCountRarities[x] = [int(i) for i in child.attrib['countRatio'].split('|')]
-					for weachild in child:
-						for i in range(0, 6 - int(weachild.attrib['rarity'])):
-							shipAug[x].append(weachild.text)
+					for augchild in child:
+						for i in range(0, 6 - int(augchild.attrib['rarity'])):
+							shipAug[x].append(augchild.text)
 						try:
-							if weachild.attrib['start'] == 'true':
-								STshipAug[x].append(weachild.text)
+							if augchild.attrib['start'] == 'true':
+								STshipAug[x].append(augchild.text)
 						except:
 							pass
 				if child.tag == 'crewList':
 					for index, i in enumerate(child.attrib['countRatio'].split('|')):
 						for y in range(0, int(i)):
 							CrewCountRarities[x].append(index)
-					for weachild in child:
-						for i in range(0, 6 - int(weachild.attrib['rarity'])):
-							CrewRarities[x].append(weachild.text)
+					for crewchild in child:
+						for i in range(0, 6 - int(crewchild.attrib['rarity'])):
+							CrewRarities[x].append(crewchild.text)
 						try:
-							if int(weachild.attrib['min']) > 0:
-								for y in range(0, int(weachild.attrib['min'])):
-									STCrewRarities[x].append(weachild.text)
+							if int(crewchild.attrib['min']) > 0:
+								for y in range(0, int(crewchild.attrib['min'])):
+									STCrewRarities[x].append(crewchild.text)
 						except:
 							pass
 				if child.tag == 'systemsList':
@@ -813,235 +723,9 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 						systemNames[x].append(syschild.text)
 						systemRarities[x].append(int(syschild.attrib['chance']))
 				if child.tag == 'artilleryList':
-					for syschild in child:
-						ArtilleryChoices[x].append(weachild.text)
-				if child.tag == 'reactorCount':
-					reactorCountRarities[x] = [int(i) for i in child.attrib['levelRatio'].split('|')]
-		'''	
-		for x in range(0, 0):
-			if os.path.exists('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Systems.txt') is True:
-				infoRead = open('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Systems.txt', 'r')
-			else:
-				infoRead = open('source/shipArmaments/'+playerShipOrder[x]+'/VanillaSystems.txt', 'r')
-			systemInfo = infoRead.readlines(100000)
-			infoRead.close()
-				
-			for y in range(0, len(systemInfo)):
-				systemInfo[y] = str(systemInfo[y][0: len(systemInfo)-1])
-				if y % 2 == 0:
-					if systemInfo[y][-1:] == '\n':
-						systemNames[x].append(systemInfo[y][:-1])
-					else:
-						systemNames[x].append(systemInfo[y])
-				else:
-					if systemInfo[y][-1:] == '\n':
-						systemRarities[x].append(int(systemInfo[y][:-1]))
-					else:
-						systemRarities[x].append(int(systemInfo[y]))
-				
-				
-			infoRead = open('source/shipArmaments/'+playerShipOrder[x]+'/systemLevels.txt', 'r')
-			systemInfo = infoRead.readlines(100000)
-			infoRead.close()
-				
-			for y in range(0, len(systemInfo)):
-				if y % 2 == 1:
-					systemInfo[y] = str(systemInfo[y][:-1])
-					systemLevelWeights[x].append(list(systemInfo[y]))
-				
-				
-			infoRead = open('source/shipArmaments/'+playerShipOrder[x]+'/systemCount.txt', 'r')
-			systemCountRarities.append(infoRead.readlines(100000))
-			infoRead.close()
-			for y in range(0, len(systemCountRarities)):
-				systemCountRarities[x][y] = int(systemCountRarities[x][y][:-1])
-		
-			
-			
-			if os.path.exists('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Weapons.txt') is True:
-				weaponsRead = open('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Weapons.txt', 'r')
-			else:
-				weaponsRead = open('source/shipArmaments/'+playerShipOrder[x]+'/VanillaWeapons.txt', 'r')
-			allWeapons[x] += weaponsRead.readlines(10000)
-			weaponsRead.close()
-			for y in range(0, len(extraEquipment)):
-				if os.path.exists('source/Extra Packs/'+str(extraEquipment[y])+'/'+str(playerShipOrder[x])+'Weapons.txt') is True:
-					weaponsRead = open('source/Extra Packs/'+str(extraEquipment[y])+'/'+str(playerShipOrder[x])+'Weapons.txt', 'r')
-					allWeapons[x] += weaponsRead.readlines(10000)
-					weaponsRead.close()
-			
-			
-			for z in range(0, len(allWeapons[x])):
-				for y in range(1, len(randomCycleWeaponPower)):
-					if '|P' + randomCycleWeaponPower[y] in allWeapons[x][z]:
-						allWeapons[x][z] = allWeapons[x][z][:allWeapons[x][z].index('|P')+2] + randomCycleWeaponPower[int(y-1)] + allWeapons[x][z][allWeapons[x][z].index('|P')+3:]
+					for artchild in child:
+						ArtilleryChoices[x].append(artchild.text)
 					
-					
-		
-			while '\n' in allWeapons:
-				allWeapons.remove('\n')
-				
-			if balanced is True:
-				for y in range(0, len(allWeapons[x])):
-					for z in range(0, len(weaponRaritySignals)):
-						if weaponRaritySignals[z] in allWeapons[x][y]:
-							for a in range(0, 4-z):
-								allWeapons[x].append(allWeapons[x][y])
-				
-			for y in range(0, len(allWeapons[x])):
-				if '\n' in allWeapons[x][y]:
-					allWeapons[x][y]=allWeapons[x][y][:-1]
-				if '|DLC' not in allWeapons[x][y]:
-					nonAEWeapons[x].append(allWeapons[x][y])
-					if '|ST' in allWeapons[x][y]:
-						STnonAEWeapons[x].append(allWeapons[x][y][:-3])
-						nonAEWeapons[x][-1]=allWeapons[x][y][:-3]
-				if '|ST' in allWeapons[x][y]:
-					STallWeapons[x].append(allWeapons[x][y][:-3])
-					allWeapons[x][y]=allWeapons[x][y][:-3]
-			
-			for y in range(0, len(nonAEWeapons[x])):
-				if '\n' in nonAEWeapons[x][y]:
-					nonAEWeapons[x][y]=nonAEWeapons[x][y][:-1]
-			
-			for y in range(0, len(missileWeapons)):
-				if '\n' in missileWeapons[y]:
-					missileWeapons[y] = missileWeapons[y][:-1]
-			
-			if os.path.exists('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Drones.txt') is True:
-				dronesRead = open('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Drones.txt', 'r')
-			else:
-				dronesRead = open('source/shipArmaments/'+playerShipOrder[x]+'/VanillaDrones.txt', 'r')
-			allDrones[x] += dronesRead.readlines(10000)
-			dronesRead.close()
-			
-			for z in range(0, len(allDrones[x])):
-				for y in range(1, len(randomCycleWeaponPower)):
-					if '|P' + randomCycleWeaponPower[y] in allDrones[x][z]:
-						allDrones[x][z] = allDrones[x][z][:allDrones[x][z].index('|P')+2] + randomCycleWeaponPower[int(y-1)] + allDrones[x][z][allDrones[x][z].index('|P')+3:]
-		
-			while '\n' in allDrones:
-				allDrones.remove('\n')
-				
-			if balanced is True:
-				for y in range(0, len(allDrones[x])):
-					for z in range(0, len(weaponRaritySignals)):
-						if weaponRaritySignals[z] in allDrones[x][y]:
-							for a in range(0, 4-z):
-								allDrones[x].append(allDrones[x][y])
-				
-			for y in range(0, len(allDrones[x])):
-				if '\n' in allDrones[x][y]:
-					allDrones[x][y]=allDrones[x][y][:-1]
-				if '|DLC' not in allDrones[x][y]:
-					nonAEDrones[x].append(allDrones[x][y])
-					if '|ST' in allDrones[x][y]:
-						STnonAEDrones[x].append(allDrones[x][y][:-3])
-						nonAEDrones[x][-1]=allDrones[x][y][:-3]
-				if '|ST' in allDrones[x][y]:
-					STallDrones[x].append(allDrones[x][y][:-3])
-					allDrones[x][y]=allDrones[x][y][:-3]
-				
-			for y in range(0, len(nonAEDrones[x])):
-				if '\n' in nonAEDrones[x][y]:
-					nonAEDrones[x][y]=nonAEDrones[x][y][:-1]
-			
-				
-			
-			
-			if os.path.exists('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Aug.txt') is True:
-				augRead = open('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Aug.txt', 'r')
-			else:
-				augRead = open('source/shipArmaments/'+playerShipOrder[x]+'/VanillaAug.txt', 'r')
-			allAug[x] += augRead.readlines(10000)
-			augRead.close()
-				
-			while '\n' in allAug:
-				allAug.remove('\n')
-			
-			for y in range(0, len(nonAEAug[x])):
-				if '\n' in nonAEAug[x][y]:
-					nonAEAug[x][y]=nonAEAug[x][y][:-1]
-				
-				
-			for y in range(0, len(allAug[x])):
-				if '\n' in allAug[x][y]:
-					allAug[x][y]=allAug[x][y][:-1]
-				if '|DLC' not in allAug[x][y]:
-					nonAEAug[x].append(allAug[x][y])
-					if '|ST' in allAug[x][y]:
-						STnonAEAug[x].append(allAug[x][y][:-3])
-						nonAEAug[x][-1]=allAug[x][y][:-3]
-				if '|ST' in allAug[x][y]:
-					STallAug[x].append(allAug[x][y][:-3])
-					allAug[x][y]=allAug[x][y][:-3]
-				
-			if balanced is True:
-				for y in range(0, len(allAug[x])):
-					for z in range(0, len(weaponRaritySignals)):
-						if weaponRaritySignals[z] in allAug[x][y]:
-							for a in range(0, 4-z):
-								allAug[x].append(allAug[x][y])
-				
-			if balanced is True:
-				for y in range(0, len(nonAEAug[x])):
-					for z in range(0, len(weaponRaritySignals)):
-						if weaponRaritySignals[z] in nonAEAug[x][y]:
-							for a in range(0, 4-z):
-								nonAEAug[x].append(nonAEAug[x][y])
-								
-			
-			augRead = open('source/shipArmaments/'+playerShipOrder[x]+'/augCount.txt', 'r')
-			augCountRarities[x] += augRead.readlines(10000)
-			augRead.close()
-			
-			for y in range(0, len(augCountRarities[x])):
-				if '\n' in augCountRarities[x][y]:
-					augCountRarities[x][y] = augCountRarities[x][y][:-1]
-					
-					
-			
-			if os.path.exists('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Crew.txt') is True:
-				crewRead = open('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Crew.txt', 'r')
-			else:
-				crewRead = open('source/shipArmaments/'+playerShipOrder[x]+'/VanillaCrew.txt', 'r')
-			CrewInfo = crewRead.readlines(10000)
-			crewRead.close()
-				
-		
-				
-			for y in range(0, len(CrewInfo)):
-				if '\n' in CrewInfo[y]:
-					CrewInfo[y] = CrewInfo[y][:-1]
-				if CrewInfo[y][:7] == '|Count|':
-					CrewCountRarities[x] = list(CrewInfo[y][7:])
-				elif '|ST' in CrewInfo[y]:
-					if '|DLC' in CrewInfo[y]:
-						STCrewRarities[x].append(CrewInfo[y][:-7])
-					else:
-						STCrewRarities[x].append(CrewInfo[y][:-3])
-					
-				else:
-					for z in range(0, int(CrewInfo[y][-1:])):
-						CrewRarities[x].append(CrewInfo[y][:-3])
-				
-						
-						
-			if os.path.exists('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Artillery.txt') is True:
-				artilleryRead = open('source/shipArmaments/'+playerShipOrder[x]+'/'+str(Mod)+'Artillery.txt', 'r')
-			else:
-				artilleryRead = open('source/shipArmaments/'+playerShipOrder[x]+'/VanillaArtillery.txt', 'r')
-			ArtilleryChoices[x%10] = artilleryRead.readlines(10000)
-			artilleryRead.close()
-				
-			while '\n' in ArtilleryChoices[x%10]:
-				ArtilleryChoices[x%10].remove('\n')
-				
-			for y in range(0, len(ArtilleryChoices[x%10])):
-				if '\n' in ArtilleryChoices[x%10][y]:
-					ArtilleryChoices[x][y] = ArtilleryChoices[x][y][:-1]
-		'''		
-		
 		for x in range(0, len(playerShipOrder)):
 				
 			trueX = x
@@ -1089,7 +773,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 				if len(systems) < systemCount:
 					for y in range(0, len(systemNames[x%10])):
 						randNumb = randint(0, 100)
-						if systemRarities[x%10][y] >= randNumb and systemNames[x%10][y] not in systems and (systemNames[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
+						if systemRarities[x%10][y] >= randNumb > 0 and systemNames[x%10][y] not in systems and (systemNames[x%10][y] not in dlcItems or x == 9 or x >= 19 or balanced is False):
 							systems.append(systemNames[x%10][y])
 				if len(systems) > systemCount:
 					for y in range(0, len(systems)):
@@ -1258,7 +942,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 <mod:findLike limit="1" reverse="true"> 
 	<mod:setAttributes name="'''+str(playerShipOrder[trueX])+'''"/>
 	<mod:setAttributes layout="'''+str(allLayouts[trueX%10][trueX//10])+'''"/>
-	<mod:setAttributes img="'''+str(playerImgOrder[trueX%10]) + '''_''' + str(shipTypeId[int(randomCyclePlayerHull[trueX%10][trueX//10])-1])+'''"/>
+	<mod:setAttributes img="'''+str(playerImgOrder[trueX%10]) + str(shipTypeId[int(randomCyclePlayerHull[trueX%10][trueX//10])-1])+'''"/>
 	<mod-overwrite:name>''' + str(allNames[trueX%10][trueX//10]) + '''</mod-overwrite:name>
 	<mod-overwrite:desc id="ship_'''+str(playerShipOrder[trueX])+'''_desc"/>
 	<mod-overwrite:unlock id="ship_'''+str(playerShipOrder[trueX])+'''_unlock"/>
@@ -2059,58 +1743,6 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		
 		'''
 		
-	blueprintsRandShipFix = '''<!-- Player Ship Stuff -->
-
-<mod:findLike type="shipBlueprint">
-	<mod:selector layout="kestral"/>
-	<mod:setAttributes layout="kestral_1"/>
-</mod:findLike>
-
-<mod:findLike type="shipBlueprint">
-	<mod:selector layout="stealth"/>
-	<mod:setAttributes layout="stealth_1"/>
-</mod:findLike>
-
-<mod:findLike type="shipBlueprint">
-	<mod:selector layout="mantis_cruiser"/>
-	<mod:setAttributes layout="mantis_cruiser_1"/>
-</mod:findLike>
-
-<mod:findLike type="shipBlueprint">
-	<mod:selector layout="circle_cruiser"/>
-	<mod:setAttributes layout="circle_cruiser_1"/>
-</mod:findLike>
-
-<mod:findLike type="shipBlueprint">
-	<mod:selector layout="fed_cruiser"/>
-	<mod:setAttributes layout="fed_cruiser_1"/>
-</mod:findLike>
-
-<mod:findLike type="shipBlueprint">
-	<mod:selector layout="jelly_cruiser"/>
-	<mod:setAttributes layout="jelly_cruiser_1"/>
-</mod:findLike>
-
-<mod:findLike type="shipBlueprint">
-	<mod:selector layout="rock_cruiser"/>
-	<mod:setAttributes layout="rock_cruiser_1"/>
-</mod:findLike>
-
-<mod:findLike type="shipBlueprint">
-	<mod:selector layout="energy_cruiser"/>
-	<mod:setAttributes layout="energy_cruiser_1"/>
-</mod:findLike>
-
-<mod:findLike type="shipBlueprint">
-	<mod:selector layout="crystal_cruiser"/>
-	<mod:setAttributes layout="crystal_cruiser_1"/>
-</mod:findLike>
-
-<mod:findLike type="shipBlueprint">
-	<mod:selector layout="anaerobic_cruiser"/>
-	<mod:setAttributes layout="anaerobic_cruiser_1"/>
-</mod:findLike>'''
-		
 	blueprintsRandShipFix2 = '''<!-- Player Ship Stuff -->
 
 <mod:findComposite>
@@ -2140,7 +1772,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		
 	for x in range(0, len(deleteFiles)):
 		for y in range(0, len(deleteFiles[x][2])):
-			if deleteFiles[x][2][y] not in ['metadata.xml', '.gitignore']:
+			if deleteFiles[x][2][y] not in ['metadata.xml']:
 				os.remove(deleteFiles[x][0]+'/'+deleteFiles[x][2][y])
 	
 	# Implementation of Files
@@ -2196,15 +1828,6 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 						#print('compiledFiles/' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):])
 						#print('two')
 						shutil.copy(extraEquipmentFileTransfer[z][x][0]+'/'+extraEquipmentFileTransfer[z][x][2][y], 'compiledFiles/' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0])-1:])
-					
-		
-	xml = open("source/start & finish/STanimations.xml.append", "r")
-	xmlStart = str(xml.read(100000))
-	xml.close()
-	
-	xml = open("compiledFiles/data/animations.xml.append", "a")
-	xml.writelines(xmlStart)
-	xml.close()
 	
 	xml = open("source/boss/layouts/bosses.xml", "r")
 	bosses_0 = str(xml.read(100000))
@@ -2232,29 +1855,10 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	xml.writelines(blueprints_1)
 	xml.close()
 	
-	xml = open("source/start & finish/STGBlueprints.xml.append", "r")
-	xmlStartBlueGlobal = str(xml.read(100000))
-	xml.close()
-	
-	xml = open("source/start & finish/STblueprints.xml.append", "r")
-	xmlStart = str(xml.read(100000))
-	xml.close()
-	
-	
-	xml = open("source/start & finish/FNblueprints.xml.append", "r")
-	xmlFinish = str(xml.read(100000))
-	xml.close()
-	
 	xml = open("compiledFiles/data/blueprints.xml.append", "a")
 	
 	xml.writelines(blueprints_ships)
 	
-	xml.writelines(xmlStart)
-	xml.writelines(xmlStartBlueGlobal)
-	
-	if randShipCheck is True:
-		xml.writelines(blueprintsRandShipFix)
-	
 	xml.writelines(blueprints_1)
 	xml.writelines(blueprints_2)
 	xml.writelines(blueprints_3)
@@ -2262,24 +1866,10 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	xml.writelines(blueprints_6)
 	xml.writelines(blueprints_7)
 	
-	xml.writelines(xmlFinish)
-	
-	xml.close()
-	
-	xml = open("source/start & finish/STdlcBlueprints.xml.append", "r")
-	xmlStart = str(xml.read(100000))
-	xml.close()
-	
-	
-	xml = open("source/start & finish/FNdlcBlueprints.xml.append", "r")
-	xmlFinish = str(xml.read(100000))
 	xml.close()
 	
 	xml = open("compiledFiles/data/dlcBlueprints.xml.append", "a")
 	
-	xml.writelines(xmlStart)
-	xml.writelines(xmlStartBlueGlobal)
-	
 	if randShipCheck is True:
 		xml.writelines(blueprintsRandShipFix2)
 	
@@ -2290,24 +1880,10 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	xml.writelines(blueprints_6)
 	xml.writelines(blueprints_7)
 	
-	xml.writelines(xmlFinish)
-	
-	xml.close()
-	
-	xml = open("source/start & finish/STdlcBlueprintsOverwrite.xml.append", "r")
-	xmlStart = str(xml.read(100000))
-	xml.close()
-	
-	
-	xml = open("source/start & finish/FNdlcBlueprintsOverwrite.xml.append", "r")
-	xmlFinish = str(xml.read(100000))
 	xml.close()
 	
 	xml = open("compiledFiles/data/dlcBlueprintsOverwrite.xml.append", "a")
 	
-	xml.writelines(xmlStart)
-	xml.writelines(xmlStartBlueGlobal)
-	
 	if randShipCheck is True:
 		xml.writelines(blueprintsRandShipFix2)
 	
@@ -2317,8 +1893,6 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	xml.writelines(blueprints_5)
 	xml.writelines(blueprints_6)
 	xml.writelines(blueprints_7)
-	
-	xml.writelines(xmlFinish)
 	
 	xml.close()
 		
@@ -2386,7 +1960,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	
 		for x in range(0, len(transferFiles)):
 			for y in range(0, len(transferFiles[x][2])):
-				if '.pdn' not in transferFiles[x][2][y]:
+				if transferFiles[x][2][y].split('.')[-1] not in ['pdn', 'xcf'] and transferFiles[x][2][y] not in ['playerImgOrder.xml']:
 					if transferFiles[x][2][y][-11:] == '.xml.append':
 						if 'boss' in transferFiles[x][2][y]:
 							fileAppenda = open(transferFiles[x][0]+'/'+transferFiles[x][2][y], 'r')

@@ -12,16 +12,16 @@
 	<shipTypeID preset="abc"/>
 	<!--
 	<shipTypeID>
-		<prefix>Q</prefix>
-		<prefix>W</prefix>
-		<prefix>E</prefix>
-		<prefix>R</prefix>
-		<prefix>T</prefix>
-		<prefix>Y</prefix>
+		<suffix>Q</suffix>
+		<suffix>W</suffix>
+		<suffix>E</suffix>
+		<suffix>R</suffix>
+		<suffix>T</suffix>
+		<suffix>Y</suffix>
 		
 		...
 		
-		<prefix>M</prefix>
+		<suffix>M</suffix>
 		
 	</shipTypeID>
 	-->

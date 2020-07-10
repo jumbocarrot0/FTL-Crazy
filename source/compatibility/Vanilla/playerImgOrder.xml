@@ -1,0 +1,12 @@
+<playerImgOrder>	<img>kestral</img>	<img>circle_cruiser</img>	<img>fed_cruiser</img>	<img>energy_cruiser</img>	<img>mantis_cruiser</img>	<img>jelly_cruiser</img>	<img>rock_cruiser</img>	<img>stealth</img>	<img>crystal_cruiser</img>	<img>anaerobic_cruiser</img>
+	
+	<shipTypeID>
+		<suffix></suffix>
+		<suffix>_2</suffix>
+		<suffix>_3</suffix>
+		<suffix>_4</suffix>
+		<suffix>_5</suffix>
+		<suffix>_6</suffix>		<suffix>_7</suffix>		<suffix>_8</suffix>		<suffix>_9</suffix>		<suffix>_10</suffix>		<suffix>_11</suffix>		<suffix>_12</suffix>
+		
+	</shipTypeID>
+</playerImgOrder>
