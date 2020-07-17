@@ -8,3 +8,7 @@ programAssets/randLog.txt
 FTLRandVanilla.ftl
 *.pdn
 source/shipArmaments/Program.py
+compiledFiles/data/
+compiledFiles/img/
+compiledFiles/audio/
+compiledFiles/fonts/
