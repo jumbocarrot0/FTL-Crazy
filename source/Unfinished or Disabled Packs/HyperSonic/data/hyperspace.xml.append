@@ -1,0 +1,335 @@
+<ships>
+	<customShip name="PLAYER_SHIP_HARD">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_HARD_2">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_HARD_3">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	
+	<customShip name="PLAYER_SHIP_CIRCLE">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_CIRCLE_2">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_CIRCLE_3">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	
+	<customShip name="PLAYER_SHIP_FED">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_FED_2">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_FED_3">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	
+	<customShip name="PLAYER_SHIP_ENERGY">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_ENERGY_2">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_ENERGY_3">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	
+	<customShip name="PLAYER_SHIP_MANTIS">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_MANTIS_2">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_MANTIS_3">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	
+	<customShip name="PLAYER_SHIP_JELLY">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_JELLY_2">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_JELLY_3">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	
+	<customShip name="PLAYER_SHIP_ROCK">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_ROCK_2">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_ROCK_3">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	
+	<customShip name="PLAYER_SHIP_STEALTH">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_STEALTH_2">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_STEALTH_3">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	
+	<customShip name="PLAYER_SHIP_CRYSTAL">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_CRYSTAL_2">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	
+	<customShip name="PLAYER_SHIP_ANAEROBIC">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+	<customShip name="PLAYER_SHIP_ANAEROBIC_2">
+		<hiddenAug>SUPER_SPEED</hiddenAug>
+	</customShip>
+</ships>
+
+<augments>
+    <aug name="SUPER_SPEED">
+		<function name="DRONE_SPEED" value="1" useForReqs="false"/>
+		<function name="AUTO_COOLDOWN" value="1" useForReqs="false"/>
+		<function name="SHIELD_RECHARGE" value="1" useForReqs="false"/>
+		<function name="FTL_BOOSTER" value="1" useForReqs="false"/>
+		<locked/>
+    </aug>
+</augments>
+
+<crew><!--
+	<toChange>
+		<moveSpeedMultiplier>1</moveSpeedMultiplier>
+		<repairSpeed>1</repairSpeed>
+		<damageMultiplier>1</damageMultiplier>
+		<fireRepairMultiplier>1.2</fireRepairMultiplier>
+		<sabotageSpeedMultiplier>1</sabotageSpeedMultiplier>
+		<suffocationModifier>1</suffocationModifier>
+		<fireDamageMultiplier>1</fireDamageMultiplier>
+		
+		<oxygenChangeSpeed>-0.525</oxygenChangeSpeed>
+		<damageTakenMultiplier>1</damageTakenMultiplier>
+		<passiveHealAmount>1</passiveHealAmount>
+		<passiveHealDelay>15</passiveHealDelay>
+		<powerEffect>
+			<cooldown>30</cooldown>			
+			<temporaryEffect>
+				<duration>10</duration>
+				<moveSpeedMultiplier>1.2</moveSpeedMultiplier>
+				<repairSpeed>1.2</repairSpeed>
+				<damageMultiplier>1.2</damageMultiplier>
+				<oxygenChangeSpeed>0</oxygenChangeSpeed>
+				<detectsLifeforms>false</detectsLifeforms>
+				<fireDamageMultiplier>1</fireDamageMultiplier>
+				<allDamageTakenMultiplier>1</allDamageTakenMultiplier>
+				<sabotageSpeedMultiplier>1</sabotageSpeedMultiplier>
+			</temporaryEffect>
+		</powerEffect>
+	</toChange>
+	
+	<toChange>
+		<moveSpeedMultiplier>2</moveSpeedMultiplier>
+		<repairSpeed>2</repairSpeed>
+		<damageMultiplier>2</damageMultiplier>
+		<fireRepairMultiplier>2.4</fireRepairMultiplier>
+		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
+		<suffocationModifier>2</suffocationModifier>
+		<fireDamageMultiplier>2</fireDamageMultiplier>
+		<powerEffect>
+			<cooldown>30</cooldown>			
+			<temporaryEffect>
+				<duration>10</duration>
+				<moveSpeedMultiplier>1.2</moveSpeedMultiplier>
+				<repairSpeed>1.2</repairSpeed>
+				<damageMultiplier>1.2</damageMultiplier>
+				<oxygenChangeSpeed>0</oxygenChangeSpeed>
+				<detectsLifeforms>false</detectsLifeforms>
+				<fireDamageMultiplier>1</fireDamageMultiplier>
+				<damageTakenMultiplier>1</damageTakenMultiplier>
+				<allDamageTakenMultiplier>1</allDamageTakenMultiplier>
+				<sabotageSpeedMultiplier>1</sabotageSpeedMultiplier>
+			</temporaryEffect>
+		</powerEffect>
+	</toChange>-->
+	<race name="human">
+		<skills>
+			<piloting req="13"/>
+			<engines req="13"/>
+			<shields req="50"/>
+			<weapons req="58"/>
+			<repair req="16"/>
+			<combat req="7"/>
+		</skills>
+		<deathSounds>
+			<deathSound>death1</deathSound>
+			<deathSound>death2</deathSound>
+		</deathSounds>
+		
+		<moveSpeedMultiplier>2</moveSpeedMultiplier>
+		<repairSpeed>2</repairSpeed>
+		<damageMultiplier>2</damageMultiplier>
+		<fireRepairMultiplier>2.4</fireRepairMultiplier>
+		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
+		<suffocationModifier>2</suffocationModifier>
+		<fireDamageMultiplier>2</fireDamageMultiplier>
+	</race>
+	<race name="engi">
+		<repairSpeed>4</repairSpeed>
+		<fireRepairMultiplier>4.8</fireRepairMultiplier>
+		<damageMultiplier>1</damageMultiplier>
+		<deathSounds>
+			<deathSound>engiDeath</deathSound>
+		</deathSounds>
+		
+		<moveSpeedMultiplier>2</moveSpeedMultiplier>
+		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
+		<suffocationModifier>2</suffocationModifier>
+		<fireDamageMultiplier>2</fireDamageMultiplier>
+	</race>
+	 <race name="energy">
+		<maxHealth>70</maxHealth>
+		<bonusPower>1</bonusPower>
+		<deathSounds>
+			<deathSound>energyDeath</deathSound>
+		</deathSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<deathEffect>
+			<persDamage>1</persDamage>
+			<friendlyFire>false</friendlyFire>
+			<shipFriendlyFire>false</shipFriendlyFire>
+		</deathEffect>
+		
+		<moveSpeedMultiplier>2</moveSpeedMultiplier>
+		<repairSpeed>2</repairSpeed>
+		<damageMultiplier>2</damageMultiplier>
+		<fireRepairMultiplier>2.4</fireRepairMultiplier>
+		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
+		<suffocationModifier>2</suffocationModifier>
+		<fireDamageMultiplier>2</fireDamageMultiplier>
+	</race>
+	<race name="mantis"> <!--MANTIS CREW TYPES-->
+		<repairSpeed>1</repairSpeed>
+		<fireRepairMultiplier>1.6</fireRepairMultiplier>
+		<moveSpeedMultiplier>2.4</moveSpeedMultiplier>
+		<damageMultiplier>3</damageMultiplier>
+		<deathSounds>
+			<deathSound>mantisDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>mantisSpit1</shootingSound>
+			<shootingSound>mantisSpit2</shootingSound>
+			<shootingSound>mantisSpit3</shootingSound>
+		</shootingSounds>
+		
+		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
+		<suffocationModifier>2</suffocationModifier>
+		<fireDamageMultiplier>2</fireDamageMultiplier>
+	</race>
+	<race name="rock"> <!--ROCK CREW TYPES-->
+		<maxHealth>150</maxHealth>
+		<canBurn>false</canBurn>
+		<fireRepairMultiplier>3.3</fireRepairMultiplier>
+		<moveSpeedMultiplier>1</moveSpeedMultiplier>
+		<fireDamageMultiplier>0</fireDamageMultiplier>
+		<animBase>rock</animBase>
+		<deathSounds>
+			<deathSound>rockDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>rockThrow1</shootingSound>
+			<shootingSound>rockThrow2</shootingSound>
+			<shootingSound>rockThrow3</shootingSound>
+		</shootingSounds>
+		
+		<repairSpeed>2</repairSpeed>
+		<damageMultiplier>2</damageMultiplier>
+		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
+		<suffocationModifier>2</suffocationModifier>
+	</race>
+	 <race name="crystal">
+		<maxHealth>125</maxHealth>
+		<moveSpeedMultiplier>1.6</moveSpeedMultiplier>
+		<suffocationModifier>1</suffocationModifier>
+		<animBase>rock</animBase>
+		<deathSounds>
+			<deathSound>crystalDeath</deathSound>
+		</deathSounds>
+		<shootingSounds>
+			<shootingSound>rockThrow1</shootingSound>
+			<shootingSound>rockThrow2</shootingSound>
+			<shootingSound>rockThrow3</shootingSound>
+		</shootingSounds>
+		<shootingSounds>
+			<shootingSound>rockThrow1</shootingSound>
+			<shootingSound>rockThrow2</shootingSound>
+			<shootingSound>rockThrow3</shootingSound>
+		</shootingSounds>
+		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
+		<hasDeathExplosion>true</hasDeathExplosion>
+		<powerEffect>
+			<cooldown>25</cooldown>
+			<jumpCooldown>full</jumpCooldown>
+			<powerSounds>
+				<powerSound>lockdown1</powerSound>
+				<powerSound>lockdown2</powerSound>
+			</powerSounds>
+			<lockdown>true</lockdown>
+			<buttonText>LOCKDOWN</buttonText>
+			<tooltip>Ready: Click to lock down room with special power.</tooltip>
+			<cooldownColor r="133" g="231" b="237"/>
+			<effectAnim>explosion_crystal</effectAnim>
+		</powerEffect>
+		
+		<repairSpeed>2</repairSpeed>
+		<damageMultiplier>2</damageMultiplier>
+		<fireRepairMultiplier>2.4</fireRepairMultiplier>
+		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
+		<fireDamageMultiplier>2</fireDamageMultiplier>
+	</race>
+	<race name="slug"> <!--SLUG CREW TYPES-->
+		<detectsLifeforms>true</detectsLifeforms>
+		<isTelepathic>true</isTelepathic>
+		
+		<moveSpeedMultiplier>2</moveSpeedMultiplier>
+		<repairSpeed>2</repairSpeed>
+		<damageMultiplier>2</damageMultiplier>
+		<fireRepairMultiplier>2.4</fireRepairMultiplier>
+		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
+		<suffocationModifier>2</suffocationModifier>
+		<fireDamageMultiplier>2</fireDamageMultiplier>
+	</race>
+	<race name="anaerobic"> <!--LANIUS CREW TYPES-->
+		<canSuffocate>false</canSuffocate>
+		<moveSpeedMultiplier>1.7</moveSpeedMultiplier>
+		<suffocationModifier>0</suffocationModifier>
+		<oxygenChangeSpeed>-1.05</oxygenChangeSpeed>
+		<isAnaerobic>true</isAnaerobic>
+		
+		<repairSpeed>2</repairSpeed>
+		<damageMultiplier>2</damageMultiplier>
+		<fireRepairMultiplier>2.4</fireRepairMultiplier>
+		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
+		<fireDamageMultiplier>2</fireDamageMultiplier>
+	</race>
+	<race name="ghost">
+		<canPhaseThroughDoors>true</canPhaseThroughDoors>
+		<canSuffocate>false</canSuffocate>
+		<maxHealth>50</maxHealth>
+		
+		<moveSpeedMultiplier>2</moveSpeedMultiplier>
+		<repairSpeed>2</repairSpeed>
+		<damageMultiplier>2</damageMultiplier>
+		<fireRepairMultiplier>2.4</fireRepairMultiplier>
+		<sabotageSpeedMultiplier>2</sabotageSpeedMultiplier>
+		<suffocationModifier>2</suffocationModifier>
+		<fireDamageMultiplier>2</fireDamageMultiplier>
+	</race>
+</crew>

@@ -1,0 +1,1472 @@
+<shipArmaments>
+
+<!-- [|]R[^"] - Find |P_ or |R_ to remove -->
+
+<!-- Power, dlc-req, type, etc. are defined in the lists below -->
+<blueprintList name="all_weapons">
+	<blueprint power="1">LASER_BURST_1</blueprint>
+	<blueprint power="1">LASER_BURST_2</blueprint>
+	<blueprint power="2">LASER_BURST_2_A</blueprint>
+	<blueprint power="2">LASER_BURST_3</blueprint>
+	<blueprint power="4">LASER_BURST_5</blueprint>
+	<blueprint power="1">LASER_HEAVY_1</blueprint>
+	<blueprint power="3">LASER_HEAVY_2</blueprint>
+	<blueprint power="2">LASER_HEAVY_1_SP</blueprint>
+	<blueprint power="1" type="missile">MISSILES_1</blueprint>
+	<blueprint power="1" type="missile">MISSILES_2_PLAYER</blueprint>
+	<blueprint power="2" type="missile">MISSILES_2</blueprint>
+	<blueprint power="3" type="missile">MISSILES_3</blueprint>
+	<blueprint power="3" type="missile">MISSILES_BURST</blueprint>
+	<blueprint power="3" type="missile">MISSILES_BREACH</blueprint>
+	<blueprint power="1">BEAM_1</blueprint>
+	<blueprint power="2">BEAM_LONG</blueprint>
+	<blueprint power="3">BEAM_2</blueprint>
+	<blueprint power="4">BEAM_3</blueprint>
+	<blueprint power="2">BEAM_FIRE</blueprint>
+	<blueprint power="2">BEAM_BIO</blueprint>
+	<blueprint power="2">LASER_HULL_1</blueprint>
+	<blueprint power="3">LASER_HULL_2</blueprint>
+	<blueprint power="2">BEAM_HULL</blueprint>
+	<blueprint power="2" type="missile">MISSILES_HULL</blueprint>
+	<blueprint power="1">ION_1</blueprint>
+	<blueprint power="2">ION_2</blueprint>
+	<blueprint power="3">ION_4</blueprint>
+	<blueprint power="1" type="bomb">BOMB_1</blueprint>
+	<blueprint power="1" type="bomb">BOMB_BREACH_1</blueprint>
+	<blueprint power="2" type="bomb">BOMB_BREACH_2</blueprint>
+	<blueprint power="2" type="bomb">BOMB_FIRE</blueprint>
+	<blueprint power="1" type="bomb">BOMB_ION</blueprint>
+	<blueprint power="1" type="bomb">BOMB_HEAL</blueprint>
+	<blueprint power="1" type="bomb">BOMB_LOCK</blueprint>
+	<blueprint power="2">CRYSTAL_BURST_1</blueprint>
+	<blueprint power="3">CRYSTAL_BURST_2</blueprint>
+	<blueprint power="1">CRYSTAL_HEAVY_1</blueprint>
+	<blueprint power="3">CRYSTAL_HEAVY_2</blueprint>
+	<blueprint power="1" dlc="true">BOMB_HEAL_SYSTEM</blueprint>
+	<blueprint power="1" dlc="true">SHOTGUN_PLAYER</blueprint>
+	<blueprint power="2" dlc="true">SHOTGUN</blueprint>
+	<blueprint power="3" dlc="true">ARTILLERY_FED_C</blueprint>
+	<blueprint power="3" dlc="true">SHOTGUN_2</blueprint>
+	<blueprint power="2" dlc="true" type="missile">MISSILE_CHARGEGUN</blueprint>
+	<blueprint power="2" dlc="true">LASER_CHAINGUN</blueprint>
+	<blueprint power="4" dlc="true">LASER_CHAINGUN_2</blueprint>
+	<blueprint power="3" dlc="true">ION_CHAINGUN</blueprint>
+	<blueprint power="1" dlc="true">LASER_CHARGEGUN_PLAYER</blueprint>
+	<blueprint power="2" dlc="true">LASER_CHARGEGUN</blueprint>
+	<blueprint power="3" dlc="true">LASER_CHARGEGUN_2</blueprint>
+	<blueprint power="2" dlc="true">ION_CHARGEGUN</blueprint>
+	<blueprint power="1" dlc="true" type="bomb">ION_STUN</blueprint>
+	<blueprint power="1" dlc="true" type="bomb">BOMB_STUN</blueprint>
+</blueprintList>
+
+<blueprintList name="all_drones">
+	<blueprint power="2" dlc="false">COMBAT_1</blueprint>
+	<blueprint power="4" dlc="false">COMBAT_2</blueprint>
+	<blueprint power="2" dlc="false">COMBAT_BEAM</blueprint>
+	<blueprint power="2" dlc="false">DEFENSE_1</blueprint>
+	<blueprint power="3" dlc="false">DEFENSE_2</blueprint>
+	<blueprint power="1" dlc="false">REPAIR</blueprint>
+	<blueprint power="2" dlc="false">BATTLE</blueprint>
+	<blueprint power="3" dlc="false">BOARDER</blueprint>
+	<blueprint power="2" dlc="false">SHIP_REPAIR</blueprint>
+	<blueprint power="3" dlc="true">BOARDER_ION</blueprint>
+	<blueprint power="2" dlc="true">DRONE_SHIELD_PLAYER</blueprint>
+	<blueprint power="1" dlc="true">ANTI_DRONE</blueprint>
+	<blueprint power="3" dlc="true">COMBAT_BEAM_2</blueprint>
+	<blueprint power="3" dlc="true">COMBAT_FIRE</blueprint>
+</blueprintList>
+
+<blueprintList name="all_augments">
+	<blueprint dlc="false">ROCK_ARMOR</blueprint>
+	<blueprint dlc="false">CRYSTAL_SHARDS</blueprint>
+	<blueprint dlc="false">ENERGY_SHIELD</blueprint>
+	<blueprint dlc="false">NANO_MEDBAY</blueprint>
+	<blueprint dlc="false">SLUG_GEL</blueprint>
+	<blueprint dlc="false">CREW_STIMS</blueprint>
+	<blueprint dlc="false">DRONE_SPEED</blueprint>
+	<blueprint dlc="false">SYSTEM_CASING</blueprint>
+	<blueprint dlc="false">ION_ARMOR</blueprint>
+	<blueprint dlc="false">CLOAK_FIRE</blueprint>
+	<blueprint dlc="false">REPAIR_ARM</blueprint>
+	<blueprint dlc="false">SCRAP_COLLECTOR</blueprint>
+	<blueprint dlc="false">ADV_SCANNERS</blueprint>
+	<blueprint dlc="false">AUTO_COOLDOWN</blueprint>
+	<blueprint dlc="false">SHIELD_RECHARGE</blueprint>
+	<blueprint dlc="false">WEAPON_PREIGNITE</blueprint>
+	<blueprint dlc="false">FTL_BOOSTER</blueprint>
+	<blueprint dlc="false">FTL_JUMPER</blueprint>
+	<blueprint dlc="false">DRONE_RECOVERY</blueprint>
+	<blueprint dlc="false">FTL_JAMMER</blueprint>
+	<blueprint dlc="false">STASIS_POD</blueprint>
+	<blueprint dlc="true">O2_MASKS</blueprint>
+	<blueprint dlc="true">EXPLOSIVE_REPLICATOR</blueprint>
+	<blueprint dlc="true">FIRE_EXTINGUISHERS</blueprint>
+	<blueprint dlc="true">FLEET_DISTRACTION</blueprint>
+	<blueprint dlc="true">TELEPORT_HEAL</blueprint>
+	<blueprint dlc="true">BATTERY_BOOSTER</blueprint>
+	<blueprint dlc="true">DEFENSE_SCRAMBLER</blueprint>
+	<blueprint dlc="true">BACKUP_DNA</blueprint>
+	<blueprint dlc="true">HACKING_STUN</blueprint>
+	<blueprint dlc="true">LIFE_SCANNER</blueprint>
+	<blueprint dlc="true">ZOLTAN_BYPASS</blueprint>
+</blueprintList>
+
+<blueprintList name="all_crew">
+	<blueprint dlc="false">human</blueprint>
+	<blueprint dlc="false">engi</blueprint>
+	<blueprint dlc="false">energy</blueprint>
+	<blueprint dlc="false">mantis</blueprint>
+	<blueprint dlc="false">rock</blueprint>
+	<blueprint dlc="false">crystal</blueprint>
+	<blueprint dlc="false">slug</blueprint>
+	<blueprint dlc="true">anaerobic</blueprint>
+</blueprintList>
+
+<blueprintList name="all_systems">
+	<blueprint>pilot</blueprint>
+	<blueprint>doors</blueprint>
+	<blueprint>sensors</blueprint>
+	<blueprint>medbay</blueprint>
+	<blueprint>oxygen</blueprint>
+	<blueprint>shields</blueprint>
+	<blueprint>engines</blueprint>
+	<blueprint>weapons</blueprint>
+	<blueprint>drones</blueprint>
+	<blueprint>teleporter</blueprint>
+	<blueprint>cloaking</blueprint>
+	<blueprint>artillery</blueprint>
+	<blueprint dlc="true">clonebay</blueprint>
+	<blueprint dlc="true">battery</blueprint>
+	<blueprint dlc="true">mind</blueprint>
+	<blueprint dlc="true">hacking</blueprint>
+</blueprintList>
+
+<shipArmament name="PLAYER_SHIP_ANAEROBIC">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<weapon start="false" rarity="4">LASER_BURST_1</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2</weapon>
+		<weapon start="false" rarity="3">LASER_HEAVY_1</weapon>
+		<weapon start="false" rarity="4">MISSILES_1</weapon>
+		<weapon start="false" rarity="3">MISSILES_2_PLAYER</weapon>
+		<weapon start="false" rarity="2">BEAM_1</weapon>
+		<weapon start="false" rarity="3">ION_1</weapon>
+		<weapon start="false" rarity="3">BOMB_1</weapon>
+		<weapon start="false" rarity="4">BOMB_ION</weapon>
+		<weapon start="false" rarity="5">BOMB_HEAL</weapon>
+		<weapon start="false" rarity="4">SHOTGUN_PLAYER</weapon>
+		<weapon start="false" rarity="5">ION_STUN</weapon>
+		<weapon start="false" rarity="4">BOMB_STUN</weapon>
+		<weapon start="false" rarity="5">BOMB_HEAL_SYSTEM</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN_PLAYER</weapon>
+		<weapon start="true" rarity="4">LASER_HEAVY_1_SP</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2_A</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_3</weapon>
+		<weapon start="false" rarity="4">MISSILES_2</weapon>
+		<weapon start="false" rarity="3">BEAM_LONG</weapon>
+		<weapon start="false" rarity="5">BEAM_FIRE</weapon>
+		<weapon start="false" rarity="3">ION_2</weapon>
+		<weapon start="false" rarity="4">BOMB_FIRE</weapon>
+		<weapon start="false" rarity="3">BEAM_HULL</weapon>
+		<weapon start="true" rarity="2">LASER_HULL_1</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN</weapon>
+		<weapon start="true" rarity="3">SHOTGUN</weapon>
+		<weapon start="false" rarity="3">MISSILE_CHARGEGUN</weapon>
+		<weapon start="true" rarity="2">LASER_CHAINGUN</weapon>
+		<weapon start="false" rarity="3">ION_CHARGEGUN</weapon>
+		<weapon start="false" rarity="4">LASER_HEAVY_2</weapon>
+		<weapon start="false" rarity="4">MISSILES_3</weapon>
+		<weapon start="false" rarity="5">MISSILES_BURST</weapon>
+		<weapon start="false" rarity="5">MISSILES_BREACH</weapon>
+		<weapon start="true" rarity="3">BEAM_2</weapon>
+		<weapon start="false" rarity="3">ION_4</weapon>
+		<weapon start="false" rarity="3">LASER_HULL_2</weapon>
+		<weapon start="true" rarity="4">SHOTGUN_2</weapon>
+		<weapon start="false" rarity="4">ION_CHAINGUN</weapon>
+		<weapon start="false" rarity="4">LASER_CHARGEGUN_2</weapon>
+		<weapon start="false" rarity="4">LASER_BURST_5</weapon>
+		<weapon start="false" rarity="4">BEAM_3</weapon>
+		<weapon start="false" rarity="5">LASER_CHAINGUN_2</weapon>
+		<weapon start="false" rarity="3">BOMB_BREACH_1</weapon>
+		<weapon start="false" rarity="4">BOMB_BREACH_2</weapon>
+	</weaponsList>
+	<dronesList>
+		<drone rarity="1" start="true">COMBAT_1</drone>
+		<drone rarity="5" start="false">COMBAT_2</drone>
+		<drone rarity="2" start="true">COMBAT_BEAM</drone>
+		<drone rarity="1" start="true">DEFENSE_1</drone>
+		<drone rarity="4" start="false">DEFENSE_2</drone>
+		<drone rarity="1" start="false">REPAIR</drone>
+		<drone rarity="2" start="false">BATTLE</drone>
+		<drone rarity="4" start="true">BOARDER</drone>
+		<drone rarity="4" start="true">BOARDER_ION</drone>
+		<drone rarity="3" start="false">DRONE_SHIELD_PLAYER</drone>
+		<drone rarity="4" start="false">ANTI_DRONE</drone>
+		<drone rarity="4" start="false">COMBAT_BEAM_2</drone>
+		<drone rarity="5" start="false">COMBAT_FIRE</drone>
+	</dronesList>
+	<!-- Count ratio determined how many augments there will be, with the zero-based index of each number determining how many augments -->
+	<augList countRatio="0|4|1">
+		<augment rarity="3" start="true">O2_MASKS</augment>
+		<augment rarity="4" start="false">EXPLOSIVE_REPLICATOR</augment>
+		<augment rarity="3" start="false">FIRE_EXTINGUISHERS</augment>
+		<augment rarity="3" start="false">FLEET_DISTRACTION</augment>
+		<augment rarity="4" start="false">TELEPORT_HEAL</augment>
+		<augment rarity="5" start="false">BATTERY_BOOSTER</augment>
+		<augment rarity="4" start="false">DEFENSE_SCRAMBLER</augment>
+		<augment rarity="1" start="false">BACKUP_DNA</augment>
+		<augment rarity="2" start="false">HACKING_STUN</augment>
+		<augment rarity="3" start="false">LIFE_SCANNER</augment>
+		<augment rarity="4" start="false">ZOLTAN_BYPASS</augment>
+		<augment rarity="1" start="false">SCRAP_COLLECTOR</augment>
+		<augment rarity="2" start="false">ADV_SCANNERS</augment>
+		<augment rarity="3" start="false">AUTO_COOLDOWN</augment>
+		<augment rarity="2" start="false">SHIELD_RECHARGE</augment>
+		<augment rarity="5" start="false">WEAPON_PREIGNITE</augment>
+		<augment rarity="2" start="false">FTL_BOOSTER</augment>
+		<augment rarity="2" start="false">FTL_JUMPER</augment>
+		<augment rarity="3" start="false">DRONE_RECOVERY</augment>
+		<augment rarity="2" start="false">FTL_JAMMER</augment>
+		<augment rarity="4" start="false">STASIS_POD</augment>
+		<augment rarity="3" start="false">CLOAK_FIRE</augment>
+		<augment rarity="5" start="false">SYSTEM_CASING</augment>
+		<augment rarity="3" start="false">ION_ARMOR</augment>
+		<augment rarity="2" start="false">DRONE_SPEED</augment>
+		<augment rarity="4" start="false">REPAIR_ARM</augment>
+	</augList>
+	
+	<artilleryList>
+		<artillery>LASER_ARTILLERY</artillery>
+		<artillery>MISSILE_ARTILLERY</artillery>
+		<artillery>BEAM_ARTILLERY</artillery>
+		<artillery>ION_ARTILLERY</artillery>
+		<artillery>ION_HEAVY_ARTILLERY</artillery>
+		<artillery>SHOTGUN_ARTILLERY</artillery>
+	</artilleryList>
+	
+	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
+	<crewList countRatio="0|0|0|1|3|2">
+		<crew rarity="1" min="1">anaerobic</crew>
+		<crew rarity="3">human</crew>
+		<crew rarity="4">engi</crew>
+		<crew rarity="5">energy</crew>
+		<crew rarity="5">mantis</crew>
+		<crew rarity="1">anaerobic</crew>
+		<crew rarity="5">rock</crew>
+		<crew rarity="5">slug</crew>
+	</crewList>
+	
+	<!-- includes subsystems, 'chance' unlike rarity is percentage based. Index determined system count and levels for countRato and levelRatio respectively. Index is not zero-based for either -->
+	<systemsList countRatio="0|0|0|0|0|0|0|0|3|6|7|4|0">
+		<system chance="100" levelRatio="4|1|1">pilot</system>
+		<system chance="100" levelRatio="3|1">doors</system>
+		<system chance="95" levelRatio="3|1">sensors</system>
+		<system chance="100" levelRatio="1">medbay</system>
+		<system chance="100" levelRatio="5|1">oxygen</system>
+		<system chance="100" levelRatio="0|5|1">shields</system>
+		<system chance="100" levelRatio="2|1">engines</system>
+		<system chance="100" levelRatio="2|3|2">weapons</system>
+		<system chance="25" levelRatio="0|3|2">drones</system>
+		<system chance="40" levelRatio="1">teleporter</system>
+		<system chance="15" levelRatio="3|1">cloaking</system>
+		<system chance="0" levelRatio="1|1">artillery</system>
+		<system chance="0" levelRatio="2|1">clonebay</system>
+		<system chance="20" levelRatio="0|1">battery</system>
+		<system chance="60" levelRatio="1">mind</system>
+		<system chance="70" levelRatio="1">hacking</system>
+	</systemsList>
+	<!-- this is zero-based -->
+	<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_CIRCLE">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<weapon rarity="4">LASER_BURST_1</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2</weapon>
+		<weapon rarity="3">LASER_HEAVY_1</weapon>
+		<weapon rarity="4">MISSILES_1</weapon>
+		<weapon rarity="3">MISSILES_2_PLAYER</weapon>
+		<weapon rarity="2">BEAM_1</weapon>
+		<weapon rarity="2">ION_1</weapon>
+		<weapon rarity="2">BOMB_1</weapon>
+		<weapon rarity="2">BOMB_ION</weapon>
+		<weapon rarity="5">BOMB_HEAL</weapon>
+		<weapon rarity="4">SHOTGUN_PLAYER</weapon>
+		<weapon rarity="5">ION_STUN</weapon>
+		<weapon rarity="3">BOMB_STUN</weapon>
+		<weapon rarity="4">BOMB_HEAL_SYSTEM</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN_PLAYER</weapon>
+		<weapon start="true" rarity="4">LASER_HEAVY_1_SP</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2_A</weapon>
+		<weapon start="true" rarity="3">LASER_BURST_3</weapon>
+		<weapon rarity="4">MISSILES_2</weapon>
+		<weapon rarity="3">BEAM_LONG</weapon>
+		<weapon rarity="5">BEAM_FIRE</weapon>
+		<weapon rarity="2">ION_2</weapon>
+		<weapon rarity="4">BOMB_FIRE</weapon>
+		<weapon rarity="3">BEAM_HULL</weapon>
+		<weapon start="true" rarity="2">LASER_HULL_1</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN</weapon>
+		<weapon start="true" rarity="3">SHOTGUN</weapon>
+		<weapon rarity="3">MISSILE_CHARGEGUN</weapon>
+		<weapon start="true" rarity="2">LASER_CHAINGUN</weapon>
+		<weapon rarity="2">ION_CHARGEGUN</weapon>
+		<weapon rarity="4">LASER_HEAVY_2</weapon>
+		<weapon rarity="4">MISSILES_3</weapon>
+		<weapon rarity="5">MISSILES_BURST</weapon>
+		<weapon rarity="5">MISSILES_BREACH</weapon>
+		<weapon start="true" rarity="3">BEAM_2</weapon>
+		<weapon rarity="2">ION_4</weapon>
+		<weapon rarity="3">LASER_HULL_2</weapon>
+		<weapon rarity="4">SHOTGUN_2</weapon>
+		<weapon rarity="3">ION_CHAINGUN</weapon>
+		<weapon rarity="4">LASER_CHARGEGUN_2</weapon>
+		<weapon rarity="4">LASER_BURST_5</weapon>
+		<weapon rarity="4">BEAM_3</weapon>
+		<weapon rarity="5">LASER_CHAINGUN_2</weapon>
+	</weaponsList>
+	<dronesList>
+		<drone start="true" rarity="1">COMBAT_1</drone>
+		<drone rarity="5">COMBAT_2</drone>
+		<drone start="true" rarity="2">COMBAT_BEAM</drone>
+		<drone start="true" rarity="1">DEFENSE_1</drone>
+		<drone rarity="4">DEFENSE_2</drone>
+		<drone rarity="1">REPAIR</drone>
+		<drone rarity="1">BATTLE</drone>
+		<drone rarity="5">BOARDER_ION</drone>
+		<drone rarity="3">DRONE_SHIELD_PLAYER</drone>
+		<drone rarity="4">ANTI_DRONE</drone>
+		<drone rarity="4">COMBAT_BEAM_2</drone>
+		<drone rarity="5">COMBAT_FIRE</drone>
+	</dronesList>
+	<!-- Count ratio determined how many augments there will be, with the zero-based index of each number determining how many augments -->
+	<augList countRatio="0|80|20|0">
+		<augment rarity="3">O2_MASKS</augment>
+		<augment rarity="4">EXPLOSIVE_REPLICATOR</augment>
+		<augment rarity="3">FIRE_EXTINGUISHERS</augment>
+		<augment rarity="3">FLEET_DISTRACTION</augment>
+		<augment rarity="4">TELEPORT_HEAL</augment>
+		<augment rarity="5">BATTERY_BOOSTER</augment>
+		<augment rarity="1">DEFENSE_SCRAMBLER</augment>
+		<augment rarity="5">BACKUP_DNA</augment>
+		<augment rarity="4">HACKING_STUN</augment>
+		<augment rarity="4">LIFE_SCANNER</augment>
+		<augment rarity="4">ZOLTAN_BYPASS</augment>
+		<augment start="true" rarity="1">NANO_MEDBAY</augment>
+		<augment rarity="2">SCRAP_COLLECTOR</augment>
+		<augment rarity="2">ADV_SCANNERS</augment>
+		<augment rarity="4">AUTO_COOLDOWN</augment>
+		<augment rarity="2">SHIELD_RECHARGE</augment>
+		<augment rarity="5">WEAPON_PREIGNITE</augment>
+		<augment rarity="2">FTL_BOOSTER</augment>
+		<augment rarity="2">FTL_JUMPER</augment>
+		<augment rarity="1">DRONE_RECOVERY</augment>
+		<augment rarity="2">FTL_JAMMER</augment>
+		<augment rarity="4">STASIS_POD</augment>
+		<augment rarity="3">CLOAK_FIRE</augment>
+		<augment rarity="5">SYSTEM_CASING</augment>
+		<augment rarity="2">ION_ARMOR</augment>
+		<augment rarity="1">DRONE_SPEED</augment>
+		<augment rarity="4">REPAIR_ARM</augment>
+	</augList>
+	
+	<artilleryList>
+		<artillery>LASER_ARTILLERY</artillery>
+		<artillery>MISSILE_ARTILLERY</artillery>
+		<artillery>BEAM_ARTILLERY</artillery>
+		<artillery>ION_ARTILLERY</artillery>
+		<artillery>ION_HEAVY_ARTILLERY</artillery>
+		<artillery>SHOTGUN_ARTILLERY</artillery>
+	</artilleryList>
+	
+	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
+	<crewList countRatio="0|1|1|2">
+		<crew rarity="1" min="1">engi</crew>
+		<crew rarity="2">human</crew>
+		<crew rarity="1">engi</crew>
+		<crew rarity="2">energy</crew>
+		<crew rarity="5">mantis</crew>
+		<crew rarity="3">anaerobic</crew>
+		<crew rarity="5">rock</crew>
+		<crew rarity="5">slug</crew>
+	</crewList>
+	
+	<!-- includes subsystems, 'chance' unlike rarity is percentage based. Index determined system count and levels for countRato and levelRatio respectively. Index is not zero-based for either -->
+	<systemsList countRatio="0|0|0|0|0|0|0|0|2|13|3|2|0">
+		<system chance="100" levelRatio="3|1|1">pilot</system>
+		<system chance="100" levelRatio="3|1">doors</system>
+		<system chance="80" levelRatio="2|1">sensors</system>
+		<system chance="100" levelRatio="1">medbay</system>
+		<system chance="100" levelRatio="5|1">oxygen</system>
+		<system chance="100" levelRatio="0|5|1">shields</system>
+		<system chance="100" levelRatio="0|1|1">engines</system>
+		<system chance="100" levelRatio="0|3|2">weapons</system>
+		<system chance="100" levelRatio="0|2|2|1">drones</system>
+		<system chance="0" levelRatio="1">teleporter</system>
+		<system chance="25" levelRatio="3|1">cloaking</system>
+		<system chance="0" levelRatio="1|1">artillery</system>
+		<system chance="0" levelRatio="4|1">clonebay</system>
+		<system chance="25" levelRatio="0|1">battery</system>
+		<system chance="5" levelRatio="1">mind</system>
+		<system chance="65" levelRatio="1">hacking</system>
+	</systemsList>
+	<!-- this is zero-based -->
+	<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_CRYSTAL">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<weapon start="true" rarity="2">CRYSTAL_BURST_1</weapon>
+		<weapon start="true" rarity="3">CRYSTAL_HEAVY_1</weapon>
+		<weapon start="true" rarity="4">CRYSTAL_BURST_2</weapon>
+		<weapon start="true" rarity="5">CRYSTAL_HEAVY_2</weapon>
+		<weapon rarity="4">BOMB_LOCK</weapon>
+	</weaponsList>
+	<dronesList>
+		<drone start="true" rarity="1">COMBAT_1</drone>
+		<drone rarity="5">COMBAT_2</drone>
+		<drone start="true" rarity="2">COMBAT_BEAM</drone>
+		<drone start="true" rarity="1">DEFENSE_1</drone>
+		<drone rarity="4">DEFENSE_2</drone>
+		<drone rarity="1">REPAIR</drone>
+		<drone rarity="2">BATTLE</drone>
+		<drone start="true" rarity="4">BOARDER</drone>
+		<drone start="true" rarity="4">BOARDER_ION</drone>
+		<drone rarity="3">DRONE_SHIELD_PLAYER</drone>
+		<drone rarity="4">ANTI_DRONE</drone>
+		<drone rarity="4">COMBAT_BEAM_2</drone>
+		<drone rarity="5">COMBAT_FIRE</drone>
+	</dronesList>
+	<!-- Count ratio determined how many augments there will be, with the zero-based index of each number determining how many augments -->
+	<augList countRatio="0|9|1">
+		<augment rarity="3">O2_MASKS</augment>
+		<augment rarity="4">EXPLOSIVE_REPLICATOR</augment>
+		<augment rarity="3">FIRE_EXTINGUISHERS</augment>
+		<augment rarity="3">FLEET_DISTRACTION</augment>
+		<augment rarity="4">TELEPORT_HEAL</augment>
+		<augment rarity="5">BATTERY_BOOSTER</augment>
+		<augment rarity="4">DEFENSE_SCRAMBLER</augment>
+		<augment rarity="5">BACKUP_DNA</augment>
+		<augment rarity="4">HACKING_STUN</augment>
+		<augment rarity="4">LIFE_SCANNER</augment>
+		<augment rarity="4">ZOLTAN_BYPASS</augment>
+		<augment rarity="2">SCRAP_COLLECTOR</augment>
+		<augment rarity="2">ADV_SCANNERS</augment>
+		<augment rarity="3">AUTO_COOLDOWN</augment>
+		<augment rarity="2">SHIELD_RECHARGE</augment>
+		<augment rarity="4">WEAPON_PREIGNITE</augment>
+		<augment rarity="2">FTL_BOOSTER</augment>
+		<augment rarity="2">FTL_JUMPER</augment>
+		<augment rarity="3">DRONE_RECOVERY</augment>
+		<augment rarity="2">FTL_JAMMER</augment>
+		<augment rarity="4">STASIS_POD</augment>
+		<augment rarity="1">CLOAK_FIRE</augment>
+		<augment rarity="4">SYSTEM_CASING</augment>
+		<augment rarity="3">ION_ARMOR</augment>
+		<augment rarity="3">DRONE_SPEED</augment>
+		<augment rarity="4">REPAIR_ARM</augment>
+		<augment start="true" rarity="1">CRYSTAL_SHARDS</augment>
+	</augList>
+
+	<artilleryList>
+		<artillery>LASER_ARTILLERY</artillery>
+		<artillery>MISSILE_ARTILLERY</artillery>
+		<artillery>BEAM_ARTILLERY</artillery>
+		<artillery>ION_ARTILLERY</artillery>
+		<artillery>ION_HEAVY_ARTILLERY</artillery>
+		<artillery>SHOTGUN_ARTILLERY</artillery>
+	</artilleryList>
+
+	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
+	<crewList countRatio="0|0|1|2|1">
+		<crew rarity="1" min="1">crystal</crew>
+		<crew rarity="1">crystal</crew>
+		<crew rarity="3">human</crew>
+		<crew rarity="5">engi</crew>
+		<crew rarity="5">energy</crew>
+		<crew rarity="5">mantis</crew>
+		<crew rarity="4">anaerobic</crew>
+		<crew rarity="3">rock</crew>
+		<crew rarity="5">slug</crew>
+	</crewList>
+
+	<!-- includes subsystems, 'chance' unlike rarity is percentage based. Index determined system count and levels for countRato and levelRatio respectively. Index is not zero-based for either -->
+	<systemsList countRatio="0|0|0|0|0|0|0|1|4|3|2|0">
+		<system chance="100" levelRatio="4|1|1">pilot</system>
+		<system chance="100" levelRatio="3|1">doors</system>
+		<system chance="90" levelRatio="2|1">sensors</system>
+		<system chance="100" levelRatio="1">medbay</system>
+		<system chance="100" levelRatio="5|1">oxygen</system>
+		<system chance="100" levelRatio="0|4|1">shields</system>
+		<system chance="100" levelRatio="0|2|1">engines</system>
+		<system chance="100" levelRatio="0|1|2|1">weapons</system>
+		<system chance="15" levelRatio="0|3|2">drones</system>
+		<system chance="50" levelRatio="1">teleporter</system>
+		<system chance="35" levelRatio="3|1">cloaking</system>
+		<system chance="0" levelRatio="1|1">artillery</system>
+		<system chance="0" levelRatio="4|1">clonebay</system>
+		<system chance="0" levelRatio="0|1">battery</system>
+		<system chance="0" levelRatio="1">mind</system>
+		<system chance="0" levelRatio="1">hacking</system>
+	</systemsList>
+	<!-- this is zero-based -->
+		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_ENERGY">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<weapon rarity="4">LASER_BURST_1</weapon>
+		<weapon start="true" rarity="5">LASER_BURST_2</weapon>
+		<weapon rarity="3">LASER_HEAVY_1</weapon>
+		<weapon rarity="3">MISSILES_1</weapon>
+		<weapon rarity="3">MISSILES_2_PLAYER</weapon>
+		<weapon rarity="2">BEAM_1</weapon>
+		<weapon rarity="3">ION_1</weapon>
+		<weapon rarity="3">BOMB_1</weapon>
+		<weapon rarity="4">BOMB_ION</weapon>
+		<weapon rarity="5">BOMB_HEAL</weapon>
+		<weapon rarity="3">ION_STUN</weapon>
+		<weapon rarity="4">BOMB_STUN</weapon>
+		<weapon rarity="5">BOMB_HEAL_SYSTEM</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN_PLAYER</weapon>
+		<weapon start="true" rarity="3">LASER_BURST_2_A</weapon>
+		<weapon start="true" rarity="5">LASER_BURST_3</weapon>
+		<weapon rarity="4">MISSILES_2</weapon>
+		<weapon rarity="2">BEAM_LONG</weapon>
+		<weapon rarity="5">BEAM_FIRE</weapon>
+		<weapon rarity="2">ION_2</weapon>
+		<weapon rarity="5">BOMB_FIRE</weapon>
+		<weapon rarity="3">BEAM_HULL</weapon>
+		<weapon start="true" rarity="4">LASER_HULL_1</weapon>
+		<weapon start="true" rarity="5">LASER_CHARGEGUN</weapon>
+		<weapon start="true" rarity="5">SHOTGUN</weapon>
+		<weapon rarity="3">MISSILE_CHARGEGUN</weapon>
+		<weapon start="true" rarity="5">LASER_CHAINGUN</weapon>
+		<weapon rarity="2">ION_CHARGEGUN</weapon>
+		<weapon rarity="5">MISSILES_3</weapon>
+		<weapon rarity="5">MISSILES_BURST</weapon>
+		<weapon rarity="5">MISSILES_BREACH</weapon>
+		<weapon start="true" rarity="3">BEAM_2</weapon>
+		<weapon rarity="2">ION_4</weapon>
+		<weapon rarity="5">SHOTGUN_2</weapon>
+		<weapon rarity="3">ION_CHAINGUN</weapon>
+		<weapon rarity="4">BEAM_3</weapon>
+	</weaponsList>
+	<dronesList>
+		<drone start="true" rarity="1">COMBAT_1</drone>
+		<drone rarity="5">COMBAT_2</drone>
+		<drone start="true" rarity="2">COMBAT_BEAM</drone>
+		<drone start="true" rarity="1">DEFENSE_1</drone>
+		<drone rarity="4">DEFENSE_2</drone>
+		<drone rarity="1">REPAIR</drone>
+		<drone rarity="2">BATTLE</drone>
+		<drone start="true" rarity="4">BOARDER</drone>
+		<drone start="true" rarity="4">BOARDER_ION</drone>
+		<drone rarity="3">DRONE_SHIELD_PLAYER</drone>
+		<drone rarity="4">ANTI_DRONE</drone>
+		<drone rarity="4">COMBAT_BEAM_2</drone>
+		<drone rarity="5">COMBAT_FIRE</drone>
+	</dronesList>
+	<!-- Count ratio determined how many augments there will be, with the zero-based index of each number determining how many augments -->
+	<augList countRatio="0|80|20|0">
+		<augment rarity="1">O2_MASKS</augment>
+		<augment rarity="3">EXPLOSIVE_REPLICATOR</augment>
+		<augment rarity="2">FIRE_EXTINGUISHERS</augment>
+		<augment rarity="3">FLEET_DISTRACTION</augment>
+		<augment rarity="4">TELEPORT_HEAL</augment>
+		<augment rarity="1">BATTERY_BOOSTER</augment>
+		<augment rarity="4">DEFENSE_SCRAMBLER</augment>
+		<augment rarity="5">BACKUP_DNA</augment>
+		<augment rarity="3">HACKING_STUN</augment>
+		<augment rarity="4">LIFE_SCANNER</augment>
+		<augment rarity="4">ZOLTAN_BYPASS</augment>
+		<augment rarity="2">SCRAP_COLLECTOR</augment>
+		<augment rarity="2">ADV_SCANNERS</augment>
+		<augment rarity="2">AUTO_COOLDOWN</augment>
+		<augment rarity="1">SHIELD_RECHARGE</augment>
+		<augment rarity="5">WEAPON_PREIGNITE</augment>
+		<augment rarity="1">FTL_BOOSTER</augment>
+		<augment rarity="1">FTL_JUMPER</augment>
+		<augment rarity="3">DRONE_RECOVERY</augment>
+		<augment rarity="1">FTL_JAMMER</augment>
+		<augment rarity="4">STASIS_POD</augment>
+		<augment start="true" rarity="1">ENERGY_SHIELD</augment>
+		<augment rarity="3">CLOAK_FIRE</augment>
+		<augment rarity="5">SYSTEM_CASING</augment>
+		<augment rarity="1">ION_ARMOR</augment>
+		<augment rarity="1">DRONE_SPEED</augment>
+		<augment rarity="4">REPAIR_ARM</augment>
+	</augList>
+
+	<artilleryList>
+		<artillery>LASER_ARTILLERY</artillery>
+		<artillery>MISSILE_ARTILLERY</artillery>
+		<artillery>BEAM_ARTILLERY</artillery>
+		<artillery>ION_ARTILLERY</artillery>
+		<artillery>ION_HEAVY_ARTILLERY</artillery>
+		<artillery>SHOTGUN_ARTILLERY</artillery>
+	</artilleryList>
+
+	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
+	<crewList countRatio="0|0|1|3|2">
+		<crew rarity="1" min="2">energy</crew>
+		<crew rarity="1">energy</crew>
+		<crew rarity="5">human</crew>
+		<crew rarity="3">engi</crew>
+		<crew rarity="5">mantis</crew>
+		<crew rarity="5">anaerobic</crew>
+		<crew rarity="5">rock</crew>
+		<crew rarity="5">slug</crew>
+	</crewList>
+
+	<!-- includes subsystems, 'chance' unlike rarity is percentage based. Index determined system count and levels for countRato and levelRatio respectively. Index is not zero-based for either -->
+	<systemsList countRatio="0|0|0|0|0|0|0|10|40|30|20|0">
+		<system chance="100" levelRatio="4|1|1">pilot</system>
+		<system chance="100" levelRatio="3|1">doors</system>
+		<system chance="90" levelRatio="2|1">sensors</system>
+		<system chance="100" levelRatio="1">medbay</system>
+		<system chance="100" levelRatio="5|1">oxygen</system>
+		<system chance="100" levelRatio="2|3">shields</system>
+		<system chance="100" levelRatio="0|2|1">engines</system>
+		<system chance="100" levelRatio="0|1|3|2">weapons</system>
+		<system chance="35" levelRatio="0|3|2">drones</system>
+		<system chance="0" levelRatio="1">teleporter</system>
+		<system chance="30" levelRatio="3|1">cloaking</system>
+		<system chance="0" levelRatio="1|1">artillery</system>
+		<system chance="0" levelRatio="4|1">clonebay</system>
+		<system chance="40" levelRatio="0|1">battery</system>
+		<system chance="10" levelRatio="1">mind</system>
+		<system chance="40" levelRatio="1">hacking</system>
+	</systemsList>
+	<!-- this is zero-based -->
+		<reactorCount levelRatio="0|0|10|15|35|35|5|0"/>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_FED">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<weapon rarity="4">LASER_BURST_1</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2</weapon>
+		<weapon rarity="3">LASER_HEAVY_1</weapon>
+		<weapon rarity="4">MISSILES_1</weapon>
+		<weapon rarity="3">MISSILES_2_PLAYER</weapon>
+		<weapon rarity="2">BEAM_1</weapon>
+		<weapon rarity="3">ION_1</weapon>
+		<weapon rarity="3">BOMB_1</weapon>
+		<weapon rarity="4">BOMB_ION</weapon>
+		<weapon rarity="5">BOMB_HEAL</weapon>
+		<weapon rarity="4">SHOTGUN_PLAYER</weapon>
+		<weapon rarity="5">ION_STUN</weapon>
+		<weapon rarity="4">BOMB_STUN</weapon>
+		<weapon rarity="5">BOMB_HEAL_SYSTEM</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN_PLAYER</weapon>
+		<weapon start="true" rarity="4">LASER_HEAVY_1_SP</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2_A</weapon>
+		<weapon start="true" rarity="3">LASER_BURST_3</weapon>
+		<weapon rarity="4">MISSILES_2</weapon>
+		<weapon rarity="3">BEAM_LONG</weapon>
+		<weapon rarity="5">BEAM_FIRE</weapon>
+		<weapon rarity="3">ION_2</weapon>
+		<weapon rarity="4">BOMB_FIRE</weapon>
+		<weapon rarity="3">BEAM_HULL</weapon>
+		<weapon start="true" rarity="2">LASER_HULL_1</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN</weapon>
+		<weapon start="true" rarity="3">SHOTGUN</weapon>
+		<weapon rarity="3">MISSILE_CHARGEGUN</weapon>
+		<weapon start="true" rarity="2">LASER_CHAINGUN</weapon>
+		<weapon rarity="3">ION_CHARGEGUN</weapon>
+		<weapon rarity="4">LASER_HEAVY_2</weapon>
+		<weapon rarity="4">MISSILES_3</weapon>
+		<weapon rarity="5">MISSILES_BURST</weapon>
+		<weapon rarity="5">MISSILES_BREACH</weapon>
+		<weapon start="true" rarity="3">BEAM_2</weapon>
+		<weapon rarity="3">ION_4</weapon>
+		<weapon rarity="3">LASER_HULL_2</weapon>
+		<weapon rarity="4">SHOTGUN_2</weapon>
+		<weapon rarity="4">ION_CHAINGUN</weapon>
+		<weapon rarity="4">LASER_CHARGEGUN_2</weapon>
+		<weapon rarity="4">LASER_BURST_5</weapon>
+		<weapon rarity="4">BEAM_3</weapon>
+		<weapon rarity="5">LASER_CHAINGUN_2</weapon>
+	</weaponsList>
+	<dronesList>
+		<drone start="true" rarity="1">COMBAT_1</drone>
+		<drone rarity="5">COMBAT_2</drone>
+		<drone start="true" rarity="2">COMBAT_BEAM</drone>
+		<drone start="true" rarity="1">DEFENSE_1</drone>
+		<drone rarity="4">DEFENSE_2</drone>
+		<drone rarity="1">REPAIR</drone>
+		<drone rarity="2">BATTLE</drone>
+		<drone start="true" rarity="4">BOARDER</drone>
+		<drone start="true" rarity="4">BOARDER_ION</drone>
+		<drone rarity="3">DRONE_SHIELD_PLAYER</drone>
+		<drone rarity="4">ANTI_DRONE</drone>
+		<drone rarity="4">COMBAT_BEAM_2</drone>
+		<drone rarity="5">COMBAT_FIRE</drone>
+	</dronesList>
+	<!-- Count ratio determined how many augments there will be, with the zero-based index of each number determining how many augments -->
+	<augList countRatio="80|20|0">
+		<augment rarity="3">O2_MASKS</augment>
+		<augment rarity="4">EXPLOSIVE_REPLICATOR</augment>
+		<augment rarity="3">FIRE_EXTINGUISHERS</augment>
+		<augment rarity="3">FLEET_DISTRACTION</augment>
+		<augment rarity="4">TELEPORT_HEAL</augment>
+		<augment rarity="5">BATTERY_BOOSTER</augment>
+		<augment rarity="4">DEFENSE_SCRAMBLER</augment>
+		<augment rarity="5">BACKUP_DNA</augment>
+		<augment rarity="4">HACKING_STUN</augment>
+		<augment rarity="4">LIFE_SCANNER</augment>
+		<augment rarity="5">ZOLTAN_BYPASS</augment>
+		<augment rarity="2">SCRAP_COLLECTOR</augment>
+		<augment rarity="2">ADV_SCANNERS</augment>
+		<augment rarity="3">AUTO_COOLDOWN</augment>
+		<augment rarity="2">SHIELD_RECHARGE</augment>
+		<augment rarity="5">WEAPON_PREIGNITE</augment>
+		<augment rarity="1">FTL_BOOSTER</augment>
+		<augment rarity="1">FTL_JUMPER</augment>
+		<augment rarity="3">DRONE_RECOVERY</augment>
+		<augment rarity="1">FTL_JAMMER</augment>
+		<augment rarity="4">STASIS_POD</augment>
+		<augment rarity="3">CLOAK_FIRE</augment>
+		<augment rarity="4">SYSTEM_CASING</augment>
+		<augment rarity="3">ION_ARMOR</augment>
+		<augment rarity="1">DRONE_SPEED</augment>
+		<augment rarity="4">REPAIR_ARM</augment>
+	</augList>
+
+	<artilleryList>
+		<artillery>ARTILLERY_FED</artillery>
+		<artillery>ARTILLERY_FED_C</artillery>
+		<artillery>ARTILLERY_FED_ION</artillery>
+	</artilleryList>
+
+	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
+	<crewList countRatio="0|0|1|2|3">
+		<crew rarity="1" min="1">human</crew>
+		<crew rarity="1">engi</crew>
+		<crew rarity="2">energy</crew>
+		<crew rarity="2">mantis</crew>
+		<crew rarity="3">anaerobic</crew>
+		<crew rarity="2">rock</crew>
+		<crew rarity="3">slug</crew>
+	</crewList>
+
+	<!-- includes subsystems, 'chance' unlike rarity is percentage based. Index determined system count and levels for countRato and levelRatio respectively. Index is not zero-based for either -->
+	<systemsList countRatio="0|0|0|0|0|0|0|0|0|85|10|5|0">
+		<system chance="100" levelRatio="4|1|1">pilot</system>
+		<system chance="100" levelRatio="3|1">doors</system>
+		<system chance="100" levelRatio="2|1">sensors</system>
+		<system chance="100" levelRatio="1">medbay</system>
+		<system chance="100" levelRatio="5|1">oxygen</system>
+		<system chance="100" levelRatio="0|5|1">shields</system>
+		<system chance="100" levelRatio="1|2|3|1">engines</system>
+		<system chance="100" levelRatio="0|2|3|1">weapons</system>
+		<system chance="20" levelRatio="0|3|2">drones</system>
+		<system chance="30" levelRatio="1">teleporter</system>
+		<system chance="20" levelRatio="3|1">cloaking</system>
+		<system chance="100" levelRatio="1|1">artillery</system>
+		<system chance="0" levelRatio="4|1">clonebay</system>
+		<system chance="0" levelRatio="0|1">battery</system>
+		<system chance="20" levelRatio="1">mind</system>
+		<system chance="40" levelRatio="1">hacking</system>
+	</systemsList>
+	<!-- this is zero-based -->
+		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_HARD">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<weapon rarity="4">LASER_BURST_1</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2</weapon>
+		<weapon rarity="3">LASER_HEAVY_1</weapon>
+		<weapon rarity="4">MISSILES_1</weapon>
+		<weapon rarity="3">MISSILES_2_PLAYER</weapon>
+		<weapon rarity="2">BEAM_1</weapon>
+		<weapon rarity="3">ION_1</weapon>
+		<weapon rarity="3">BOMB_1</weapon>
+		<weapon rarity="4">BOMB_ION</weapon>
+		<weapon rarity="5">BOMB_HEAL</weapon>
+		<weapon rarity="4">SHOTGUN_PLAYER</weapon>
+		<weapon rarity="5">ION_STUN</weapon>
+		<weapon rarity="4">BOMB_STUN</weapon>
+		<weapon rarity="5">BOMB_HEAL_SYSTEM</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN_PLAYER</weapon>
+		<weapon start="true" rarity="4">LASER_HEAVY_1_SP</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2_A</weapon>
+		<weapon start="true" rarity="3">LASER_BURST_3</weapon>
+		<weapon rarity="4">MISSILES_2</weapon>
+		<weapon rarity="3">BEAM_LONG</weapon>
+		<weapon rarity="5">BEAM_FIRE</weapon>
+		<weapon rarity="3">ION_2</weapon>
+		<weapon rarity="4">BOMB_FIRE</weapon>
+		<weapon rarity="3">BEAM_HULL</weapon>
+		<weapon start="true" rarity="2">LASER_HULL_1</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN</weapon>
+		<weapon start="true" rarity="3">SHOTGUN</weapon>
+		<weapon rarity="3">MISSILE_CHARGEGUN</weapon>
+		<weapon start="true" rarity="2">LASER_CHAINGUN</weapon>
+		<weapon rarity="3">ION_CHARGEGUN</weapon>
+		<weapon rarity="4">LASER_HEAVY_2</weapon>
+		<weapon rarity="4">MISSILES_3</weapon>
+		<weapon rarity="5">MISSILES_BURST</weapon>
+		<weapon rarity="5">MISSILES_BREACH</weapon>
+		<weapon start="true" rarity="3">BEAM_2</weapon>
+		<weapon rarity="3">ION_4</weapon>
+		<weapon rarity="3">LASER_HULL_2</weapon>
+		<weapon rarity="4">SHOTGUN_2</weapon>
+		<weapon rarity="4">ION_CHAINGUN</weapon>
+		<weapon rarity="4">LASER_CHARGEGUN_2</weapon>
+		<weapon rarity="4">LASER_BURST_5</weapon>
+		<weapon rarity="4">BEAM_3</weapon>
+		<weapon rarity="5">LASER_CHAINGUN_2</weapon>
+	</weaponsList>
+	<dronesList>
+		<drone rarity="1" start="true">COMBAT_1</drone>
+		<drone rarity="5" start="false">COMBAT_2</drone>
+		<drone rarity="2" start="true">COMBAT_BEAM</drone>
+		<drone rarity="1" start="true">DEFENSE_1</drone>
+		<drone rarity="4" start="false">DEFENSE_2</drone>
+		<drone rarity="1" start="false">REPAIR</drone>
+		<drone rarity="2" start="false">BATTLE</drone>
+		<drone rarity="4" start="true">BOARDER</drone>
+		<drone rarity="4" start="true">BOARDER_ION</drone>
+		<drone rarity="3" start="false">DRONE_SHIELD_PLAYER</drone>
+		<drone rarity="4" start="false">ANTI_DRONE</drone>
+		<drone rarity="4" start="false">COMBAT_BEAM_2</drone>
+		<drone rarity="5" start="false">COMBAT_FIRE</drone>
+	</dronesList>
+	<!-- Count ratio determined how many augments there will be, with the zero-based index of each number determining how many augments -->
+	<augList countRatio="9|1">
+		<augment rarity="3" start="false">O2_MASKS</augment>
+		<augment rarity="4" start="false">EXPLOSIVE_REPLICATOR</augment>
+		<augment rarity="3" start="false">FIRE_EXTINGUISHERS</augment>
+		<augment rarity="3" start="false">FLEET_DISTRACTION</augment>
+		<augment rarity="4" start="false">TELEPORT_HEAL</augment>
+		<augment rarity="5" start="false">BATTERY_BOOSTER</augment>
+		<augment rarity="4" start="false">DEFENSE_SCRAMBLER</augment>
+		<augment rarity="5" start="false">BACKUP_DNA</augment>
+		<augment rarity="4" start="false">HACKING_STUN</augment>
+		<augment rarity="4" start="false">LIFE_SCANNER</augment>
+		<augment rarity="4" start="false">ZOLTAN_BYPASS</augment>
+		<augment rarity="2" start="false">SCRAP_COLLECTOR</augment>
+		<augment rarity="2" start="false">ADV_SCANNERS</augment>
+		<augment rarity="3" start="false">AUTO_COOLDOWN</augment>
+		<augment rarity="2" start="false">SHIELD_RECHARGE</augment>
+		<augment rarity="5" start="false">WEAPON_PREIGNITE</augment>
+		<augment rarity="1" start="false">FTL_BOOSTER</augment>
+		<augment rarity="1" start="false">FTL_JUMPER</augment>
+		<augment rarity="3" start="false">DRONE_RECOVERY</augment>
+		<augment rarity="1" start="false">FTL_JAMMER</augment>
+		<augment rarity="4" start="false">STASIS_POD</augment>
+		<augment rarity="3" start="false">CLOAK_FIRE</augment>
+		<augment rarity="4" start="false">SYSTEM_CASING</augment>
+		<augment rarity="3" start="false">ION_ARMOR</augment>
+		<augment rarity="1" start="false">DRONE_SPEED</augment>
+		<augment rarity="4" start="false">REPAIR_ARM</augment>
+	</augList>
+	
+	<artilleryList>
+		<artillery>LASER_ARTILLERY</artillery>
+		<artillery>MISSILE_ARTILLERY</artillery>
+		<artillery>BEAM_ARTILLERY</artillery>
+		<artillery>ION_ARTILLERY</artillery>
+		<artillery>ION_HEAVY_ARTILLERY</artillery>
+		<artillery>SHOTGUN_ARTILLERY</artillery>
+	</artilleryList>
+	
+	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
+	<crewList countRatio="0|0|1|3|2">
+		<crew rarity="1" min="2">human</crew>
+		<crew rarity="1">human</crew>
+		<crew rarity="2">engi</crew>
+		<crew rarity="2">energy</crew>
+		<crew rarity="3">mantis</crew>
+		<crew rarity="4">anaerobic</crew>
+		<crew rarity="3">rock</crew>
+		<crew rarity="4">slug</crew>
+	</crewList>
+	
+	<!-- includes subsystems, 'chance' unlike rarity is percentage based. Index determined system count and levels for countRato and levelRatio respectively. Index is not zero-based for either -->
+	<systemsList countRatio="0|0|0|0|0|0|0|0|4|1|0">
+		<system chance="100" levelRatio="4|1|1">pilot</system>
+		<system chance="100" levelRatio="3|1">doors</system>
+		<system chance="100" levelRatio="2|1">sensors</system>
+		<system chance="100" levelRatio="1">medbay</system>
+		<system chance="100" levelRatio="5|1">oxygen</system>
+		<system chance="100" levelRatio="0|5|1">shields</system>
+		<system chance="100" levelRatio="0|3|2">engines</system>
+		<system chance="100" levelRatio="0|1|3|2">weapons</system>
+		<system chance="10" levelRatio="0|3|2">drones</system>
+		<system chance="0" levelRatio="1">teleporter</system>
+		<system chance="0" levelRatio="3|1">cloaking</system>
+		<system chance="0" levelRatio="1|1">artillery</system>
+		<system chance="0" levelRatio="4|1">clonebay</system>
+		<system chance="5" levelRatio="0|1">battery</system>
+		<system chance="0" levelRatio="1">mind</system>
+		<system chance="10" levelRatio="1">hacking</system>
+	</systemsList>
+	<!-- this is zero-based -->
+	<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_JELLY">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<weapon rarity="4">LASER_BURST_1</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2</weapon>
+		<weapon rarity="3">LASER_HEAVY_1</weapon>
+		<weapon rarity="4">MISSILES_1</weapon>
+		<weapon rarity="3">MISSILES_2_PLAYER</weapon>
+		<weapon rarity="2">BEAM_1</weapon>
+		<weapon rarity="3">ION_1</weapon>
+		<weapon rarity="2">BOMB_1</weapon>
+		<weapon rarity="2">BOMB_ION</weapon>
+		<weapon rarity="3">BOMB_HEAL</weapon>
+		<weapon rarity="4">SHOTGUN_PLAYER</weapon>
+		<weapon rarity="5">ION_STUN</weapon>
+		<weapon rarity="2">BOMB_STUN</weapon>
+		<weapon rarity="5">BOMB_HEAL_SYSTEM</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN_PLAYER</weapon>
+		<weapon start="true" rarity="4">LASER_HEAVY_1_SP</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2_A</weapon>
+		<weapon start="true" rarity="3">LASER_BURST_3</weapon>
+		<weapon rarity="4">MISSILES_2</weapon>
+		<weapon rarity="3">BEAM_LONG</weapon>
+		<weapon rarity="5">BEAM_FIRE</weapon>
+		<weapon rarity="3">ION_2</weapon>
+		<weapon rarity="3">BOMB_FIRE</weapon>
+		<weapon rarity="3">BEAM_HULL</weapon>
+		<weapon start="true" rarity="2">LASER_HULL_1</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN</weapon>
+		<weapon start="true" rarity="3">SHOTGUN</weapon>
+		<weapon start="true" rarity="3">MISSILE_CHARGEGUN</weapon>
+		<weapon start="true" rarity="2">LASER_CHAINGUN</weapon>
+		<weapon rarity="3">ION_CHARGEGUN</weapon>
+		<weapon rarity="4">LASER_HEAVY_2</weapon>
+		<weapon rarity="4">MISSILES_3</weapon>
+		<weapon rarity="5">MISSILES_BURST</weapon>
+		<weapon rarity="5">MISSILES_BREACH</weapon>
+		<weapon start="true" rarity="3">BEAM_2</weapon>
+		<weapon rarity="3">ION_4</weapon>
+		<weapon rarity="3">LASER_HULL_2</weapon>
+		<weapon rarity="4">SHOTGUN_2</weapon>
+		<weapon rarity="4">ION_CHAINGUN</weapon>
+		<weapon rarity="4">LASER_CHARGEGUN_2</weapon>
+		<weapon rarity="4">LASER_BURST_5</weapon>
+		<weapon rarity="4">BEAM_3</weapon>
+		<weapon rarity="5">LASER_CHAINGUN_2</weapon>
+		<weapon rarity="2">BOMB_BREACH_1</weapon>
+		<weapon rarity="3">BOMB_BREACH_2</weapon>
+		<weapon rarity="3">BEAM_BIO</weapon>
+	</weaponsList>
+	<dronesList>
+		<drone start="true" rarity="1">COMBAT_1</drone>
+		<drone rarity="5">COMBAT_2</drone>
+		<drone start="true" rarity="2">COMBAT_BEAM</drone>
+		<drone start="true" rarity="1">DEFENSE_1</drone>
+		<drone rarity="4">DEFENSE_2</drone>
+		<drone rarity="1">REPAIR</drone>
+		<drone rarity="2">BATTLE</drone>
+		<drone start="true" rarity="4">BOARDER</drone>
+		<drone start="true" rarity="4">BOARDER_ION</drone>
+		<drone rarity="3">DRONE_SHIELD_PLAYER</drone>
+		<drone rarity="4">ANTI_DRONE</drone>
+		<drone rarity="4">COMBAT_BEAM_2</drone>
+		<drone rarity="5">COMBAT_FIRE</drone>
+	</dronesList>
+	<!-- Count ratio determined how many augments there will be, with the zero-based index of each number determining how many augments -->
+	<augList countRatio="0|65|35|0">
+		<augment rarity="1">O2_MASKS</augment>
+		<augment rarity="4">EXPLOSIVE_REPLICATOR</augment>
+		<augment rarity="3">FIRE_EXTINGUISHERS</augment>
+		<augment rarity="1">FLEET_DISTRACTION</augment>
+		<augment rarity="2">TELEPORT_HEAL</augment>
+		<augment rarity="5">BATTERY_BOOSTER</augment>
+		<augment rarity="4">DEFENSE_SCRAMBLER</augment>
+		<augment rarity="5">BACKUP_DNA</augment>
+		<augment rarity="2">HACKING_STUN</augment>
+		<augment rarity="4">ZOLTAN_BYPASS</augment>
+		<augment rarity="1">SCRAP_COLLECTOR</augment>
+		<augment rarity="2">ADV_SCANNERS</augment>
+		<augment rarity="3">AUTO_COOLDOWN</augment>
+		<augment rarity="2">SHIELD_RECHARGE</augment>
+		<augment rarity="5">WEAPON_PREIGNITE</augment>
+		<augment rarity="1">FTL_BOOSTER</augment>
+		<augment rarity="1">FTL_JUMPER</augment>
+		<augment rarity="3">DRONE_RECOVERY</augment>
+		<augment rarity="1">FTL_JAMMER</augment>
+		<augment rarity="5">STASIS_POD</augment>
+		<augment start="true" rarity="1">SLUG_GEL</augment>
+		<augment rarity="3">CLOAK_FIRE</augment>
+		<augment rarity="5">SYSTEM_CASING</augment>
+		<augment rarity="3">ION_ARMOR</augment>
+		<augment rarity="1">DRONE_SPEED</augment>
+		<augment rarity="4">REPAIR_ARM</augment>
+	</augList>
+
+	<artilleryList>
+		<artillery>LASER_ARTILLERY</artillery>
+		<artillery>MISSILE_ARTILLERY</artillery>
+		<artillery>BEAM_ARTILLERY</artillery>
+		<artillery>ION_ARTILLERY</artillery>
+		<artillery>ION_HEAVY_ARTILLERY</artillery>
+		<artillery>SHOTGUN_ARTILLERY</artillery>
+	</artilleryList>
+
+	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
+	<crewList countRatio="0|0|2|2|1">
+		<crew rarity="1" min="2">slug</crew>
+		<crew rarity="1">slug</crew>
+		<crew rarity="5">human</crew>
+		<crew rarity="5">engi</crew>
+		<crew rarity="5">energy</crew>
+		<crew rarity="5">mantis</crew>
+		<crew rarity="5">anaerobic</crew>
+		<crew rarity="5">rock</crew>
+	</crewList>
+
+	<!-- includes subsystems, 'chance' unlike rarity is percentage based. Index determined system count and levels for countRato and levelRatio respectively. Index is not zero-based for either -->
+	<systemsList countRatio="0|0|0|0|0|0|0|10|40|30|20|0">
+		<system chance="100" levelRatio="4|1|1">pilot</system>
+		<system chance="100" levelRatio="1|3">doors</system>
+		<system chance="20" levelRatio="1">sensors</system>
+		<system chance="80" levelRatio="1">medbay</system>
+		<system chance="100" levelRatio="4|1">oxygen</system>
+		<system chance="100" levelRatio="0|5|1">shields</system>
+		<system chance="100" levelRatio="0|2|1">engines</system>
+		<system chance="100" levelRatio="0|1|3|2">weapons</system>
+		<system chance="15" levelRatio="0|3|2">drones</system>
+		<system chance="35" levelRatio="1">teleporter</system>
+		<system chance="10" levelRatio="3|1">cloaking</system>
+		<system chance="0" levelRatio="1|1">artillery</system>
+		<system chance="0" levelRatio="4|1">clonebay</system>
+		<system chance="10" levelRatio="0|1">battery</system>
+		<system chance="60" levelRatio="1">mind</system>
+		<system chance="60" levelRatio="1">hacking</system>
+	</systemsList>
+	<!-- this is zero-based -->
+		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_MANTIS">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<weapon rarity="4">LASER_BURST_1</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2</weapon>
+		<weapon rarity="3">LASER_HEAVY_1</weapon>
+		<weapon rarity="4">MISSILES_1</weapon>
+		<weapon rarity="3">MISSILES_2_PLAYER</weapon>
+		<weapon rarity="2">BEAM_1</weapon>
+		<weapon rarity="3">ION_1</weapon>
+		<weapon start="true" rarity="3">BOMB_1</weapon>
+		<weapon start="true" rarity="4">BOMB_ION</weapon>
+		<weapon start="true" rarity="5">BOMB_HEAL</weapon>
+		<weapon rarity="4">SHOTGUN_PLAYER</weapon>
+		<weapon start="true" rarity="5">ION_STUN</weapon>
+		<weapon start="true" rarity="4">BOMB_STUN</weapon>
+		<weapon start="true" rarity="5">BOMB_HEAL_SYSTEM</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN_PLAYER</weapon>
+		<weapon start="true" rarity="4">LASER_HEAVY_1_SP</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2_A</weapon>
+		<weapon start="true" rarity="3">LASER_BURST_3</weapon>
+		<weapon rarity="4">MISSILES_2</weapon>
+		<weapon rarity="3">BEAM_LONG</weapon>
+		<weapon rarity="5">BEAM_FIRE</weapon>
+		<weapon rarity="3">ION_2</weapon>
+		<weapon rarity="4">BOMB_FIRE</weapon>
+		<weapon rarity="3">BEAM_HULL</weapon>
+		<weapon start="true" rarity="2">LASER_HULL_1</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN</weapon>
+		<weapon rarity="3">SHOTGUN</weapon>
+		<weapon rarity="3">MISSILE_CHARGEGUN</weapon>
+		<weapon rarity="2">LASER_CHAINGUN</weapon>
+		<weapon rarity="3">ION_CHARGEGUN</weapon>
+		<weapon rarity="4">LASER_HEAVY_2</weapon>
+		<weapon rarity="4">MISSILES_3</weapon>
+		<weapon rarity="5">MISSILES_BURST</weapon>
+		<weapon rarity="5">MISSILES_BREACH</weapon>
+		<weapon rarity="3">BEAM_2</weapon>
+		<weapon rarity="3">ION_4</weapon>
+		<weapon rarity="3">LASER_HULL_2</weapon>
+		<weapon rarity="4">SHOTGUN_2</weapon>
+		<weapon rarity="4">ION_CHAINGUN</weapon>
+		<weapon rarity="4">LASER_CHARGEGUN_2</weapon>
+		<weapon rarity="4">LASER_BURST_5</weapon>
+		<weapon rarity="4">BEAM_3</weapon>
+		<weapon rarity="5">LASER_CHAINGUN_2</weapon>
+		<weapon rarity="4">BOMB_LOCK</weapon>
+		<weapon rarity="3">BOMB_BREACH_1</weapon>
+		<weapon rarity="4">BOMB_BREACH_2</weapon>
+	</weaponsList>
+	<dronesList>
+		<drone start="true" rarity="1">COMBAT_1</drone>
+		<drone rarity="5">COMBAT_2</drone>
+		<drone start="true" rarity="2">COMBAT_BEAM</drone>
+		<drone start="true" rarity="1">DEFENSE_1</drone>
+		<drone rarity="4">DEFENSE_2</drone>
+		<drone rarity="1">REPAIR</drone>
+		<drone rarity="2">BATTLE</drone>
+		<drone start="true" rarity="4">BOARDER</drone>
+		<drone start="true" rarity="4">BOARDER_ION</drone>
+		<drone rarity="3">DRONE_SHIELD_PLAYER</drone>
+		<drone rarity="4">ANTI_DRONE</drone>
+		<drone rarity="4">COMBAT_BEAM_2</drone>
+		<drone rarity="5">COMBAT_FIRE</drone>
+	</dronesList>
+	<!-- Count ratio determined how many augments there will be, with the zero-based index of each number determining how many augments -->
+	<augList countRatio="0|80|20|0">
+		<augment rarity="3">O2_MASKS</augment>
+		<augment rarity="4">EXPLOSIVE_REPLICATOR</augment>
+		<augment rarity="3">FIRE_EXTINGUISHERS</augment>
+		<augment rarity="3">FLEET_DISTRACTION</augment>
+		<augment rarity="4">TELEPORT_HEAL</augment>
+		<augment rarity="5">BATTERY_BOOSTER</augment>
+		<augment rarity="4">DEFENSE_SCRAMBLER</augment>
+		<augment rarity="5">BACKUP_DNA</augment>
+		<augment rarity="4">HACKING_STUN</augment>
+		<augment rarity="4">LIFE_SCANNER</augment>
+		<augment rarity="4">ZOLTAN_BYPASS</augment>
+		<augment rarity="5">NANO_MEDBAY</augment>
+		<augment start="true" rarity="1">CREW_STIMS</augment>
+		<augment rarity="2">SCRAP_COLLECTOR</augment>
+		<augment rarity="2">ADV_SCANNERS</augment>
+		<augment rarity="3">AUTO_COOLDOWN</augment>
+		<augment rarity="2">SHIELD_RECHARGE</augment>
+		<augment rarity="5">WEAPON_PREIGNITE</augment>
+		<augment rarity="1">FTL_BOOSTER</augment>
+		<augment rarity="1">FTL_JUMPER</augment>
+		<augment rarity="3">DRONE_RECOVERY</augment>
+		<augment rarity="1">FTL_JAMMER</augment>
+		<augment rarity="4">STASIS_POD</augment>
+		<augment rarity="3">CLOAK_FIRE</augment>
+		<augment rarity="3">ION_ARMOR</augment>
+		<augment rarity="1">DRONE_SPEED</augment>
+		<augment rarity="4">REPAIR_ARM</augment>
+	</augList>
+
+	<artilleryList>
+		<artillery>LASER_ARTILLERY</artillery>
+		<artillery>MISSILE_ARTILLERY</artillery>
+		<artillery>BEAM_ARTILLERY</artillery>
+		<artillery>ION_ARTILLERY</artillery>
+		<artillery>ION_HEAVY_ARTILLERY</artillery>
+		<artillery>SHOTGUN_ARTILLERY</artillery>
+	</artilleryList>
+
+	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
+	<crewList countRatio="0|0|1|3|1">
+		<crew rarity="1" min="2">mantis</crew>
+		<crew rarity="3">mantis</crew>
+		<crew rarity="5">human</crew>
+		<crew rarity="3">engi</crew>
+		<crew rarity="5">energy</crew>
+		<crew rarity="3">anaerobic</crew>
+		<crew rarity="3">rock</crew>
+		<crew rarity="5">slug</crew>
+	</crewList>
+
+	<!-- includes subsystems, 'chance' unlike rarity is percentage based. Index determined system count and levels for countRato and levelRatio respectively. Index is not zero-based for either -->
+	<systemsList countRatio="0|0|0|0|0|0|0|0|0|55|35|10|0|0">
+		<system chance="100" levelRatio="4|1|1">pilot</system>
+		<system chance="100" levelRatio="3|1">doors</system>
+		<system chance="80" levelRatio="2|1">sensors</system>
+		<system chance="100" levelRatio="1">medbay</system>
+		<system chance="100" levelRatio="5|1">oxygen</system>
+		<system chance="100" levelRatio="0|5|1|1">shields</system>
+		<system chance="100" levelRatio="2|2|1">engines</system>
+		<system chance="100" levelRatio="2|2|1">weapons</system>
+		<system chance="20" levelRatio="0|3|2">drones</system>
+		<system chance="100" levelRatio="4|1">teleporter</system>
+		<system chance="0" levelRatio="3|1">cloaking</system>
+		<system chance="0" levelRatio="1|1">artillery</system>
+		<system chance="0" levelRatio="4|1">clonebay</system>
+		<system chance="0" levelRatio="0|1">battery</system>
+		<system chance="20" levelRatio="1">mind</system>
+		<system chance="10" levelRatio="1">hacking</system>
+	</systemsList>
+	<!-- this is zero-based -->
+		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_ROCK">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<weapon rarity="4">LASER_BURST_1</weapon>
+		<weapon rarity="2">LASER_BURST_2</weapon>
+		<weapon rarity="3">LASER_HEAVY_1</weapon>
+		<weapon start="true" rarity="4">MISSILES_1</weapon>
+		<weapon start="true" rarity="2">MISSILES_2_PLAYER</weapon>
+		<weapon rarity="2">BEAM_1</weapon>
+		<weapon rarity="3">ION_1</weapon>
+		<weapon rarity="3">BOMB_1</weapon>
+		<weapon rarity="4">BOMB_ION</weapon>
+		<weapon rarity="5">BOMB_HEAL</weapon>
+		<weapon rarity="4">SHOTGUN_PLAYER</weapon>
+		<weapon rarity="5">ION_STUN</weapon>
+		<weapon rarity="4">BOMB_STUN</weapon>
+		<weapon rarity="5">BOMB_HEAL_SYSTEM</weapon>
+		<weapon rarity="3">LASER_CHARGEGUN_PLAYER</weapon>
+		<weapon start="true" rarity="4">LASER_HEAVY_1_SP</weapon>
+		<weapon rarity="2">LASER_BURST_2_A</weapon>
+		<weapon rarity="3">LASER_BURST_3</weapon>
+		<weapon start="true" rarity="4">MISSILES_2</weapon>
+		<weapon rarity="3">BEAM_LONG</weapon>
+		<weapon rarity="5">BEAM_FIRE</weapon>
+		<weapon rarity="3">ION_2</weapon>
+		<weapon rarity="2">BOMB_FIRE</weapon>
+		<weapon rarity="3">BEAM_HULL</weapon>
+		<weapon rarity="2">LASER_HULL_1</weapon>
+		<weapon rarity="3">LASER_CHARGEGUN</weapon>
+		<weapon start="true" rarity="3">SHOTGUN</weapon>
+		<weapon start="true" rarity="2">MISSILE_CHARGEGUN</weapon>
+		<weapon rarity="2">LASER_CHAINGUN</weapon>
+		<weapon rarity="3">ION_CHARGEGUN</weapon>
+		<weapon rarity="4">LASER_HEAVY_2</weapon>
+		<weapon start="true" rarity="3">MISSILES_3</weapon>
+		<weapon rarity="2">MISSILES_BURST</weapon>
+		<weapon rarity="3">MISSILES_BREACH</weapon>
+		<weapon start="true" rarity="3">BEAM_2</weapon>
+		<weapon rarity="3">ION_4</weapon>
+		<weapon rarity="3">LASER_HULL_2</weapon>
+		<weapon rarity="4">SHOTGUN_2</weapon>
+		<weapon rarity="4">ION_CHAINGUN</weapon>
+		<weapon rarity="4">LASER_CHARGEGUN_2</weapon>
+		<weapon rarity="4">LASER_BURST_5</weapon>
+		<weapon rarity="4">BEAM_3</weapon>
+		<weapon rarity="5">LASER_CHAINGUN_2</weapon>
+		<weapon rarity="5">CRYSTAL_BURST_1</weapon>
+		<weapon rarity="5">CRYSTAL_HEAVY_1</weapon>
+		<weapon rarity="5">BOMB_LOCK</weapon>
+		<weapon rarity="3">BOMB_BREACH_1</weapon>
+		<weapon rarity="4">BOMB_BREACH_2</weapon>
+	</weaponsList>
+	<dronesList>
+		<drone start="true" rarity="1">COMBAT_1</drone>
+		<drone rarity="5">COMBAT_2</drone>
+		<drone start="true" rarity="2">COMBAT_BEAM</drone>
+		<drone start="true" rarity="1">DEFENSE_1</drone>
+		<drone rarity="4">DEFENSE_2</drone>
+		<drone rarity="1">REPAIR</drone>
+		<drone rarity="2">BATTLE</drone>
+		<drone start="true" rarity="4">BOARDER</drone>
+		<drone start="true" rarity="4">BOARDER_ION</drone>
+		<drone rarity="3">DRONE_SHIELD_PLAYER</drone>
+		<drone rarity="4">ANTI_DRONE</drone>
+		<drone rarity="4">COMBAT_BEAM_2</drone>
+		<drone rarity="5">COMBAT_FIRE</drone>
+	</dronesList>
+	<!-- Count ratio determined how many augments there will be, with the zero-based index of each number determining how many augments -->
+	<augList countRatio="0|80|20|0">
+		<augment rarity="3">O2_MASKS</augment>
+		<augment rarity="1">EXPLOSIVE_REPLICATOR</augment>
+		<augment rarity="3">FIRE_EXTINGUISHERS</augment>
+		<augment rarity="3">FLEET_DISTRACTION</augment>
+		<augment rarity="4">TELEPORT_HEAL</augment>
+		<augment rarity="5">BATTERY_BOOSTER</augment>
+		<augment rarity="4">DEFENSE_SCRAMBLER</augment>
+		<augment rarity="5">BACKUP_DNA</augment>
+		<augment rarity="4">HACKING_STUN</augment>
+		<augment rarity="4">LIFE_SCANNER</augment>
+		<augment rarity="4">ZOLTAN_BYPASS</augment>
+		<augment rarity="2">SCRAP_COLLECTOR</augment>
+		<augment rarity="2">ADV_SCANNERS</augment>
+		<augment rarity="3">AUTO_COOLDOWN</augment>
+		<augment rarity="2">SHIELD_RECHARGE</augment>
+		<augment rarity="5">WEAPON_PREIGNITE</augment>
+		<augment rarity="2">FTL_BOOSTER</augment>
+		<augment rarity="2">FTL_JUMPER</augment>
+		<augment rarity="3">DRONE_RECOVERY</augment>
+		<augment rarity="2">FTL_JAMMER</augment>
+		<augment rarity="4">STASIS_POD</augment>
+		<augment start="true" rarity="1">ROCK_ARMOR</augment>
+		<augment rarity="3">CLOAK_FIRE</augment>
+		<augment rarity="3">ION_ARMOR</augment>
+		<augment rarity="3">DRONE_SPEED</augment>
+		<augment rarity="4">REPAIR_ARM</augment>
+	</augList>
+
+	<artilleryList>
+		<artillery>LASER_ARTILLERY</artillery>
+		<artillery>MISSILE_ARTILLERY</artillery>
+		<artillery>BEAM_ARTILLERY</artillery>
+		<artillery>ION_ARTILLERY</artillery>
+		<artillery>ION_HEAVY_ARTILLERY</artillery>
+		<artillery>SHOTGUN_ARTILLERY</artillery>
+	</artilleryList>
+
+	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
+	<crewList countRatio="0|0|1|3|2">
+		<crew rarity="1" min="2">rock</crew>
+		<crew rarity="1">rock</crew>
+		<crew rarity="1">rock</crew>
+		<crew rarity="5">human</crew>
+		<crew rarity="5">engi</crew>
+		<crew rarity="5">energy</crew>
+		<crew rarity="5">mantis</crew>
+		<crew rarity="4">anaerobic</crew>
+		<crew rarity="5">slug</crew>
+		<crew rarity="3">crystal</crew>
+	</crewList>
+
+	<!-- includes subsystems, 'chance' unlike rarity is percentage based. Index determined system count and levels for countRato and levelRatio respectively. Index is not zero-based for either -->
+	<systemsList countRatio="0|0|0|0|0|0|10|50|25|15|0">
+		<system chance="100" levelRatio="4|1|1">pilot</system>
+		<system chance="65" levelRatio="3|1">doors</system>
+		<system chance="80" levelRatio="2|1">sensors</system>
+		<system chance="100" levelRatio="1">medbay</system>
+		<system chance="100" levelRatio="5|1">oxygen</system>
+		<system chance="100" levelRatio="0|5|1">shields</system>
+		<system chance="100" levelRatio="0|2|1">engines</system>
+		<system chance="100" levelRatio="0|2|4|2">weapons</system>
+		<system chance="0" levelRatio="0|3|2">drones</system>
+		<system chance="10" levelRatio="1">teleporter</system>
+		<system chance="10" levelRatio="3|1">cloaking</system>
+		<system chance="0" levelRatio="1|1">artillery</system>
+		<system chance="0" levelRatio="4|1">clonebay</system>
+		<system chance="0" levelRatio="0|1">battery</system>
+		<system chance="10" levelRatio="1">mind</system>
+		<system chance="10" levelRatio="1">hacking</system>
+	</systemsList>
+	<!-- this is zero-based -->
+		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
+</shipArmament>
+
+<shipArmament name="PLAYER_SHIP_STEALTH">
+	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
+	<weaponsList>
+		<weapon rarity="4">LASER_BURST_1</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2</weapon>
+		<weapon rarity="3">LASER_HEAVY_1</weapon>
+		<weapon rarity="4">MISSILES_1</weapon>
+		<weapon rarity="3">MISSILES_2_PLAYER</weapon>
+		<weapon rarity="2">BEAM_1</weapon>
+		<weapon rarity="3">ION_1</weapon>
+		<weapon rarity="3">BOMB_1</weapon>
+		<weapon rarity="4">BOMB_ION</weapon>
+		<weapon rarity="5">BOMB_HEAL</weapon>
+		<weapon rarity="4">SHOTGUN_PLAYER</weapon>
+		<weapon rarity="5">ION_STUN</weapon>
+		<weapon rarity="4">BOMB_STUN</weapon>
+		<weapon rarity="5">BOMB_HEAL_SYSTEM</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN_PLAYER</weapon>
+		<weapon start="true" rarity="4">LASER_HEAVY_1_SP</weapon>
+		<weapon start="true" rarity="2">LASER_BURST_2_A</weapon>
+		<weapon start="true" rarity="3">LASER_BURST_3</weapon>
+		<weapon rarity="4">MISSILES_2</weapon>
+		<weapon rarity="3">BEAM_LONG</weapon>
+		<weapon rarity="5">BEAM_FIRE</weapon>
+		<weapon rarity="3">ION_2</weapon>
+		<weapon rarity="4">BOMB_FIRE</weapon>
+		<weapon rarity="3">BEAM_HULL</weapon>
+		<weapon start="true" rarity="2">LASER_HULL_1</weapon>
+		<weapon start="true" rarity="3">LASER_CHARGEGUN</weapon>
+		<weapon start="true" rarity="3">SHOTGUN</weapon>
+		<weapon rarity="3">MISSILE_CHARGEGUN</weapon>
+		<weapon start="true" rarity="2">LASER_CHAINGUN</weapon>
+		<weapon rarity="3">ION_CHARGEGUN</weapon>
+		<weapon rarity="4">LASER_HEAVY_2</weapon>
+		<weapon rarity="4">MISSILES_3</weapon>
+		<weapon rarity="5">MISSILES_BURST</weapon>
+		<weapon rarity="5">MISSILES_BREACH</weapon>
+		<weapon start="true" rarity="3">BEAM_2</weapon>
+		<weapon rarity="3">ION_4</weapon>
+		<weapon rarity="3">LASER_HULL_2</weapon>
+		<weapon start="true" rarity="4">SHOTGUN_2</weapon>
+		<weapon rarity="4">ION_CHAINGUN</weapon>
+		<weapon rarity="4">LASER_CHARGEGUN_2</weapon>
+		<weapon start="true" rarity="3">LASER_BURST_5</weapon>
+		<weapon start="true" rarity="2">BEAM_3</weapon>
+		<weapon start="true" rarity="3">LASER_CHAINGUN_2</weapon>
+	</weaponsList>
+	<dronesList>
+		<drone start="true" rarity="4">COMBAT_1</drone>
+		<drone rarity="5">COMBAT_2</drone>
+		<drone start="true" rarity="4">COMBAT_BEAM</drone>
+		<drone start="true" rarity="1">DEFENSE_1</drone>
+		<drone rarity="3">DEFENSE_2</drone>
+		<drone rarity="2">REPAIR</drone>
+		<drone rarity="4">BATTLE</drone>
+		<drone start="true" rarity="4">BOARDER_ION</drone>
+		<drone rarity="2">DRONE_SHIELD_PLAYER</drone>
+		<drone rarity="2">ANTI_DRONE</drone>
+		<drone rarity="4">COMBAT_BEAM_2</drone>
+		<drone rarity="5">COMBAT_FIRE</drone>
+	</dronesList>
+	<!-- Count ratio determined how many augments there will be, with the zero-based index of each number determining how many augments -->
+	<augList countRatio="0|50|50|0">
+		<augment rarity="3">O2_MASKS</augment>
+		<augment rarity="4">EXPLOSIVE_REPLICATOR</augment>
+		<augment rarity="3">FIRE_EXTINGUISHERS</augment>
+		<augment rarity="3">FLEET_DISTRACTION</augment>
+		<augment rarity="4">TELEPORT_HEAL</augment>
+		<augment rarity="5">BATTERY_BOOSTER</augment>
+		<augment rarity="4">DEFENSE_SCRAMBLER</augment>
+		<augment rarity="5">BACKUP_DNA</augment>
+		<augment rarity="4">HACKING_STUN</augment>
+		<augment rarity="4">LIFE_SCANNER</augment>
+		<augment rarity="4">ZOLTAN_BYPASS</augment>
+		<augment rarity="2">SCRAP_COLLECTOR</augment>
+		<augment rarity="2">ADV_SCANNERS</augment>
+		<augment rarity="3">AUTO_COOLDOWN</augment>
+		<augment rarity="2">SHIELD_RECHARGE</augment>
+		<augment rarity="3">WEAPON_PREIGNITE</augment>
+		<augment rarity="1">FTL_BOOSTER</augment>
+		<augment rarity="1">FTL_JUMPER</augment>
+		<augment rarity="3">DRONE_RECOVERY</augment>
+		<augment rarity="1">FTL_JAMMER</augment>
+		<augment rarity="4">STASIS_POD</augment>
+		<augment rarity="1">CLOAK_FIRE</augment>
+		<augment start="true" rarity="1">SYSTEM_CASING</augment>
+		<augment rarity="3">ION_ARMOR</augment>
+		<augment rarity="3">DRONE_SPEED</augment>
+		<augment rarity="4">REPAIR_ARM</augment>
+	</augList>
+
+	<artilleryList>
+		<artillery>LASER_ARTILLERY</artillery>
+		<artillery>MISSILE_ARTILLERY</artillery>
+		<artillery>BEAM_ARTILLERY</artillery>
+		<artillery>ION_ARTILLERY</artillery>
+		<artillery>ION_HEAVY_ARTILLERY</artillery>
+		<artillery>SHOTGUN_ARTILLERY</artillery>
+	</artilleryList>
+
+	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
+	<crewList countRatio="0|0|1|3|2">
+		<crew rarity="1" min="1">human</crew>
+		<crew rarity="2">engi</crew>
+		<crew rarity="2">energy</crew>
+		<crew rarity="3">mantis</crew>
+		<crew rarity="4">anaerobic</crew>
+		<crew rarity="3">rock</crew>
+		<crew rarity="4">slug</crew>
+	</crewList>
+
+	<!-- includes subsystems, 'chance' unlike rarity is percentage based. Index determined system count and levels for countRato and levelRatio respectively. Index is not zero-based for either -->
+	<systemsList countRatio="0|0|0|0|0|0|0|10|80|10|0|0">
+		<system chance="100" levelRatio="4|1|1">pilot</system>
+		<system chance="100" levelRatio="3|1">doors</system>
+		<system chance="80" levelRatio="2|1">sensors</system>
+		<system chance="100" levelRatio="1">medbay</system>
+		<system chance="100" levelRatio="5|1">oxygen</system>
+		<system chance="0" levelRatio="0|5|1|1">shields</system>
+		<system chance="100" levelRatio="0|1|2|3">engines</system>
+		<system chance="100" levelRatio="0|2|3|2">weapons</system>
+		<system chance="50" levelRatio="0|3|2">drones</system>
+		<system chance="0" levelRatio="1">teleporter</system>
+		<system chance="85" levelRatio="1|1">cloaking</system>
+		<system chance="0" levelRatio="1|1">artillery</system>
+		<system chance="0" levelRatio="4|1">clonebay</system>
+		<system chance="20" levelRatio="0|1">battery</system>
+		<system chance="10" levelRatio="1">mind</system>
+		<system chance="40" levelRatio="1">hacking</system>
+	</systemsList>
+	<!-- this is zero-based -->
+		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
+</shipArmament>
+
+</shipArmaments>

@@ -3,6 +3,7 @@
 	<pack name="Extra Pack">
 		<chance>(0 to 100)</chance>
 		<hyperspaceReq/>
+		<patchAfter/>
 	</pack>-->
 	<pack name="AntiBio">
 		<chance>50</chance>
@@ -18,5 +19,10 @@
 	</pack>
 	<pack name="Pulsers">
 		<chance>50</chance>
-	</pack>
+	</pack><!--
+	<pack name="HyperSonic">
+		<chance>100</chance>
+		<hyperspaceReq/>
+		<patchAfter/>
+	</pack>-->
 </packs>

@@ -1,0 +1,11 @@
+<mod:findLike type="shipBlueprint">
+	<mod-append:aug name="SUPER_SPEED"/>
+</mod:findLike>
+<mod:findWithChildLike type="shipBlueprint" child-type="desc">
+	
+	<mod:findLike type="aug">
+		<mod:selector name="SUPER_SPEED"/>
+		<mod:removeTag/>
+	</mod:findLike>
+	
+</mod:findWithChildLike>
