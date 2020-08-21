@@ -3,7 +3,7 @@
 <!-- [|]R[^"] - Find |P_ or |R_ to remove -->
 
 <!-- Power, dlc-req, type, etc. are defined in the lists below -->
-<blueprintList name="all_weapons">
+<blueprintList blueprint="all_weapons">
 	<blueprint power="1">LASER_BURST_1</blueprint>
 	<blueprint power="1">LASER_BURST_2</blueprint>
 	<blueprint power="2">LASER_BURST_2_A</blueprint>
@@ -12,71 +12,231 @@
 	<blueprint power="1">LASER_HEAVY_1</blueprint>
 	<blueprint power="3">LASER_HEAVY_2</blueprint>
 	<blueprint power="2">LASER_HEAVY_1_SP</blueprint>
+	<blueprint power="3">LASER_BURST_4</blueprint>
+	<blueprint power="2">LASER_HULL_1</blueprint>
+	<blueprint power="3">LASER_HULL_2</blueprint>
+	<blueprint power="1">BA_LASER_OLD</blueprint>
+	<blueprint power="1">BA_LASER_DUAL_OLD</blueprint>
+	<blueprint power="2">BA_LASER_AUTO_1</blueprint>
+	<blueprint power="3">BA_LASER_AUTO_2</blueprint>
+	<blueprint power="1">BA_LASER_BURST_1_2</blueprint>
+	<blueprint power="2">BA_LASER_DUAL_2</blueprint>
+	<blueprint power="1">BA_LASER_HULL_SMALL</blueprint>
+	<blueprint power="1">BA_LASER_BURST_SCATTER_1</blueprint>
+	<blueprint power="3">BA_LASER_BURST_SCATTER_2</blueprint>
+	<blueprint power="1">BA_LASER_HEAVY_SCATTER_1</blueprint>
+	<blueprint power="2">BA_LASER_HEAVY_SCATTER_2</blueprint>
+	<blueprint power="3">BA_LASER_ARTILLERY_1</blueprint>
+	<blueprint power="4">BA_LASER_ARTILLERY_2</blueprint>
+	<blueprint power="2">BA_LASER_HULLCRUSHER</blueprint>
+	<blueprint power="1" dlc="true">BA_SHOTGUN_SMALL</blueprint>
+	<blueprint power="2" dlc="true">BA_SHOTGUN_SCATTER</blueprint>
+	<blueprint power="2" dlc="true">BA_LASER_CHARGEGUN_MEDIUM</blueprint>
+	<blueprint power="3" dlc="true">BA_LASER_CHARGEGUN_HEAVY</blueprint>
+
+	<blueprint power="1" dlc="true">SHOTGUN_PLAYER</blueprint>
+	<blueprint power="2" dlc="true">SHOTGUN</blueprint>
+	<blueprint power="3" dlc="true">SHOTGUN_2</blueprint>
+	<blueprint power="2" dlc="true">LASER_CHAINGUN</blueprint>
+	<blueprint power="4" dlc="true">LASER_CHAINGUN_2</blueprint>
+	<blueprint power="1" dlc="true">LASER_CHARGEGUN_PLAYER</blueprint>
+	<blueprint power="2" dlc="true">LASER_CHARGEGUN</blueprint>
+	<blueprint power="3" dlc="true">LASER_CHARGEGUN_2</blueprint>
+
+	<blueprint power="1">BA_LASER_LIGHT_1</blueprint>
+	<blueprint power="1">BA_LASER_LIGHT_2</blueprint>
+	<blueprint power="2">BA_LASER_LIGHT_3</blueprint>
+	<blueprint power="1">BA_LASER_LIGHT_SCATTER_1</blueprint>
+	<blueprint power="1">BA_LASER_LIGHT_SCATTER_2</blueprint>
+	<blueprint power="2">BA_LASER_LIGHT_SCATTER_3</blueprint>
+	<blueprint power="2">BA_LASER_LIGHT_ARTILLERY</blueprint>
+	<blueprint power="1">BA_LASER_LIGHT_AUTO</blueprint>
+	<blueprint power="3" dlc="true">BA_LASER_LIGHT_CHAINGUN</blueprint>
+	<blueprint power="1" dlc="true">BA_PLASMA_1</blueprint>
+	<blueprint power="2" dlc="true">BA_PLASMA_2</blueprint>
+	<blueprint power="2">BEAM_BIO</blueprint>
+	<blueprint power="2">BA_BEAM_BIO_2</blueprint>
+	<blueprint power="4">BA_BEAM_BIO_FOCUS</blueprint>
+	<blueprint power="1" type="bomb">BA_BOMB_NANO_1</blueprint>
+	<blueprint power="2" type="bomb">BA_BOMB_NANO_2</blueprint>
+	<blueprint power="1" type="bomb" dlc="true">BOMB_HEAL_SYSTEM</blueprint>
+	<blueprint power="1" type="bomb">BOMB_HEAL</blueprint>
+	<blueprint power="1" type="bomb">BA_BOMB_HEAL_2</blueprint>
+	<blueprint power="2" type="bomb">BA_BOMB_CLUSTER_STUN</blueprint>
+	<blueprint power="1" type="missile">BA_MINES_SMALL</blueprint>
+	<blueprint power="1" type="missile">BA_MINES_MEDIUM</blueprint>
+	<blueprint power="1" type="missile">BA_MINES_BIG</blueprint>
+	<blueprint power="2" type="missile">BA_MINES_TECH</blueprint>
+	<blueprint power="1">BA_STUNGUN_1</blueprint>
+	<blueprint power="2">BA_STUNGUN_2</blueprint>
+	<blueprint power="1" type="bomb">BA_BOMB_BIO</blueprint>
+
+	<blueprint power="2">BA_BEAM_AUTO</blueprint>
+	<blueprint power="2">BEAM_HULL</blueprint>
+	<blueprint power="4">BEAM_3</blueprint>
+	<blueprint power="3">BEAM_2</blueprint>
+	<blueprint power="1">BEAM_1</blueprint>
+	<blueprint power="2">BEAM_LONG</blueprint>
+	<blueprint power="1">BA_BEAM_HASTA</blueprint>
+	<blueprint power="2">BA_BEAM_HULL_SMALL</blueprint>
+	<blueprint power="2">BA_BEAM_BARDICHE</blueprint>
+	<blueprint power="4">BA_BEAM_NAGINATA</blueprint>
+	<blueprint power="2">BA_BEAM_PERNACH</blueprint>
+	<blueprint power="4">BA_BEAM_MAUL</blueprint>
+	<blueprint power="1">BA_BEAM_SCYTHE</blueprint>
+	<blueprint power="3">BA_BEAM_FLAIL_DAMAGE</blueprint>
+	<blueprint power="1" dlc="true">BA_BEAM_ADAPTIVE_1</blueprint>
+	<blueprint power="2" dlc="true">BA_BEAM_ADAPTIVE_2</blueprint>
+	<blueprint power="3" dlc="true">BA_BEAM_ADAPTIVE_3</blueprint>
+	<blueprint power="2">BEAM_FIRE</blueprint>
+	<blueprint power="3">BA_BEAM_FIRE_2</blueprint>
+	<blueprint power="2">BA_BEAM_FIRE_FOCUS</blueprint>
+	<blueprint power="1">BA_BEAM_BATON</blueprint>
+	<blueprint power="2">BA_BEAM_BO</blueprint>
+
+	<blueprint power="1" type="bomb" dlc="true">BOMB_STUN</blueprint>
+	<blueprint power="1" type="bomb">BOMB_ION</blueprint>
+	<blueprint power="1" type="bomb">BOMB_1</blueprint>
+	<blueprint power="1" type="bomb">BOMB_BREACH_1</blueprint>
+	<blueprint power="2" type="bomb">BOMB_FIRE</blueprint>
+	<blueprint power="1" type="bomb">BA_BOMB_FIRE_SMALL</blueprint>
+	<blueprint power="2" type="bomb">BA_BOMB_FIRE_2</blueprint>
+	<blueprint power="2" type="bomb">BA_BOMB_CLUSTER_FIRE</blueprint>
+	<blueprint power="1" type="bomb">BA_BOMB_CLUSTER_1</blueprint>
+	<blueprint power="1" type="bomb">BA_BOMB_CLUSTER_ION</blueprint>
+	<blueprint power="2" type="bomb">BA_BOMB_CLUSTER_BREACH</blueprint>
+	<blueprint power="2" type="bomb">BOMB_BREACH_2</blueprint>
+	<blueprint power="1" type="bomb">BA_BOMB_BIG</blueprint>
+
 	<blueprint power="1" type="missile">MISSILES_1</blueprint>
 	<blueprint power="1" type="missile">MISSILES_2_PLAYER</blueprint>
-	<blueprint power="2" type="missile">MISSILES_2</blueprint>
 	<blueprint power="3" type="missile">MISSILES_3</blueprint>
 	<blueprint power="3" type="missile">MISSILES_BURST</blueprint>
 	<blueprint power="3" type="missile">MISSILES_BREACH</blueprint>
-	<blueprint power="1">BEAM_1</blueprint>
-	<blueprint power="2">BEAM_LONG</blueprint>
-	<blueprint power="3">BEAM_2</blueprint>
-	<blueprint power="4">BEAM_3</blueprint>
-	<blueprint power="2">BEAM_FIRE</blueprint>
-	<blueprint power="2">BEAM_BIO</blueprint>
-	<blueprint power="2">LASER_HULL_1</blueprint>
-	<blueprint power="3">LASER_HULL_2</blueprint>
-	<blueprint power="2">BEAM_HULL</blueprint>
+	<blueprint power="2" type="missile">MISSILE_CHARGEGUN</blueprint>
+	<blueprint power="1" type="missile">BA_MISSILES_ASTERIA</blueprint>
+	<blueprint power="2" type="missile">BA_MISSILES_PERYTON</blueprint>
+	<blueprint power="3" type="missile">BA_MISSILES_COCKATRICE</blueprint>
+	<blueprint power="3" type="missile">BA_MISSILES_SIMURGH</blueprint>
+	<blueprint power="3" type="missile">BA_MISSILES_FIRE</blueprint>
+	<blueprint power="2" type="missile">BA_MISSILES_ONI</blueprint>
+	<blueprint power="4" type="missile">BA_MISSILES_IFRIT</blueprint>
+	<blueprint power="2" type="missile">BA_MISSILES_4</blueprint>
+	<blueprint power="1" type="missile">BA_MISSILES_SWARM_1</blueprint>
+	<blueprint power="2" type="missile">BA_MISSILES_SWARM_2</blueprint>
+	<blueprint power="2" type="missile">BA_MISSILES_SWARM_3</blueprint>
+	<blueprint power="3" type="missile">BA_SHOTGUN_MISSILES</blueprint>
+	<blueprint power="1" type="missile" dlc="true">BA_MISSILE_CHARGEGUN_SMALL</blueprint>
+	<blueprint power="1" type="missile">BA_MISSILES_HULL_SMALL</blueprint>
 	<blueprint power="2" type="missile">MISSILES_HULL</blueprint>
+
 	<blueprint power="1">ION_1</blueprint>
 	<blueprint power="2">ION_2</blueprint>
 	<blueprint power="3">ION_4</blueprint>
-	<blueprint power="1" type="bomb">BOMB_1</blueprint>
-	<blueprint power="1" type="bomb">BOMB_BREACH_1</blueprint>
-	<blueprint power="2" type="bomb">BOMB_BREACH_2</blueprint>
-	<blueprint power="2" type="bomb">BOMB_FIRE</blueprint>
-	<blueprint power="1" type="bomb">BOMB_ION</blueprint>
-	<blueprint power="1" type="bomb">BOMB_HEAL</blueprint>
+	<blueprint power="3">ION_CHAINGUN</blueprint>
+	<blueprint power="1" dlc="true">ION_STUN</blueprint>
+	<blueprint power="2">ION_CHARGEGUN</blueprint>
+	<blueprint power="2" dlc="true">BA_ION_2_STUN</blueprint>
+	<blueprint power="1">BA_ION_BURST_1_STUN</blueprint>
+	<blueprint power="2">BA_SHOTGUN_ION_1</blueprint>
+	<blueprint power="3">BA_SHOTGUN_ION_2</blueprint>
+	<blueprint power="1">BA_ION_PIERCE_1</blueprint>
+	<blueprint power="2">BA_ION_PIERCE_2</blueprint>
+	<blueprint power="1">BA_ION_BURST_1</blueprint>
+	<blueprint power="3">BA_ION_BURST_2</blueprint>
+	<blueprint power="4">BA_ION_BURST_3</blueprint>
+	<blueprint power="3">BA_ION_HEAVY_3</blueprint>
+	<blueprint power="2">BA_ION_HEAVY_2</blueprint>
+	<blueprint power="2">BA_EFFECTOR_1</blueprint>
+	<blueprint power="2">BA_EFFECTOR_2</blueprint>
+	<blueprint power="2">BA_EFFECTOR_3</blueprint>
+	<blueprint power="3">BA_EFFECTOR_ADAPTIVE</blueprint>
+	<blueprint power="2">BA_EFFECTOR_3_OLD</blueprint>
+  
 	<blueprint power="1" type="bomb">BOMB_LOCK</blueprint>
 	<blueprint power="2">CRYSTAL_BURST_1</blueprint>
 	<blueprint power="3">CRYSTAL_BURST_2</blueprint>
 	<blueprint power="1">CRYSTAL_HEAVY_1</blueprint>
 	<blueprint power="3">CRYSTAL_HEAVY_2</blueprint>
-	<blueprint power="1" dlc="true">BOMB_HEAL_SYSTEM</blueprint>
-	<blueprint power="1" dlc="true">SHOTGUN_PLAYER</blueprint>
-	<blueprint power="2" dlc="true">SHOTGUN</blueprint>
-	<blueprint power="3" dlc="true">ARTILLERY_FED_C</blueprint>
-	<blueprint power="3" dlc="true">SHOTGUN_2</blueprint>
-	<blueprint power="2" dlc="true" type="missile">MISSILE_CHARGEGUN</blueprint>
-	<blueprint power="2" dlc="true">LASER_CHAINGUN</blueprint>
-	<blueprint power="4" dlc="true">LASER_CHAINGUN_2</blueprint>
-	<blueprint power="3" dlc="true">ION_CHAINGUN</blueprint>
-	<blueprint power="1" dlc="true">LASER_CHARGEGUN_PLAYER</blueprint>
-	<blueprint power="2" dlc="true">LASER_CHARGEGUN</blueprint>
-	<blueprint power="3" dlc="true">LASER_CHARGEGUN_2</blueprint>
-	<blueprint power="2" dlc="true">ION_CHARGEGUN</blueprint>
-	<blueprint power="1" dlc="true" type="bomb">ION_STUN</blueprint>
-	<blueprint power="1" dlc="true" type="bomb">BOMB_STUN</blueprint>
+	<blueprint power="2">BA_BOMB_LOCK_2</blueprint>
+	<blueprint power="1">BA_CRYSTAL_LIGHT_1</blueprint>
+	<blueprint power="2">BA_CRYSTAL_LIGHT_2</blueprint>
+	<blueprint power="1">BA_CRYSTAL_HEAVY_LOCKDOWN_1</blueprint>
+	<blueprint power="3">BA_CRYSTAL_HEAVY_LOCKDOWN_2</blueprint>
 </blueprintList>
 
-<blueprintList name="all_drones">
-	<blueprint power="2" dlc="false">COMBAT_1</blueprint>
-	<blueprint power="4" dlc="false">COMBAT_2</blueprint>
-	<blueprint power="2" dlc="false">COMBAT_BEAM</blueprint>
-	<blueprint power="2" dlc="false">DEFENSE_1</blueprint>
-	<blueprint power="3" dlc="false">DEFENSE_2</blueprint>
-	<blueprint power="1" dlc="false">REPAIR</blueprint>
-	<blueprint power="2" dlc="false">BATTLE</blueprint>
-	<blueprint power="3" dlc="false">BOARDER</blueprint>
-	<blueprint power="2" dlc="false">SHIP_REPAIR</blueprint>
-	<blueprint power="3" dlc="true">BOARDER_ION</blueprint>
-	<blueprint power="2" dlc="true">DRONE_SHIELD_PLAYER</blueprint>
-	<blueprint power="1" dlc="true">ANTI_DRONE</blueprint>
+<blueprintList blueprint="all_drones">
+	<blueprint power="2">COMBAT_1</blueprint>
+	<blueprint power="4">COMBAT_2</blueprint>
+	<blueprint power="2">COMBAT_BEAM</blueprint>
 	<blueprint power="3" dlc="true">COMBAT_BEAM_2</blueprint>
+	<blueprint power="2">DEFENSE_1</blueprint>
+	<blueprint power="3">DEFENSE_2</blueprint>
+	<blueprint power="1">REPAIR</blueprint>
+	<blueprint power="2">BATTLE</blueprint>
+	<blueprint power="3">BOARDER</blueprint>
+	<blueprint power="3" dlc="true">BOARDER_ION</blueprint>
+	<blueprint power="2">SHIP_REPAIR</blueprint>
 	<blueprint power="3" dlc="true">COMBAT_FIRE</blueprint>
+	<blueprint power="3" dlc="true">DRONE_SHIELD</blueprint>
+	<blueprint power="2" dlc="true">DRONE_SHIELD_PLAYER</blueprint>
+	<blueprint power="3" dlc="true">DE_DRONE_SHIELD_BIG</blueprint>
+	<blueprint power="3" dlc="true">DE_DRONE_SHIELD_SMALL</blueprint>
+	<blueprint power="2">DE_DRONE_MISSILES_1</blueprint>
+	<blueprint power="3">DE_DRONE_MISSILES_2</blueprint>
+	<blueprint power="4">DE_DRONE_MISSILES_3</blueprint>
+	<blueprint power="4">DE_DRONE_BEAM_2</blueprint>
+	<blueprint power="2">DE_DRONE_STEALTH_BEAM_1</blueprint>
+	<blueprint power="3">DE_DRONE_STEALTH_BEAM_2</blueprint>
+	<blueprint power="1">DE_DRONE_ION_1</blueprint>
+	<blueprint power="2">DE_DRONE_ION_2</blueprint>
+	<blueprint power="4">DE_DRONE_ION_3</blueprint>
+	<blueprint power="3">DE_DRONE_ION_PIERCE</blueprint>
+	<blueprint power="1">DE_DRONE_LIGHT_1</blueprint>
+	<blueprint power="2">DE_DRONE_LIGHT_2</blueprint>
+	<blueprint power="2">DE_DRONE_LIGHT_MISSILE</blueprint>
+	<blueprint power="2">DE_DRONE_LIGHT_MISSILE_FIRE</blueprint>
+	<blueprint power="3">DE_DRONE_MISSILES_BARRAGE</blueprint>
+	<blueprint power="1" dlc="true">DE_DRONE_LIGHT_MISSILE_STUN</blueprint>
+	<blueprint power="2">DE_DRONE_MINE_SMALL</blueprint>
+	<blueprint power="2">DE_DRONE_MINE_MEDIUM</blueprint>
+	<blueprint power="2">DE_DRONE_HEAVY_SCATTER</blueprint>
+	<blueprint power="2">DE_DRONE_LIGHT_SCATTER</blueprint>
+	<blueprint power="2">DE_DRONE_SCATTER</blueprint>
+	<blueprint power="3">DE_DRONE_BEAM_FOCUS</blueprint>
+	<blueprint power="2">DE_DRONE_HEAVY_1</blueprint>
+	<blueprint power="3">DE_DRONE_HEAVY_2</blueprint>
+	<blueprint power="2">DE_DRONE_HULL_1</blueprint>
+	<blueprint power="4">DE_DRONE_HULL_2</blueprint>
+	<blueprint power="3">DE_DRONE_HULL_BEAM</blueprint>
+	<blueprint power="2">DE_DRONE_PLASMA</blueprint>
+	<blueprint power="1">DE_DRONE_DEFENSE_LIGHT_1</blueprint>
+	<blueprint power="2">DE_DRONE_DEFENSE_LIGHT_2</blueprint>
+	<blueprint power="1">DE_DRONE_DEFENSE_LIGHT_MISSILE</blueprint>
+	<blueprint power="1">DE_DRONE_DEFENSE_SWARM_MISSILE</blueprint>
+	<blueprint power="2">DE_DRONE_DEFENSE_HEAVY</blueprint>
+	<blueprint power="1">DE_DRONE_DEFENSE_HEAVY_SMALL</blueprint>
+	<blueprint power="2">DE_DRONE_DEFENSE_SCATTER</blueprint>
+	<blueprint power="4">DE_DRONE_DEFENSE_3</blueprint>
+	<blueprint power="1">DE_DRONE_DEFENSE_MINESWEEPER</blueprint>
+	<blueprint power="1" dlc="true">ANTI_DRONE</blueprint>
+	<blueprint power="2" dlc="true">DE_ANTI_DRONE_2</blueprint>
+	<blueprint power="3" dlc="true">DE_ANTI_DRONE_EFFECTOR</blueprint>
+	<blueprint power="1" dlc="true">DE_ANTI_DRONE_MISSILES</blueprint>
+	<blueprint power="2" dlc="true">DE_ANTI_DRONE_LASER_HEAVY</blueprint>
+	<blueprint power="1">DE_REPAIR_2</blueprint>
+	<blueprint power="2">DE_REPAIR_3</blueprint>
+	<blueprint power="1">DE_REPAIR_4</blueprint>
+	<blueprint power="2">DE_BATTLE_2</blueprint>
+	<blueprint power="3">DE_BATTLE_3</blueprint>
+	<blueprint power="2">DE_BATTLE_4</blueprint>
+	<blueprint power="3">DE_BOARDER_2</blueprint>
+	<blueprint power="2">DE_BOARDER_3</blueprint>
+	<blueprint power="3">DE_BOARDER_4</blueprint>
+	<blueprint power="3">DE_SHIP_REPAIR_2</blueprint>
 </blueprintList>
 
-<blueprintList name="all_augments">
+<blueprintList blueprint="all_augments">
 	<blueprint dlc="false">ROCK_ARMOR</blueprint>
 	<blueprint dlc="false">CRYSTAL_SHARDS</blueprint>
 	<blueprint dlc="false">ENERGY_SHIELD</blueprint>
@@ -109,9 +269,37 @@
 	<blueprint dlc="true">HACKING_STUN</blueprint>
 	<blueprint dlc="true">LIFE_SCANNER</blueprint>
 	<blueprint dlc="true">ZOLTAN_BYPASS</blueprint>
+
+	<blueprint dlc="false">AE_REPAIR_KIT</blueprint>
+	<blueprint dlc="false">AE_BEACON_KIT</blueprint>
+	<blueprint dlc="false">AE_SCIENCE</blueprint>
+	<blueprint dlc="false">AE_TRADE_BOOSTER</blueprint>
+	<blueprint dlc="false">AE_REQUISITION</blueprint>
+	<blueprint dlc="false">AE_COMBAT_SIMULATOR</blueprint>
+	<blueprint dlc="false">AE_BOUNTYHUNTER</blueprint>
+	<blueprint dlc="false">AE_AUG_GENERATOR</blueprint>
+	<blueprint dlc="false">AE_ADV_THRUSTERS</blueprint>
+	<blueprint dlc="false">AE_AMMO_MANUFACTURER</blueprint>
+	<blueprint dlc="false">AE_DRONE_MANUFACTURER</blueprint>
+	<blueprint dlc="false">AE_HOLOGRAM_GENERATOR</blueprint>
+	<blueprint dlc="false">AE_SECTOR_SCANNER</blueprint>
+	<blueprint dlc="false">AE_SECTOR_MAPPING</blueprint>
+	<blueprint dlc="false">AE_CLONE_LAB</blueprint>
+	<blueprint dlc="false">AE_PRODUCTION</blueprint>
+	<blueprint dlc="false">AE_FUEL_RECYCLE</blueprint>
+	<blueprint dlc="false">AE_WEAPON_JAMMER</blueprint>
+	<blueprint dlc="false">AE_SHIELD_JAMMER</blueprint>
+	<blueprint dlc="false">AE_DRONE_JAMMER</blueprint>
+	<blueprint dlc="false">AE_TELEPORTER_JAMMER</blueprint>
+	<blueprint dlc="false">AE_ADV_EFFECTOR</blueprint>
+	<blueprint dlc="false">AE_IRRADIATOR</blueprint>
+	<blueprint dlc="false">AE_MIND_SHIELD</blueprint>
+	<blueprint dlc="false">AE_FIREWALL</blueprint>
+	<blueprint dlc="false">AE_NEBULA_SCANNER</blueprint>
+	<blueprint dlc="false">AE_ASB</blueprint>
 </blueprintList>
 
-<blueprintList name="all_crew">
+<blueprintList blueprint="all_crew">
 	<blueprint dlc="false">human</blueprint>
 	<blueprint dlc="false">engi</blueprint>
 	<blueprint dlc="false">energy</blueprint>
@@ -120,9 +308,11 @@
 	<blueprint dlc="false">crystal</blueprint>
 	<blueprint dlc="false">slug</blueprint>
 	<blueprint dlc="true">anaerobic</blueprint>
+	
+	<blueprint dlc="false">ghost</blueprint>
 </blueprintList>
 
-<blueprintList name="all_systems">
+<blueprintList blueprint="all_systems">
 	<blueprint>pilot</blueprint>
 	<blueprint>doors</blueprint>
 	<blueprint>sensors</blueprint>
@@ -141,7 +331,7 @@
 	<blueprint dlc="true">hacking</blueprint>
 </blueprintList>
 
-<shipArmament name="PLAYER_SHIP_ANAEROBIC">
+<shipArmament blueprint="PLAYER_SHIP_ANAEROBIC">
 	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
 	<weaponsList>
 		<weapon start="false" rarity="4">LASER_BURST_1</weapon>
@@ -233,6 +423,34 @@
 		<augment rarity="3" start="false">ION_ARMOR</augment>
 		<augment rarity="2" start="false">DRONE_SPEED</augment>
 		<augment rarity="4" start="false">REPAIR_ARM</augment>
+
+		<blueprint>AE_REPAIR_KIT</blueprint>
+		<blueprint>AE_BEACON_KIT</blueprint>
+		<blueprint>AE_SCIENCE</blueprint>
+		<blueprint>AE_TRADE_BOOSTER</blueprint>
+		<blueprint>AE_REQUISITION</blueprint>
+		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
+		<blueprint>AE_BOUNTYHUNTER</blueprint>
+		<blueprint>AE_AUG_GENERATOR</blueprint>
+		<blueprint>AE_ADV_THRUSTERS</blueprint>
+		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
+		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
+		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
+		<blueprint>AE_SECTOR_SCANNER</blueprint>
+		<blueprint>AE_SECTOR_MAPPING</blueprint>
+		<blueprint>AE_CLONE_LAB</blueprint>
+		<blueprint>AE_PRODUCTION</blueprint>
+		<blueprint>AE_FUEL_RECYCLE</blueprint>
+		<blueprint>AE_WEAPON_JAMMER</blueprint>
+		<blueprint>AE_SHIELD_JAMMER</blueprint>
+		<blueprint>AE_DRONE_JAMMER</blueprint>
+		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
+		<blueprint>AE_ADV_EFFECTOR</blueprint>
+		<blueprint>AE_IRRADIATOR</blueprint>
+		<blueprint>AE_MIND_SHIELD</blueprint>
+		<blueprint>AE_FIREWALL</blueprint>
+		<blueprint>AE_NEBULA_SCANNER</blueprint>
+		<blueprint>AE_ASB</blueprint>
 	</augList>
 	
 	<artilleryList>
@@ -242,6 +460,9 @@
 		<artillery>ION_ARTILLERY</artillery>
 		<artillery>ION_HEAVY_ARTILLERY</artillery>
 		<artillery>SHOTGUN_ARTILLERY</artillery>
+		
+		<artillery>ARTILLERY_FED_C</artillery>
+		<artillery>ARTILLERY_FED_C</artillery>
 	</artilleryList>
 	
 	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
@@ -279,7 +500,7 @@
 	<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
-<shipArmament name="PLAYER_SHIP_CIRCLE">
+<shipArmament blueprint="PLAYER_SHIP_CIRCLE">
 	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
 	<weaponsList>
 		<weapon rarity="4">LASER_BURST_1</weapon>
@@ -369,6 +590,34 @@
 		<augment rarity="2">ION_ARMOR</augment>
 		<augment rarity="1">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
+
+		<blueprint>AE_REPAIR_KIT</blueprint>
+		<blueprint>AE_BEACON_KIT</blueprint>
+		<blueprint>AE_SCIENCE</blueprint>
+		<blueprint>AE_TRADE_BOOSTER</blueprint>
+		<blueprint>AE_REQUISITION</blueprint>
+		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
+		<blueprint>AE_BOUNTYHUNTER</blueprint>
+		<blueprint>AE_AUG_GENERATOR</blueprint>
+		<blueprint>AE_ADV_THRUSTERS</blueprint>
+		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
+		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
+		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
+		<blueprint>AE_SECTOR_SCANNER</blueprint>
+		<blueprint>AE_SECTOR_MAPPING</blueprint>
+		<blueprint>AE_CLONE_LAB</blueprint>
+		<blueprint>AE_PRODUCTION</blueprint>
+		<blueprint>AE_FUEL_RECYCLE</blueprint>
+		<blueprint>AE_WEAPON_JAMMER</blueprint>
+		<blueprint>AE_SHIELD_JAMMER</blueprint>
+		<blueprint>AE_DRONE_JAMMER</blueprint>
+		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
+		<blueprint>AE_ADV_EFFECTOR</blueprint>
+		<blueprint>AE_IRRADIATOR</blueprint>
+		<blueprint>AE_MIND_SHIELD</blueprint>
+		<blueprint>AE_FIREWALL</blueprint>
+		<blueprint>AE_NEBULA_SCANNER</blueprint>
+		<blueprint>AE_ASB</blueprint>
 	</augList>
 	
 	<artilleryList>
@@ -378,6 +627,9 @@
 		<artillery>ION_ARTILLERY</artillery>
 		<artillery>ION_HEAVY_ARTILLERY</artillery>
 		<artillery>SHOTGUN_ARTILLERY</artillery>
+		
+		<artillery>BA_ARTILLERY_CIRCLE</artillery>
+		<artillery>BA_ARTILLERY_CIRCLE_2</artillery>
 	</artilleryList>
 	
 	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
@@ -415,7 +667,7 @@
 	<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
-<shipArmament name="PLAYER_SHIP_CRYSTAL">
+<shipArmament blueprint="PLAYER_SHIP_CRYSTAL">
 	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
 	<weaponsList>
 		<weapon start="true" rarity="2">CRYSTAL_BURST_1</weapon>
@@ -468,6 +720,34 @@
 		<augment rarity="3">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
 		<augment start="true" rarity="1">CRYSTAL_SHARDS</augment>
+
+		<blueprint>AE_REPAIR_KIT</blueprint>
+		<blueprint>AE_BEACON_KIT</blueprint>
+		<blueprint>AE_SCIENCE</blueprint>
+		<blueprint>AE_TRADE_BOOSTER</blueprint>
+		<blueprint>AE_REQUISITION</blueprint>
+		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
+		<blueprint>AE_BOUNTYHUNTER</blueprint>
+		<blueprint>AE_AUG_GENERATOR</blueprint>
+		<blueprint>AE_ADV_THRUSTERS</blueprint>
+		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
+		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
+		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
+		<blueprint>AE_SECTOR_SCANNER</blueprint>
+		<blueprint>AE_SECTOR_MAPPING</blueprint>
+		<blueprint>AE_CLONE_LAB</blueprint>
+		<blueprint>AE_PRODUCTION</blueprint>
+		<blueprint>AE_FUEL_RECYCLE</blueprint>
+		<blueprint>AE_WEAPON_JAMMER</blueprint>
+		<blueprint>AE_SHIELD_JAMMER</blueprint>
+		<blueprint>AE_DRONE_JAMMER</blueprint>
+		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
+		<blueprint>AE_ADV_EFFECTOR</blueprint>
+		<blueprint>AE_IRRADIATOR</blueprint>
+		<blueprint>AE_MIND_SHIELD</blueprint>
+		<blueprint>AE_FIREWALL</blueprint>
+		<blueprint>AE_NEBULA_SCANNER</blueprint>
+		<blueprint>AE_ASB</blueprint>
 	</augList>
 
 	<artilleryList>
@@ -477,6 +757,9 @@
 		<artillery>ION_ARTILLERY</artillery>
 		<artillery>ION_HEAVY_ARTILLERY</artillery>
 		<artillery>SHOTGUN_ARTILLERY</artillery>
+		
+		<artillery>BA_ARTILLERY_CRYSTAL</artillery>
+		<artillery>BA_ARTILLERY_CRYSTAL</artillery>
 	</artilleryList>
 
 	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
@@ -515,7 +798,7 @@
 		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
-<shipArmament name="PLAYER_SHIP_ENERGY">
+<shipArmament blueprint="PLAYER_SHIP_ENERGY">
 	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
 	<weaponsList>
 		<weapon rarity="4">LASER_BURST_1</weapon>
@@ -599,6 +882,34 @@
 		<augment rarity="1">ION_ARMOR</augment>
 		<augment rarity="1">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
+
+		<blueprint>AE_REPAIR_KIT</blueprint>
+		<blueprint>AE_BEACON_KIT</blueprint>
+		<blueprint>AE_SCIENCE</blueprint>
+		<blueprint>AE_TRADE_BOOSTER</blueprint>
+		<blueprint>AE_REQUISITION</blueprint>
+		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
+		<blueprint>AE_BOUNTYHUNTER</blueprint>
+		<blueprint>AE_AUG_GENERATOR</blueprint>
+		<blueprint>AE_ADV_THRUSTERS</blueprint>
+		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
+		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
+		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
+		<blueprint>AE_SECTOR_SCANNER</blueprint>
+		<blueprint>AE_SECTOR_MAPPING</blueprint>
+		<blueprint>AE_CLONE_LAB</blueprint>
+		<blueprint>AE_PRODUCTION</blueprint>
+		<blueprint>AE_FUEL_RECYCLE</blueprint>
+		<blueprint>AE_WEAPON_JAMMER</blueprint>
+		<blueprint>AE_SHIELD_JAMMER</blueprint>
+		<blueprint>AE_DRONE_JAMMER</blueprint>
+		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
+		<blueprint>AE_ADV_EFFECTOR</blueprint>
+		<blueprint>AE_IRRADIATOR</blueprint>
+		<blueprint>AE_MIND_SHIELD</blueprint>
+		<blueprint>AE_FIREWALL</blueprint>
+		<blueprint>AE_NEBULA_SCANNER</blueprint>
+		<blueprint>AE_ASB</blueprint>
 	</augList>
 
 	<artilleryList>
@@ -608,6 +919,9 @@
 		<artillery>ION_ARTILLERY</artillery>
 		<artillery>ION_HEAVY_ARTILLERY</artillery>
 		<artillery>SHOTGUN_ARTILLERY</artillery>
+		
+		<artillery>BA_ARTILLERY_ENERGY_A</artillery>
+		<artillery>BA_ARTILLERY_ENERGY_A</artillery>
 	</artilleryList>
 
 	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
@@ -645,7 +959,7 @@
 		<reactorCount levelRatio="0|0|10|15|35|35|5|0"/>
 </shipArmament>
 
-<shipArmament name="PLAYER_SHIP_FED">
+<shipArmament blueprint="PLAYER_SHIP_FED">
 	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
 	<weaponsList>
 		<weapon rarity="4">LASER_BURST_1</weapon>
@@ -735,6 +1049,34 @@
 		<augment rarity="3">ION_ARMOR</augment>
 		<augment rarity="1">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
+
+		<blueprint>AE_REPAIR_KIT</blueprint>
+		<blueprint>AE_BEACON_KIT</blueprint>
+		<blueprint>AE_SCIENCE</blueprint>
+		<blueprint>AE_TRADE_BOOSTER</blueprint>
+		<blueprint>AE_REQUISITION</blueprint>
+		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
+		<blueprint>AE_BOUNTYHUNTER</blueprint>
+		<blueprint>AE_AUG_GENERATOR</blueprint>
+		<blueprint>AE_ADV_THRUSTERS</blueprint>
+		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
+		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
+		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
+		<blueprint>AE_SECTOR_SCANNER</blueprint>
+		<blueprint>AE_SECTOR_MAPPING</blueprint>
+		<blueprint>AE_CLONE_LAB</blueprint>
+		<blueprint>AE_PRODUCTION</blueprint>
+		<blueprint>AE_FUEL_RECYCLE</blueprint>
+		<blueprint>AE_WEAPON_JAMMER</blueprint>
+		<blueprint>AE_SHIELD_JAMMER</blueprint>
+		<blueprint>AE_DRONE_JAMMER</blueprint>
+		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
+		<blueprint>AE_ADV_EFFECTOR</blueprint>
+		<blueprint>AE_IRRADIATOR</blueprint>
+		<blueprint>AE_MIND_SHIELD</blueprint>
+		<blueprint>AE_FIREWALL</blueprint>
+		<blueprint>AE_NEBULA_SCANNER</blueprint>
+		<blueprint>AE_ASB</blueprint>
 	</augList>
 
 	<artilleryList>
@@ -777,7 +1119,7 @@
 		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
-<shipArmament name="PLAYER_SHIP_HARD">
+<shipArmament blueprint="PLAYER_SHIP_HARD">
 	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
 	<weaponsList>
 		<weapon rarity="4">LASER_BURST_1</weapon>
@@ -867,6 +1209,34 @@
 		<augment rarity="3" start="false">ION_ARMOR</augment>
 		<augment rarity="1" start="false">DRONE_SPEED</augment>
 		<augment rarity="4" start="false">REPAIR_ARM</augment>
+
+		<blueprint>AE_REPAIR_KIT</blueprint>
+		<blueprint>AE_BEACON_KIT</blueprint>
+		<blueprint>AE_SCIENCE</blueprint>
+		<blueprint>AE_TRADE_BOOSTER</blueprint>
+		<blueprint>AE_REQUISITION</blueprint>
+		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
+		<blueprint>AE_BOUNTYHUNTER</blueprint>
+		<blueprint>AE_AUG_GENERATOR</blueprint>
+		<blueprint>AE_ADV_THRUSTERS</blueprint>
+		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
+		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
+		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
+		<blueprint>AE_SECTOR_SCANNER</blueprint>
+		<blueprint>AE_SECTOR_MAPPING</blueprint>
+		<blueprint>AE_CLONE_LAB</blueprint>
+		<blueprint>AE_PRODUCTION</blueprint>
+		<blueprint>AE_FUEL_RECYCLE</blueprint>
+		<blueprint>AE_WEAPON_JAMMER</blueprint>
+		<blueprint>AE_SHIELD_JAMMER</blueprint>
+		<blueprint>AE_DRONE_JAMMER</blueprint>
+		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
+		<blueprint>AE_ADV_EFFECTOR</blueprint>
+		<blueprint>AE_IRRADIATOR</blueprint>
+		<blueprint>AE_MIND_SHIELD</blueprint>
+		<blueprint>AE_FIREWALL</blueprint>
+		<blueprint>AE_NEBULA_SCANNER</blueprint>
+		<blueprint>AE_ASB</blueprint>
 	</augList>
 	
 	<artilleryList>
@@ -876,6 +1246,9 @@
 		<artillery>ION_ARTILLERY</artillery>
 		<artillery>ION_HEAVY_ARTILLERY</artillery>
 		<artillery>SHOTGUN_ARTILLERY</artillery>
+		
+		<artillery>BA_ARTILLERY_KESTREL_CE</artillery>
+		<artillery>BA_ARTILLERY_KESTREL_CE</artillery>
 	</artilleryList>
 	
 	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
@@ -913,7 +1286,7 @@
 	<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
-<shipArmament name="PLAYER_SHIP_JELLY">
+<shipArmament blueprint="PLAYER_SHIP_JELLY">
 	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
 	<weaponsList>
 		<weapon rarity="4">LASER_BURST_1</weapon>
@@ -1006,6 +1379,34 @@
 		<augment rarity="3">ION_ARMOR</augment>
 		<augment rarity="1">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
+
+		<blueprint>AE_REPAIR_KIT</blueprint>
+		<blueprint>AE_BEACON_KIT</blueprint>
+		<blueprint>AE_SCIENCE</blueprint>
+		<blueprint>AE_TRADE_BOOSTER</blueprint>
+		<blueprint>AE_REQUISITION</blueprint>
+		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
+		<blueprint>AE_BOUNTYHUNTER</blueprint>
+		<blueprint>AE_AUG_GENERATOR</blueprint>
+		<blueprint>AE_ADV_THRUSTERS</blueprint>
+		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
+		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
+		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
+		<blueprint>AE_SECTOR_SCANNER</blueprint>
+		<blueprint>AE_SECTOR_MAPPING</blueprint>
+		<blueprint>AE_CLONE_LAB</blueprint>
+		<blueprint>AE_PRODUCTION</blueprint>
+		<blueprint>AE_FUEL_RECYCLE</blueprint>
+		<blueprint>AE_WEAPON_JAMMER</blueprint>
+		<blueprint>AE_SHIELD_JAMMER</blueprint>
+		<blueprint>AE_DRONE_JAMMER</blueprint>
+		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
+		<blueprint>AE_ADV_EFFECTOR</blueprint>
+		<blueprint>AE_IRRADIATOR</blueprint>
+		<blueprint>AE_MIND_SHIELD</blueprint>
+		<blueprint>AE_FIREWALL</blueprint>
+		<blueprint>AE_NEBULA_SCANNER</blueprint>
+		<blueprint>AE_ASB</blueprint>
 	</augList>
 
 	<artilleryList>
@@ -1015,6 +1416,9 @@
 		<artillery>ION_ARTILLERY</artillery>
 		<artillery>ION_HEAVY_ARTILLERY</artillery>
 		<artillery>SHOTGUN_ARTILLERY</artillery>
+		
+		<artillery>BA_ARTILLERY_SLUG_A</artillery>
+		<artillery>BA_ARTILLERY_SLUG_A</artillery>
 	</artilleryList>
 
 	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
@@ -1052,7 +1456,7 @@
 		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
-<shipArmament name="PLAYER_SHIP_MANTIS">
+<shipArmament blueprint="PLAYER_SHIP_MANTIS">
 	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
 	<weaponsList>
 		<weapon rarity="4">LASER_BURST_1</weapon>
@@ -1146,6 +1550,34 @@
 		<augment rarity="3">ION_ARMOR</augment>
 		<augment rarity="1">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
+
+		<blueprint>AE_REPAIR_KIT</blueprint>
+		<blueprint>AE_BEACON_KIT</blueprint>
+		<blueprint>AE_SCIENCE</blueprint>
+		<blueprint>AE_TRADE_BOOSTER</blueprint>
+		<blueprint>AE_REQUISITION</blueprint>
+		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
+		<blueprint>AE_BOUNTYHUNTER</blueprint>
+		<blueprint>AE_AUG_GENERATOR</blueprint>
+		<blueprint>AE_ADV_THRUSTERS</blueprint>
+		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
+		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
+		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
+		<blueprint>AE_SECTOR_SCANNER</blueprint>
+		<blueprint>AE_SECTOR_MAPPING</blueprint>
+		<blueprint>AE_CLONE_LAB</blueprint>
+		<blueprint>AE_PRODUCTION</blueprint>
+		<blueprint>AE_FUEL_RECYCLE</blueprint>
+		<blueprint>AE_WEAPON_JAMMER</blueprint>
+		<blueprint>AE_SHIELD_JAMMER</blueprint>
+		<blueprint>AE_DRONE_JAMMER</blueprint>
+		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
+		<blueprint>AE_ADV_EFFECTOR</blueprint>
+		<blueprint>AE_IRRADIATOR</blueprint>
+		<blueprint>AE_MIND_SHIELD</blueprint>
+		<blueprint>AE_FIREWALL</blueprint>
+		<blueprint>AE_NEBULA_SCANNER</blueprint>
+		<blueprint>AE_ASB</blueprint>
 	</augList>
 
 	<artilleryList>
@@ -1155,6 +1587,9 @@
 		<artillery>ION_ARTILLERY</artillery>
 		<artillery>ION_HEAVY_ARTILLERY</artillery>
 		<artillery>SHOTGUN_ARTILLERY</artillery>
+		
+		<artillery>BA_ARTILLERY_MANTIS_CE</artillery>
+		<artillery>BA_ARTILLERY_MANTIS_CE</artillery>
 	</artilleryList>
 
 	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
@@ -1192,7 +1627,7 @@
 		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
-<shipArmament name="PLAYER_SHIP_ROCK">
+<shipArmament blueprint="PLAYER_SHIP_ROCK">
 	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
 	<weaponsList>
 		<weapon rarity="4">LASER_BURST_1</weapon>
@@ -1287,6 +1722,34 @@
 		<augment rarity="3">ION_ARMOR</augment>
 		<augment rarity="3">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
+
+		<blueprint>AE_REPAIR_KIT</blueprint>
+		<blueprint>AE_BEACON_KIT</blueprint>
+		<blueprint>AE_SCIENCE</blueprint>
+		<blueprint>AE_TRADE_BOOSTER</blueprint>
+		<blueprint>AE_REQUISITION</blueprint>
+		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
+		<blueprint>AE_BOUNTYHUNTER</blueprint>
+		<blueprint>AE_AUG_GENERATOR</blueprint>
+		<blueprint>AE_ADV_THRUSTERS</blueprint>
+		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
+		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
+		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
+		<blueprint>AE_SECTOR_SCANNER</blueprint>
+		<blueprint>AE_SECTOR_MAPPING</blueprint>
+		<blueprint>AE_CLONE_LAB</blueprint>
+		<blueprint>AE_PRODUCTION</blueprint>
+		<blueprint>AE_FUEL_RECYCLE</blueprint>
+		<blueprint>AE_WEAPON_JAMMER</blueprint>
+		<blueprint>AE_SHIELD_JAMMER</blueprint>
+		<blueprint>AE_DRONE_JAMMER</blueprint>
+		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
+		<blueprint>AE_ADV_EFFECTOR</blueprint>
+		<blueprint>AE_IRRADIATOR</blueprint>
+		<blueprint>AE_MIND_SHIELD</blueprint>
+		<blueprint>AE_FIREWALL</blueprint>
+		<blueprint>AE_NEBULA_SCANNER</blueprint>
+		<blueprint>AE_ASB</blueprint>
 	</augList>
 
 	<artilleryList>
@@ -1296,6 +1759,9 @@
 		<artillery>ION_ARTILLERY</artillery>
 		<artillery>ION_HEAVY_ARTILLERY</artillery>
 		<artillery>SHOTGUN_ARTILLERY</artillery>
+		
+		<artillery>BA_ARTILLERY_ROCK_CE</artillery>
+		<artillery>BA_ARTILLERY_ROCK_PLASMA</artillery>
 	</artilleryList>
 
 	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->
@@ -1335,7 +1801,7 @@
 		<reactorCount levelRatio="0|0|0|0|0|0|0|2|4|5|4|3|2"/>
 </shipArmament>
 
-<shipArmament name="PLAYER_SHIP_STEALTH">
+<shipArmament blueprint="PLAYER_SHIP_STEALTH">
 	<!-- One item with 'start = "true"' is guaranteed to be selected, ensuring the ship is at least useable -->
 	<weaponsList>
 		<weapon rarity="4">LASER_BURST_1</weapon>
@@ -1424,6 +1890,34 @@
 		<augment rarity="3">ION_ARMOR</augment>
 		<augment rarity="3">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
+
+		<blueprint>AE_REPAIR_KIT</blueprint>
+		<blueprint>AE_BEACON_KIT</blueprint>
+		<blueprint>AE_SCIENCE</blueprint>
+		<blueprint>AE_TRADE_BOOSTER</blueprint>
+		<blueprint>AE_REQUISITION</blueprint>
+		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
+		<blueprint>AE_BOUNTYHUNTER</blueprint>
+		<blueprint>AE_AUG_GENERATOR</blueprint>
+		<blueprint>AE_ADV_THRUSTERS</blueprint>
+		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
+		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
+		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
+		<blueprint>AE_SECTOR_SCANNER</blueprint>
+		<blueprint>AE_SECTOR_MAPPING</blueprint>
+		<blueprint>AE_CLONE_LAB</blueprint>
+		<blueprint>AE_PRODUCTION</blueprint>
+		<blueprint>AE_FUEL_RECYCLE</blueprint>
+		<blueprint>AE_WEAPON_JAMMER</blueprint>
+		<blueprint>AE_SHIELD_JAMMER</blueprint>
+		<blueprint>AE_DRONE_JAMMER</blueprint>
+		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
+		<blueprint>AE_ADV_EFFECTOR</blueprint>
+		<blueprint>AE_IRRADIATOR</blueprint>
+		<blueprint>AE_MIND_SHIELD</blueprint>
+		<blueprint>AE_FIREWALL</blueprint>
+		<blueprint>AE_NEBULA_SCANNER</blueprint>
+		<blueprint>AE_ASB</blueprint>
 	</augList>
 
 	<artilleryList>
@@ -1433,6 +1927,9 @@
 		<artillery>ION_ARTILLERY</artillery>
 		<artillery>ION_HEAVY_ARTILLERY</artillery>
 		<artillery>SHOTGUN_ARTILLERY</artillery>
+		
+		<artillery>BA_ARTILLERY_STEALTH</artillery>
+		<artillery>BA_ARTILLERY_STEALTH</artillery>
 	</artilleryList>
 
 	<!-- countRatio is the ratio of how likely each number of crew is (i.e. for below 0% for 1 crew, 20% for 2, 50% for 3 and 30% for 4) Index determines # of crew -->

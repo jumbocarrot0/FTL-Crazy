@@ -2,7 +2,8 @@
 
 <!-- [|]R[^"] - Find |P_ or |R_ to remove -->
 
-<!-- Power, dlc-req, type, etc. are defined in the lists below -->
+<!-- Power, dlc-req, type, etc. are defined in the lists below
+dlc by default is false -->
 <blueprintList name="all_weapons">
 	<blueprint power="1">LASER_BURST_1</blueprint>
 	<blueprint power="1">LASER_BURST_2</blueprint>
