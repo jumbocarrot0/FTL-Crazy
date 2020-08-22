@@ -469,7 +469,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	
 	blueprints_ships = ''''''
 	
-	if randShipCheck is True:
+	if randShipCheck:
 	
 		print('Importing random ship data')
 		
@@ -478,15 +478,12 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		systemLevelWeights = [[], [], [], [], [], [], [], [], [], []]
 		
 		shipWeapons = [[], [], [], [], [], [], [], [], [], []]
-		
 		STshipWeapons = [[], [], [], [], [], [], [], [], [], []]
 		
 		shipDrones = [[], [], [], [], [], [], [], [], [], []]
-		
 		STshipDrones = [[], [], [], [], [], [], [], [], [], []]
 		
 		shipAug = [[], [], [], [], [], [], [], [], [], []]
-		
 		STshipAug = [[], [], [], [], [], [], [], [], [], []]
 		
 		augCountRarities = [[], [], [], [], [], [], [], [], [], []]
@@ -1015,7 +1012,43 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		
 </mod:findLike>
 '''		
-		# Ship Stuff - Crew, Augments, Reactor power and Health.
+		
+	# Hyperspace Stuff
+	
+	if hyperspace:
+		allDrones = []
+		
+		for blueprintList in root:
+			try:
+				if blueprintList.attrib['name'] == 'all_drones':
+					for weapon in blueprintList:
+						itemPowers[weapon.text] = weapon.attrib['power']
+						try:
+							if weapon.attrib['dlc'] == 'false':
+								allDrones.append(weapon.text)
+						except:
+							pass
+			except KeyError:
+				print('Error in VanillaArmaments.xml, no "name" attribute')
+			except:
+				raise
+				
+		shuffle(allDrones)
+		freeDrones = allDrones[:randint(3, 5)]
+	
+	if os.path.exists('source/shipArmaments/'+str(Mod)+'Armaments.xml') is True:
+		tree = ET.parse('source/shipArmaments/'+str(Mod)+'Armaments.xml')
+	else:
+		tree = ET.parse('source/shipArmaments/VanillaArmaments.xml')
+	root = tree.getroot()
+	
+	for y in range(0, len(extraEquipment)):
+		if os.path.exists('source/Extra Packs/'+str(extraEquipment[y])+'/AppendArmaments.xml') is True:
+			treeExtra = ET.parse('source/Extra Packs/'+str(extraEquipment[y])+'/AppendArmaments.xml')
+			rootExtra = tree.getroot()
+			root.extend(rootExtra)
+		
+	# Ship Stuff - Crew, Augments, Reactor power and Health.
 		
 	print('Writing Code')
 	blueprints_1 = '''
@@ -1680,6 +1713,77 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
     <mod:removeTag />
 </mod:findComposite>
 '''
+
+	if randShipCheck:
+		hyperspace_discord = '''<!-- Discord Integration -->
+		
+<mod:findLike type="discord">
+	<mod:removeTag/>
+</mod:findLike>
+
+<discord enabled="true">
+	<miniships>\n'''
+			
+		for x in range(0, 28):
+			hyperspace_discord += '\t\t<miniship>miniship_'+str(playerImgOrder[x%10]) + str(shipTypeId[int(randomCyclePlayerHull[x%10][x//10])-1])+'</miniship>\n'
+		
+		hyperspace_discord += '''\t</miniships>
+	<appId>746565208842960926</appId> <!-- Discord app id -->
+	'''
+		
+	else:
+		hyperspace_discord = '''\n\n<!-- Discord Integration -->
+<discord enabled="true">
+	<miniships>
+		<miniship>miniship_anaerobic_cruiser</miniship>
+		<miniship>miniship_anaerobic_cruiser_2</miniship>
+		<miniship>miniship_circle_cruiser</miniship>
+		<miniship>miniship_circle_cruiser_2</miniship>
+		<miniship>miniship_circle_cruiser_3</miniship>
+		<miniship>miniship_crystal_cruiser</miniship>
+		<miniship>miniship_crystal_cruiser_2</miniship>
+		<miniship>miniship_energy_cruiser</miniship>
+		<miniship>miniship_energy_cruiser_2</miniship>
+		<miniship>miniship_energy_cruiser_3</miniship>
+		<miniship>miniship_fed_cruiser</miniship>
+		<miniship>miniship_fed_cruiser_2</miniship>
+		<miniship>miniship_fed_cruiser_3</miniship>
+		<miniship>miniship_jelly_cruiser</miniship>
+		<miniship>miniship_jelly_cruiser_2</miniship>
+		<miniship>miniship_jelly_cruiser_3</miniship>
+		<miniship>miniship_kestral</miniship>
+		<miniship>miniship_kestral_2</miniship>
+		<miniship>miniship_kestral_3</miniship>
+		<miniship>miniship_mantis_cruiser</miniship>
+		<miniship>miniship_mantis_cruiser_2</miniship>
+		<miniship>miniship_mantis_cruiser_3</miniship>
+		<miniship>miniship_rock_cruiser</miniship>
+		<miniship>miniship_rock_cruiser_2</miniship>
+		<miniship>miniship_rock_cruiser_3</miniship>
+		<miniship>miniship_stealth</miniship>
+		<miniship>miniship_stealth_2</miniship>
+		<miniship>miniship_stealth_3</miniship>
+	</miniships>
+	<appId>746565208842960926</appId> <!-- Discord app id -->
+'''
+	
+	hyperspace_discord += '''<icon>big_icon_1</icon> <!-- internal asset id for large icon -->
+</discord>'''
+			
+
+	hyperspace_1 = '''<!-- Drones in stores -->
+	
+<mod:findLike type="store">
+	<mod:findLike type="freeDrones">
+		<mod:removeTag/>
+	</mod:findLike>
+	<mod-append:freeDrones>'''
+		
+	for drone in freeDrones:
+		hyperspace_1 += ('\n\t\t<' + drone + '/>')
+			
+	hyperspace_1 += '''\n\t</mod-append:freeDrones>
+</mod:findLike>'''
 		
 
 	print("Removing Files")
@@ -1931,6 +2035,9 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	xml.writelines(blueprints_6)
 	xml.writelines(blueprints_7)
 	
+	xml = open("compiledFiles/data/hyperspace.xml.append", "a")
+	xml.writelines(hyperspace_discord)
+	xml.writelines(hyperspace_1)
 	xml.close()
 	
 	extraEquipmentFileTransfer = []

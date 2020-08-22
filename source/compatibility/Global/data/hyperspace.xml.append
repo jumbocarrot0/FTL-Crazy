@@ -64,6 +64,11 @@
 			<shootingSound>rockThrow2</shootingSound>
 			<shootingSound>rockThrow3</shootingSound>
 		</shootingSounds>
+		<repairSounds animSoundFrame="5">
+			<repairSound>rockThud1</repairSound>
+			<repairSound>rockThud2</repairSound>
+			<repairSound>rockThud3</repairSound>
+		</repairSounds>
 	</race>
 	 <race name="crystal">
 		<maxHealth>125</maxHealth>
@@ -78,11 +83,11 @@
 			<shootingSound>rockThrow2</shootingSound>
 			<shootingSound>rockThrow3</shootingSound>
 		</shootingSounds>
-		<shootingSounds>
-			<shootingSound>rockThrow1</shootingSound>
-			<shootingSound>rockThrow2</shootingSound>
-			<shootingSound>rockThrow3</shootingSound>
-		</shootingSounds>
+		<repairSounds animSoundFrame="5">
+			<repairSound>rockThud1</repairSound>
+			<repairSound>rockThud2</repairSound>
+			<repairSound>rockThud3</repairSound>
+		</repairSounds>
 		<hasCustomDeathAnimation>true</hasCustomDeathAnimation>
 		<hasDeathExplosion>true</hasDeathExplosion>
 		<powerEffect>
