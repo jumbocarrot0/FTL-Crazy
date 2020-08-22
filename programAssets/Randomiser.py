@@ -1714,76 +1714,77 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 </mod:findComposite>
 '''
 
-	if randShipCheck:
-		hyperspace_discord = '''<!-- Discord Integration -->
-		
-<mod:findLike type="discord">
-	<mod:removeTag/>
-</mod:findLike>
-
-<discord enabled="true">
-	<miniships>\n'''
+	if hyperspace:
+		if randShipCheck:
+			hyperspace_discord = '''<!-- Discord Integration -->
 			
-		for x in range(0, 28):
-			hyperspace_discord += '\t\t<miniship>miniship_'+str(playerImgOrder[x%10]) + str(shipTypeId[int(randomCyclePlayerHull[x%10][x//10])-1])+'</miniship>\n'
-		
-		hyperspace_discord += '''\t</miniships>
-	<appId>746565208842960926</appId> <!-- Discord app id -->
-	'''
-		
-	else:
-		hyperspace_discord = '''\n\n<!-- Discord Integration -->
-<discord enabled="true">
-	<miniships>
-		<miniship>miniship_anaerobic_cruiser</miniship>
-		<miniship>miniship_anaerobic_cruiser_2</miniship>
-		<miniship>miniship_circle_cruiser</miniship>
-		<miniship>miniship_circle_cruiser_2</miniship>
-		<miniship>miniship_circle_cruiser_3</miniship>
-		<miniship>miniship_crystal_cruiser</miniship>
-		<miniship>miniship_crystal_cruiser_2</miniship>
-		<miniship>miniship_energy_cruiser</miniship>
-		<miniship>miniship_energy_cruiser_2</miniship>
-		<miniship>miniship_energy_cruiser_3</miniship>
-		<miniship>miniship_fed_cruiser</miniship>
-		<miniship>miniship_fed_cruiser_2</miniship>
-		<miniship>miniship_fed_cruiser_3</miniship>
-		<miniship>miniship_jelly_cruiser</miniship>
-		<miniship>miniship_jelly_cruiser_2</miniship>
-		<miniship>miniship_jelly_cruiser_3</miniship>
-		<miniship>miniship_kestral</miniship>
-		<miniship>miniship_kestral_2</miniship>
-		<miniship>miniship_kestral_3</miniship>
-		<miniship>miniship_mantis_cruiser</miniship>
-		<miniship>miniship_mantis_cruiser_2</miniship>
-		<miniship>miniship_mantis_cruiser_3</miniship>
-		<miniship>miniship_rock_cruiser</miniship>
-		<miniship>miniship_rock_cruiser_2</miniship>
-		<miniship>miniship_rock_cruiser_3</miniship>
-		<miniship>miniship_stealth</miniship>
-		<miniship>miniship_stealth_2</miniship>
-		<miniship>miniship_stealth_3</miniship>
-	</miniships>
-	<appId>746565208842960926</appId> <!-- Discord app id -->
-'''
-	
-	hyperspace_discord += '''<icon>big_icon_1</icon> <!-- internal asset id for large icon -->
-</discord>'''
-			
-
-	hyperspace_1 = '''<!-- Drones in stores -->
-	
-<mod:findLike type="store">
-	<mod:findLike type="freeDrones">
+	<mod:findLike type="discord">
 		<mod:removeTag/>
 	</mod:findLike>
-	<mod-append:freeDrones>'''
-		
-	for drone in freeDrones:
-		hyperspace_1 += ('\n\t\t<' + drone + '/>')
+
+	<discord enabled="true">
+		<miniships>\n'''
+				
+			for x in range(0, 28):
+				hyperspace_discord += '\t\t<miniship>miniship_'+str(playerImgOrder[x%10]) + str(shipTypeId[int(randomCyclePlayerHull[x%10][x//10])-1])+'</miniship>\n'
 			
-	hyperspace_1 += '''\n\t</mod-append:freeDrones>
-</mod:findLike>'''
+			hyperspace_discord += '''\t</miniships>
+		<appId>746565208842960926</appId> <!-- Discord app id -->
+		'''
+			
+		else:
+			hyperspace_discord = '''\n\n<!-- Discord Integration -->
+	<discord enabled="true">
+		<miniships>
+			<miniship>miniship_anaerobic_cruiser</miniship>
+			<miniship>miniship_anaerobic_cruiser_2</miniship>
+			<miniship>miniship_circle_cruiser</miniship>
+			<miniship>miniship_circle_cruiser_2</miniship>
+			<miniship>miniship_circle_cruiser_3</miniship>
+			<miniship>miniship_crystal_cruiser</miniship>
+			<miniship>miniship_crystal_cruiser_2</miniship>
+			<miniship>miniship_energy_cruiser</miniship>
+			<miniship>miniship_energy_cruiser_2</miniship>
+			<miniship>miniship_energy_cruiser_3</miniship>
+			<miniship>miniship_fed_cruiser</miniship>
+			<miniship>miniship_fed_cruiser_2</miniship>
+			<miniship>miniship_fed_cruiser_3</miniship>
+			<miniship>miniship_jelly_cruiser</miniship>
+			<miniship>miniship_jelly_cruiser_2</miniship>
+			<miniship>miniship_jelly_cruiser_3</miniship>
+			<miniship>miniship_kestral</miniship>
+			<miniship>miniship_kestral_2</miniship>
+			<miniship>miniship_kestral_3</miniship>
+			<miniship>miniship_mantis_cruiser</miniship>
+			<miniship>miniship_mantis_cruiser_2</miniship>
+			<miniship>miniship_mantis_cruiser_3</miniship>
+			<miniship>miniship_rock_cruiser</miniship>
+			<miniship>miniship_rock_cruiser_2</miniship>
+			<miniship>miniship_rock_cruiser_3</miniship>
+			<miniship>miniship_stealth</miniship>
+			<miniship>miniship_stealth_2</miniship>
+			<miniship>miniship_stealth_3</miniship>
+		</miniships>
+		<appId>746565208842960926</appId> <!-- Discord app id -->
+	'''
+		
+		hyperspace_discord += '''<icon>big_icon_1</icon> <!-- internal asset id for large icon -->
+	</discord>'''
+				
+
+		hyperspace_1 = '''<!-- Drones in stores -->
+		
+	<mod:findLike type="store">
+		<mod:findLike type="freeDrones">
+			<mod:removeTag/>
+		</mod:findLike>
+		<mod-append:freeDrones>'''
+			
+		for drone in freeDrones:
+			hyperspace_1 += ('\n\t\t<' + drone + '/>')
+				
+		hyperspace_1 += '''\n\t</mod-append:freeDrones>
+	</mod:findLike>'''
 		
 
 	print("Removing Files")
@@ -1844,7 +1845,7 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 		
 					fileAppenda.close()
 					fileAppendb.close()
-				elif extraEquipmentFileTransfer[z][x][2][y] != 'AppendArmaments.xml' and extraEquipmentFileTransfer[z][x][2][y].split('.') not in ['pdn', 'xcf']:
+				elif extraEquipmentFileTransfer[z][x][2][y] != 'AppendArmaments.xml' and extraEquipmentFileTransfer[z][x][2][y].split('.')[-1] not in ['pdn', 'xcf']:
 					if extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):][:1] == '/':
 						if os.path.exists('compiledFiles' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):]) == False:
 							os.makedirs('compiledFiles' + extraEquipmentFileTransfer[z][x][0][len(extraEquipmentFileTransfer[z][0][0]):])
@@ -2035,10 +2036,13 @@ def generateRandMod(Mod="Vanilla", balanced=False, modSeed = '', extraEquipmentC
 	xml.writelines(blueprints_6)
 	xml.writelines(blueprints_7)
 	
-	xml = open("compiledFiles/data/hyperspace.xml.append", "a")
-	xml.writelines(hyperspace_discord)
-	xml.writelines(hyperspace_1)
-	xml.close()
+	if hyperspace:
+		xml = open("compiledFiles/data/hyperspace.xml.append", "a")
+		xml.writelines(hyperspace_discord)
+		xml.writelines(hyperspace_1)
+		xml.close()
+	else:
+		os.remove("compiledFiles/data/hyperspace.xml.append")
 	
 	extraEquipmentFileTransfer = []
 		
