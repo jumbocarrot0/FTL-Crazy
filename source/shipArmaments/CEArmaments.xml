@@ -424,33 +424,15 @@
 		<augment rarity="2" start="false">DRONE_SPEED</augment>
 		<augment rarity="4" start="false">REPAIR_ARM</augment>
 
-		<blueprint>AE_REPAIR_KIT</blueprint>
-		<blueprint>AE_BEACON_KIT</blueprint>
-		<blueprint>AE_SCIENCE</blueprint>
-		<blueprint>AE_TRADE_BOOSTER</blueprint>
-		<blueprint>AE_REQUISITION</blueprint>
-		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
-		<blueprint>AE_BOUNTYHUNTER</blueprint>
-		<blueprint>AE_AUG_GENERATOR</blueprint>
-		<blueprint>AE_ADV_THRUSTERS</blueprint>
-		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
-		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
-		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
-		<blueprint>AE_SECTOR_SCANNER</blueprint>
-		<blueprint>AE_SECTOR_MAPPING</blueprint>
-		<blueprint>AE_CLONE_LAB</blueprint>
-		<blueprint>AE_PRODUCTION</blueprint>
-		<blueprint>AE_FUEL_RECYCLE</blueprint>
-		<blueprint>AE_WEAPON_JAMMER</blueprint>
-		<blueprint>AE_SHIELD_JAMMER</blueprint>
-		<blueprint>AE_DRONE_JAMMER</blueprint>
-		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
-		<blueprint>AE_ADV_EFFECTOR</blueprint>
-		<blueprint>AE_IRRADIATOR</blueprint>
-		<blueprint>AE_MIND_SHIELD</blueprint>
-		<blueprint>AE_FIREWALL</blueprint>
-		<blueprint>AE_NEBULA_SCANNER</blueprint>
-		<blueprint>AE_ASB</blueprint>
+		<augment rarity="3" start="false">AE_REQUISITION</augment>
+		
+		<augment rarity="4" start="false">AE_REPAIR_KIT</augment>
+		<augment rarity="4" start="false">AE_FUEL_RECYCLE</augment>
+		<augment rarity="4" start="false">AE_AMMO_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_DRONE_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_ADV_THRUSTERS</augment>
+		<augment rarity="4" start="false">AE_BEACON_KIT</augment>
+		<augment rarity="4" start="false">AE_SECTOR_SCANNER</augment>
 	</augList>
 	
 	<artilleryList>
@@ -590,34 +572,19 @@
 		<augment rarity="2">ION_ARMOR</augment>
 		<augment rarity="1">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
+		
+		<augment rarity="5" start="false">TE_GOODS_ENGI_MEDICINE</augment>
+		<augment rarity="3" start="false">AE_HOLOGRAM_GENERATOR</augment>
+		<augment rarity="5" start="false">TE_GOODS_ROCK_ORE</augment>
+		<augment rarity="3" start="false">AE_SCIENCE</augment>
 
-		<blueprint>AE_REPAIR_KIT</blueprint>
-		<blueprint>AE_BEACON_KIT</blueprint>
-		<blueprint>AE_SCIENCE</blueprint>
-		<blueprint>AE_TRADE_BOOSTER</blueprint>
-		<blueprint>AE_REQUISITION</blueprint>
-		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
-		<blueprint>AE_BOUNTYHUNTER</blueprint>
-		<blueprint>AE_AUG_GENERATOR</blueprint>
-		<blueprint>AE_ADV_THRUSTERS</blueprint>
-		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
-		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
-		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
-		<blueprint>AE_SECTOR_SCANNER</blueprint>
-		<blueprint>AE_SECTOR_MAPPING</blueprint>
-		<blueprint>AE_CLONE_LAB</blueprint>
-		<blueprint>AE_PRODUCTION</blueprint>
-		<blueprint>AE_FUEL_RECYCLE</blueprint>
-		<blueprint>AE_WEAPON_JAMMER</blueprint>
-		<blueprint>AE_SHIELD_JAMMER</blueprint>
-		<blueprint>AE_DRONE_JAMMER</blueprint>
-		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
-		<blueprint>AE_ADV_EFFECTOR</blueprint>
-		<blueprint>AE_IRRADIATOR</blueprint>
-		<blueprint>AE_MIND_SHIELD</blueprint>
-		<blueprint>AE_FIREWALL</blueprint>
-		<blueprint>AE_NEBULA_SCANNER</blueprint>
-		<blueprint>AE_ASB</blueprint>
+		<augment rarity="4" start="false">AE_REPAIR_KIT</augment>
+		<augment rarity="4" start="false">AE_FUEL_RECYCLE</augment>
+		<augment rarity="4" start="false">AE_AMMO_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_DRONE_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_ADV_THRUSTERS</augment>
+		<augment rarity="4" start="false">AE_BEACON_KIT</augment>
+		<augment rarity="4" start="false">AE_SECTOR_SCANNER</augment>
 	</augList>
 	
 	<artilleryList>
@@ -721,33 +688,13 @@
 		<augment rarity="4">REPAIR_ARM</augment>
 		<augment start="true" rarity="1">CRYSTAL_SHARDS</augment>
 
-		<blueprint>AE_REPAIR_KIT</blueprint>
-		<blueprint>AE_BEACON_KIT</blueprint>
-		<blueprint>AE_SCIENCE</blueprint>
-		<blueprint>AE_TRADE_BOOSTER</blueprint>
-		<blueprint>AE_REQUISITION</blueprint>
-		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
-		<blueprint>AE_BOUNTYHUNTER</blueprint>
-		<blueprint>AE_AUG_GENERATOR</blueprint>
-		<blueprint>AE_ADV_THRUSTERS</blueprint>
-		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
-		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
-		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
-		<blueprint>AE_SECTOR_SCANNER</blueprint>
-		<blueprint>AE_SECTOR_MAPPING</blueprint>
-		<blueprint>AE_CLONE_LAB</blueprint>
-		<blueprint>AE_PRODUCTION</blueprint>
-		<blueprint>AE_FUEL_RECYCLE</blueprint>
-		<blueprint>AE_WEAPON_JAMMER</blueprint>
-		<blueprint>AE_SHIELD_JAMMER</blueprint>
-		<blueprint>AE_DRONE_JAMMER</blueprint>
-		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
-		<blueprint>AE_ADV_EFFECTOR</blueprint>
-		<blueprint>AE_IRRADIATOR</blueprint>
-		<blueprint>AE_MIND_SHIELD</blueprint>
-		<blueprint>AE_FIREWALL</blueprint>
-		<blueprint>AE_NEBULA_SCANNER</blueprint>
-		<blueprint>AE_ASB</blueprint>
+		<augment rarity="4" start="false">AE_REPAIR_KIT</augment>
+		<augment rarity="4" start="false">AE_FUEL_RECYCLE</augment>
+		<augment rarity="4" start="false">AE_AMMO_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_DRONE_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_ADV_THRUSTERS</augment>
+		<augment rarity="4" start="false">AE_BEACON_KIT</augment>
+		<augment rarity="4" start="false">AE_SECTOR_SCANNER</augment>
 	</augList>
 
 	<artilleryList>
@@ -883,33 +830,17 @@
 		<augment rarity="1">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
 
-		<blueprint>AE_REPAIR_KIT</blueprint>
-		<blueprint>AE_BEACON_KIT</blueprint>
-		<blueprint>AE_SCIENCE</blueprint>
-		<blueprint>AE_TRADE_BOOSTER</blueprint>
-		<blueprint>AE_REQUISITION</blueprint>
-		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
-		<blueprint>AE_BOUNTYHUNTER</blueprint>
-		<blueprint>AE_AUG_GENERATOR</blueprint>
-		<blueprint>AE_ADV_THRUSTERS</blueprint>
-		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
-		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
-		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
-		<blueprint>AE_SECTOR_SCANNER</blueprint>
-		<blueprint>AE_SECTOR_MAPPING</blueprint>
-		<blueprint>AE_CLONE_LAB</blueprint>
-		<blueprint>AE_PRODUCTION</blueprint>
-		<blueprint>AE_FUEL_RECYCLE</blueprint>
-		<blueprint>AE_WEAPON_JAMMER</blueprint>
-		<blueprint>AE_SHIELD_JAMMER</blueprint>
-		<blueprint>AE_DRONE_JAMMER</blueprint>
-		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
-		<blueprint>AE_ADV_EFFECTOR</blueprint>
-		<blueprint>AE_IRRADIATOR</blueprint>
-		<blueprint>AE_MIND_SHIELD</blueprint>
-		<blueprint>AE_FIREWALL</blueprint>
-		<blueprint>AE_NEBULA_SCANNER</blueprint>
-		<blueprint>AE_ASB</blueprint>
+		<augment rarity="3" start="false">AE_SHIELD_JAMMER</augment>
+		<augment rarity="3" start="false">AE_PRODUCTION</augment>
+		<augment rarity="5" start="false">TE_GOODS_ZOLTAN_BEACONS</augment>
+
+		<augment rarity="4" start="false">AE_REPAIR_KIT</augment>
+		<augment rarity="4" start="false">AE_FUEL_RECYCLE</augment>
+		<augment rarity="4" start="false">AE_AMMO_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_DRONE_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_ADV_THRUSTERS</augment>
+		<augment rarity="4" start="false">AE_BEACON_KIT</augment>
+		<augment rarity="4" start="false">AE_SECTOR_SCANNER</augment>
 	</augList>
 
 	<artilleryList>
@@ -1050,33 +981,16 @@
 		<augment rarity="1">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
 
-		<blueprint>AE_REPAIR_KIT</blueprint>
-		<blueprint>AE_BEACON_KIT</blueprint>
-		<blueprint>AE_SCIENCE</blueprint>
-		<blueprint>AE_TRADE_BOOSTER</blueprint>
-		<blueprint>AE_REQUISITION</blueprint>
-		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
-		<blueprint>AE_BOUNTYHUNTER</blueprint>
-		<blueprint>AE_AUG_GENERATOR</blueprint>
-		<blueprint>AE_ADV_THRUSTERS</blueprint>
-		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
-		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
-		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
-		<blueprint>AE_SECTOR_SCANNER</blueprint>
-		<blueprint>AE_SECTOR_MAPPING</blueprint>
-		<blueprint>AE_CLONE_LAB</blueprint>
-		<blueprint>AE_PRODUCTION</blueprint>
-		<blueprint>AE_FUEL_RECYCLE</blueprint>
-		<blueprint>AE_WEAPON_JAMMER</blueprint>
-		<blueprint>AE_SHIELD_JAMMER</blueprint>
-		<blueprint>AE_DRONE_JAMMER</blueprint>
-		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
-		<blueprint>AE_ADV_EFFECTOR</blueprint>
-		<blueprint>AE_IRRADIATOR</blueprint>
-		<blueprint>AE_MIND_SHIELD</blueprint>
-		<blueprint>AE_FIREWALL</blueprint>
-		<blueprint>AE_NEBULA_SCANNER</blueprint>
-		<blueprint>AE_ASB</blueprint>
+		<augment rarity="2" start="false">AE_COMBAT_SIMULATOR</augment>
+		<augment rarity="4" start="false">AE_REQUISITION</augment>
+
+		<augment rarity="4" start="false">AE_REPAIR_KIT</augment>
+		<augment rarity="4" start="false">AE_FUEL_RECYCLE</augment>
+		<augment rarity="4" start="false">AE_AMMO_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_DRONE_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_ADV_THRUSTERS</augment>
+		<augment rarity="4" start="false">AE_BEACON_KIT</augment>
+		<augment rarity="4" start="false">AE_SECTOR_SCANNER</augment>
 	</augList>
 
 	<artilleryList>
@@ -1210,33 +1124,18 @@
 		<augment rarity="1" start="false">DRONE_SPEED</augment>
 		<augment rarity="4" start="false">REPAIR_ARM</augment>
 
-		<blueprint>AE_REPAIR_KIT</blueprint>
-		<blueprint>AE_BEACON_KIT</blueprint>
-		<blueprint>AE_SCIENCE</blueprint>
-		<blueprint>AE_TRADE_BOOSTER</blueprint>
-		<blueprint>AE_REQUISITION</blueprint>
-		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
-		<blueprint>AE_BOUNTYHUNTER</blueprint>
-		<blueprint>AE_AUG_GENERATOR</blueprint>
-		<blueprint>AE_ADV_THRUSTERS</blueprint>
-		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
-		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
-		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
-		<blueprint>AE_SECTOR_SCANNER</blueprint>
-		<blueprint>AE_SECTOR_MAPPING</blueprint>
-		<blueprint>AE_CLONE_LAB</blueprint>
-		<blueprint>AE_PRODUCTION</blueprint>
-		<blueprint>AE_FUEL_RECYCLE</blueprint>
-		<blueprint>AE_WEAPON_JAMMER</blueprint>
-		<blueprint>AE_SHIELD_JAMMER</blueprint>
-		<blueprint>AE_DRONE_JAMMER</blueprint>
-		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
-		<blueprint>AE_ADV_EFFECTOR</blueprint>
-		<blueprint>AE_IRRADIATOR</blueprint>
-		<blueprint>AE_MIND_SHIELD</blueprint>
-		<blueprint>AE_FIREWALL</blueprint>
-		<blueprint>AE_NEBULA_SCANNER</blueprint>
-		<blueprint>AE_ASB</blueprint>
+		<augment rarity="3" start="false">AE_TRADE_BOOSTER</augment>
+		<augment rarity="5" start="false">TE_GOODS_GIRDER</augment>
+		<augment rarity="4" start="false">AE_BOUNTYHUNTER</augment>
+		<augment rarity="5" start="false">TE_GOODS_MANTIS_BOUNTY</augment>
+
+		<augment rarity="4" start="false">AE_REPAIR_KIT</augment>
+		<augment rarity="2" start="false">AE_FUEL_RECYCLE</augment>
+		<augment rarity="4" start="false">AE_AMMO_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_DRONE_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_ADV_THRUSTERS</augment>
+		<augment rarity="4" start="false">AE_BEACON_KIT</augment>
+		<augment rarity="4" start="false">AE_SECTOR_SCANNER</augment>
 	</augList>
 	
 	<artilleryList>
@@ -1380,33 +1279,16 @@
 		<augment rarity="1">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
 
-		<blueprint>AE_REPAIR_KIT</blueprint>
-		<blueprint>AE_BEACON_KIT</blueprint>
-		<blueprint>AE_SCIENCE</blueprint>
-		<blueprint>AE_TRADE_BOOSTER</blueprint>
-		<blueprint>AE_REQUISITION</blueprint>
-		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
-		<blueprint>AE_BOUNTYHUNTER</blueprint>
-		<blueprint>AE_AUG_GENERATOR</blueprint>
-		<blueprint>AE_ADV_THRUSTERS</blueprint>
-		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
-		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
-		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
-		<blueprint>AE_SECTOR_SCANNER</blueprint>
-		<blueprint>AE_SECTOR_MAPPING</blueprint>
-		<blueprint>AE_CLONE_LAB</blueprint>
-		<blueprint>AE_PRODUCTION</blueprint>
-		<blueprint>AE_FUEL_RECYCLE</blueprint>
-		<blueprint>AE_WEAPON_JAMMER</blueprint>
-		<blueprint>AE_SHIELD_JAMMER</blueprint>
-		<blueprint>AE_DRONE_JAMMER</blueprint>
-		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
-		<blueprint>AE_ADV_EFFECTOR</blueprint>
-		<blueprint>AE_IRRADIATOR</blueprint>
-		<blueprint>AE_MIND_SHIELD</blueprint>
-		<blueprint>AE_FIREWALL</blueprint>
-		<blueprint>AE_NEBULA_SCANNER</blueprint>
-		<blueprint>AE_ASB</blueprint>
+		<augment rarity="2" start="false">AE_WEAPON_JAMMER</augment>
+		<augment rarity="2" start="false">AE_ADV_EFFECTOR</augment>
+
+		<augment rarity="4" start="false">AE_REPAIR_KIT</augment>
+		<augment rarity="4" start="false">AE_FUEL_RECYCLE</augment>
+		<augment rarity="4" start="false">AE_AMMO_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_DRONE_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_ADV_THRUSTERS</augment>
+		<augment rarity="4" start="false">AE_BEACON_KIT</augment>
+		<augment rarity="4" start="false">AE_SECTOR_SCANNER</augment>
 	</augList>
 
 	<artilleryList>
@@ -1550,34 +1432,6 @@
 		<augment rarity="3">ION_ARMOR</augment>
 		<augment rarity="1">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
-
-		<blueprint>AE_REPAIR_KIT</blueprint>
-		<blueprint>AE_BEACON_KIT</blueprint>
-		<blueprint>AE_SCIENCE</blueprint>
-		<blueprint>AE_TRADE_BOOSTER</blueprint>
-		<blueprint>AE_REQUISITION</blueprint>
-		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
-		<blueprint>AE_BOUNTYHUNTER</blueprint>
-		<blueprint>AE_AUG_GENERATOR</blueprint>
-		<blueprint>AE_ADV_THRUSTERS</blueprint>
-		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
-		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
-		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
-		<blueprint>AE_SECTOR_SCANNER</blueprint>
-		<blueprint>AE_SECTOR_MAPPING</blueprint>
-		<blueprint>AE_CLONE_LAB</blueprint>
-		<blueprint>AE_PRODUCTION</blueprint>
-		<blueprint>AE_FUEL_RECYCLE</blueprint>
-		<blueprint>AE_WEAPON_JAMMER</blueprint>
-		<blueprint>AE_SHIELD_JAMMER</blueprint>
-		<blueprint>AE_DRONE_JAMMER</blueprint>
-		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
-		<blueprint>AE_ADV_EFFECTOR</blueprint>
-		<blueprint>AE_IRRADIATOR</blueprint>
-		<blueprint>AE_MIND_SHIELD</blueprint>
-		<blueprint>AE_FIREWALL</blueprint>
-		<blueprint>AE_NEBULA_SCANNER</blueprint>
-		<blueprint>AE_ASB</blueprint>
 	</augList>
 
 	<artilleryList>
@@ -1723,33 +1577,15 @@
 		<augment rarity="3">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
 
-		<blueprint>AE_REPAIR_KIT</blueprint>
-		<blueprint>AE_BEACON_KIT</blueprint>
-		<blueprint>AE_SCIENCE</blueprint>
-		<blueprint>AE_TRADE_BOOSTER</blueprint>
-		<blueprint>AE_REQUISITION</blueprint>
-		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
-		<blueprint>AE_BOUNTYHUNTER</blueprint>
-		<blueprint>AE_AUG_GENERATOR</blueprint>
-		<blueprint>AE_ADV_THRUSTERS</blueprint>
-		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
-		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
-		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
-		<blueprint>AE_SECTOR_SCANNER</blueprint>
-		<blueprint>AE_SECTOR_MAPPING</blueprint>
-		<blueprint>AE_CLONE_LAB</blueprint>
-		<blueprint>AE_PRODUCTION</blueprint>
-		<blueprint>AE_FUEL_RECYCLE</blueprint>
-		<blueprint>AE_WEAPON_JAMMER</blueprint>
-		<blueprint>AE_SHIELD_JAMMER</blueprint>
-		<blueprint>AE_DRONE_JAMMER</blueprint>
-		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
-		<blueprint>AE_ADV_EFFECTOR</blueprint>
-		<blueprint>AE_IRRADIATOR</blueprint>
-		<blueprint>AE_MIND_SHIELD</blueprint>
-		<blueprint>AE_FIREWALL</blueprint>
-		<blueprint>AE_NEBULA_SCANNER</blueprint>
-		<blueprint>AE_ASB</blueprint>
+		<augment rarity="4" start="false">AE_AMMO_MANUFACTURER</augment>
+
+		<augment rarity="4" start="false">AE_REPAIR_KIT</augment>
+		<augment rarity="4" start="false">AE_FUEL_RECYCLE</augment>
+		<augment rarity="4" start="false">AE_AMMO_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_DRONE_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_ADV_THRUSTERS</augment>
+		<augment rarity="4" start="false">AE_BEACON_KIT</augment>
+		<augment rarity="4" start="false">AE_SECTOR_SCANNER</augment>
 	</augList>
 
 	<artilleryList>
@@ -1891,33 +1727,17 @@
 		<augment rarity="3">DRONE_SPEED</augment>
 		<augment rarity="4">REPAIR_ARM</augment>
 
-		<blueprint>AE_REPAIR_KIT</blueprint>
-		<blueprint>AE_BEACON_KIT</blueprint>
-		<blueprint>AE_SCIENCE</blueprint>
-		<blueprint>AE_TRADE_BOOSTER</blueprint>
-		<blueprint>AE_REQUISITION</blueprint>
-		<blueprint>AE_COMBAT_SIMULATOR</blueprint>
-		<blueprint>AE_BOUNTYHUNTER</blueprint>
-		<blueprint>AE_AUG_GENERATOR</blueprint>
-		<blueprint>AE_ADV_THRUSTERS</blueprint>
-		<blueprint>AE_AMMO_MANUFACTURER</blueprint>
-		<blueprint>AE_DRONE_MANUFACTURER</blueprint>
-		<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
-		<blueprint>AE_SECTOR_SCANNER</blueprint>
-		<blueprint>AE_SECTOR_MAPPING</blueprint>
-		<blueprint>AE_CLONE_LAB</blueprint>
-		<blueprint>AE_PRODUCTION</blueprint>
-		<blueprint>AE_FUEL_RECYCLE</blueprint>
-		<blueprint>AE_WEAPON_JAMMER</blueprint>
-		<blueprint>AE_SHIELD_JAMMER</blueprint>
-		<blueprint>AE_DRONE_JAMMER</blueprint>
-		<blueprint>AE_TELEPORTER_JAMMER</blueprint>
-		<blueprint>AE_ADV_EFFECTOR</blueprint>
-		<blueprint>AE_IRRADIATOR</blueprint>
-		<blueprint>AE_MIND_SHIELD</blueprint>
-		<blueprint>AE_FIREWALL</blueprint>
-		<blueprint>AE_NEBULA_SCANNER</blueprint>
-		<blueprint>AE_ASB</blueprint>
+		<augment rarity="2" start="false">AE_SECTOR_MAPPING</augment>
+		<augment rarity="5" start="false">TE_GOODS_PIRATE_ARMS</augment>
+		<augment rarity="3" start="false">AE_FIREWALL</augment>
+
+		<augment rarity="4" start="false">AE_REPAIR_KIT</augment>
+		<augment rarity="4" start="false">AE_FUEL_RECYCLE</augment>
+		<augment rarity="4" start="false">AE_AMMO_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_DRONE_MANUFACTURER</augment>
+		<augment rarity="4" start="false">AE_ADV_THRUSTERS</augment>
+		<augment rarity="4" start="false">AE_BEACON_KIT</augment>
+		<augment rarity="4" start="false">AE_SECTOR_SCANNER</augment>
 	</augList>
 
 	<artilleryList>
