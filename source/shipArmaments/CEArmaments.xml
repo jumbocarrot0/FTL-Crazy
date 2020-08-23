@@ -237,27 +237,27 @@
 </blueprintList>
 
 <blueprintList blueprint="all_augments">
-	<blueprint dlc="false">ROCK_ARMOR</blueprint>
-	<blueprint dlc="false">CRYSTAL_SHARDS</blueprint>
-	<blueprint dlc="false">ENERGY_SHIELD</blueprint>
-	<blueprint dlc="false">NANO_MEDBAY</blueprint>
-	<blueprint dlc="false">SLUG_GEL</blueprint>
-	<blueprint dlc="false">CREW_STIMS</blueprint>
-	<blueprint dlc="false">DRONE_SPEED</blueprint>
-	<blueprint dlc="false">SYSTEM_CASING</blueprint>
-	<blueprint dlc="false">ION_ARMOR</blueprint>
-	<blueprint dlc="false">CLOAK_FIRE</blueprint>
-	<blueprint dlc="false">REPAIR_ARM</blueprint>
-	<blueprint dlc="false">SCRAP_COLLECTOR</blueprint>
-	<blueprint dlc="false">ADV_SCANNERS</blueprint>
-	<blueprint dlc="false">AUTO_COOLDOWN</blueprint>
-	<blueprint dlc="false">SHIELD_RECHARGE</blueprint>
-	<blueprint dlc="false">WEAPON_PREIGNITE</blueprint>
-	<blueprint dlc="false">FTL_BOOSTER</blueprint>
-	<blueprint dlc="false">FTL_JUMPER</blueprint>
-	<blueprint dlc="false">DRONE_RECOVERY</blueprint>
-	<blueprint dlc="false">FTL_JAMMER</blueprint>
-	<blueprint dlc="false">STASIS_POD</blueprint>
+	<blueprint>ROCK_ARMOR</blueprint>
+	<blueprint>CRYSTAL_SHARDS</blueprint>
+	<blueprint>ENERGY_SHIELD</blueprint>
+	<blueprint>NANO_MEDBAY</blueprint>
+	<blueprint>SLUG_GEL</blueprint>
+	<blueprint>CREW_STIMS</blueprint>
+	<blueprint>DRONE_SPEED</blueprint>
+	<blueprint>SYSTEM_CASING</blueprint>
+	<blueprint>ION_ARMOR</blueprint>
+	<blueprint>CLOAK_FIRE</blueprint>
+	<blueprint>REPAIR_ARM</blueprint>
+	<blueprint>SCRAP_COLLECTOR</blueprint>
+	<blueprint>ADV_SCANNERS</blueprint>
+	<blueprint>AUTO_COOLDOWN</blueprint>
+	<blueprint>SHIELD_RECHARGE</blueprint>
+	<blueprint>WEAPON_PREIGNITE</blueprint>
+	<blueprint>FTL_BOOSTER</blueprint>
+	<blueprint>FTL_JUMPER</blueprint>
+	<blueprint>DRONE_RECOVERY</blueprint>
+	<blueprint>FTL_JAMMER</blueprint>
+	<blueprint>STASIS_POD</blueprint>
 	<blueprint dlc="true">O2_MASKS</blueprint>
 	<blueprint dlc="true">EXPLOSIVE_REPLICATOR</blueprint>
 	<blueprint dlc="true">FIRE_EXTINGUISHERS</blueprint>
@@ -270,46 +270,46 @@
 	<blueprint dlc="true">LIFE_SCANNER</blueprint>
 	<blueprint dlc="true">ZOLTAN_BYPASS</blueprint>
 
-	<blueprint dlc="false">AE_REPAIR_KIT</blueprint>
-	<blueprint dlc="false">AE_BEACON_KIT</blueprint>
-	<blueprint dlc="false">AE_SCIENCE</blueprint>
-	<blueprint dlc="false">AE_TRADE_BOOSTER</blueprint>
-	<blueprint dlc="false">AE_REQUISITION</blueprint>
-	<blueprint dlc="false">AE_COMBAT_SIMULATOR</blueprint>
-	<blueprint dlc="false">AE_BOUNTYHUNTER</blueprint>
-	<blueprint dlc="false">AE_AUG_GENERATOR</blueprint>
-	<blueprint dlc="false">AE_ADV_THRUSTERS</blueprint>
-	<blueprint dlc="false">AE_AMMO_MANUFACTURER</blueprint>
-	<blueprint dlc="false">AE_DRONE_MANUFACTURER</blueprint>
-	<blueprint dlc="false">AE_HOLOGRAM_GENERATOR</blueprint>
-	<blueprint dlc="false">AE_SECTOR_SCANNER</blueprint>
-	<blueprint dlc="false">AE_SECTOR_MAPPING</blueprint>
-	<blueprint dlc="false">AE_CLONE_LAB</blueprint>
-	<blueprint dlc="false">AE_PRODUCTION</blueprint>
-	<blueprint dlc="false">AE_FUEL_RECYCLE</blueprint>
-	<blueprint dlc="false">AE_WEAPON_JAMMER</blueprint>
-	<blueprint dlc="false">AE_SHIELD_JAMMER</blueprint>
-	<blueprint dlc="false">AE_DRONE_JAMMER</blueprint>
-	<blueprint dlc="false">AE_TELEPORTER_JAMMER</blueprint>
-	<blueprint dlc="false">AE_ADV_EFFECTOR</blueprint>
-	<blueprint dlc="false">AE_IRRADIATOR</blueprint>
-	<blueprint dlc="false">AE_MIND_SHIELD</blueprint>
-	<blueprint dlc="false">AE_FIREWALL</blueprint>
-	<blueprint dlc="false">AE_NEBULA_SCANNER</blueprint>
-	<blueprint dlc="false">AE_ASB</blueprint>
+	<blueprint>AE_REPAIR_KIT</blueprint>
+	<blueprint>AE_BEACON_KIT</blueprint>
+	<blueprint>AE_SCIENCE</blueprint>
+	<blueprint>AE_TRADE_BOOSTER</blueprint>
+	<blueprint>AE_REQUISITION</blueprint>
+	<blueprint>AE_COMBAT_SIMULATOR</blueprint>
+	<blueprint>AE_BOUNTYHUNTER</blueprint>
+	<blueprint>AE_AUG_GENERATOR</blueprint>
+	<blueprint>AE_ADV_THRUSTERS</blueprint>
+	<blueprint>AE_AMMO_MANUFACTURER</blueprint>
+	<blueprint>AE_DRONE_MANUFACTURER</blueprint>
+	<blueprint>AE_HOLOGRAM_GENERATOR</blueprint>
+	<blueprint>AE_SECTOR_SCANNER</blueprint>
+	<blueprint>AE_SECTOR_MAPPING</blueprint>
+	<blueprint>AE_CLONE_LAB</blueprint>
+	<blueprint>AE_PRODUCTION</blueprint>
+	<blueprint>AE_FUEL_RECYCLE</blueprint>
+	<blueprint>AE_WEAPON_JAMMER</blueprint>
+	<blueprint>AE_SHIELD_JAMMER</blueprint>
+	<blueprint>AE_DRONE_JAMMER</blueprint>
+	<blueprint>AE_TELEPORTER_JAMMER</blueprint>
+	<blueprint>AE_ADV_EFFECTOR</blueprint>
+	<blueprint>AE_IRRADIATOR</blueprint>
+	<blueprint>AE_MIND_SHIELD</blueprint>
+	<blueprint>AE_FIREWALL</blueprint>
+	<blueprint>AE_NEBULA_SCANNER</blueprint>
+	<blueprint>AE_ASB</blueprint>
 </blueprintList>
 
 <blueprintList blueprint="all_crew">
-	<blueprint dlc="false">human</blueprint>
-	<blueprint dlc="false">engi</blueprint>
-	<blueprint dlc="false">energy</blueprint>
-	<blueprint dlc="false">mantis</blueprint>
-	<blueprint dlc="false">rock</blueprint>
-	<blueprint dlc="false">crystal</blueprint>
-	<blueprint dlc="false">slug</blueprint>
+	<blueprint>human</blueprint>
+	<blueprint>engi</blueprint>
+	<blueprint>energy</blueprint>
+	<blueprint>mantis</blueprint>
+	<blueprint>rock</blueprint>
+	<blueprint>crystal</blueprint>
+	<blueprint>slug</blueprint>
 	<blueprint dlc="true">anaerobic</blueprint>
 	
-	<blueprint dlc="false">ghost</blueprint>
+	<blueprint>ghost</blueprint>
 </blueprintList>
 
 <blueprintList blueprint="all_systems">

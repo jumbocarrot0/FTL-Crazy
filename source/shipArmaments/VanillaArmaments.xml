@@ -46,7 +46,6 @@ dlc by default is false -->
 	<blueprint power="1" dlc="true">BOMB_HEAL_SYSTEM</blueprint>
 	<blueprint power="1" dlc="true">SHOTGUN_PLAYER</blueprint>
 	<blueprint power="2" dlc="true">SHOTGUN</blueprint>
-	<blueprint power="3" dlc="true">ARTILLERY_FED_C</blueprint>
 	<blueprint power="3" dlc="true">SHOTGUN_2</blueprint>
 	<blueprint power="2" dlc="true" type="missile">MISSILE_CHARGEGUN</blueprint>
 	<blueprint power="2" dlc="true">LASER_CHAINGUN</blueprint>
@@ -61,15 +60,15 @@ dlc by default is false -->
 </blueprintList>
 
 <blueprintList name="all_drones">
-	<blueprint power="2" dlc="false">COMBAT_1</blueprint>
-	<blueprint power="4" dlc="false">COMBAT_2</blueprint>
-	<blueprint power="2" dlc="false">COMBAT_BEAM</blueprint>
-	<blueprint power="2" dlc="false">DEFENSE_1</blueprint>
-	<blueprint power="3" dlc="false">DEFENSE_2</blueprint>
-	<blueprint power="1" dlc="false">REPAIR</blueprint>
-	<blueprint power="2" dlc="false">BATTLE</blueprint>
-	<blueprint power="3" dlc="false">BOARDER</blueprint>
-	<blueprint power="2" dlc="false">SHIP_REPAIR</blueprint>
+	<blueprint power="2">COMBAT_1</blueprint>
+	<blueprint power="4">COMBAT_2</blueprint>
+	<blueprint power="2">COMBAT_BEAM</blueprint>
+	<blueprint power="2">DEFENSE_1</blueprint>
+	<blueprint power="3">DEFENSE_2</blueprint>
+	<blueprint power="1">REPAIR</blueprint>
+	<blueprint power="2">BATTLE</blueprint>
+	<blueprint power="3">BOARDER</blueprint>
+	<blueprint power="2">SHIP_REPAIR</blueprint>
 	<blueprint power="3" dlc="true">BOARDER_ION</blueprint>
 	<blueprint power="2" dlc="true">DRONE_SHIELD_PLAYER</blueprint>
 	<blueprint power="1" dlc="true">ANTI_DRONE</blueprint>
@@ -78,27 +77,27 @@ dlc by default is false -->
 </blueprintList>
 
 <blueprintList name="all_augments">
-	<blueprint dlc="false">ROCK_ARMOR</blueprint>
-	<blueprint dlc="false">CRYSTAL_SHARDS</blueprint>
-	<blueprint dlc="false">ENERGY_SHIELD</blueprint>
-	<blueprint dlc="false">NANO_MEDBAY</blueprint>
-	<blueprint dlc="false">SLUG_GEL</blueprint>
-	<blueprint dlc="false">CREW_STIMS</blueprint>
-	<blueprint dlc="false">DRONE_SPEED</blueprint>
-	<blueprint dlc="false">SYSTEM_CASING</blueprint>
-	<blueprint dlc="false">ION_ARMOR</blueprint>
-	<blueprint dlc="false">CLOAK_FIRE</blueprint>
-	<blueprint dlc="false">REPAIR_ARM</blueprint>
-	<blueprint dlc="false">SCRAP_COLLECTOR</blueprint>
-	<blueprint dlc="false">ADV_SCANNERS</blueprint>
-	<blueprint dlc="false">AUTO_COOLDOWN</blueprint>
-	<blueprint dlc="false">SHIELD_RECHARGE</blueprint>
-	<blueprint dlc="false">WEAPON_PREIGNITE</blueprint>
-	<blueprint dlc="false">FTL_BOOSTER</blueprint>
-	<blueprint dlc="false">FTL_JUMPER</blueprint>
-	<blueprint dlc="false">DRONE_RECOVERY</blueprint>
-	<blueprint dlc="false">FTL_JAMMER</blueprint>
-	<blueprint dlc="false">STASIS_POD</blueprint>
+	<blueprint>ROCK_ARMOR</blueprint>
+	<blueprint>CRYSTAL_SHARDS</blueprint>
+	<blueprint>ENERGY_SHIELD</blueprint>
+	<blueprint>NANO_MEDBAY</blueprint>
+	<blueprint>SLUG_GEL</blueprint>
+	<blueprint>CREW_STIMS</blueprint>
+	<blueprint>DRONE_SPEED</blueprint>
+	<blueprint>SYSTEM_CASING</blueprint>
+	<blueprint>ION_ARMOR</blueprint>
+	<blueprint>CLOAK_FIRE</blueprint>
+	<blueprint>REPAIR_ARM</blueprint>
+	<blueprint>SCRAP_COLLECTOR</blueprint>
+	<blueprint>ADV_SCANNERS</blueprint>
+	<blueprint>AUTO_COOLDOWN</blueprint>
+	<blueprint>SHIELD_RECHARGE</blueprint>
+	<blueprint>WEAPON_PREIGNITE</blueprint>
+	<blueprint>FTL_BOOSTER</blueprint>
+	<blueprint>FTL_JUMPER</blueprint>
+	<blueprint>DRONE_RECOVERY</blueprint>
+	<blueprint>FTL_JAMMER</blueprint>
+	<blueprint>STASIS_POD</blueprint>
 	<blueprint dlc="true">O2_MASKS</blueprint>
 	<blueprint dlc="true">EXPLOSIVE_REPLICATOR</blueprint>
 	<blueprint dlc="true">FIRE_EXTINGUISHERS</blueprint>
@@ -113,13 +112,13 @@ dlc by default is false -->
 </blueprintList>
 
 <blueprintList name="all_crew">
-	<blueprint dlc="false">human</blueprint>
-	<blueprint dlc="false">engi</blueprint>
-	<blueprint dlc="false">energy</blueprint>
-	<blueprint dlc="false">mantis</blueprint>
-	<blueprint dlc="false">rock</blueprint>
-	<blueprint dlc="false">crystal</blueprint>
-	<blueprint dlc="false">slug</blueprint>
+	<blueprint>human</blueprint>
+	<blueprint>engi</blueprint>
+	<blueprint>energy</blueprint>
+	<blueprint>mantis</blueprint>
+	<blueprint>rock</blueprint>
+	<blueprint>crystal</blueprint>
+	<blueprint>slug</blueprint>
 	<blueprint dlc="true">anaerobic</blueprint>
 </blueprintList>
 
