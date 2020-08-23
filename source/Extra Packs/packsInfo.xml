@@ -5,19 +5,19 @@
 		<hyperspaceReq/>
 		<patchAfter/>
 	</pack>-->
-	<pack name="AntiBio">
+	<pack name="AntiBio"><!-- Adds various anti-bio weaponry -->
 		<chance>50</chance>
 	</pack>
-	<pack name="ChainCharge">
+	<pack name="ChainCharge"><!-- Adds various chain and charge weapons -->
 		<chance>50</chance>
 	</pack>
-	<pack name="Deceit">
+	<pack name="Deceit"><!-- Adds various 'fake' weapons that look like better counterparts of themsevles -->
 		<chance>20</chance>
 	</pack>
-	<pack name="Hidden">
-		<chance>20</chance>
+	<pack name="Hidden"><!-- Hides equipment information -->
+		<chance>10</chance>
 	</pack>
-	<pack name="Pulsers">
+	<pack name="Pulsers"><!-- Adds a new 'pulser' class of weapons, essentially shield piercing ions -->
 		<chance>50</chance>
 	</pack><!--
 	<pack name="HyperSonic">
