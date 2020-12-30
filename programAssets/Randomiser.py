@@ -1,3 +1,10 @@
+#!/usr/bin/env python
+from random import *
+import shutil
+import os
+from sys import maxsize
+import xml.etree.ElementTree as ET
+
 logo = '''
      _______________   _______________    _____
     |               | |               |  |     |
@@ -21,12 +28,6 @@ logo = '''
 '''
 
 print(logo)
-
-from random import *
-import shutil
-import os
-from sys import maxsize
-import xml.etree.ElementTree as ET
 
 
 def generateRandMod(Mod="Vanilla",
