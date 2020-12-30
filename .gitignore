@@ -12,3 +12,5 @@ compiledFiles/data/
 compiledFiles/img/
 compiledFiles/audio/
 compiledFiles/fonts/
+venv/
+.idea/
