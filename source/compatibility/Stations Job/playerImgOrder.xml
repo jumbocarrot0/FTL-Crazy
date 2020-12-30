@@ -1,28 +1,16 @@
-<playerImgOrder>	<img>fed_station</img>
-	<img>engi_station</img>
-	<img>rebel_station</img>
-	<img>zoltan_station</img>
-	<img>mantis_station</img>
-	<img>slug_station</img>
-	<img>rock_station</img>
-	<img>auto_station</img>
-	<img>crystal_station</img>
-	<img>lanius_station</img>
-	
-	<shipTypeID preset="abc"/>
-	<!--
-	<shipTypeID>
-		<suffix>Q</suffix>
-		<suffix>W</suffix>
-		<suffix>E</suffix>
-		<suffix>R</suffix>
-		<suffix>T</suffix>
-		<suffix>Y</suffix>
-		
-		...
-		
-		<suffix>M</suffix>
-		
-	</shipTypeID>
-	-->
-</playerImgOrder>
+<shipData>
+    <playerImgOrder>
+        <img>fed_station</img>
+        <img>engi_station</img>
+        <img>rebel_station</img>
+        <img>zoltan_station</img>
+        <img>mantis_station</img>
+        <img>slug_station</img>
+        <img>rock_station</img>
+        <img>auto_station</img>
+        <img>crystal_station</img>
+        <img>lanius_station</img>
+    </playerImgOrder>
+    <shipTypeID preset="abc"/>
+    <shipID mod="Global"/>
+</shipData>

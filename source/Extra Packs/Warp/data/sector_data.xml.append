@@ -1,0 +1,20 @@
+<sectorDescription name="CRAZY_ZOLTAN_TAKEOVER" minSector="0" unique="false">
+	<nameList>
+		<name>Alternate Reality</name>
+	</nameList>
+	<trackList>
+		<track>zoltan</track>
+		<track>cosmos</track>
+	</trackList>
+	<startEvent>CRAZY_START_BEACON_WARP_ZOLTAN_TAKEOVER</startEvent>
+	<event name="STORE" min="1" max="2"/>
+	<event name="ITEMS" min="1" max="1"/> <!--DLC - CHanged from 1/2-->
+	<event name="NEUTRAL_CIVILIAN" min="2" max="4"/>
+	<event name="NOTHING" min="1" max="2"/>
+	<event name="DISTRESS_BEACON" min="1" max="2"/>
+	<event name="HOSTILE_CIVILIAN" min="4" max="6"/>
+	<event name="NEBULA" min="0" max="4"/>
+	<event name="QUESTS" min="1" max="1"/>
+	<event name="HOSTILE1" min="2" max="2"/>
+	<event name="HOSTILE_BOARDING" min="0" max="0"/>
+</sectorDescription>

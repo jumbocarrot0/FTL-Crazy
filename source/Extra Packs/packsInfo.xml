@@ -25,4 +25,8 @@
 		<hyperspaceReq/>
 		<patchAfter/>
 	</pack>-->
+	<pack name="Warp"><!-- Adds an event that can warp the player to an alternate reality -->
+		<chance>5</chance>
+		<hyperspaceReq/>
+	</pack>
 </packs>

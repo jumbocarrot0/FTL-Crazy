@@ -33,7 +33,7 @@ FTL: Crazy is a randomising tool for FTL:Faster than Light, inspired mainly by t
 ## How to Use
 
 This is not a conventional FTL mod, but it is instead a randomiser that creates a .ftl file that can be used as a standard mod.
-To use, simply execute the FTLRand file. It should load up a window with a simple user interface. Here, you can change various settings, including balance and extra additions.
+To use, simply execute the FTLCrazy.py file. It should load up a window with a simple user interface. Here, you can change various settings, including balance and extra additions.
 Versions for various Overhaul mods are also avaliable, however the randomiser should be able to generate a mod that can be used alongside most smaller mods. Simply just put this mod ahead of any mods that you want to be randomised.
 Clicking the Generate button will create a .ftl file. Patch this file into the game with Slipstream Mod Manager. If there is already a copy of that .ftl in this directory, it will be overwritten.
 The source files of the generated mod can be seen in the compiledFiles folder. The other folders are for the functionality of the randomiser and shouldn't be tinkered with unless you know what you're doing.

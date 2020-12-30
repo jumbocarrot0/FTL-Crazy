@@ -1,0 +1,8 @@
+<events>
+	<eventFile>warp</eventFile>
+	
+	<sector name="CRAZY_ZOLTAN_TAKEOVER">
+        <rebelBeacon event="CRAZY_ZOLTAN_FLEET" nebulaEvent="CRAZY_ZOLTAN_FLEET_NEBULA"/>
+        <removeFirstBeaconNebula/>
+    </sector>
+</events>
